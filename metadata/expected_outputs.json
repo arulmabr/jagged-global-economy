@@ -1,0 +1,230 @@
+{
+  "data_tables": {
+    "aggregates/income_exposure_marginals.csv": {
+      "columns": 13,
+      "rows": 4,
+      "sha256": "5762fc199246a6984f79df7a73fe6eb59382f17cc9dcaba2ee894713f7284e1c"
+    },
+    "aggregates/national_exposure_map_data.csv": {
+      "columns": 9,
+      "rows": 141,
+      "sha256": "1a80771a089bdef735211f87cd9e5b53bb9dc0a056cdb1ddf7044e0378fcf7e0"
+    },
+    "aggregates/region_exposure_marginals.csv": {
+      "columns": 13,
+      "rows": 7,
+      "sha256": "a6dcfd8a7b62e9bc2d6caab3ad0e070ffcf9243017691acce7a281aef6540446"
+    },
+    "aggregates/region_income_exposure_grid.csv": {
+      "columns": 14,
+      "rows": 28,
+      "sha256": "d35c4b6f9f66cb277b0cdb9b09f0aed9322b9a41ab340b68d225cbf7ed927c09"
+    },
+    "aggregates/wb_group_exposure_exclusions.csv": {
+      "columns": 10,
+      "rows": 6,
+      "sha256": "03cc078831bf4d165e9f8cfe4ddd1c28834225b4a93a314cab134a6b573f5398"
+    },
+    "core/isco2_exposure_scores.csv": {
+      "columns": 4,
+      "rows": 40,
+      "sha256": "e3df98149d53ff6659f40e1b47f66c62f4420022768d3c3501378471a0d06736"
+    },
+    "core/nation_exposure_by_sex.csv": {
+      "columns": 12,
+      "rows": 441,
+      "sha256": "9cc8b0c370552cd941ec6151955b96acdbf9e319d47b4142c688765f9e1f2b19"
+    },
+    "core/nation_exposure_enriched.csv": {
+      "columns": 31,
+      "rows": 141,
+      "sha256": "b6370b8ac5c37f0ec0bd759a55ffff6971864728642c83faeeedd7600e8bb2b8"
+    },
+    "coverage/country_exclusion_lists.csv": {
+      "columns": 2,
+      "rows": 4,
+      "sha256": "ca650848ac2acbaa7f0dae521d39654e5c53bd42aaa4c01e750e2a882869e24b"
+    },
+    "coverage/sample_coverage_summary.csv": {
+      "columns": 2,
+      "rows": 5,
+      "sha256": "d3cc4ef5d718ba7230b2f78edd6c68a63e76ebac54a8075b0333569457259cbb"
+    },
+    "indirect/remittance_corridor_evidence.csv": {
+      "columns": 16,
+      "rows": 6,
+      "sha256": "fb7a1872b48d3b8ac73318194644c24cc8f0acfa3d406961c617d06cc304c2ab"
+    },
+    "indirect/remittance_data.csv": {
+      "columns": 4,
+      "rows": 134,
+      "sha256": "d7973bc3dfcc1f0438216c61b317eb9e2307872630c755101abf7736f217f8a2"
+    },
+    "indirect/remittance_weighted_exposure.csv": {
+      "columns": 9,
+      "rows": 126,
+      "sha256": "bd9c4aad5766c5939126d10aa202f6437a713bda89b839fdfe9f54138e54ed41"
+    },
+    "mechanisms/gender_decomposition_summary.csv": {
+      "columns": 8,
+      "rows": 2,
+      "sha256": "114b191c60f6eef723e9a96bcf6eb4fdce6a3e1f53e9b5f41e493d5fd3b50c78"
+    },
+    "mechanisms/gender_gap.csv": {
+      "columns": 10,
+      "rows": 147,
+      "sha256": "6aaf6c4ccbae71dddf045da200e4635f667afe57b1a726d93c2947c5e4f86529"
+    },
+    "mechanisms/gender_wc_decomposition.csv": {
+      "columns": 10,
+      "rows": 134,
+      "sha256": "a70adf2b146dc152c496405566230811573cdd723fc958dad6b96709c617e70b"
+    },
+    "mechanisms/gender_wcs_decomposition.csv": {
+      "columns": 21,
+      "rows": 132,
+      "sha256": "bc8b219b44a5c614e03697ddfb166def6b2321ea9b996db5360fa59ac0cf9481"
+    },
+    "mechanisms/labor_share.csv": {
+      "columns": 5,
+      "rows": 124,
+      "sha256": "571755ae2c500161062ea690dbdd59f7c2b17917a65537def1e4599c71031656"
+    },
+    "mechanisms/occupation_contributions.csv": {
+      "columns": 13,
+      "rows": 5335,
+      "sha256": "8cd96d78900f54e6eae25f3ee2a090e5c97282c61dd44ff2c14633680c7051e8"
+    },
+    "mechanisms/wage_weighted_exposure.csv": {
+      "columns": 7,
+      "rows": 113,
+      "sha256": "b8efefd94c3153d713110e6a8c4be27afe8a3abee0ddecef67c670ec3449ac32"
+    },
+    "mechanisms/wc_bc_sensitivity.csv": {
+      "columns": 6,
+      "rows": 3,
+      "sha256": "6d431b9a5793a39667d8dee4f3d07e5e2b5cfc1caa6f2fcc1adb9ba7af140863"
+    },
+    "mechanisms/white_collar_analysis.csv": {
+      "columns": 7,
+      "rows": 141,
+      "sha256": "4cb0f46df517afc0c6add7dcf15b0dc68ac592eaa430bb94e5834407333f583e"
+    },
+    "paper_tables/cross_country_labor_composition.csv": {
+      "columns": 6,
+      "rows": 5,
+      "sha256": "1edbcb234bfb71e87f6bea899182e25532a57fd845b93453459e0bfa907db748"
+    },
+    "paper_tables/gmyrek_hierarchy_summary.csv": {
+      "columns": 4,
+      "rows": 4,
+      "sha256": "ffbd00a584ab025bf26e5851bda54077c3378a08c3e41d91d4bb087d6a1c05ba"
+    },
+    "paper_tables/structural_baseline_metrics.csv": {
+      "columns": 3,
+      "rows": 4,
+      "sha256": "d8a0c30596f8376abe23255b17436b7f0abc20b32a82b1fa4ab50a61fca21ab3"
+    },
+    "paper_tables/validation_stack_compact.csv": {
+      "columns": 5,
+      "rows": 3,
+      "sha256": "83c3b3737aa4aad026b0c66980e6a8cb6f648f716b885172b5952d34e8645624"
+    },
+    "robustness/alternative_exposure_national.csv": {
+      "columns": 8,
+      "rows": 131,
+      "sha256": "11112c9d4015f338ec8839151724cff8b74f80a68e46ca7186c6bdc3b26f83be"
+    },
+    "robustness/alternative_exposure_occupation.csv": {
+      "columns": 6,
+      "rows": 40,
+      "sha256": "2c2c4b561a93220f909acdd6bb7df0a705987b3f847e8bda397c5855775f2676"
+    },
+    "robustness/alternative_exposure_summary.csv": {
+      "columns": 10,
+      "rows": 2,
+      "sha256": "bc6bbd2a39248210d776ef29abdf97ed9a676b4a1fd3e6297c3182b74f145049"
+    },
+    "robustness/wc_boundary_sensitivity.csv": {
+      "columns": 5,
+      "rows": 21,
+      "sha256": "9d69ddd478aa5c7081d58eb611160b4f90ac72ab093622533c924b3f2b26a9c9"
+    },
+    "validation/adoption_gap.csv": {
+      "columns": 7,
+      "rows": 109,
+      "sha256": "84b6708da625724c38d529a42865124120e6242036a2ad846fe90fe9887e945e"
+    },
+    "validation/adoption_predictor_grid.csv": {
+      "columns": 9,
+      "rows": 24,
+      "sha256": "133d11e95868fc67fea092504d284e0cba3e85f981a5b3580bfbd793236b0e71"
+    },
+    "validation/appendix_predicting_adoption_regressions.csv": {
+      "columns": 25,
+      "rows": 24,
+      "sha256": "049f086503501a20272ab9ca14c3779c793a38b4631895f558a0b5f4941c4c3b"
+    },
+    "validation/appendix_predicting_exposure_regressions.csv": {
+      "columns": 25,
+      "rows": 8,
+      "sha256": "a78944b45809391522f16d838ba21274d7e1137bb9f5e7f3aa473d2d341ab4db"
+    },
+    "validation/exposure_predictor_country_panel.csv": {
+      "columns": 9,
+      "rows": 141,
+      "sha256": "9bcab94bd651402d86957870299a303eca0e387da1876773102574df0ccf7e3a"
+    },
+    "validation/observed_outcomes_vs_exposure.csv": {
+      "columns": 8,
+      "rows": 202,
+      "sha256": "0b8119579da6518d1c025374b962629f4f54e9d0937c967948aec46c09b4fe70"
+    },
+    "validation/observed_outcomes_vs_exposure_stats.csv": {
+      "columns": 5,
+      "rows": 3,
+      "sha256": "df961e0f7bd170d7e88a81f7ce8d53c61db02cb14a24e191285645380dd4cd17"
+    },
+    "validation/occupation_validation.csv": {
+      "columns": 8,
+      "rows": 40,
+      "sha256": "e61c3101700d31b74d0a16f15c16d7337b3dd537a74bbba3ee0596e52f1e3c2d"
+    },
+    "validation/openai_rank_quintile_summary.csv": {
+      "columns": 11,
+      "rows": 2,
+      "sha256": "f639caf9d94310e6b32a9d6aaeb9cca5f5cbfebb8eebf60624ab399a191c1228"
+    }
+  },
+  "generated_files": [
+    "national_exposure_distribution_labels.png",
+    "national_exposure_distribution_labels.pdf",
+    "white_collar_vs_exposure.png",
+    "white_collar_vs_exposure.pdf",
+    "appendix_gender_exposure_gap.png",
+    "appendix_gender_exposure_gap.pdf",
+    "cross_country_labor_composition.png",
+    "cross_country_labor_composition.pdf",
+    "remittance_bilateral.png",
+    "remittance_bilateral.pdf",
+    "observed_outcomes_anthropic.png",
+    "observed_outcomes_anthropic.pdf",
+    "observed_outcomes_openai.png",
+    "observed_outcomes_openai.pdf",
+    "alternative_exposure_estimates.png",
+    "alternative_exposure_estimates.pdf"
+  ],
+  "generated_tables": [
+    "tex/countries_coverage.tex",
+    "tex/national_exposure_scores.tex",
+    "tex/gmyrek_hierarchy_summary.tex",
+    "tex/section6_adoption_predictor_grid.tex",
+    "tex/gender_decomposition_summary.tex",
+    "tex/openai_rank_quintile_summary.tex",
+    "tex/appendix_predicting_exposure_regressions.tex",
+    "tex/appendix_predicting_adoption_regressions.tex",
+    "csv/national_exposure_scores.csv",
+    "csv/gender_decomposition_summary.csv",
+    "csv/openai_rank_quintile_summary.csv"
+  ]
+}
