@@ -1,0 +1,5 @@
+level,n_estimates,construction,used_for
+Task-by-occupation estimates in Gmyrek workbook,3265,score_2025 assigned to each task row within a 4-digit ISCO-08 occupation,Raw exposure source layer
+4-digit occupations (ISCO-08),427,Mean score_2025 across task rows within each 4-digit occupation,Occupation-level exposure estimates
+2-digit occupations (project aggregation),40,Mean 4-digit occupation score within each 2-digit ISCO-08 group,Matched to ILO employment shares in the main cross-country analysis
+1-digit occupation groups,9,Aggregation of 2-digit occupations to ISCO major groups,Descriptive summaries and wage-weighted extensions

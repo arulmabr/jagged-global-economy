@@ -1,0 +1,3 @@
+measure,source_key,occupation_metric,occupation_n,occupation_correlation,national_metric,national_n,national_correlation,released_vectors,note
+Eloundou et al. LLM-task exposure,eloundou,pearson,40,0.9535477418170476,spearman,131,0.9928027790720912,True,ISCO-level and national Eloundou comparison vectors are released under the OpenAI GPTs-are-GPTs MIT license.
+Hosseini Maasoum and Lichtinger PSS exposure,hosseini_lichtinger,pearson,40,0.9475414978594915,spearman,131,0.9900055650758562,False,Only aggregate robustness statistics are released because no standalone open-data redistribution license was identified for transformed H&L score vectors.

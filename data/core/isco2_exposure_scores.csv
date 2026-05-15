@@ -1,0 +1,41 @@
+isco08_2d,exposure_score,n_4digit_occs,description_2d
+11,0.3339999999999999,5,"Chief executives, senior officials and legislators"
+12,0.3871428571428571,7,Administrative and commercial managers
+13,0.3542857142857142,14,Production and specialised services managers
+14,0.3725,4,"Hospitality, retail and other services managers"
+21,0.3854166666666667,24,Science and engineering professionals
+22,0.262,15,Health professionals
+23,0.3333333333333333,12,Teaching professionals
+24,0.4936363636363636,11,Business and administration professionals
+25,0.5433333333333333,9,Information and communications technology professionals
+26,0.3828571428571429,21,"Legal, social and cultural professionals"
+31,0.2924,25,Science and engineering associate professionals
+32,0.2458823529411764,17,Health associate professionals
+33,0.4645833333333333,24,Business and administration associate professionals
+34,0.307,10,"Legal, social, cultural and related associate professionals"
+35,0.4433333333333333,6,Information and communications technicians
+41,0.6325,4,General and keyboard clerks
+42,0.52,12,Customer services clerks
+43,0.5333333333333333,6,Numerical and material recording clerks
+44,0.5085714285714286,7,Other clerical support workers
+51,0.2229411764705882,17,Personal service workers
+52,0.3625,12,Sales workers
+53,0.194,5,Personal care workers
+54,0.172,5,Protective services workers
+61,0.1855555555555555,9,Market-oriented skilled agricultural workers
+62,0.156,5,"Market-oriented skilled forestry, fishery and hunting workers"
+63,0.125,4,"Subsistence farmers, fishers, hunters and gatherers"
+71,0.125,16,"Building and related trades workers, excluding electricians"
+72,0.1615384615384615,13,"Metal, machinery and related trades workers"
+73,0.2,11,Handicraft and printing workers
+74,0.2,5,Electrical and electronic trades workers
+75,0.174,20,"Food processing, wood working, garment and other craft and related trades workers"
+81,0.1903999999999999,25,Stationary plant and machine operators
+82,0.29,3,Assemblers
+83,0.1899999999999999,11,Drivers and mobile plant operators
+91,0.1166666666666666,6,Cleaners and helpers
+92,0.1066666666666666,6,"Agricultural, forestry and fishery labourers"
+93,0.1433333333333333,9,"Labourers in mining, construction, manufacturing and transport"
+94,0.155,2,Food preparation assistants
+95,0.19,2,Street and related sales and service workers
+96,0.2,8,Refuse workers and other elementary workers

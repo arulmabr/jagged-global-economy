@@ -1,0 +1,16 @@
+The original documentation and metadata in this anonymized release are
+provided under CC BY 4.0 where permitted.
+
+Upstream source datasets remain governed by their original licenses and terms.
+This release does not override any upstream provider terms.
+
+Portions of the Eloundou et al. comparison are derived from OpenAI's
+GPTs-are-GPTs repository, Copyright (c) 2024 OpenAI, licensed under the
+MIT License.
+
+Portions of the O*NET-derived mechanism analysis contain information derived
+from the O*NET 30.2 Database by the U.S. Department of Labor, Employment and
+Training Administration (USDOL/ETA), used under CC BY 4.0. The authors
+modified the source data through SOC-to-ISCO crosswalks and national
+aggregation. USDOL/ETA has not approved, endorsed, or tested these
+modifications.

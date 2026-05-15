@@ -1,0 +1,3 @@
+component_set,label,n_countries,actual_column,predicted_column,r2,source_table,note
+white_collar,White-collar share,134,gender_gap,predicted_gg,0.5026483894613671,data/mechanisms/gender_wc_decomposition.csv,Share of measured gender-gap variation explained by country differences in male and female white-collar shares.
+white_collar_plus_sales,White-collar plus sales share,132,gender_gap,predicted_wcs,0.8777812329761993,data/mechanisms/gender_wcs_decomposition.csv,Share of measured gender-gap variation explained after adding sales occupations to the white-collar grouping.

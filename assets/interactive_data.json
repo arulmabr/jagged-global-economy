@@ -1,0 +1,4087 @@
+{
+  "nationalExposure": [
+    {
+      "countryCode": "LUX",
+      "countryName": "Luxembourg",
+      "exposure": 0.3715,
+      "employmentK": 315.2,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 677012.0
+    },
+    {
+      "countryCode": "SGP",
+      "countryName": "Singapore",
+      "exposure": 0.3676,
+      "employmentK": 2259.5,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "High income",
+      "population2024": 6036860.0
+    },
+    {
+      "countryCode": "NLD",
+      "countryName": "Netherlands",
+      "exposure": 0.3391,
+      "employmentK": 9744.5,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 17993485.0
+    },
+    {
+      "countryCode": "CHE",
+      "countryName": "Switzerland",
+      "exposure": 0.3349,
+      "employmentK": 4757.2,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 9005582.0
+    },
+    {
+      "countryCode": "SWE",
+      "countryName": "Sweden",
+      "exposure": 0.334,
+      "employmentK": 5275.5,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 10569709.0
+    },
+    {
+      "countryCode": "ISR",
+      "countryName": "Israel",
+      "exposure": 0.3333,
+      "employmentK": 4024.3,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "High income",
+      "population2024": 9974400.0
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "exposure": 0.333,
+      "employmentK": 42265.9,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 83516593.0
+    },
+    {
+      "countryCode": "IRL",
+      "countryName": "Ireland",
+      "exposure": 0.3307,
+      "employmentK": 2726.6,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 5395790.0
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom of Great Britain and Northern Ireland",
+      "exposure": 0.3294,
+      "employmentK": 34055.5,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 69226000.0
+    },
+    {
+      "countryCode": "DNK",
+      "countryName": "Denmark",
+      "exposure": 0.3239,
+      "employmentK": 2982.9,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 5976992.0
+    },
+    {
+      "countryCode": "BEL",
+      "countryName": "Belgium",
+      "exposure": 0.3231,
+      "employmentK": 5043.8,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 11858610.0
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "exposure": 0.3225,
+      "employmentK": 163492.9,
+      "region": "North America",
+      "incomeGroup": "High income",
+      "population2024": 340110988.0
+    },
+    {
+      "countryCode": "CYP",
+      "countryName": "Cyprus",
+      "exposure": 0.3219,
+      "employmentK": 480.0,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 1358282.0
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "exposure": 0.3217,
+      "employmentK": 14378.6,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "High income",
+      "population2024": 27196812.0
+    },
+    {
+      "countryCode": "AUT",
+      "countryName": "Austria",
+      "exposure": 0.3211,
+      "employmentK": 4488.4,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 9177982.0
+    },
+    {
+      "countryCode": "NOR",
+      "countryName": "Norway",
+      "exposure": 0.3196,
+      "employmentK": 2849.6,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 5572279.0
+    },
+    {
+      "countryCode": "FRA",
+      "countryName": "France",
+      "exposure": 0.3193,
+      "employmentK": 28545.5,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 68551653.0
+    },
+    {
+      "countryCode": "MNE",
+      "countryName": "Montenegro",
+      "exposure": 0.3181,
+      "employmentK": 280.6,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Upper middle income",
+      "population2024": 623525.0
+    },
+    {
+      "countryCode": "POL",
+      "countryName": "Poland",
+      "exposure": 0.3165,
+      "employmentK": 17037.3,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 36559233.0
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "exposure": 0.3161,
+      "employmentK": 66094.6,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "High income",
+      "population2024": 123975371.0
+    },
+    {
+      "countryCode": "GRC",
+      "countryName": "Greece",
+      "exposure": 0.3154,
+      "employmentK": 17093.2,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 10405134.0
+    },
+    {
+      "countryCode": "PRT",
+      "countryName": "Portugal",
+      "exposure": 0.3139,
+      "employmentK": 5229.2,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 10694681.0
+    },
+    {
+      "countryCode": "NIU",
+      "countryName": "Niue",
+      "exposure": 0.3137,
+      "employmentK": 0.7,
+      "region": "",
+      "incomeGroup": "",
+      "population2024": null
+    },
+    {
+      "countryCode": "ITA",
+      "countryName": "Italy",
+      "exposure": 0.313,
+      "employmentK": 23697.7,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 58952704.0
+    },
+    {
+      "countryCode": "EST",
+      "countryName": "Estonia",
+      "exposure": 0.3115,
+      "employmentK": 701.5,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 1372341.0
+    },
+    {
+      "countryCode": "HRV",
+      "countryName": "Croatia",
+      "exposure": 0.3107,
+      "employmentK": 1660.0,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 3866200.0
+    },
+    {
+      "countryCode": "FIN",
+      "countryName": "Finland",
+      "exposure": 0.3089,
+      "employmentK": 2576.8,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 5619911.0
+    },
+    {
+      "countryCode": "LTU",
+      "countryName": "Lithuania",
+      "exposure": 0.3088,
+      "employmentK": 1458.3,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 2888278.0
+    },
+    {
+      "countryCode": "HUN",
+      "countryName": "Hungary",
+      "exposure": 0.3086,
+      "employmentK": 4691.8,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 9562065.0
+    },
+    {
+      "countryCode": "BRN",
+      "countryName": "Brunei Darussalam",
+      "exposure": 0.3071,
+      "employmentK": 216.4,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "High income",
+      "population2024": 462721.0
+    },
+    {
+      "countryCode": "TUV",
+      "countryName": "Tuvalu",
+      "exposure": 0.3055,
+      "employmentK": 2.9,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Upper middle income",
+      "population2024": 9646.0
+    },
+    {
+      "countryCode": "LVA",
+      "countryName": "Latvia",
+      "exposure": 0.3042,
+      "employmentK": 872.3,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 1866124.0
+    },
+    {
+      "countryCode": "SVN",
+      "countryName": "Slovenia",
+      "exposure": 0.3041,
+      "employmentK": 984.8,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 2127400.0
+    },
+    {
+      "countryCode": "CZE",
+      "countryName": "Czechia",
+      "exposure": 0.3016,
+      "employmentK": 5187.7,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 10905028.0
+    },
+    {
+      "countryCode": "ESP",
+      "countryName": "Spain",
+      "exposure": 0.3011,
+      "employmentK": 21558.1,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 48848840.0
+    },
+    {
+      "countryCode": "RUS",
+      "countryName": "Russian Federation",
+      "exposure": 0.2982,
+      "employmentK": 73457.4,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 143533851.0
+    },
+    {
+      "countryCode": "PLW",
+      "countryName": "Palau",
+      "exposure": 0.2949,
+      "employmentK": 9.5,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "High income",
+      "population2024": 17695.0
+    },
+    {
+      "countryCode": "ARG",
+      "countryName": "Argentina",
+      "exposure": 0.2937,
+      "employmentK": 12165.0,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 45696159.0
+    },
+    {
+      "countryCode": "BGR",
+      "countryName": "Bulgaria",
+      "exposure": 0.2924,
+      "employmentK": 2909.6,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 6441421.0
+    },
+    {
+      "countryCode": "WLF",
+      "countryName": "Wallis and Futuna",
+      "exposure": 0.2907,
+      "employmentK": 3.3,
+      "region": "",
+      "incomeGroup": "",
+      "population2024": null
+    },
+    {
+      "countryCode": "MSR",
+      "countryName": "Montserrat",
+      "exposure": 0.2904,
+      "employmentK": 2.5,
+      "region": "",
+      "incomeGroup": "",
+      "population2024": null
+    },
+    {
+      "countryCode": "COK",
+      "countryName": "Cook Islands",
+      "exposure": 0.29,
+      "employmentK": 8.4,
+      "region": "",
+      "incomeGroup": "",
+      "population2024": null
+    },
+    {
+      "countryCode": "MUS",
+      "countryName": "Mauritius",
+      "exposure": 0.2894,
+      "employmentK": 546.6,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Upper middle income",
+      "population2024": 1245779.0
+    },
+    {
+      "countryCode": "KOS",
+      "countryName": "Kosovo",
+      "exposure": 0.2879,
+      "employmentK": 423.8,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Upper middle income",
+      "population2024": 1594353.0
+    },
+    {
+      "countryCode": "BRB",
+      "countryName": "Barbados",
+      "exposure": 0.2864,
+      "employmentK": 113.2,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "High income",
+      "population2024": 282467.0
+    },
+    {
+      "countryCode": "MKD",
+      "countryName": "North Macedonia",
+      "exposure": 0.2862,
+      "employmentK": 693.2,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Upper middle income",
+      "population2024": 1824359.0
+    },
+    {
+      "countryCode": "SRB",
+      "countryName": "Serbia",
+      "exposure": 0.2847,
+      "employmentK": 12183.7,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Upper middle income",
+      "population2024": 6586476.0
+    },
+    {
+      "countryCode": "BHS",
+      "countryName": "Bahamas",
+      "exposure": 0.2824,
+      "employmentK": 208.0,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "High income",
+      "population2024": 401283.0
+    },
+    {
+      "countryCode": "BLR",
+      "countryName": "Belarus",
+      "exposure": 0.2821,
+      "employmentK": 4796.7,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Upper middle income",
+      "population2024": 9132629.0
+    },
+    {
+      "countryCode": "URY",
+      "countryName": "Uruguay",
+      "exposure": 0.2807,
+      "employmentK": 1726.7,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "High income",
+      "population2024": 3386588.0
+    },
+    {
+      "countryCode": "ARE",
+      "countryName": "United Arab Emirates",
+      "exposure": 0.2806,
+      "employmentK": 7173.9,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "High income",
+      "population2024": 10986400.0
+    },
+    {
+      "countryCode": "MDV",
+      "countryName": "Maldives",
+      "exposure": 0.2797,
+      "employmentK": 189.2,
+      "region": "South Asia",
+      "incomeGroup": "Upper middle income",
+      "population2024": 527799.0
+    },
+    {
+      "countryCode": "CHL",
+      "countryName": "Chile",
+      "exposure": 0.2786,
+      "employmentK": 9093.2,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "High income",
+      "population2024": 19764771.0
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "exposure": 0.2783,
+      "employmentK": 101317.1,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 211998573.0
+    },
+    {
+      "countryCode": "CRI",
+      "countryName": "Costa Rica",
+      "exposure": 0.274,
+      "employmentK": 2186.5,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "High income",
+      "population2024": 5129910.0
+    },
+    {
+      "countryCode": "TKL",
+      "countryName": "Tokelau",
+      "exposure": 0.2727,
+      "employmentK": 0.4,
+      "region": "",
+      "incomeGroup": "",
+      "population2024": null
+    },
+    {
+      "countryCode": "ROU",
+      "countryName": "Romania",
+      "exposure": 0.2717,
+      "employmentK": 7807.8,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "High income",
+      "population2024": 19051804.0
+    },
+    {
+      "countryCode": "SUR",
+      "countryName": "Suriname",
+      "exposure": 0.2703,
+      "employmentK": 185.4,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 634431.0
+    },
+    {
+      "countryCode": "MHL",
+      "countryName": "Marshall Islands",
+      "exposure": 0.2682,
+      "employmentK": 12.4,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Upper middle income",
+      "population2024": 37548.0
+    },
+    {
+      "countryCode": "JAM",
+      "countryName": "Jamaica",
+      "exposure": 0.2662,
+      "employmentK": 1124.3,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 2839175.0
+    },
+    {
+      "countryCode": "TUR",
+      "countryName": "Türkiye",
+      "exposure": 0.2652,
+      "employmentK": 32620.3,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Upper middle income",
+      "population2024": 85518661.0
+    },
+    {
+      "countryCode": "CUB",
+      "countryName": "Cuba",
+      "exposure": 0.2645,
+      "employmentK": 4585.2,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 10979783.0
+    },
+    {
+      "countryCode": "DOM",
+      "countryName": "Dominican Republic",
+      "exposure": 0.264,
+      "employmentK": 5098.3,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 11427557.0
+    },
+    {
+      "countryCode": "LBN",
+      "countryName": "Lebanon",
+      "exposure": 0.2639,
+      "employmentK": 1513.6,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "Lower middle income",
+      "population2024": 5805962.0
+    },
+    {
+      "countryCode": "MEX",
+      "countryName": "Mexico",
+      "exposure": 0.2638,
+      "employmentK": 58954.0,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 130861007.0
+    },
+    {
+      "countryCode": "MNG",
+      "countryName": "Mongolia",
+      "exposure": 0.263,
+      "employmentK": 1363.8,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Upper middle income",
+      "population2024": 3524788.0
+    },
+    {
+      "countryCode": "BIH",
+      "countryName": "Bosnia and Herzegovina",
+      "exposure": 0.2628,
+      "employmentK": 1345.8,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Upper middle income",
+      "population2024": 3164253.0
+    },
+    {
+      "countryCode": "COL",
+      "countryName": "Colombia",
+      "exposure": 0.2628,
+      "employmentK": 23807.4,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 52886363.0
+    },
+    {
+      "countryCode": "TON",
+      "countryName": "Tonga",
+      "exposure": 0.259,
+      "employmentK": 32.8,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Upper middle income",
+      "population2024": 104175.0
+    },
+    {
+      "countryCode": "SOM",
+      "countryName": "Somalia",
+      "exposure": 0.2586,
+      "employmentK": 1010.5,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 19009151.0
+    },
+    {
+      "countryCode": "FJI",
+      "countryName": "Fiji",
+      "exposure": 0.2585,
+      "employmentK": 319.0,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Upper middle income",
+      "population2024": 928784.0
+    },
+    {
+      "countryCode": "JOR",
+      "countryName": "Jordan",
+      "exposure": 0.2547,
+      "employmentK": 2753.7,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "Lower middle income",
+      "population2024": 11552876.0
+    },
+    {
+      "countryCode": "EGY",
+      "countryName": "Egypt",
+      "exposure": 0.2543,
+      "employmentK": 29927.6,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "Lower middle income",
+      "population2024": 116538258.0
+    },
+    {
+      "countryCode": "IRN",
+      "countryName": "Iran (Islamic Republic of)",
+      "exposure": 0.2538,
+      "employmentK": 24075.6,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "Upper middle income",
+      "population2024": 91567738.0
+    },
+    {
+      "countryCode": "PSE",
+      "countryName": "Palestine (State of)",
+      "exposure": 0.2534,
+      "employmentK": 686.7,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "Lower middle income",
+      "population2024": 5289152.0
+    },
+    {
+      "countryCode": "PHL",
+      "countryName": "Philippines",
+      "exposure": 0.2523,
+      "employmentK": 46846.2,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 115843670.0
+    },
+    {
+      "countryCode": "SLV",
+      "countryName": "El Salvador",
+      "exposure": 0.2511,
+      "employmentK": 2874.5,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 6338193.0
+    },
+    {
+      "countryCode": "THA",
+      "countryName": "Thailand",
+      "exposure": 0.25,
+      "employmentK": 39677.8,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Upper middle income",
+      "population2024": 71668011.0
+    },
+    {
+      "countryCode": "GUY",
+      "countryName": "Guyana",
+      "exposure": 0.247,
+      "employmentK": 238.6,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "High income",
+      "population2024": 831087.0
+    },
+    {
+      "countryCode": "SWZ",
+      "countryName": "Eswatini",
+      "exposure": 0.2438,
+      "employmentK": 216.9,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 1242822.0
+    },
+    {
+      "countryCode": "PER",
+      "countryName": "Peru",
+      "exposure": 0.2432,
+      "employmentK": 17717.4,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 34217848.0
+    },
+    {
+      "countryCode": "IRQ",
+      "countryName": "Iraq",
+      "exposure": 0.2428,
+      "employmentK": 8019.5,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "Upper middle income",
+      "population2024": 46042015.0
+    },
+    {
+      "countryCode": "BLZ",
+      "countryName": "Belize",
+      "exposure": 0.2425,
+      "employmentK": 143.3,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 417072.0
+    },
+    {
+      "countryCode": "BTN",
+      "countryName": "Bhutan",
+      "exposure": 0.2422,
+      "employmentK": 365.2,
+      "region": "South Asia",
+      "incomeGroup": "Lower middle income",
+      "population2024": 791524.0
+    },
+    {
+      "countryCode": "IDN",
+      "countryName": "Indonesia",
+      "exposure": 0.2419,
+      "employmentK": 138702.5,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Upper middle income",
+      "population2024": 283487931.0
+    },
+    {
+      "countryCode": "BOL",
+      "countryName": "Bolivia (Plurinational State of)",
+      "exposure": 0.2413,
+      "employmentK": 6816.8,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Lower middle income",
+      "population2024": 12413315.0
+    },
+    {
+      "countryCode": "NER",
+      "countryName": "Niger",
+      "exposure": 0.2412,
+      "employmentK": 2078.9,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 27032412.0
+    },
+    {
+      "countryCode": "KGZ",
+      "countryName": "Kyrgyzstan",
+      "exposure": 0.2401,
+      "employmentK": 2591.8,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Lower middle income",
+      "population2024": 7221868.0
+    },
+    {
+      "countryCode": "CIV",
+      "countryName": "Côte d'Ivoire",
+      "exposure": 0.2397,
+      "employmentK": 8615.1,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 31934230.0
+    },
+    {
+      "countryCode": "WSM",
+      "countryName": "Samoa",
+      "exposure": 0.2394,
+      "employmentK": 52.5,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Upper middle income",
+      "population2024": 218019.0
+    },
+    {
+      "countryCode": "LKA",
+      "countryName": "Sri Lanka",
+      "exposure": 0.2373,
+      "employmentK": 7783.6,
+      "region": "South Asia",
+      "incomeGroup": "Lower middle income",
+      "population2024": 21916000.0
+    },
+    {
+      "countryCode": "GEO",
+      "countryName": "Georgia",
+      "exposure": 0.237,
+      "employmentK": 1810.9,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Upper middle income",
+      "population2024": 3699557.0
+    },
+    {
+      "countryCode": "PNG",
+      "countryName": "Papua New Guinea",
+      "exposure": 0.2364,
+      "employmentK": 3989.3,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 10576502.0
+    },
+    {
+      "countryCode": "TUN",
+      "countryName": "Tunisia",
+      "exposure": 0.2364,
+      "employmentK": 5440.7,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "Lower middle income",
+      "population2024": 12277109.0
+    },
+    {
+      "countryCode": "TGO",
+      "countryName": "Togo",
+      "exposure": 0.2353,
+      "employmentK": 3348.4,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 9515236.0
+    },
+    {
+      "countryCode": "GTM",
+      "countryName": "Guatemala",
+      "exposure": 0.2337,
+      "employmentK": 7575.1,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 18406359.0
+    },
+    {
+      "countryCode": "GMB",
+      "countryName": "Gambia",
+      "exposure": 0.2337,
+      "employmentK": 621.0,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 2759988.0
+    },
+    {
+      "countryCode": "NPL",
+      "countryName": "Nepal",
+      "exposure": 0.2326,
+      "employmentK": 7374.1,
+      "region": "South Asia",
+      "incomeGroup": "Lower middle income",
+      "population2024": 29651054.0
+    },
+    {
+      "countryCode": "PAN",
+      "countryName": "Panama",
+      "exposure": 0.2318,
+      "employmentK": 1922.5,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "High income",
+      "population2024": 4515577.0
+    },
+    {
+      "countryCode": "HND",
+      "countryName": "Honduras",
+      "exposure": 0.2314,
+      "employmentK": 4041.2,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Lower middle income",
+      "population2024": 10825703.0
+    },
+    {
+      "countryCode": "ALB",
+      "countryName": "Albania",
+      "exposure": 0.2302,
+      "employmentK": 1166.1,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Upper middle income",
+      "population2024": 2377128.0
+    },
+    {
+      "countryCode": "STP",
+      "countryName": "Sao Tome and Principe",
+      "exposure": 0.23,
+      "employmentK": 27.2,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 235536.0
+    },
+    {
+      "countryCode": "MMR",
+      "countryName": "Myanmar",
+      "exposure": 0.2293,
+      "employmentK": 22262.1,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 54500091.0
+    },
+    {
+      "countryCode": "BWA",
+      "countryName": "Botswana",
+      "exposure": 0.2282,
+      "employmentK": 857.5,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Upper middle income",
+      "population2024": 2521139.0
+    },
+    {
+      "countryCode": "KIR",
+      "countryName": "Kiribati",
+      "exposure": 0.2273,
+      "employmentK": 41.1,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 134518.0
+    },
+    {
+      "countryCode": "BEN",
+      "countryName": "Benin",
+      "exposure": 0.2272,
+      "employmentK": 5435.2,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 14462724.0
+    },
+    {
+      "countryCode": "GIN",
+      "countryName": "Guinea",
+      "exposure": 0.2271,
+      "employmentK": 3156.8,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 14754785.0
+    },
+    {
+      "countryCode": "VNM",
+      "countryName": "Viet Nam",
+      "exposure": 0.2253,
+      "employmentK": 53436.1,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 100987686.0
+    },
+    {
+      "countryCode": "PAK",
+      "countryName": "Pakistan",
+      "exposure": 0.225,
+      "employmentK": 77608.6,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "Lower middle income",
+      "population2024": 251269164.0
+    },
+    {
+      "countryCode": "MWI",
+      "countryName": "Malawi",
+      "exposure": 0.2225,
+      "employmentK": 4979.6,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 21655286.0
+    },
+    {
+      "countryCode": "ECU",
+      "countryName": "Ecuador",
+      "exposure": 0.2222,
+      "employmentK": 8295.9,
+      "region": "Latin America & Caribbean",
+      "incomeGroup": "Upper middle income",
+      "population2024": 18135478.0
+    },
+    {
+      "countryCode": "TJK",
+      "countryName": "Tajikistan",
+      "exposure": 0.2216,
+      "employmentK": 2254.9,
+      "region": "Europe & Central Asia",
+      "incomeGroup": "Lower middle income",
+      "population2024": 10590927.0
+    },
+    {
+      "countryCode": "KHM",
+      "countryName": "Cambodia",
+      "exposure": 0.2208,
+      "employmentK": 9701.4,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 17638801.0
+    },
+    {
+      "countryCode": "CPV",
+      "countryName": "Cabo Verde",
+      "exposure": 0.2201,
+      "employmentK": 132.2,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Upper middle income",
+      "population2024": 524877.0
+    },
+    {
+      "countryCode": "GHA",
+      "countryName": "Ghana",
+      "exposure": 0.22,
+      "employmentK": 12026.4,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 34427414.0
+    },
+    {
+      "countryCode": "FSM",
+      "countryName": "Micronesia (Federated States of)",
+      "exposure": 0.2188,
+      "employmentK": 30.1,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 113160.0
+    },
+    {
+      "countryCode": "VUT",
+      "countryName": "Vanuatu",
+      "exposure": 0.2182,
+      "employmentK": 69.7,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 327777.0
+    },
+    {
+      "countryCode": "BGD",
+      "countryName": "Bangladesh",
+      "exposure": 0.218,
+      "employmentK": 67828.9,
+      "region": "South Asia",
+      "incomeGroup": "Lower middle income",
+      "population2024": 173562364.0
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "exposure": 0.2166,
+      "employmentK": 482793.2,
+      "region": "South Asia",
+      "incomeGroup": "Lower middle income",
+      "population2024": 1450935791.0
+    },
+    {
+      "countryCode": "SDN",
+      "countryName": "Sudan",
+      "exposure": 0.2128,
+      "employmentK": 7961.2,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 50448963.0
+    },
+    {
+      "countryCode": "TLS",
+      "countryName": "Timor-Leste",
+      "exposure": 0.2076,
+      "employmentK": 354.3,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 1400638.0
+    },
+    {
+      "countryCode": "AGO",
+      "countryName": "Angola",
+      "exposure": 0.2062,
+      "employmentK": 13086.2,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 37885849.0
+    },
+    {
+      "countryCode": "LAO",
+      "countryName": "Lao People's Democratic Republic",
+      "exposure": 0.2054,
+      "employmentK": 3442.6,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 7769819.0
+    },
+    {
+      "countryCode": "SLE",
+      "countryName": "Sierra Leone",
+      "exposure": 0.2047,
+      "employmentK": 3157.2,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 8642022.0
+    },
+    {
+      "countryCode": "MLI",
+      "countryName": "Mali",
+      "exposure": 0.2001,
+      "employmentK": 6736.2,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 24478595.0
+    },
+    {
+      "countryCode": "SLB",
+      "countryName": "Solomon Islands",
+      "exposure": 0.1992,
+      "employmentK": 362.9,
+      "region": "East Asia & Pacific",
+      "incomeGroup": "Lower middle income",
+      "population2024": 819198.0
+    },
+    {
+      "countryCode": "KEN",
+      "countryName": "Kenya",
+      "exposure": 0.1988,
+      "employmentK": 14540.3,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 56432944.0
+    },
+    {
+      "countryCode": "BFA",
+      "countryName": "Burkina Faso",
+      "exposure": 0.1977,
+      "employmentK": 7857.2,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 23548781.0
+    },
+    {
+      "countryCode": "COD",
+      "countryName": "Congo, Democratic Republic of the",
+      "exposure": 0.1969,
+      "employmentK": 30581.6,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 109276265.0
+    },
+    {
+      "countryCode": "ZWE",
+      "countryName": "Zimbabwe",
+      "exposure": 0.1918,
+      "employmentK": 4921.8,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 16634373.0
+    },
+    {
+      "countryCode": "AFG",
+      "countryName": "Afghanistan",
+      "exposure": 0.1893,
+      "employmentK": 7211.3,
+      "region": "Middle East, North Africa, Afghanistan & Pakistan",
+      "incomeGroup": "Low income",
+      "population2024": 42647492.0
+    },
+    {
+      "countryCode": "ZMB",
+      "countryName": "Zambia",
+      "exposure": 0.1872,
+      "employmentK": 7126.2,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 21314956.0
+    },
+    {
+      "countryCode": "RWA",
+      "countryName": "Rwanda",
+      "exposure": 0.1862,
+      "employmentK": 4852.1,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 14256567.0
+    },
+    {
+      "countryCode": "UGA",
+      "countryName": "Uganda",
+      "exposure": 0.182,
+      "employmentK": 17917.8,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 50015092.0
+    },
+    {
+      "countryCode": "GNB",
+      "countryName": "Guinea-Bissau",
+      "exposure": 0.1788,
+      "employmentK": 704.2,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 2201352.0
+    },
+    {
+      "countryCode": "ETH",
+      "countryName": "Ethiopia",
+      "exposure": 0.1767,
+      "employmentK": 36491.5,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "",
+      "population2024": 132059767.0
+    },
+    {
+      "countryCode": "LSO",
+      "countryName": "Lesotho",
+      "exposure": 0.1748,
+      "employmentK": 800.0,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 2337423.0
+    },
+    {
+      "countryCode": "TZA",
+      "countryName": "Tanzania, United Republic of",
+      "exposure": 0.1733,
+      "employmentK": 30978.0,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Lower middle income",
+      "population2024": 68560157.0
+    },
+    {
+      "countryCode": "MDG",
+      "countryName": "Madagascar",
+      "exposure": 0.1662,
+      "employmentK": 11830.4,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 31964956.0
+    },
+    {
+      "countryCode": "MOZ",
+      "countryName": "Mozambique",
+      "exposure": 0.1618,
+      "employmentK": 12176.0,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 34631766.0
+    },
+    {
+      "countryCode": "BDI",
+      "countryName": "Burundi",
+      "exposure": 0.144,
+      "employmentK": 4951.0,
+      "region": "Sub-Saharan Africa",
+      "incomeGroup": "Low income",
+      "population2024": 14047786.0
+    }
+  ],
+  "laborComposition": {
+    "categories": [
+      "Office and knowledge work (ISCO 1--4)",
+      "Services and sales (ISCO 5)",
+      "Agriculture (ISCO 6)",
+      "Production, operators, and elementary work (ISCO 7--9)"
+    ],
+    "countries": [
+      {
+        "countryCode": "USA",
+        "countryName": "United States",
+        "shares": {
+          "Office and knowledge work (ISCO 1--4)": 60.7,
+          "Services and sales (ISCO 5)": 14.7,
+          "Agriculture (ISCO 6)": 0.4,
+          "Production, operators, and elementary work (ISCO 7--9)": 24.1
+        }
+      },
+      {
+        "countryCode": "JOR",
+        "countryName": "Jordan",
+        "shares": {
+          "Office and knowledge work (ISCO 1--4)": 24.9,
+          "Services and sales (ISCO 5)": 40.8,
+          "Agriculture (ISCO 6)": 1.8,
+          "Production, operators, and elementary work (ISCO 7--9)": 32.5
+        }
+      },
+      {
+        "countryCode": "MEX",
+        "countryName": "Mexico",
+        "shares": {
+          "Office and knowledge work (ISCO 1--4)": 28.0,
+          "Services and sales (ISCO 5)": 20.9,
+          "Agriculture (ISCO 6)": 6.6,
+          "Production, operators, and elementary work (ISCO 7--9)": 44.4
+        }
+      },
+      {
+        "countryCode": "IND",
+        "countryName": "India",
+        "shares": {
+          "Office and knowledge work (ISCO 1--4)": 13.9,
+          "Services and sales (ISCO 5)": 12.5,
+          "Agriculture (ISCO 6)": 35.2,
+          "Production, operators, and elementary work (ISCO 7--9)": 38.4
+        }
+      },
+      {
+        "countryCode": "MOZ",
+        "countryName": "Mozambique",
+        "shares": {
+          "Office and knowledge work (ISCO 1--4)": 4.9,
+          "Services and sales (ISCO 5)": 10.5,
+          "Agriculture (ISCO 6)": 73.0,
+          "Production, operators, and elementary work (ISCO 7--9)": 11.5
+        }
+      }
+    ]
+  },
+  "whiteCollar": {
+    "points": [
+      {
+        "countryCode": "LUX",
+        "countryName": "Luxembourg",
+        "exposure": 0.3715,
+        "wcSharePct": 74.33635057060991,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 315.2
+      },
+      {
+        "countryCode": "SGP",
+        "countryName": "Singapore",
+        "exposure": 0.3676,
+        "wcSharePct": 73.7596734890414,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "High income",
+        "employmentK": 2259.5
+      },
+      {
+        "countryCode": "NLD",
+        "countryName": "Netherlands",
+        "exposure": 0.3391,
+        "wcSharePct": 63.54953530268044,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 9744.5
+      },
+      {
+        "countryCode": "CHE",
+        "countryName": "Switzerland",
+        "exposure": 0.3349,
+        "wcSharePct": 65.36941661479804,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 4757.2
+      },
+      {
+        "countryCode": "SWE",
+        "countryName": "Sweden",
+        "exposure": 0.334,
+        "wcSharePct": 64.15312686297673,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 5275.5
+      },
+      {
+        "countryCode": "ISR",
+        "countryName": "Israel",
+        "exposure": 0.3333,
+        "wcSharePct": 61.920956432779185,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "High income",
+        "employmentK": 4024.3
+      },
+      {
+        "countryCode": "DEU",
+        "countryName": "Germany",
+        "exposure": 0.333,
+        "wcSharePct": 60.93726092591126,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 42265.9
+      },
+      {
+        "countryCode": "IRL",
+        "countryName": "Ireland",
+        "exposure": 0.3307,
+        "wcSharePct": 59.658596823629296,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 2726.6
+      },
+      {
+        "countryCode": "GBR",
+        "countryName": "United Kingdom of Great Britain and Northern Ireland",
+        "exposure": 0.3294,
+        "wcSharePct": 64.44655061600663,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 34055.5
+      },
+      {
+        "countryCode": "DNK",
+        "countryName": "Denmark",
+        "exposure": 0.3239,
+        "wcSharePct": 57.25139837106737,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 2982.9
+      },
+      {
+        "countryCode": "BEL",
+        "countryName": "Belgium",
+        "exposure": 0.3231,
+        "wcSharePct": 59.77152625253319,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 5043.8
+      },
+      {
+        "countryCode": "USA",
+        "countryName": "United States of America",
+        "exposure": 0.3225,
+        "wcSharePct": 60.74466198564268,
+        "region": "North America",
+        "incomeGroup": "High income",
+        "employmentK": 163492.9
+      },
+      {
+        "countryCode": "CYP",
+        "countryName": "Cyprus",
+        "exposure": 0.3219,
+        "wcSharePct": 53.02091450430658,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 480.0
+      },
+      {
+        "countryCode": "AUS",
+        "countryName": "Australia",
+        "exposure": 0.3217,
+        "wcSharePct": 58.301500803101156,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "High income",
+        "employmentK": 14378.6
+      },
+      {
+        "countryCode": "AUT",
+        "countryName": "Austria",
+        "exposure": 0.3211,
+        "wcSharePct": 56.08959570090347,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 4488.4
+      },
+      {
+        "countryCode": "NOR",
+        "countryName": "Norway",
+        "exposure": 0.3196,
+        "wcSharePct": 58.861976635235145,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 2849.6
+      },
+      {
+        "countryCode": "FRA",
+        "countryName": "France",
+        "exposure": 0.3193,
+        "wcSharePct": 58.59665577924683,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 28545.5
+      },
+      {
+        "countryCode": "MNE",
+        "countryName": "Montenegro",
+        "exposure": 0.3181,
+        "wcSharePct": 48.255314599333474,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 280.6
+      },
+      {
+        "countryCode": "POL",
+        "countryName": "Poland",
+        "exposure": 0.3165,
+        "wcSharePct": 53.16104998438122,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 17037.3
+      },
+      {
+        "countryCode": "JPN",
+        "countryName": "Japan",
+        "exposure": 0.3161,
+        "wcSharePct": 42.46228804951981,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "High income",
+        "employmentK": 66094.6
+      },
+      {
+        "countryCode": "GRC",
+        "countryName": "Greece",
+        "exposure": 0.3154,
+        "wcSharePct": 44.49932128087917,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 17093.2
+      },
+      {
+        "countryCode": "PRT",
+        "countryName": "Portugal",
+        "exposure": 0.3139,
+        "wcSharePct": 50.79735982307021,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 5229.2
+      },
+      {
+        "countryCode": "NIU",
+        "countryName": "Niue",
+        "exposure": 0.3137,
+        "wcSharePct": 60.91030789825962,
+        "region": "",
+        "incomeGroup": "",
+        "employmentK": 0.7
+      },
+      {
+        "countryCode": "ITA",
+        "countryName": "Italy",
+        "exposure": 0.313,
+        "wcSharePct": 50.04759524386825,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 23697.7
+      },
+      {
+        "countryCode": "EST",
+        "countryName": "Estonia",
+        "exposure": 0.3115,
+        "wcSharePct": 53.43555632219618,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 701.5
+      },
+      {
+        "countryCode": "HRV",
+        "countryName": "Croatia",
+        "exposure": 0.3107,
+        "wcSharePct": 51.731774112124555,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 1660.0
+      },
+      {
+        "countryCode": "FIN",
+        "countryName": "Finland",
+        "exposure": 0.3089,
+        "wcSharePct": 53.526881745467094,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 2576.8
+      },
+      {
+        "countryCode": "LTU",
+        "countryName": "Lithuania",
+        "exposure": 0.3088,
+        "wcSharePct": 52.50737341756951,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 1458.3
+      },
+      {
+        "countryCode": "HUN",
+        "countryName": "Hungary",
+        "exposure": 0.3086,
+        "wcSharePct": 49.24608217218356,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 4691.8
+      },
+      {
+        "countryCode": "BRN",
+        "countryName": "Brunei Darussalam",
+        "exposure": 0.3071,
+        "wcSharePct": 51.061440119801915,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "High income",
+        "employmentK": 216.4
+      },
+      {
+        "countryCode": "TUV",
+        "countryName": "Tuvalu",
+        "exposure": 0.3055,
+        "wcSharePct": 56.347589952477875,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 2.9
+      },
+      {
+        "countryCode": "LVA",
+        "countryName": "Latvia",
+        "exposure": 0.3042,
+        "wcSharePct": 51.5304051962701,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 872.3
+      },
+      {
+        "countryCode": "SVN",
+        "countryName": "Slovenia",
+        "exposure": 0.3041,
+        "wcSharePct": 49.93638308653212,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 984.8
+      },
+      {
+        "countryCode": "CZE",
+        "countryName": "Czechia",
+        "exposure": 0.3016,
+        "wcSharePct": 48.947228717835536,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 5187.7
+      },
+      {
+        "countryCode": "ESP",
+        "countryName": "Spain",
+        "exposure": 0.3011,
+        "wcSharePct": 46.23406261179078,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 21558.1
+      },
+      {
+        "countryCode": "RUS",
+        "countryName": "Russian Federation",
+        "exposure": 0.2982,
+        "wcSharePct": 51.428883174009556,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 73457.4
+      },
+      {
+        "countryCode": "PLW",
+        "countryName": "Palau",
+        "exposure": 0.2949,
+        "wcSharePct": 44.0803382663847,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "High income",
+        "employmentK": 9.5
+      },
+      {
+        "countryCode": "ARG",
+        "countryName": "Argentina",
+        "exposure": 0.2937,
+        "wcSharePct": 38.01806856921887,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 12165.0
+      },
+      {
+        "countryCode": "BGR",
+        "countryName": "Bulgaria",
+        "exposure": 0.2924,
+        "wcSharePct": 40.98780809285817,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 2909.6
+      },
+      {
+        "countryCode": "WLF",
+        "countryName": "Wallis and Futuna",
+        "exposure": 0.2907,
+        "wcSharePct": 44.06576980568003,
+        "region": "",
+        "incomeGroup": "",
+        "employmentK": 3.3
+      },
+      {
+        "countryCode": "MSR",
+        "countryName": "Montserrat",
+        "exposure": 0.2904,
+        "wcSharePct": 47.51223491027724,
+        "region": "",
+        "incomeGroup": "",
+        "employmentK": 2.5
+      },
+      {
+        "countryCode": "COK",
+        "countryName": "Cook Islands",
+        "exposure": 0.29,
+        "wcSharePct": 44.23467558848122,
+        "region": "",
+        "incomeGroup": "",
+        "employmentK": 8.4
+      },
+      {
+        "countryCode": "MUS",
+        "countryName": "Mauritius",
+        "exposure": 0.2894,
+        "wcSharePct": 39.578020321469914,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 546.6
+      },
+      {
+        "countryCode": "KOS",
+        "countryName": "Kosovo",
+        "exposure": 0.2879,
+        "wcSharePct": 40.01793129482813,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 423.8
+      },
+      {
+        "countryCode": "BRB",
+        "countryName": "Barbados",
+        "exposure": 0.2864,
+        "wcSharePct": 41.79971741434116,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income",
+        "employmentK": 113.2
+      },
+      {
+        "countryCode": "MKD",
+        "countryName": "North Macedonia",
+        "exposure": 0.2862,
+        "wcSharePct": 40.49138610061994,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 693.2
+      },
+      {
+        "countryCode": "SRB",
+        "countryName": "Serbia",
+        "exposure": 0.2847,
+        "wcSharePct": 40.48457970078571,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 12183.7
+      },
+      {
+        "countryCode": "BHS",
+        "countryName": "Bahamas",
+        "exposure": 0.2824,
+        "wcSharePct": 37.127158933043525,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income",
+        "employmentK": 208.0
+      },
+      {
+        "countryCode": "BLR",
+        "countryName": "Belarus",
+        "exposure": 0.2821,
+        "wcSharePct": 45.92121093731261,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 4796.7
+      },
+      {
+        "countryCode": "URY",
+        "countryName": "Uruguay",
+        "exposure": 0.2807,
+        "wcSharePct": 35.77500157819042,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income",
+        "employmentK": 1726.7
+      },
+      {
+        "countryCode": "ARE",
+        "countryName": "United Arab Emirates",
+        "exposure": 0.2806,
+        "wcSharePct": 43.81220003370528,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "High income",
+        "employmentK": 7173.9
+      },
+      {
+        "countryCode": "MDV",
+        "countryName": "Maldives",
+        "exposure": 0.2797,
+        "wcSharePct": 45.4098005318445,
+        "region": "South Asia",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 189.2
+      },
+      {
+        "countryCode": "CHL",
+        "countryName": "Chile",
+        "exposure": 0.2786,
+        "wcSharePct": 38.65519954647643,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income",
+        "employmentK": 9093.2
+      },
+      {
+        "countryCode": "BRA",
+        "countryName": "Brazil",
+        "exposure": 0.2783,
+        "wcSharePct": 34.702854700736516,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 101317.1
+      },
+      {
+        "countryCode": "CRI",
+        "countryName": "Costa Rica",
+        "exposure": 0.274,
+        "wcSharePct": 34.402876506774774,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income",
+        "employmentK": 2186.5
+      },
+      {
+        "countryCode": "TKL",
+        "countryName": "Tokelau",
+        "exposure": 0.2727,
+        "wcSharePct": 56.51105651105648,
+        "region": "",
+        "incomeGroup": "",
+        "employmentK": 0.4
+      },
+      {
+        "countryCode": "ROU",
+        "countryName": "Romania",
+        "exposure": 0.2717,
+        "wcSharePct": 32.71711787450036,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income",
+        "employmentK": 7807.8
+      },
+      {
+        "countryCode": "SUR",
+        "countryName": "Suriname",
+        "exposure": 0.2703,
+        "wcSharePct": 37.93358212174805,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 185.4
+      },
+      {
+        "countryCode": "MHL",
+        "countryName": "Marshall Islands",
+        "exposure": 0.2682,
+        "wcSharePct": 39.01570341589761,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 12.4
+      },
+      {
+        "countryCode": "JAM",
+        "countryName": "Jamaica",
+        "exposure": 0.2662,
+        "wcSharePct": 31.306508839950443,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 1124.3
+      },
+      {
+        "countryCode": "TUR",
+        "countryName": "Türkiye",
+        "exposure": 0.2652,
+        "wcSharePct": 32.12189979415898,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 32620.3
+      },
+      {
+        "countryCode": "CUB",
+        "countryName": "Cuba",
+        "exposure": 0.2645,
+        "wcSharePct": 38.011127080329935,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 4585.2
+      },
+      {
+        "countryCode": "DOM",
+        "countryName": "Dominican Republic",
+        "exposure": 0.264,
+        "wcSharePct": 27.34456829517245,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 5098.3
+      },
+      {
+        "countryCode": "LBN",
+        "countryName": "Lebanon",
+        "exposure": 0.2639,
+        "wcSharePct": 33.50380438265401,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 1513.6
+      },
+      {
+        "countryCode": "MEX",
+        "countryName": "Mexico",
+        "exposure": 0.2638,
+        "wcSharePct": 27.99800868412916,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 58954.0
+      },
+      {
+        "countryCode": "MNG",
+        "countryName": "Mongolia",
+        "exposure": 0.263,
+        "wcSharePct": 33.22381059923909,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 1363.8
+      },
+      {
+        "countryCode": "BIH",
+        "countryName": "Bosnia and Herzegovina",
+        "exposure": 0.2628,
+        "wcSharePct": 32.650762384616826,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 1345.8
+      },
+      {
+        "countryCode": "COL",
+        "countryName": "Colombia",
+        "exposure": 0.2628,
+        "wcSharePct": 29.798197983714488,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 23807.4
+      },
+      {
+        "countryCode": "TON",
+        "countryName": "Tonga",
+        "exposure": 0.259,
+        "wcSharePct": 35.582784686661704,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 32.8
+      },
+      {
+        "countryCode": "SOM",
+        "countryName": "Somalia",
+        "exposure": 0.2586,
+        "wcSharePct": 36.7410316220123,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 1010.5
+      },
+      {
+        "countryCode": "FJI",
+        "countryName": "Fiji",
+        "exposure": 0.2585,
+        "wcSharePct": 29.340208124373042,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 319.0
+      },
+      {
+        "countryCode": "JOR",
+        "countryName": "Jordan",
+        "exposure": 0.2547,
+        "wcSharePct": 24.858890215988772,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 2753.7
+      },
+      {
+        "countryCode": "EGY",
+        "countryName": "Egypt",
+        "exposure": 0.2543,
+        "wcSharePct": 27.017454814224656,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 29927.6
+      },
+      {
+        "countryCode": "IRN",
+        "countryName": "Iran (Islamic Republic of)",
+        "exposure": 0.2538,
+        "wcSharePct": 25.148686102814942,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 24075.6
+      },
+      {
+        "countryCode": "PSE",
+        "countryName": "Palestine (State of)",
+        "exposure": 0.2534,
+        "wcSharePct": 28.51575867808541,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 686.7
+      },
+      {
+        "countryCode": "PHL",
+        "countryName": "Philippines",
+        "exposure": 0.2523,
+        "wcSharePct": 21.507104741517782,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 46846.2
+      },
+      {
+        "countryCode": "SLV",
+        "countryName": "El Salvador",
+        "exposure": 0.2511,
+        "wcSharePct": 20.07110764772484,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 2874.5
+      },
+      {
+        "countryCode": "THA",
+        "countryName": "Thailand",
+        "exposure": 0.25,
+        "wcSharePct": 18.12935621957605,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 39677.8
+      },
+      {
+        "countryCode": "GUY",
+        "countryName": "Guyana",
+        "exposure": 0.247,
+        "wcSharePct": 24.633454432697587,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income",
+        "employmentK": 238.6
+      },
+      {
+        "countryCode": "SWZ",
+        "countryName": "Eswatini",
+        "exposure": 0.2438,
+        "wcSharePct": 23.569518716577463,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 216.9
+      },
+      {
+        "countryCode": "PER",
+        "countryName": "Peru",
+        "exposure": 0.2432,
+        "wcSharePct": 22.47425770152386,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 17717.4
+      },
+      {
+        "countryCode": "IRQ",
+        "countryName": "Iraq",
+        "exposure": 0.2428,
+        "wcSharePct": 26.230911325902888,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 8019.5
+      },
+      {
+        "countryCode": "BLZ",
+        "countryName": "Belize",
+        "exposure": 0.2425,
+        "wcSharePct": 20.16048564351245,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 143.3
+      },
+      {
+        "countryCode": "BTN",
+        "countryName": "Bhutan",
+        "exposure": 0.2422,
+        "wcSharePct": 28.57393204401878,
+        "region": "South Asia",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 365.2
+      },
+      {
+        "countryCode": "IDN",
+        "countryName": "Indonesia",
+        "exposure": 0.2419,
+        "wcSharePct": 15.34518810359809,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 138702.5
+      },
+      {
+        "countryCode": "BOL",
+        "countryName": "Bolivia (Plurinational State of)",
+        "exposure": 0.2413,
+        "wcSharePct": 18.155332670359712,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 6816.8
+      },
+      {
+        "countryCode": "NER",
+        "countryName": "Niger",
+        "exposure": 0.2412,
+        "wcSharePct": 16.720694025883994,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 2078.9
+      },
+      {
+        "countryCode": "KGZ",
+        "countryName": "Kyrgyzstan",
+        "exposure": 0.2401,
+        "wcSharePct": 23.39759851501624,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 2591.8
+      },
+      {
+        "countryCode": "CIV",
+        "countryName": "Côte d'Ivoire",
+        "exposure": 0.2397,
+        "wcSharePct": 8.12449673937601,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 8615.1
+      },
+      {
+        "countryCode": "WSM",
+        "countryName": "Samoa",
+        "exposure": 0.2394,
+        "wcSharePct": 26.63921927416888,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 52.5
+      },
+      {
+        "countryCode": "LKA",
+        "countryName": "Sri Lanka",
+        "exposure": 0.2373,
+        "wcSharePct": 24.39120527127672,
+        "region": "South Asia",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 7783.6
+      },
+      {
+        "countryCode": "GEO",
+        "countryName": "Georgia",
+        "exposure": 0.237,
+        "wcSharePct": 29.095961428335475,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 1810.9
+      },
+      {
+        "countryCode": "PNG",
+        "countryName": "Papua New Guinea",
+        "exposure": 0.2364,
+        "wcSharePct": 16.48740542285724,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 3989.3
+      },
+      {
+        "countryCode": "TUN",
+        "countryName": "Tunisia",
+        "exposure": 0.2364,
+        "wcSharePct": 23.84327920654057,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 5440.7
+      },
+      {
+        "countryCode": "TGO",
+        "countryName": "Togo",
+        "exposure": 0.2353,
+        "wcSharePct": 8.036568627099552,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 3348.4
+      },
+      {
+        "countryCode": "GTM",
+        "countryName": "Guatemala",
+        "exposure": 0.2337,
+        "wcSharePct": 15.272951836486087,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 7575.1
+      },
+      {
+        "countryCode": "GMB",
+        "countryName": "Gambia",
+        "exposure": 0.2337,
+        "wcSharePct": 11.725755987433258,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 621.0
+      },
+      {
+        "countryCode": "NPL",
+        "countryName": "Nepal",
+        "exposure": 0.2326,
+        "wcSharePct": 16.24365027908997,
+        "region": "South Asia",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 7374.1
+      },
+      {
+        "countryCode": "PAN",
+        "countryName": "Panama",
+        "exposure": 0.2318,
+        "wcSharePct": 27.546772734625602,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income",
+        "employmentK": 1922.5
+      },
+      {
+        "countryCode": "HND",
+        "countryName": "Honduras",
+        "exposure": 0.2314,
+        "wcSharePct": 16.67608224039674,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 4041.2
+      },
+      {
+        "countryCode": "ALB",
+        "countryName": "Albania",
+        "exposure": 0.2302,
+        "wcSharePct": 22.302469209911052,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 1166.1
+      },
+      {
+        "countryCode": "STP",
+        "countryName": "Sao Tome and Principe",
+        "exposure": 0.23,
+        "wcSharePct": 14.630024248658918,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 27.2
+      },
+      {
+        "countryCode": "MMR",
+        "countryName": "Myanmar",
+        "exposure": 0.2293,
+        "wcSharePct": 8.181235943568838,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 22262.1
+      },
+      {
+        "countryCode": "BWA",
+        "countryName": "Botswana",
+        "exposure": 0.2282,
+        "wcSharePct": 24.57323117470746,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 857.5
+      },
+      {
+        "countryCode": "KIR",
+        "countryName": "Kiribati",
+        "exposure": 0.2273,
+        "wcSharePct": 22.45950284574589,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 41.1
+      },
+      {
+        "countryCode": "BEN",
+        "countryName": "Benin",
+        "exposure": 0.2272,
+        "wcSharePct": 5.639136823857751,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 5435.2
+      },
+      {
+        "countryCode": "GIN",
+        "countryName": "Guinea",
+        "exposure": 0.2271,
+        "wcSharePct": 8.65642848318388,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 3156.8
+      },
+      {
+        "countryCode": "VNM",
+        "countryName": "Viet Nam",
+        "exposure": 0.2253,
+        "wcSharePct": 13.48121300160646,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 53436.1
+      },
+      {
+        "countryCode": "PAK",
+        "countryName": "Pakistan",
+        "exposure": 0.225,
+        "wcSharePct": 14.465745302412289,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 77608.6
+      },
+      {
+        "countryCode": "MWI",
+        "countryName": "Malawi",
+        "exposure": 0.2225,
+        "wcSharePct": 20.64660666351105,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 4979.6
+      },
+      {
+        "countryCode": "ECU",
+        "countryName": "Ecuador",
+        "exposure": 0.2222,
+        "wcSharePct": 15.95662392150147,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 8295.9
+      },
+      {
+        "countryCode": "TJK",
+        "countryName": "Tajikistan",
+        "exposure": 0.2216,
+        "wcSharePct": 24.615246795072128,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 2254.9
+      },
+      {
+        "countryCode": "KHM",
+        "countryName": "Cambodia",
+        "exposure": 0.2208,
+        "wcSharePct": 10.223844442749282,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 9701.4
+      },
+      {
+        "countryCode": "CPV",
+        "countryName": "Cabo Verde",
+        "exposure": 0.2201,
+        "wcSharePct": 16.38203572887191,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Upper middle income",
+        "employmentK": 132.2
+      },
+      {
+        "countryCode": "GHA",
+        "countryName": "Ghana",
+        "exposure": 0.22,
+        "wcSharePct": 11.152011887186381,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 12026.4
+      },
+      {
+        "countryCode": "FSM",
+        "countryName": "Micronesia (Federated States of)",
+        "exposure": 0.2188,
+        "wcSharePct": 26.027669951229143,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 30.1
+      },
+      {
+        "countryCode": "VUT",
+        "countryName": "Vanuatu",
+        "exposure": 0.2182,
+        "wcSharePct": 18.13745891875591,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 69.7
+      },
+      {
+        "countryCode": "BGD",
+        "countryName": "Bangladesh",
+        "exposure": 0.218,
+        "wcSharePct": 9.556692520131579,
+        "region": "South Asia",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 67828.9
+      },
+      {
+        "countryCode": "IND",
+        "countryName": "India",
+        "exposure": 0.2166,
+        "wcSharePct": 13.894169565593891,
+        "region": "South Asia",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 482793.2
+      },
+      {
+        "countryCode": "SDN",
+        "countryName": "Sudan",
+        "exposure": 0.2128,
+        "wcSharePct": 10.37058046305248,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 7961.2
+      },
+      {
+        "countryCode": "TLS",
+        "countryName": "Timor-Leste",
+        "exposure": 0.2076,
+        "wcSharePct": 9.537343847903683,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 354.3
+      },
+      {
+        "countryCode": "AGO",
+        "countryName": "Angola",
+        "exposure": 0.2062,
+        "wcSharePct": 8.97045841767125,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 13086.2
+      },
+      {
+        "countryCode": "LAO",
+        "countryName": "Lao People's Democratic Republic",
+        "exposure": 0.2054,
+        "wcSharePct": 9.293008631878068,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 3442.6
+      },
+      {
+        "countryCode": "SLE",
+        "countryName": "Sierra Leone",
+        "exposure": 0.2047,
+        "wcSharePct": 6.3015771759573,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 3157.2
+      },
+      {
+        "countryCode": "MLI",
+        "countryName": "Mali",
+        "exposure": 0.2001,
+        "wcSharePct": 4.608989303142439,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 6736.2
+      },
+      {
+        "countryCode": "SLB",
+        "countryName": "Solomon Islands",
+        "exposure": 0.1992,
+        "wcSharePct": 16.75415319925151,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 362.9
+      },
+      {
+        "countryCode": "KEN",
+        "countryName": "Kenya",
+        "exposure": 0.1988,
+        "wcSharePct": 13.45126597504563,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 14540.3
+      },
+      {
+        "countryCode": "BFA",
+        "countryName": "Burkina Faso",
+        "exposure": 0.1977,
+        "wcSharePct": 12.791239616198599,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 7857.2
+      },
+      {
+        "countryCode": "COD",
+        "countryName": "Congo, Democratic Republic of the",
+        "exposure": 0.1969,
+        "wcSharePct": 10.77202672158333,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 30581.6
+      },
+      {
+        "countryCode": "ZWE",
+        "countryName": "Zimbabwe",
+        "exposure": 0.1918,
+        "wcSharePct": 11.493025396273831,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 4921.8
+      },
+      {
+        "countryCode": "AFG",
+        "countryName": "Afghanistan",
+        "exposure": 0.1893,
+        "wcSharePct": 8.697744309187,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Low income",
+        "employmentK": 7211.3
+      },
+      {
+        "countryCode": "ZMB",
+        "countryName": "Zambia",
+        "exposure": 0.1872,
+        "wcSharePct": 8.20856168026287,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 7126.2
+      },
+      {
+        "countryCode": "RWA",
+        "countryName": "Rwanda",
+        "exposure": 0.1862,
+        "wcSharePct": 9.19553424714552,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 4852.1
+      },
+      {
+        "countryCode": "UGA",
+        "countryName": "Uganda",
+        "exposure": 0.182,
+        "wcSharePct": 5.56226148720688,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 17917.8
+      },
+      {
+        "countryCode": "GNB",
+        "countryName": "Guinea-Bissau",
+        "exposure": 0.1788,
+        "wcSharePct": 6.739509856410601,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 704.2
+      },
+      {
+        "countryCode": "ETH",
+        "countryName": "Ethiopia",
+        "exposure": 0.1767,
+        "wcSharePct": 5.0083083679460705,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "",
+        "employmentK": 36491.5
+      },
+      {
+        "countryCode": "LSO",
+        "countryName": "Lesotho",
+        "exposure": 0.1748,
+        "wcSharePct": 9.605379282412239,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 800.0
+      },
+      {
+        "countryCode": "TZA",
+        "countryName": "Tanzania, United Republic of",
+        "exposure": 0.1733,
+        "wcSharePct": 4.344521072401091,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income",
+        "employmentK": 30978.0
+      },
+      {
+        "countryCode": "MDG",
+        "countryName": "Madagascar",
+        "exposure": 0.1662,
+        "wcSharePct": 5.07978525122849,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 11830.4
+      },
+      {
+        "countryCode": "MOZ",
+        "countryName": "Mozambique",
+        "exposure": 0.1618,
+        "wcSharePct": 4.919351825121971,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 12176.0
+      },
+      {
+        "countryCode": "BDI",
+        "countryName": "Burundi",
+        "exposure": 0.144,
+        "wcSharePct": 3.0918694014400097,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income",
+        "employmentK": 4951.0
+      }
+    ],
+    "metrics": {
+      "White-collar share only": {
+        "rSquared": 0.9081295640371688,
+        "note": "Baseline fit of broad WC share."
+      },
+      "White-collar share + composition deviation": {
+        "rSquared": 0.9106486424916403,
+        "note": "Adding the WC composition deviation index."
+      },
+      "White-collar share + 5 latent composition PCs": {
+        "rSquared": 0.9360699281216448,
+        "note": "Adding five latent WC-composition dimensions."
+      },
+      "Agriculture share only": {
+        "rSquared": 0.791202935886379,
+        "note": "Agriculture share alone."
+      }
+    },
+    "fit": {
+      "points": [
+        {
+          "x": 3.0918694014400097,
+          "y": 0.19083343006749662
+        },
+        {
+          "x": 74.33635057060991,
+          "y": 0.3630627808295914
+        }
+      ],
+      "slope": 0.0024174412941984445,
+      "intercept": 0.18335901730018692
+    }
+  },
+  "adoption": {
+    "anthropic": {
+      "source": "Anthropic Claude",
+      "metricLabel": "Claude usage / 100k WAP (log)",
+      "nCountries": 114.0,
+      "spearmanRho": 0.8956292640812337,
+      "points": [
+        {
+          "countryCode": "LUX",
+          "countryName": "Luxembourg",
+          "exposure": 0.3715,
+          "value": 111.61049653792
+        },
+        {
+          "countryCode": "SGP",
+          "countryName": "Singapore",
+          "exposure": 0.3676,
+          "value": 122.01085605958
+        },
+        {
+          "countryCode": "NLD",
+          "countryName": "Netherlands",
+          "exposure": 0.3391,
+          "value": 88.74045949561
+        },
+        {
+          "countryCode": "CHE",
+          "countryName": "Switzerland",
+          "exposure": 0.3349,
+          "value": 107.01478785386
+        },
+        {
+          "countryCode": "SWE",
+          "countryName": "Sweden",
+          "exposure": 0.334,
+          "value": 74.22333672871
+        },
+        {
+          "countryCode": "ISR",
+          "countryName": "Israel",
+          "exposure": 0.3333,
+          "value": 114.75452267579
+        },
+        {
+          "countryCode": "DEU",
+          "countryName": "Germany",
+          "exposure": 0.333,
+          "value": 57.63124941121
+        },
+        {
+          "countryCode": "IRL",
+          "countryName": "Ireland",
+          "exposure": 0.3307,
+          "value": 73.06720651905
+        },
+        {
+          "countryCode": "GBR",
+          "countryName": "United Kingdom of Great Britain and Northern Ireland",
+          "exposure": 0.3294,
+          "value": 81.83557544801
+        },
+        {
+          "countryCode": "DNK",
+          "countryName": "Denmark",
+          "exposure": 0.3239,
+          "value": 66.91006069378
+        },
+        {
+          "countryCode": "BEL",
+          "countryName": "Belgium",
+          "exposure": 0.3231,
+          "value": 63.85894339724
+        },
+        {
+          "countryCode": "USA",
+          "countryName": "United States of America",
+          "exposure": 0.3225,
+          "value": 100.98150717229
+        },
+        {
+          "countryCode": "CYP",
+          "countryName": "Cyprus",
+          "exposure": 0.3219,
+          "value": 72.33545807675999
+        },
+        {
+          "countryCode": "AUS",
+          "countryName": "Australia",
+          "exposure": 0.3217,
+          "value": 90.74855922541
+        },
+        {
+          "countryCode": "AUT",
+          "countryName": "Austria",
+          "exposure": 0.3211,
+          "value": 57.78093135638
+        },
+        {
+          "countryCode": "NOR",
+          "countryName": "Norway",
+          "exposure": 0.3196,
+          "value": 72.279660189
+        },
+        {
+          "countryCode": "FRA",
+          "countryName": "France",
+          "exposure": 0.3193,
+          "value": 76.91897400194
+        },
+        {
+          "countryCode": "MNE",
+          "countryName": "Montenegro",
+          "exposure": 0.3181,
+          "value": 42.05172362005
+        },
+        {
+          "countryCode": "POL",
+          "countryName": "Poland",
+          "exposure": 0.3165,
+          "value": 39.15197083493
+        },
+        {
+          "countryCode": "JPN",
+          "countryName": "Japan",
+          "exposure": 0.3161,
+          "value": 39.96893323825
+        },
+        {
+          "countryCode": "GRC",
+          "countryName": "Greece",
+          "exposure": 0.3154,
+          "value": 32.28963372557
+        },
+        {
+          "countryCode": "PRT",
+          "countryName": "Portugal",
+          "exposure": 0.3139,
+          "value": 65.69751646687
+        },
+        {
+          "countryCode": "ITA",
+          "countryName": "Italy",
+          "exposure": 0.313,
+          "value": 46.39474781438
+        },
+        {
+          "countryCode": "EST",
+          "countryName": "Estonia",
+          "exposure": 0.3115,
+          "value": 85.64058230972
+        },
+        {
+          "countryCode": "HRV",
+          "countryName": "Croatia",
+          "exposure": 0.3107,
+          "value": 44.58193740597
+        },
+        {
+          "countryCode": "FIN",
+          "countryName": "Finland",
+          "exposure": 0.3089,
+          "value": 59.16012249895999
+        },
+        {
+          "countryCode": "LTU",
+          "countryName": "Lithuania",
+          "exposure": 0.3088,
+          "value": 60.98082905218
+        },
+        {
+          "countryCode": "HUN",
+          "countryName": "Hungary",
+          "exposure": 0.3086,
+          "value": 26.66009256086
+        },
+        {
+          "countryCode": "BRN",
+          "countryName": "Brunei Darussalam",
+          "exposure": 0.3071,
+          "value": 21.51958132459
+        },
+        {
+          "countryCode": "LVA",
+          "countryName": "Latvia",
+          "exposure": 0.3042,
+          "value": 60.91101694915
+        },
+        {
+          "countryCode": "SVN",
+          "countryName": "Slovenia",
+          "exposure": 0.3041,
+          "value": 56.57222659101
+        },
+        {
+          "countryCode": "CZE",
+          "countryName": "Czechia",
+          "exposure": 0.3016,
+          "value": 43.62818123956
+        },
+        {
+          "countryCode": "ESP",
+          "countryName": "Spain",
+          "exposure": 0.3011,
+          "value": 48.60173975583
+        },
+        {
+          "countryCode": "ARG",
+          "countryName": "Argentina",
+          "exposure": 0.2937,
+          "value": 16.53380474853
+        },
+        {
+          "countryCode": "BGR",
+          "countryName": "Bulgaria",
+          "exposure": 0.2924,
+          "value": 38.34439227315
+        },
+        {
+          "countryCode": "MUS",
+          "countryName": "Mauritius",
+          "exposure": 0.2894,
+          "value": 35.34214855889
+        },
+        {
+          "countryCode": "KOS",
+          "countryName": "Kosovo",
+          "exposure": 0.2879,
+          "value": 9.270312863599644
+        },
+        {
+          "countryCode": "BRB",
+          "countryName": "Barbados",
+          "exposure": 0.2864,
+          "value": 42.77685985766
+        },
+        {
+          "countryCode": "MKD",
+          "countryName": "North Macedonia",
+          "exposure": 0.2862,
+          "value": 34.94200740119
+        },
+        {
+          "countryCode": "SRB",
+          "countryName": "Serbia",
+          "exposure": 0.2847,
+          "value": 39.58912130463
+        },
+        {
+          "countryCode": "BHS",
+          "countryName": "Bahamas",
+          "exposure": 0.2824,
+          "value": 30.48045706508
+        },
+        {
+          "countryCode": "URY",
+          "countryName": "Uruguay",
+          "exposure": 0.2807,
+          "value": 26.66731423719
+        },
+        {
+          "countryCode": "ARE",
+          "countryName": "United Arab Emirates",
+          "exposure": 0.2806,
+          "value": 52.66221254509
+        },
+        {
+          "countryCode": "MDV",
+          "countryName": "Maldives",
+          "exposure": 0.2797,
+          "value": 39.00965488958
+        },
+        {
+          "countryCode": "CHL",
+          "countryName": "Chile",
+          "exposure": 0.2786,
+          "value": 19.97403375611
+        },
+        {
+          "countryCode": "BRA",
+          "countryName": "Brazil",
+          "exposure": 0.2783,
+          "value": 17.39324091632
+        },
+        {
+          "countryCode": "CRI",
+          "countryName": "Costa Rica",
+          "exposure": 0.274,
+          "value": 21.81786323421
+        },
+        {
+          "countryCode": "ROU",
+          "countryName": "Romania",
+          "exposure": 0.2717,
+          "value": 31.258657192339996
+        },
+        {
+          "countryCode": "SUR",
+          "countryName": "Suriname",
+          "exposure": 0.2703,
+          "value": 9.012149800902638
+        },
+        {
+          "countryCode": "JAM",
+          "countryName": "Jamaica",
+          "exposure": 0.2662,
+          "value": 17.73411074277
+        },
+        {
+          "countryCode": "TUR",
+          "countryName": "Türkiye",
+          "exposure": 0.2652,
+          "value": 15.707178723659998
+        },
+        {
+          "countryCode": "DOM",
+          "countryName": "Dominican Republic",
+          "exposure": 0.264,
+          "value": 16.609177638749998
+        },
+        {
+          "countryCode": "LBN",
+          "countryName": "Lebanon",
+          "exposure": 0.2639,
+          "value": 19.31324377289
+        },
+        {
+          "countryCode": "MEX",
+          "countryName": "Mexico",
+          "exposure": 0.2638,
+          "value": 11.08832204787
+        },
+        {
+          "countryCode": "MNG",
+          "countryName": "Mongolia",
+          "exposure": 0.263,
+          "value": 11.00069671079
+        },
+        {
+          "countryCode": "BIH",
+          "countryName": "Bosnia and Herzegovina",
+          "exposure": 0.2628,
+          "value": 19.23562320245
+        },
+        {
+          "countryCode": "COL",
+          "countryName": "Colombia",
+          "exposure": 0.2628,
+          "value": 18.67343920337
+        },
+        {
+          "countryCode": "FJI",
+          "countryName": "Fiji",
+          "exposure": 0.2585,
+          "value": 7.942992011619462
+        },
+        {
+          "countryCode": "JOR",
+          "countryName": "Jordan",
+          "exposure": 0.2547,
+          "value": 9.108837789763216
+        },
+        {
+          "countryCode": "EGY",
+          "countryName": "Egypt",
+          "exposure": 0.2543,
+          "value": 6.254621805983024
+        },
+        {
+          "countryCode": "PSE",
+          "countryName": "Palestine (State of)",
+          "exposure": 0.2534,
+          "value": 8.426055184480182
+        },
+        {
+          "countryCode": "PHL",
+          "countryName": "Philippines",
+          "exposure": 0.2523,
+          "value": 12.02229792344
+        },
+        {
+          "countryCode": "SLV",
+          "countryName": "El Salvador",
+          "exposure": 0.2511,
+          "value": 11.17789609874
+        },
+        {
+          "countryCode": "THA",
+          "countryName": "Thailand",
+          "exposure": 0.25,
+          "value": 12.41236029106
+        },
+        {
+          "countryCode": "GUY",
+          "countryName": "Guyana",
+          "exposure": 0.247,
+          "value": 8.446516656530846
+        },
+        {
+          "countryCode": "SWZ",
+          "countryName": "Eswatini",
+          "exposure": 0.2438,
+          "value": 5.416950411688232
+        },
+        {
+          "countryCode": "PER",
+          "countryName": "Peru",
+          "exposure": 0.2432,
+          "value": 14.67318306488
+        },
+        {
+          "countryCode": "IRQ",
+          "countryName": "Iraq",
+          "exposure": 0.2428,
+          "value": 9.338632271156817
+        },
+        {
+          "countryCode": "BLZ",
+          "countryName": "Belize",
+          "exposure": 0.2425,
+          "value": 18.579020429910003
+        },
+        {
+          "countryCode": "BTN",
+          "countryName": "Bhutan",
+          "exposure": 0.2422,
+          "value": 7.1351750206223965
+        },
+        {
+          "countryCode": "IDN",
+          "countryName": "Indonesia",
+          "exposure": 0.2419,
+          "value": 6.572969909345632
+        },
+        {
+          "countryCode": "BOL",
+          "countryName": "Bolivia (Plurinational State of)",
+          "exposure": 0.2413,
+          "value": 9.082379049346883
+        },
+        {
+          "countryCode": "NER",
+          "countryName": "Niger",
+          "exposure": 0.2412,
+          "value": 0.7354167763420647
+        },
+        {
+          "countryCode": "KGZ",
+          "countryName": "Kyrgyzstan",
+          "exposure": 0.2401,
+          "value": 10.0501098477
+        },
+        {
+          "countryCode": "CIV",
+          "countryName": "Côte d'Ivoire",
+          "exposure": 0.2397,
+          "value": 5.784214877599032
+        },
+        {
+          "countryCode": "LKA",
+          "countryName": "Sri Lanka",
+          "exposure": 0.2373,
+          "value": 16.97939535479
+        },
+        {
+          "countryCode": "GEO",
+          "countryName": "Georgia",
+          "exposure": 0.237,
+          "value": 56.69679504665
+        },
+        {
+          "countryCode": "PNG",
+          "countryName": "Papua New Guinea",
+          "exposure": 0.2364,
+          "value": 0.7797147023903953
+        },
+        {
+          "countryCode": "TUN",
+          "countryName": "Tunisia",
+          "exposure": 0.2364,
+          "value": 22.69534364134
+        },
+        {
+          "countryCode": "TGO",
+          "countryName": "Togo",
+          "exposure": 0.2353,
+          "value": 5.432692881245188
+        },
+        {
+          "countryCode": "GTM",
+          "countryName": "Guatemala",
+          "exposure": 0.2337,
+          "value": 6.272660413035033
+        },
+        {
+          "countryCode": "GMB",
+          "countryName": "Gambia",
+          "exposure": 0.2337,
+          "value": 1.2786178652323985
+        },
+        {
+          "countryCode": "NPL",
+          "countryName": "Nepal",
+          "exposure": 0.2326,
+          "value": 8.210162750926987
+        },
+        {
+          "countryCode": "PAN",
+          "countryName": "Panama",
+          "exposure": 0.2318,
+          "value": 18.82737453104
+        },
+        {
+          "countryCode": "HND",
+          "countryName": "Honduras",
+          "exposure": 0.2314,
+          "value": 5.21863299401791
+        },
+        {
+          "countryCode": "ALB",
+          "countryName": "Albania",
+          "exposure": 0.2302,
+          "value": 21.18943353581
+        },
+        {
+          "countryCode": "BWA",
+          "countryName": "Botswana",
+          "exposure": 0.2282,
+          "value": 9.196225073880484
+        },
+        {
+          "countryCode": "BEN",
+          "countryName": "Benin",
+          "exposure": 0.2272,
+          "value": 6.948147450186095
+        },
+        {
+          "countryCode": "GIN",
+          "countryName": "Guinea",
+          "exposure": 0.2271,
+          "value": 1.3398111986779233
+        },
+        {
+          "countryCode": "VNM",
+          "countryName": "Viet Nam",
+          "exposure": 0.2253,
+          "value": 9.219600174040789
+        },
+        {
+          "countryCode": "PAK",
+          "countryName": "Pakistan",
+          "exposure": 0.225,
+          "value": 5.8644147709446495
+        },
+        {
+          "countryCode": "MWI",
+          "countryName": "Malawi",
+          "exposure": 0.2225,
+          "value": 1.009743125420438
+        },
+        {
+          "countryCode": "ECU",
+          "countryName": "Ecuador",
+          "exposure": 0.2222,
+          "value": 9.73983161989154
+        },
+        {
+          "countryCode": "TJK",
+          "countryName": "Tajikistan",
+          "exposure": 0.2216,
+          "value": 2.1442374957450285
+        },
+        {
+          "countryCode": "KHM",
+          "countryName": "Cambodia",
+          "exposure": 0.2208,
+          "value": 4.134044306332152
+        },
+        {
+          "countryCode": "CPV",
+          "countryName": "Cabo Verde",
+          "exposure": 0.2201,
+          "value": 10.99248001623
+        },
+        {
+          "countryCode": "GHA",
+          "countryName": "Ghana",
+          "exposure": 0.22,
+          "value": 7.872436744922723
+        },
+        {
+          "countryCode": "BGD",
+          "countryName": "Bangladesh",
+          "exposure": 0.218,
+          "value": 2.152055840387568
+        },
+        {
+          "countryCode": "IND",
+          "countryName": "India",
+          "exposure": 0.2166,
+          "value": 6.2251544911733
+        },
+        {
+          "countryCode": "TLS",
+          "countryName": "Timor-Leste",
+          "exposure": 0.2076,
+          "value": 2.221484325674279
+        },
+        {
+          "countryCode": "AGO",
+          "countryName": "Angola",
+          "exposure": 0.2062,
+          "value": 1.8747707155414892
+        },
+        {
+          "countryCode": "LAO",
+          "countryName": "Lao People's Democratic Republic",
+          "exposure": 0.2054,
+          "value": 3.3195453645512862
+        },
+        {
+          "countryCode": "SLE",
+          "countryName": "Sierra Leone",
+          "exposure": 0.2047,
+          "value": 1.1636734290556632
+        },
+        {
+          "countryCode": "KEN",
+          "countryName": "Kenya",
+          "exposure": 0.1988,
+          "value": 9.825919326906275
+        },
+        {
+          "countryCode": "BFA",
+          "countryName": "Burkina Faso",
+          "exposure": 0.1977,
+          "value": 3.3255728987367643
+        },
+        {
+          "countryCode": "ZWE",
+          "countryName": "Zimbabwe",
+          "exposure": 0.1918,
+          "value": 3.9193752039536753
+        },
+        {
+          "countryCode": "ZMB",
+          "countryName": "Zambia",
+          "exposure": 0.1872,
+          "value": 2.6526535820107644
+        },
+        {
+          "countryCode": "RWA",
+          "countryName": "Rwanda",
+          "exposure": 0.1862,
+          "value": 6.0211622348403795
+        },
+        {
+          "countryCode": "UGA",
+          "countryName": "Uganda",
+          "exposure": 0.182,
+          "value": 1.768450902221281
+        },
+        {
+          "countryCode": "LSO",
+          "countryName": "Lesotho",
+          "exposure": 0.1748,
+          "value": 1.874451983135486
+        },
+        {
+          "countryCode": "TZA",
+          "countryName": "Tanzania, United Republic of",
+          "exposure": 0.1733,
+          "value": 1.3186927348633977
+        },
+        {
+          "countryCode": "MDG",
+          "countryName": "Madagascar",
+          "exposure": 0.1662,
+          "value": 2.809898525016063
+        },
+        {
+          "countryCode": "MOZ",
+          "countryName": "Mozambique",
+          "exposure": 0.1618,
+          "value": 1.2312439142349416
+        },
+        {
+          "countryCode": "BDI",
+          "countryName": "Burundi",
+          "exposure": 0.144,
+          "value": 0.5935584340741392
+        }
+      ],
+      "isLogScale": true,
+      "fit": {
+        "points": [
+          {
+            "x": 0.144,
+            "y": 0.7825217018691621
+          },
+          {
+            "x": 0.3715,
+            "y": 206.42861110866278
+          }
+        ],
+        "slope": 10.642960438579008,
+        "intercept": -1.639089912372891
+      }
+    },
+    "signals": {
+      "source": "OpenAI Signals",
+      "metricLabel": "OpenAI rank percentile",
+      "nCountries": 88.0,
+      "spearmanRho": 0.9040492764047876,
+      "points": [
+        {
+          "countryCode": "SGP",
+          "countryName": "Singapore",
+          "exposure": 0.3676,
+          "value": 1.0
+        },
+        {
+          "countryCode": "NLD",
+          "countryName": "Netherlands",
+          "exposure": 0.3391,
+          "value": 0.9914529914529916
+        },
+        {
+          "countryCode": "CHE",
+          "countryName": "Switzerland",
+          "exposure": 0.3349,
+          "value": 0.9743589743589745
+        },
+        {
+          "countryCode": "SWE",
+          "countryName": "Sweden",
+          "exposure": 0.334,
+          "value": 0.9230769230769232
+        },
+        {
+          "countryCode": "ISR",
+          "countryName": "Israel",
+          "exposure": 0.3333,
+          "value": 0.9829059829059827
+        },
+        {
+          "countryCode": "DEU",
+          "countryName": "Germany",
+          "exposure": 0.333,
+          "value": 0.8974358974358975
+        },
+        {
+          "countryCode": "IRL",
+          "countryName": "Ireland",
+          "exposure": 0.3307,
+          "value": 0.8461538461538461
+        },
+        {
+          "countryCode": "GBR",
+          "countryName": "United Kingdom of Great Britain and Northern Ireland",
+          "exposure": 0.3294,
+          "value": 0.7606837606837606
+        },
+        {
+          "countryCode": "DNK",
+          "countryName": "Denmark",
+          "exposure": 0.3239,
+          "value": 0.8888888888888888
+        },
+        {
+          "countryCode": "BEL",
+          "countryName": "Belgium",
+          "exposure": 0.3231,
+          "value": 0.9487179487179488
+        },
+        {
+          "countryCode": "USA",
+          "countryName": "United States of America",
+          "exposure": 0.3225,
+          "value": 0.7777777777777778
+        },
+        {
+          "countryCode": "AUS",
+          "countryName": "Australia",
+          "exposure": 0.3217,
+          "value": 0.905982905982906
+        },
+        {
+          "countryCode": "AUT",
+          "countryName": "Austria",
+          "exposure": 0.3211,
+          "value": 0.8803418803418803
+        },
+        {
+          "countryCode": "NOR",
+          "countryName": "Norway",
+          "exposure": 0.3196,
+          "value": 0.9316239316239316
+        },
+        {
+          "countryCode": "FRA",
+          "countryName": "France",
+          "exposure": 0.3193,
+          "value": 0.8632478632478633
+        },
+        {
+          "countryCode": "POL",
+          "countryName": "Poland",
+          "exposure": 0.3165,
+          "value": 0.7948717948717949
+        },
+        {
+          "countryCode": "JPN",
+          "countryName": "Japan",
+          "exposure": 0.3161,
+          "value": 0.6324786324786325
+        },
+        {
+          "countryCode": "GRC",
+          "countryName": "Greece",
+          "exposure": 0.3154,
+          "value": 0.8205128205128205
+        },
+        {
+          "countryCode": "PRT",
+          "countryName": "Portugal",
+          "exposure": 0.3139,
+          "value": 0.8547008547008547
+        },
+        {
+          "countryCode": "ITA",
+          "countryName": "Italy",
+          "exposure": 0.313,
+          "value": 0.6752136752136753
+        },
+        {
+          "countryCode": "FIN",
+          "countryName": "Finland",
+          "exposure": 0.3089,
+          "value": 0.9572649572649572
+        },
+        {
+          "countryCode": "HUN",
+          "countryName": "Hungary",
+          "exposure": 0.3086,
+          "value": 0.7264957264957265
+        },
+        {
+          "countryCode": "CZE",
+          "countryName": "Czechia",
+          "exposure": 0.3016,
+          "value": 0.8717948717948718
+        },
+        {
+          "countryCode": "ESP",
+          "countryName": "Spain",
+          "exposure": 0.3011,
+          "value": 0.8376068376068376
+        },
+        {
+          "countryCode": "ARG",
+          "countryName": "Argentina",
+          "exposure": 0.2937,
+          "value": 0.6581196581196581
+        },
+        {
+          "countryCode": "BGR",
+          "countryName": "Bulgaria",
+          "exposure": 0.2924,
+          "value": 0.7521367521367521
+        },
+        {
+          "countryCode": "SRB",
+          "countryName": "Serbia",
+          "exposure": 0.2847,
+          "value": 0.7863247863247863
+        },
+        {
+          "countryCode": "ARE",
+          "countryName": "United Arab Emirates",
+          "exposure": 0.2806,
+          "value": 0.9658119658119658
+        },
+        {
+          "countryCode": "CHL",
+          "countryName": "Chile",
+          "exposure": 0.2786,
+          "value": 0.6837606837606838
+        },
+        {
+          "countryCode": "BRA",
+          "countryName": "Brazil",
+          "exposure": 0.2783,
+          "value": 0.6068376068376069
+        },
+        {
+          "countryCode": "CRI",
+          "countryName": "Costa Rica",
+          "exposure": 0.274,
+          "value": 0.6923076923076923
+        },
+        {
+          "countryCode": "ROU",
+          "countryName": "Romania",
+          "exposure": 0.2717,
+          "value": 0.7008547008547008
+        },
+        {
+          "countryCode": "TUR",
+          "countryName": "Türkiye",
+          "exposure": 0.2652,
+          "value": 0.6153846153846154
+        },
+        {
+          "countryCode": "DOM",
+          "countryName": "Dominican Republic",
+          "exposure": 0.264,
+          "value": 0.5811965811965811
+        },
+        {
+          "countryCode": "LBN",
+          "countryName": "Lebanon",
+          "exposure": 0.2639,
+          "value": 0.7094017094017093
+        },
+        {
+          "countryCode": "MEX",
+          "countryName": "Mexico",
+          "exposure": 0.2638,
+          "value": 0.4957264957264957
+        },
+        {
+          "countryCode": "COL",
+          "countryName": "Colombia",
+          "exposure": 0.2628,
+          "value": 0.5726495726495726
+        },
+        {
+          "countryCode": "SOM",
+          "countryName": "Somalia",
+          "exposure": 0.2586,
+          "value": 0.3162393162393162
+        },
+        {
+          "countryCode": "JOR",
+          "countryName": "Jordan",
+          "exposure": 0.2547,
+          "value": 0.6239316239316239
+        },
+        {
+          "countryCode": "EGY",
+          "countryName": "Egypt",
+          "exposure": 0.2543,
+          "value": 0.4444444444444444
+        },
+        {
+          "countryCode": "PSE",
+          "countryName": "Palestine (State of)",
+          "exposure": 0.2534,
+          "value": 0.5641025641025641
+        },
+        {
+          "countryCode": "PHL",
+          "countryName": "Philippines",
+          "exposure": 0.2523,
+          "value": 0.5384615384615384
+        },
+        {
+          "countryCode": "SLV",
+          "countryName": "El Salvador",
+          "exposure": 0.2511,
+          "value": 0.4700854700854701
+        },
+        {
+          "countryCode": "THA",
+          "countryName": "Thailand",
+          "exposure": 0.25,
+          "value": 0.4786324786324786
+        },
+        {
+          "countryCode": "PER",
+          "countryName": "Peru",
+          "exposure": 0.2432,
+          "value": 0.6666666666666667
+        },
+        {
+          "countryCode": "IRQ",
+          "countryName": "Iraq",
+          "exposure": 0.2428,
+          "value": 0.4529914529914529
+        },
+        {
+          "countryCode": "IDN",
+          "countryName": "Indonesia",
+          "exposure": 0.2419,
+          "value": 0.4273504273504274
+        },
+        {
+          "countryCode": "BOL",
+          "countryName": "Bolivia (Plurinational State of)",
+          "exposure": 0.2413,
+          "value": 0.5042735042735043
+        },
+        {
+          "countryCode": "NER",
+          "countryName": "Niger",
+          "exposure": 0.2412,
+          "value": 0.0256410256410256
+        },
+        {
+          "countryCode": "KGZ",
+          "countryName": "Kyrgyzstan",
+          "exposure": 0.2401,
+          "value": 0.5555555555555556
+        },
+        {
+          "countryCode": "CIV",
+          "countryName": "Côte d'Ivoire",
+          "exposure": 0.2397,
+          "value": 0.2649572649572649
+        },
+        {
+          "countryCode": "LKA",
+          "countryName": "Sri Lanka",
+          "exposure": 0.2373,
+          "value": 0.4188034188034187
+        },
+        {
+          "countryCode": "PNG",
+          "countryName": "Papua New Guinea",
+          "exposure": 0.2364,
+          "value": 0.1367521367521367
+        },
+        {
+          "countryCode": "TUN",
+          "countryName": "Tunisia",
+          "exposure": 0.2364,
+          "value": 0.5897435897435898
+        },
+        {
+          "countryCode": "TGO",
+          "countryName": "Togo",
+          "exposure": 0.2353,
+          "value": 0.1623931623931623
+        },
+        {
+          "countryCode": "GTM",
+          "countryName": "Guatemala",
+          "exposure": 0.2337,
+          "value": 0.3931623931623932
+        },
+        {
+          "countryCode": "NPL",
+          "countryName": "Nepal",
+          "exposure": 0.2326,
+          "value": 0.4102564102564102
+        },
+        {
+          "countryCode": "HND",
+          "countryName": "Honduras",
+          "exposure": 0.2314,
+          "value": 0.4017094017094017
+        },
+        {
+          "countryCode": "MMR",
+          "countryName": "Myanmar",
+          "exposure": 0.2293,
+          "value": 0.1794871794871795
+        },
+        {
+          "countryCode": "BEN",
+          "countryName": "Benin",
+          "exposure": 0.2272,
+          "value": 0.2478632478632478
+        },
+        {
+          "countryCode": "GIN",
+          "countryName": "Guinea",
+          "exposure": 0.2271,
+          "value": 0.094017094017094
+        },
+        {
+          "countryCode": "VNM",
+          "countryName": "Viet Nam",
+          "exposure": 0.2253,
+          "value": 0.5470085470085471
+        },
+        {
+          "countryCode": "PAK",
+          "countryName": "Pakistan",
+          "exposure": 0.225,
+          "value": 0.3504273504273504
+        },
+        {
+          "countryCode": "MWI",
+          "countryName": "Malawi",
+          "exposure": 0.2225,
+          "value": 0.0854700854700855
+        },
+        {
+          "countryCode": "ECU",
+          "countryName": "Ecuador",
+          "exposure": 0.2222,
+          "value": 0.641025641025641
+        },
+        {
+          "countryCode": "TJK",
+          "countryName": "Tajikistan",
+          "exposure": 0.2216,
+          "value": 0.3076923076923077
+        },
+        {
+          "countryCode": "KHM",
+          "countryName": "Cambodia",
+          "exposure": 0.2208,
+          "value": 0.376068376068376
+        },
+        {
+          "countryCode": "GHA",
+          "countryName": "Ghana",
+          "exposure": 0.22,
+          "value": 0.3333333333333333
+        },
+        {
+          "countryCode": "BGD",
+          "countryName": "Bangladesh",
+          "exposure": 0.218,
+          "value": 0.3418803418803419
+        },
+        {
+          "countryCode": "IND",
+          "countryName": "India",
+          "exposure": 0.2166,
+          "value": 0.3589743589743589
+        },
+        {
+          "countryCode": "SDN",
+          "countryName": "Sudan",
+          "exposure": 0.2128,
+          "value": 0.0683760683760683
+        },
+        {
+          "countryCode": "AGO",
+          "countryName": "Angola",
+          "exposure": 0.2062,
+          "value": 0.188034188034188
+        },
+        {
+          "countryCode": "LAO",
+          "countryName": "Lao People's Democratic Republic",
+          "exposure": 0.2054,
+          "value": 0.282051282051282
+        },
+        {
+          "countryCode": "SLE",
+          "countryName": "Sierra Leone",
+          "exposure": 0.2047,
+          "value": 0.1282051282051282
+        },
+        {
+          "countryCode": "MLI",
+          "countryName": "Mali",
+          "exposure": 0.2001,
+          "value": 0.0598290598290598
+        },
+        {
+          "countryCode": "KEN",
+          "countryName": "Kenya",
+          "exposure": 0.1988,
+          "value": 0.3675213675213675
+        },
+        {
+          "countryCode": "BFA",
+          "countryName": "Burkina Faso",
+          "exposure": 0.1977,
+          "value": 0.1196581196581196
+        },
+        {
+          "countryCode": "COD",
+          "countryName": "Congo, Democratic Republic of the",
+          "exposure": 0.1969,
+          "value": 0.0512820512820513
+        },
+        {
+          "countryCode": "ZWE",
+          "countryName": "Zimbabwe",
+          "exposure": 0.1918,
+          "value": 0.1538461538461538
+        },
+        {
+          "countryCode": "AFG",
+          "countryName": "Afghanistan",
+          "exposure": 0.1893,
+          "value": 0.2222222222222222
+        },
+        {
+          "countryCode": "ZMB",
+          "countryName": "Zambia",
+          "exposure": 0.1872,
+          "value": 0.1965811965811965
+        },
+        {
+          "countryCode": "RWA",
+          "countryName": "Rwanda",
+          "exposure": 0.1862,
+          "value": 0.2735042735042735
+        },
+        {
+          "countryCode": "UGA",
+          "countryName": "Uganda",
+          "exposure": 0.182,
+          "value": 0.1111111111111111
+        },
+        {
+          "countryCode": "ETH",
+          "countryName": "Ethiopia",
+          "exposure": 0.1767,
+          "value": 0.0769230769230768
+        },
+        {
+          "countryCode": "TZA",
+          "countryName": "Tanzania, United Republic of",
+          "exposure": 0.1733,
+          "value": 0.1452991452991453
+        },
+        {
+          "countryCode": "MDG",
+          "countryName": "Madagascar",
+          "exposure": 0.1662,
+          "value": 0.2136752136752137
+        },
+        {
+          "countryCode": "MOZ",
+          "countryName": "Mozambique",
+          "exposure": 0.1618,
+          "value": 0.1709401709401709
+        },
+        {
+          "countryCode": "BDI",
+          "countryName": "Burundi",
+          "exposure": 0.144,
+          "value": 0.0427350427350426
+        }
+      ],
+      "isLogScale": false,
+      "fit": {
+        "points": [
+          {
+            "x": 0.144,
+            "y": -0.06857676678041535
+          },
+          {
+            "x": 0.3676,
+            "y": 1.0974507248108978
+          }
+        ],
+        "slope": 5.214792001750059,
+        "intercept": -0.8195068150324237
+      }
+    },
+    "microsoft": {
+      "source": "Microsoft AI Diffusion",
+      "metricLabel": "MS GenAI adoption (% WAP)",
+      "nCountries": 107.0,
+      "spearmanRho": 0.7954118508290835,
+      "points": [],
+      "isLogScale": false,
+      "fit": {
+        "points": [],
+        "slope": null,
+        "intercept": null
+      },
+      "note": "Microsoft country-level adoption points are not redistributed in this public release."
+    }
+  },
+  "remittance": {
+    "points": [
+      {
+        "countryCode": "BIH",
+        "countryName": "Bosnia and Herzegovina",
+        "domesticExposure": 0.2628,
+        "remittanceExposure": 0.3133511005610703,
+        "remittancePctGdp": 10.5503,
+        "sourceShareCovered": 0.9755789473684211,
+        "totalInflowM": 2375.0
+      },
+      {
+        "countryCode": "GEO",
+        "countryName": "Georgia",
+        "domesticExposure": 0.237,
+        "remittanceExposure": 0.30396535147392284,
+        "remittancePctGdp": 11.8705,
+        "sourceShareCovered": 0.8342792281498297,
+        "totalInflowM": 2643.0
+      },
+      {
+        "countryCode": "GMB",
+        "countryName": "Gambia",
+        "domesticExposure": 0.2337,
+        "remittanceExposure": 0.3158666037735849,
+        "remittancePctGdp": 21.999,
+        "sourceShareCovered": 0.9724770642201835,
+        "totalInflowM": 545.0
+      },
+      {
+        "countryCode": "GTM",
+        "countryName": "Guatemala",
+        "domesticExposure": 0.2337,
+        "remittanceExposure": 0.3187144401239043,
+        "remittancePctGdp": 19.1207,
+        "sourceShareCovered": 0.985643757308042,
+        "totalInflowM": 15394.0
+      },
+      {
+        "countryCode": "HND",
+        "countryName": "Honduras",
+        "domesticExposure": 0.2314,
+        "remittanceExposure": 0.316664363584879,
+        "remittancePctGdp": 25.6991,
+        "sourceShareCovered": 0.9811084872899014,
+        "totalInflowM": 7199.0
+      },
+      {
+        "countryCode": "KGZ",
+        "countryName": "Kyrgyzstan",
+        "domesticExposure": 0.2401,
+        "remittanceExposure": 0.30181319758672703,
+        "remittancePctGdp": 17.7363,
+        "sourceShareCovered": 0.9495166487647692,
+        "totalInflowM": 2793.0
+      },
+      {
+        "countryCode": "KOS",
+        "countryName": "Kosovo",
+        "domesticExposure": 0.2879,
+        "remittanceExposure": 0.3305960284528749,
+        "remittancePctGdp": 17.2964,
+        "sourceShareCovered": 0.9988158673771462,
+        "totalInflowM": 1689.0
+      },
+      {
+        "countryCode": "LBN",
+        "countryName": "Lebanon",
+        "domesticExposure": 0.2639,
+        "remittanceExposure": 0.31787178016726403,
+        "remittancePctGdp": 33.3498,
+        "sourceShareCovered": 0.654622243078367,
+        "totalInflowM": 6393.0
+      },
+      {
+        "countryCode": "LSO",
+        "countryName": "Lesotho",
+        "domesticExposure": 0.1748,
+        "remittanceExposure": 0.20712,
+        "remittancePctGdp": 20.9449,
+        "sourceShareCovered": 0.04024144869215292,
+        "totalInflowM": 497.0
+      },
+      {
+        "countryCode": "MHL",
+        "countryName": "Marshall Islands",
+        "domesticExposure": 0.2682,
+        "remittanceExposure": 0.3225,
+        "remittancePctGdp": 11.8749,
+        "sourceShareCovered": 1.0,
+        "totalInflowM": 30.0
+      },
+      {
+        "countryCode": "MNE",
+        "countryName": "Montenegro",
+        "domesticExposure": 0.3181,
+        "remittanceExposure": 0.30218971722365034,
+        "remittancePctGdp": 10.3409,
+        "sourceShareCovered": 0.9835651074589129,
+        "totalInflowM": 791.0
+      },
+      {
+        "countryCode": "NPL",
+        "countryName": "Nepal",
+        "domesticExposure": 0.2326,
+        "remittanceExposure": 0.26830174195453194,
+        "remittancePctGdp": 26.2255,
+        "sourceShareCovered": 0.41284739151633354,
+        "totalInflowM": 8204.0
+      },
+      {
+        "countryCode": "SLV",
+        "countryName": "El Salvador",
+        "domesticExposure": 0.2511,
+        "remittanceExposure": 0.3194638271434489,
+        "remittancePctGdp": 24.0023,
+        "sourceShareCovered": 0.9674101776412448,
+        "totalInflowM": 7487.0
+      },
+      {
+        "countryCode": "SOM",
+        "countryName": "Somalia",
+        "domesticExposure": 0.2586,
+        "remittanceExposure": 0.2782764573991031,
+        "remittancePctGdp": 17.6994,
+        "sourceShareCovered": 0.7711815561959654,
+        "totalInflowM": 1735.0
+      },
+      {
+        "countryCode": "TJK",
+        "countryName": "Tajikistan",
+        "domesticExposure": 0.2216,
+        "remittanceExposure": 0.3001030086498684,
+        "remittancePctGdp": 47.8852,
+        "sourceShareCovered": 0.9099931553730322,
+        "totalInflowM": 2922.0
+      },
+      {
+        "countryCode": "TLS",
+        "countryName": "Timor-Leste",
+        "domesticExposure": 0.2076,
+        "remittanceExposure": 0.28014821428571435,
+        "remittancePctGdp": 11.7692,
+        "sourceShareCovered": 1.0,
+        "totalInflowM": 168.0
+      },
+      {
+        "countryCode": "TON",
+        "countryName": "Tonga",
+        "domesticExposure": 0.259,
+        "remittanceExposure": 0.3194380597014926,
+        "remittancePctGdp": 42.6104,
+        "sourceShareCovered": 0.6350710900473934,
+        "totalInflowM": 211.0
+      },
+      {
+        "countryCode": "VUT",
+        "countryName": "Vanuatu",
+        "domesticExposure": 0.2182,
+        "remittanceExposure": 0.31820731707317074,
+        "remittancePctGdp": 18.751,
+        "sourceShareCovered": 0.7365269461077845,
+        "totalInflowM": 167.0
+      },
+      {
+        "countryCode": "WSM",
+        "countryName": "Samoa",
+        "domesticExposure": 0.2394,
+        "remittanceExposure": 0.3220786885245902,
+        "remittancePctGdp": 24.0063,
+        "sourceShareCovered": 0.4939271255060729,
+        "totalInflowM": 247.0
+      }
+    ]
+  }
+}

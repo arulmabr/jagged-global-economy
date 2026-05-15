@@ -1,0 +1,4 @@
+panel,label,stat,n_overlap,aux
+Anthropic refresh,Pinned vs latest rank,0.9731060557947728,162,top-20 overlap=18/20
+Work activity,SOC applicability vs observed exposure,0.5794828891757098,756,Microsoft vs Anthropic
+Work activity,IWA share vs Signals work share,0.5450755344861983,259,Microsoft vs OpenAI Signals

@@ -1,0 +1,5 @@
+specification,r_squared,note
+White-collar share only,0.9081295640371688,Baseline fit of broad WC share.
+White-collar share + composition deviation,0.9106486424916403,Adding the WC composition deviation index.
+White-collar share + 5 latent composition PCs,0.9360699281216448,Adding five latent WC-composition dimensions.
+Agriculture share only,0.791202935886379,Agriculture share alone.

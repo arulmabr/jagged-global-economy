@@ -1,0 +1,4 @@
+source_key,source,metric_label,n_countries,spearman_rho
+anthropic,Anthropic Claude,Claude usage / 100k WAP (log),114,0.8956292640812337
+signals,OpenAI Signals,OpenAI rank percentile,88,0.9040492764047876
+microsoft,Microsoft AI Diffusion,MS GenAI adoption (% WAP),107,0.7954118508290835

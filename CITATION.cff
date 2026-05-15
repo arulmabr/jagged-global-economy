@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the paper."
+title: "The Jagged Global Economy: Frontier AI Unevenly Exposes National Economies"
+type: dataset
+authors:
+  - family-names: Murugan
+    given-names: Arul
+  - family-names: Aguirre
+    given-names: Tomás
+  - family-names: Nagaraj
+    given-names: Abhishek
+  - family-names: Bommasani
+    given-names: Rishi
+date-released: "2026-05-15"
+url: "https://arulmabr.github.io/jagged-global-economy/"
+repository-code: "https://github.com/arulmabr/jagged-global-economy"
+preferred-citation:
+  type: article
+  title: "The Jagged Global Economy: Frontier AI Unevenly Exposes National Economies"
+  authors:
+    - family-names: Murugan
+      given-names: Arul
+    - family-names: Aguirre
+      given-names: Tomás
+    - family-names: Nagaraj
+      given-names: Abhishek
+    - family-names: Bommasani
+      given-names: Rishi
+  year: 2026

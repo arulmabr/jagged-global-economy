@@ -1,0 +1,442 @@
+country_code,country_name,sex,year,weighted_exposure,n_occupations,total_employment_k,employment_coverage,nec_share,isco_version,n_unreliable_cells,reliability
+AFG,Afghanistan,Female,2021,0.1486,14,1682.6,0.92,0.075,ISCO-08,6,medium
+AFG,Afghanistan,Male,2021,0.2015,29,5520.6,0.944,0.019,ISCO-08,11,medium
+AFG,Afghanistan,Total,2021,0.1893,29,7211.3,0.939,0.033,ISCO-08,10,medium
+AGO,Angola,Female,2025,0.2165,33,6771.4,0.98,0.019,ISCO-08,8,high
+AGO,Angola,Male,2025,0.195,40,6310.4,0.965,0.014,ISCO-08,5,high
+AGO,Angola,Total,2025,0.2062,40,13086.2,0.973,0.017,ISCO-08,2,high
+ALB,Albania,Female,2024,0.2378,39,533.8,0.996,0.003,ISCO-08,7,high
+ALB,Albania,Male,2024,0.2238,39,632.1,0.988,0.004,ISCO-08,4,high
+ALB,Albania,Total,2024,0.2302,40,1166.1,0.992,0.004,ISCO-08,1,high
+ARE,United Arab Emirates,Female,2022,0.2954,33,1753.0,0.992,0.005,ISCO-08,3,high
+ARE,United Arab Emirates,Male,2022,0.2759,40,5419.4,0.979,0.017,ISCO-08,1,high
+ARE,United Arab Emirates,Total,2022,0.2806,40,7173.9,0.982,0.014,ISCO-08,1,high
+ARG,Argentina,Female,2024,0.3137,36,5412.1,0.913,0.087,ISCO-08,1,high
+ARG,Argentina,Male,2024,0.2777,38,6751.8,0.911,0.089,ISCO-08,0,high
+ARG,Argentina,Total,2024,0.2937,38,12165.0,0.912,0.088,ISCO-08,0,high
+AUS,Australia,Female,2024,0.3496,38,6884.3,0.998,0.002,ISCO-08,0,high
+AUS,Australia,Male,2024,0.2962,38,7494.3,0.996,0.003,ISCO-08,0,high
+AUS,Australia,Total,2024,0.3217,38,14378.6,0.997,0.003,ISCO-08,0,high
+AUT,Austria,Female,2025,0.3457,37,2136.8,0.999,0.0,ISCO-08,0,high
+AUT,Austria,Male,2025,0.2987,38,2351.5,0.995,0.0,ISCO-08,0,high
+AUT,Austria,Total,2025,0.3211,38,4488.4,0.997,0.0,ISCO-08,0,high
+BDI,Burundi,Female,2020,0.1395,31,2745.0,0.999,0.0,ISCO-08,14,medium
+BDI,Burundi,Male,2020,0.1493,36,2200.2,0.998,0.0,ISCO-08,9,high
+BDI,Burundi,Total,2020,0.144,38,4951.0,0.999,0.0,ISCO-08,4,high
+BEL,Belgium,Female,2024,0.3376,36,2381.0,0.999,0.0,ISCO-08,5,high
+BEL,Belgium,Male,2024,0.3101,38,2662.3,0.993,0.0,ISCO-08,1,high
+BEL,Belgium,Total,2024,0.3231,38,5043.8,0.996,0.0,ISCO-08,1,high
+BEN,Benin,Female,2022,0.251,27,2826.1,0.996,0.0,ISCO-08,5,high
+BEN,Benin,Male,2022,0.2008,40,2598.7,0.997,0.0,ISCO-08,8,high
+BEN,Benin,Total,2022,0.2272,40,5435.2,0.998,0.0,ISCO-08,4,high
+BFA,Burkina Faso,Female,2024,0.2034,28,3877.1,0.996,0.0,ISCO-08,8,high
+BFA,Burkina Faso,Male,2024,0.1917,36,3963.9,0.995,0.0,ISCO-08,10,high
+BFA,Burkina Faso,Total,2024,0.1977,38,7857.2,0.997,0.0,ISCO-08,8,high
+BGD,Bangladesh,Female,2024,0.1923,38,22572.8,0.987,0.012,ISCO-08,2,high
+BGD,Bangladesh,Male,2024,0.2308,40,45251.6,0.979,0.018,ISCO-08,0,high
+BGD,Bangladesh,Total,2024,0.218,40,67828.9,0.982,0.016,ISCO-08,0,high
+BGR,Bulgaria,Female,2024,0.3278,38,1372.9,0.996,0.0,ISCO-08,4,high
+BGR,Bulgaria,Male,2024,0.2608,39,1536.3,0.989,0.0,ISCO-08,3,high
+BGR,Bulgaria,Total,2024,0.2924,39,2909.6,0.992,0.0,ISCO-08,0,high
+BHS,Bahamas,Female,2019,0.3315,30,99.7,0.981,0.014,ISCO-08,7,high
+BHS,Bahamas,Male,2019,0.2364,35,107.4,0.98,0.013,ISCO-08,8,high
+BHS,Bahamas,Total,2019,0.2824,37,208.0,0.984,0.013,ISCO-08,3,high
+BIH,Bosnia and Herzegovina,Female,2024,0.2895,39,544.9,0.999,0.0,ISCO-08,4,high
+BIH,Bosnia and Herzegovina,Male,2024,0.2446,39,801.0,0.99,0.0,ISCO-08,2,high
+BIH,Bosnia and Herzegovina,Total,2024,0.2628,39,1345.8,0.994,0.0,ISCO-08,0,high
+BLR,Belarus,Female,2024,0.3191,38,2424.2,1.0,0.0,ISCO-08,1,high
+BLR,Belarus,Male,2024,0.2444,37,2371.9,0.999,0.0,ISCO-08,1,high
+BLR,Belarus,Total,2024,0.2821,38,4796.7,1.0,0.0,ISCO-08,0,high
+BLZ,Belize,Female,2016,0.2833,32,52.9,0.989,0.0,ISCO-08,6,high
+BLZ,Belize,Male,2016,0.2179,39,90.1,0.983,0.009,ISCO-08,7,high
+BLZ,Belize,Total,2016,0.2425,39,143.3,0.988,0.007,ISCO-08,2,high
+BOL,Bolivia (Plurinational State of),Female,2024,0.2571,38,3257.3,1.0,0.0,ISCO-08,2,high
+BOL,Bolivia (Plurinational State of),Male,2024,0.2268,38,3559.5,0.999,0.0,ISCO-08,0,high
+BOL,Bolivia (Plurinational State of),Total,2024,0.2413,38,6816.8,0.999,0.0,ISCO-08,0,high
+BRA,Brazil,Female,2025,0.3045,39,44298.9,0.997,0.001,ISCO-08,0,high
+BRA,Brazil,Male,2025,0.2579,39,57018.2,0.983,0.004,ISCO-08,0,high
+BRA,Brazil,Total,2025,0.2783,39,101317.1,0.989,0.003,ISCO-08,0,high
+BRB,Barbados,Female,2023,0.3271,35,54.6,0.909,0.088,ISCO-08,6,high
+BRB,Barbados,Male,2023,0.2488,38,58.4,0.916,0.084,ISCO-08,6,high
+BRB,Barbados,Total,2023,0.2864,38,113.2,0.914,0.086,ISCO-08,1,high
+BRN,Brunei Darussalam,Female,2024,0.3507,33,87.8,0.986,0.0,ISCO-08,6,high
+BRN,Brunei Darussalam,Male,2024,0.2776,39,128.2,0.957,0.001,ISCO-08,4,high
+BRN,Brunei Darussalam,Total,2024,0.3071,39,216.4,0.97,0.001,ISCO-08,4,high
+BTN,Bhutan,Female,2024,0.2492,39,144.3,0.99,0.009,ISCO-08,5,high
+BTN,Bhutan,Male,2024,0.2376,38,220.9,0.979,0.006,ISCO-08,1,high
+BTN,Bhutan,Total,2024,0.2422,39,365.2,0.983,0.007,ISCO-08,1,high
+BWA,Botswana,Female,2024,0.2544,34,414.1,0.992,0.003,ISCO-08,12,medium
+BWA,Botswana,Male,2024,0.2023,35,439.8,0.99,0.0,ISCO-08,8,high
+BWA,Botswana,Total,2024,0.2282,38,857.5,0.995,0.002,ISCO-08,2,high
+CHE,Switzerland,Female,2024,0.347,38,2235.3,0.975,0.025,ISCO-08,0,high
+CHE,Switzerland,Male,2024,0.3241,38,2521.9,0.977,0.022,ISCO-08,0,high
+CHE,Switzerland,Total,2024,0.3349,38,4757.2,0.976,0.023,ISCO-08,0,high
+CHL,Chile,Female,2022,0.3004,40,3785.9,0.981,0.018,ISCO-08,1,high
+CHL,Chile,Male,2022,0.263,40,5307.3,0.995,0.001,ISCO-08,0,high
+CHL,Chile,Total,2022,0.2786,40,9093.2,0.989,0.008,ISCO-08,0,high
+CIV,Côte d'Ivoire,Female,2019,0.2671,20,3525.9,0.909,0.081,ISCO-08,7,medium
+CIV,Côte d'Ivoire,Male,2019,0.2203,35,5053.3,0.96,0.036,ISCO-08,9,high
+CIV,Côte d'Ivoire,Total,2019,0.2397,35,8615.1,0.942,0.056,ISCO-08,3,high
+COD,"Congo, Democratic Republic of the",Female,2020,0.1937,31,14911.0,0.981,0.017,ISCO-08,8,high
+COD,"Congo, Democratic Republic of the",Male,2020,0.2,35,15631.8,0.984,0.014,ISCO-08,2,high
+COD,"Congo, Democratic Republic of the",Total,2020,0.1969,37,30581.6,0.984,0.016,ISCO-08,3,high
+COK,Cook Islands,Female,2023,0.3385,25,4.0,0.949,0.0,ISCO-08,14,medium
+COK,Cook Islands,Male,2023,0.2436,25,4.0,0.923,0.0,ISCO-08,14,medium
+COK,Cook Islands,Total,2023,0.29,33,8.4,0.981,0.0,ISCO-08,7,high
+COL,Colombia,Female,2025,0.2925,39,9890.4,1.0,0.0,ISCO-08,0,high
+COL,Colombia,Male,2025,0.2417,39,13917.1,0.999,0.0,ISCO-08,0,high
+COL,Colombia,Total,2025,0.2628,39,23807.4,0.999,0.0,ISCO-08,0,high
+CPV,Cabo Verde,Female,2009,0.2413,29,59.3,0.906,0.078,ISCO-08,6,high
+CPV,Cabo Verde,Male,2009,0.2007,37,71.8,0.927,0.063,ISCO-08,10,high
+CPV,Cabo Verde,Total,2009,0.2201,40,132.2,0.925,0.07,ISCO-08,5,high
+CRI,Costa Rica,Female,2025,0.3025,38,851.0,0.978,0.022,ISCO-08,4,high
+CRI,Costa Rica,Male,2025,0.2559,39,1335.3,0.982,0.018,ISCO-08,2,high
+CRI,Costa Rica,Total,2025,0.274,39,2186.5,0.98,0.02,ISCO-08,0,high
+CUB,Cuba,Female,2012,0.3086,39,1737.2,0.949,0.051,ISCO-08,0,high
+CUB,Cuba,Male,2012,0.2377,39,2848.0,0.945,0.055,ISCO-08,0,high
+CUB,Cuba,Total,2012,0.2645,39,4585.2,0.947,0.053,ISCO-08,0,high
+CYP,Cyprus,Female,2024,0.3486,34,233.1,0.994,0.0,ISCO-08,1,high
+CYP,Cyprus,Male,2024,0.2968,37,246.8,0.978,0.0,ISCO-08,1,high
+CYP,Cyprus,Total,2024,0.3219,37,480.0,0.986,0.0,ISCO-08,1,high
+CZE,Czechia,Female,2024,0.3352,37,2344.2,0.999,0.0,ISCO-08,3,high
+CZE,Czechia,Male,2024,0.2741,39,2841.7,0.999,0.0,ISCO-08,2,high
+CZE,Czechia,Total,2024,0.3016,39,5187.7,0.999,0.0,ISCO-08,0,high
+DEU,Germany,Female,2024,0.3562,38,19840.8,0.99,0.009,ISCO-08,1,high
+DEU,Germany,Male,2024,0.3125,38,22423.2,0.984,0.009,ISCO-08,0,high
+DEU,Germany,Total,2024,0.333,39,42265.9,0.987,0.009,ISCO-08,1,high
+DNK,Denmark,Female,2024,0.3399,38,1401.6,0.968,0.031,ISCO-08,1,high
+DNK,Denmark,Male,2024,0.3097,38,1581.3,0.97,0.023,ISCO-08,0,high
+DNK,Denmark,Total,2024,0.3239,38,2982.9,0.969,0.027,ISCO-08,0,high
+DOM,Dominican Republic,Female,2025,0.3015,39,2172.9,0.996,0.0,ISCO-08,5,high
+DOM,Dominican Republic,Male,2025,0.2361,39,2925.4,0.989,0.0,ISCO-08,1,high
+DOM,Dominican Republic,Total,2025,0.264,39,5098.3,0.992,0.0,ISCO-08,0,high
+ECU,Ecuador,Female,2025,0.2387,39,3411.5,0.999,0.0,ISCO-08,0,high
+ECU,Ecuador,Male,2025,0.2106,40,4884.3,0.994,0.0,ISCO-08,0,high
+ECU,Ecuador,Total,2025,0.2222,40,8295.9,0.996,0.0,ISCO-08,0,high
+EGY,Egypt,Female,2024,0.3041,36,4935.5,0.665,0.335,ISCO-08,4,low
+EGY,Egypt,Male,2024,0.2444,40,24988.4,0.989,0.011,ISCO-08,0,high
+EGY,Egypt,Total,2024,0.2543,40,29927.6,0.916,0.084,ISCO-08,0,high
+ESP,Spain,Female,2024,0.324,38,10038.8,0.999,0.0,ISCO-08,2,high
+ESP,Spain,Male,2024,0.2811,39,11519.0,0.993,0.0,ISCO-08,1,high
+ESP,Spain,Total,2024,0.3011,39,21558.1,0.996,0.0,ISCO-08,1,high
+EST,Estonia,Female,2024,0.3374,37,353.5,1.0,0.0,ISCO-08,3,high
+EST,Estonia,Male,2024,0.2852,38,347.9,0.993,0.0,ISCO-08,2,high
+EST,Estonia,Total,2024,0.3115,38,701.5,0.997,0.0,ISCO-08,0,high
+ETH,Ethiopia,Female,2021,0.1874,40,15434.2,0.988,0.012,ISCO-08,1,high
+ETH,Ethiopia,Male,2021,0.1689,40,21057.4,0.983,0.014,ISCO-08,0,high
+ETH,Ethiopia,Total,2021,0.1767,40,36491.5,0.985,0.013,ISCO-08,0,high
+FIN,Finland,Female,2024,0.3209,38,1257.4,0.987,0.012,ISCO-08,7,high
+FIN,Finland,Male,2024,0.2976,39,1318.9,0.979,0.015,ISCO-08,3,high
+FIN,Finland,Total,2024,0.3089,39,2576.8,0.983,0.013,ISCO-08,1,high
+FJI,Fiji,Female,2024,0.2886,29,106.2,0.999,0.0,ISCO-08,3,high
+FJI,Fiji,Male,2024,0.2435,29,212.5,0.999,0.0,ISCO-08,1,high
+FJI,Fiji,Total,2024,0.2585,31,319.0,1.0,0.0,ISCO-08,3,high
+FRA,France,Female,2024,0.3385,38,13999.7,0.988,0.01,ISCO-08,1,high
+FRA,France,Male,2024,0.3008,38,14545.8,0.979,0.01,ISCO-08,0,high
+FRA,France,Total,2024,0.3193,38,28545.5,0.984,0.01,ISCO-08,0,high
+FSM,Micronesia (Federated States of),Female,2014,0.2648,28,10.1,0.731,0.263,ISCO-08,8,low
+FSM,Micronesia (Federated States of),Male,2014,0.1955,34,19.9,0.916,0.081,ISCO-08,10,high
+FSM,Micronesia (Federated States of),Total,2014,0.2188,35,30.1,0.847,0.152,ISCO-08,3,medium
+GBR,United Kingdom of Great Britain and Northern Ireland,Female,2025,0.3398,39,16571.3,0.999,0.001,ISCO-08,0,high
+GBR,United Kingdom of Great Britain and Northern Ireland,Male,2025,0.3196,39,17484.2,0.998,0.001,ISCO-08,0,high
+GBR,United Kingdom of Great Britain and Northern Ireland,Total,2025,0.3294,39,34055.5,0.998,0.001,ISCO-08,0,high
+GEO,Georgia,Female,2024,0.2486,37,881.2,1.0,0.0,ISCO-08,4,high
+GEO,Georgia,Male,2024,0.226,39,929.5,0.989,0.0,ISCO-08,2,high
+GEO,Georgia,Total,2024,0.237,40,1810.9,0.994,0.0,ISCO-08,2,high
+GHA,Ghana,Female,2017,0.2295,32,6212.8,0.991,0.007,ISCO-08,4,high
+GHA,Ghana,Male,2017,0.2098,39,5799.0,0.994,0.005,ISCO-08,4,high
+GHA,Ghana,Total,2017,0.22,40,12026.4,0.993,0.006,ISCO-08,3,high
+GIN,Guinea,Female,2019,0.2434,26,1408.7,0.988,0.0,ISCO-08,12,medium
+GIN,Guinea,Male,2019,0.2123,35,1729.3,0.98,0.0,ISCO-08,8,high
+GIN,Guinea,Total,2019,0.2271,40,3156.8,0.99,0.0,ISCO-08,7,high
+GMB,Gambia,Female,2023,0.2477,37,321.4,0.998,0.0,ISCO-08,12,medium
+GMB,Gambia,Male,2023,0.2186,39,299.2,0.993,0.0,ISCO-08,4,high
+GMB,Gambia,Total,2023,0.2337,40,621.0,0.996,0.0,ISCO-08,2,high
+GNB,Guinea-Bissau,Female,2022,0.1812,26,351.0,0.992,0.0,ISCO-08,8,medium
+GNB,Guinea-Bissau,Male,2022,0.1758,39,351.6,0.982,0.0,ISCO-08,11,high
+GNB,Guinea-Bissau,Total,2022,0.1788,40,704.2,0.99,0.0,ISCO-08,10,high
+GRC,Greece,Female,2025,0.3481,38,7513.7,0.994,0.006,ISCO-08,1,high
+GRC,Greece,Male,2025,0.2897,39,9578.0,0.977,0.023,ISCO-08,1,high
+GRC,Greece,Total,2025,0.3154,39,17093.2,0.985,0.015,ISCO-08,0,high
+GRD,Grenada,Female,2023,0.3033,28,13.6,0.59,0.38,ISCO-08,13,low
+GRD,Grenada,Male,2023,0.2146,30,18.9,0.646,0.335,ISCO-08,9,low
+GRD,Grenada,Total,2023,0.2529,36,33.2,0.634,0.355,ISCO-08,7,low
+GTM,Guatemala,Female,2024,0.2611,38,3271.7,1.0,0.0,ISCO-08,5,high
+GTM,Guatemala,Male,2024,0.2129,39,4301.8,0.998,0.002,ISCO-08,3,high
+GTM,Guatemala,Total,2024,0.2337,40,7575.1,0.999,0.001,ISCO-08,2,high
+GUY,Guyana,Female,2019,0.294,39,96.5,0.97,0.028,ISCO-08,5,high
+GUY,Guyana,Male,2019,0.2151,40,142.1,0.971,0.019,ISCO-08,1,high
+GUY,Guyana,Total,2019,0.247,40,238.6,0.97,0.022,ISCO-08,0,high
+HND,Honduras,Female,2025,0.2745,36,1601.5,0.993,0.005,ISCO-08,5,high
+HND,Honduras,Male,2025,0.203,38,2435.5,0.989,0.007,ISCO-08,3,high
+HND,Honduras,Total,2025,0.2314,39,4041.2,0.992,0.006,ISCO-08,1,high
+HRV,Croatia,Female,2024,0.3433,37,787.1,0.99,0.004,ISCO-08,2,high
+HRV,Croatia,Male,2024,0.2813,39,872.5,0.982,0.005,ISCO-08,2,high
+HRV,Croatia,Total,2024,0.3107,39,1660.0,0.986,0.005,ISCO-08,1,high
+HUN,Hungary,Female,2024,0.345,39,2212.9,0.998,0.0,ISCO-08,2,high
+HUN,Hungary,Male,2024,0.2761,39,2478.8,0.993,0.0,ISCO-08,1,high
+HUN,Hungary,Total,2024,0.3086,39,4691.8,0.995,0.0,ISCO-08,1,high
+IDN,Indonesia,Female,2023,0.2633,40,54482.9,0.999,0.0,ISCO-08,0,high
+IDN,Indonesia,Male,2023,0.2281,40,84219.6,0.994,0.0,ISCO-08,0,high
+IDN,Indonesia,Total,2023,0.2419,40,138702.5,0.996,0.0,ISCO-08,0,high
+IND,India,Female,2024,0.2001,40,149915.3,1.0,0.0,ISCO-08,1,high
+IND,India,Male,2024,0.224,40,332877.2,1.0,0.0,ISCO-08,0,high
+IND,India,Total,2024,0.2166,40,482793.2,1.0,0.0,ISCO-08,0,high
+IRL,Ireland,Female,2024,0.3523,36,1290.5,0.994,0.005,ISCO-08,5,high
+IRL,Ireland,Male,2024,0.3115,38,1434.9,0.988,0.008,ISCO-08,1,high
+IRL,Ireland,Total,2024,0.3307,38,2726.6,0.991,0.007,ISCO-08,1,high
+IRN,Iran (Islamic Republic of),Female,2024,0.3001,39,3952.6,0.999,0.001,ISCO-08,0,high
+IRN,Iran (Islamic Republic of),Male,2024,0.2447,40,20122.8,0.976,0.024,ISCO-08,0,high
+IRN,Iran (Islamic Republic of),Total,2024,0.2538,40,24075.6,0.98,0.02,ISCO-08,0,high
+IRQ,Iraq,Female,2021,0.3129,31,967.1,0.966,0.02,ISCO-08,10,medium
+IRQ,Iraq,Male,2021,0.2331,40,7043.8,0.918,0.025,ISCO-08,0,high
+IRQ,Iraq,Total,2021,0.2428,40,8019.5,0.924,0.024,ISCO-08,0,high
+ISR,Israel,Female,2024,0.3506,39,1981.7,0.935,0.065,ISCO-08,1,high
+ISR,Israel,Male,2024,0.3166,38,2042.5,0.911,0.089,ISCO-08,0,high
+ISR,Israel,Total,2024,0.3333,39,4024.3,0.923,0.077,ISCO-08,1,high
+ITA,Italy,Female,2024,0.3451,39,10155.1,0.999,0.0,ISCO-08,1,high
+ITA,Italy,Male,2024,0.2889,39,13542.6,0.984,0.0,ISCO-08,0,high
+ITA,Italy,Total,2024,0.313,39,23697.7,0.99,0.0,ISCO-08,0,high
+JAM,Jamaica,Female,2014,0.3173,25,484.1,0.998,0.001,ISCO-08,1,high
+JAM,Jamaica,Male,2014,0.2276,26,640.2,0.996,0.001,ISCO-08,2,high
+JAM,Jamaica,Total,2014,0.2662,26,1124.3,0.997,0.001,ISCO-08,1,high
+JOR,Jordan,Female,2023,0.2742,34,471.1,1.0,0.0,ISCO-08,7,high
+JOR,Jordan,Male,2023,0.2507,36,2282.6,1.0,0.0,ISCO-08,2,high
+JOR,Jordan,Total,2023,0.2547,36,2753.7,1.0,0.0,ISCO-08,1,high
+JPN,Japan,Female,2023,0.3407,22,29906.6,0.985,0.015,ISCO-08,0,high
+JPN,Japan,Male,2023,0.2958,22,36188.0,0.984,0.016,ISCO-08,0,high
+JPN,Japan,Total,2023,0.3161,22,66094.6,0.984,0.016,ISCO-08,0,high
+KEN,Kenya,Female,2022,0.2006,27,7048.8,0.891,0.108,ISCO-08,7,medium
+KEN,Kenya,Male,2022,0.197,33,7479.2,0.816,0.184,ISCO-08,4,medium
+KEN,Kenya,Total,2022,0.1988,34,14540.3,0.851,0.148,ISCO-08,4,medium
+KGZ,Kyrgyzstan,Female,2023,0.2668,39,1012.9,1.0,0.0,ISCO-08,4,high
+KGZ,Kyrgyzstan,Male,2023,0.2229,40,1578.9,1.0,0.0,ISCO-08,3,high
+KGZ,Kyrgyzstan,Total,2023,0.2401,40,2591.8,1.0,0.0,ISCO-08,1,high
+KHM,Cambodia,Female,2023,0.234,37,4706.2,0.998,0.0,ISCO-08,3,high
+KHM,Cambodia,Male,2023,0.2082,38,4991.7,0.99,0.0,ISCO-08,2,high
+KHM,Cambodia,Total,2023,0.2208,40,9701.4,0.994,0.0,ISCO-08,1,high
+KIR,Kiribati,Female,2023,0.2679,30,18.0,0.988,0.0,ISCO-08,9,high
+KIR,Kiribati,Male,2023,0.1947,34,22.9,0.995,0.0,ISCO-08,8,high
+KIR,Kiribati,Total,2023,0.2273,36,41.1,0.996,0.0,ISCO-08,2,high
+KOS,Kosovo,Female,2024,0.335,35,115.8,0.998,0.0,ISCO-08,5,high
+KOS,Kosovo,Male,2024,0.2702,39,307.7,1.0,0.0,ISCO-08,2,high
+KOS,Kosovo,Total,2024,0.2879,40,423.8,1.0,0.0,ISCO-08,2,high
+LAO,Lao People's Democratic Republic,Female,2022,0.2138,20,1663.4,0.991,0.0,ISCO-08,4,high
+LAO,Lao People's Democratic Republic,Male,2022,0.1974,23,1777.4,0.971,0.0,ISCO-08,3,high
+LAO,Lao People's Democratic Republic,Total,2022,0.2054,24,3442.6,0.981,0.0,ISCO-08,3,high
+LBN,Lebanon,Female,2019,0.289,33,480.2,0.988,0.005,ISCO-08,2,high
+LBN,Lebanon,Male,2019,0.2523,39,1033.1,0.932,0.007,ISCO-08,1,high
+LBN,Lebanon,Total,2019,0.2639,39,1513.6,0.949,0.006,ISCO-08,1,high
+LBR,Liberia,Female,2017,0.2551,26,310.3,0.605,0.382,ISCO-08,14,low
+LBR,Liberia,Male,2017,0.2329,35,328.8,0.63,0.361,ISCO-08,10,low
+LBR,Liberia,Total,2017,0.2445,39,645.5,0.624,0.372,ISCO-08,10,low
+LKA,Sri Lanka,Female,2024,0.2543,37,2556.1,0.986,0.012,ISCO-08,2,high
+LKA,Sri Lanka,Male,2024,0.2291,40,5226.6,0.975,0.018,ISCO-08,2,high
+LKA,Sri Lanka,Total,2024,0.2373,40,7783.6,0.979,0.016,ISCO-08,2,high
+LSO,Lesotho,Female,2024,0.1843,33,351.4,0.998,0.0,ISCO-08,7,high
+LSO,Lesotho,Male,2024,0.1669,37,447.7,0.992,0.0,ISCO-08,8,high
+LSO,Lesotho,Total,2024,0.1748,38,800.0,0.996,0.0,ISCO-08,3,high
+LTU,Lithuania,Female,2024,0.3353,36,718.8,0.998,0.0,ISCO-08,1,high
+LTU,Lithuania,Male,2024,0.2832,40,738.6,0.993,0.0,ISCO-08,3,high
+LTU,Lithuania,Total,2024,0.3088,40,1458.3,0.996,0.0,ISCO-08,3,high
+LUX,Luxembourg,Female,2024,0.3706,30,148.2,0.972,0.023,ISCO-08,9,high
+LUX,Luxembourg,Male,2024,0.3727,36,166.2,0.97,0.026,ISCO-08,5,high
+LUX,Luxembourg,Total,2024,0.3715,36,315.2,0.973,0.025,ISCO-08,2,high
+LVA,Latvia,Female,2024,0.329,36,444.8,0.994,0.002,ISCO-08,8,high
+LVA,Latvia,Male,2024,0.2787,36,425.3,0.975,0.005,ISCO-08,7,high
+LVA,Latvia,Total,2024,0.3042,39,872.3,0.987,0.004,ISCO-08,2,high
+MDG,Madagascar,Female,2022,0.1704,25,5597.6,0.997,0.002,ISCO-08,4,high
+MDG,Madagascar,Male,2022,0.1625,28,6231.5,0.995,0.002,ISCO-08,0,high
+MDG,Madagascar,Total,2022,0.1662,28,11830.4,0.996,0.002,ISCO-08,0,high
+MDV,Maldives,Female,2019,0.2819,33,81.9,0.992,0.004,ISCO-08,4,high
+MDV,Maldives,Male,2019,0.2778,38,107.0,0.97,0.007,ISCO-08,3,high
+MDV,Maldives,Total,2019,0.2797,38,189.2,0.981,0.005,ISCO-08,1,high
+MEX,Mexico,Female,2025,0.2957,40,24167.7,0.977,0.023,ISCO-08,0,high
+MEX,Mexico,Male,2025,0.2417,40,34786.3,0.973,0.025,ISCO-08,0,high
+MEX,Mexico,Total,2025,0.2638,40,58954.0,0.975,0.024,ISCO-08,0,high
+MHL,Marshall Islands,Female,2021,0.3045,37,4.5,0.985,0.014,ISCO-08,6,high
+MHL,Marshall Islands,Male,2021,0.2478,39,7.9,0.991,0.008,ISCO-08,0,high
+MHL,Marshall Islands,Total,2021,0.2682,40,12.4,0.99,0.01,ISCO-08,0,high
+MKD,North Macedonia,Female,2025,0.3066,37,296.7,0.998,0.0,ISCO-08,5,high
+MKD,North Macedonia,Male,2025,0.2711,39,396.4,0.985,0.0,ISCO-08,3,high
+MKD,North Macedonia,Total,2025,0.2862,39,693.2,0.99,0.0,ISCO-08,1,high
+MLI,Mali,Female,2022,0.216,24,2491.2,0.995,0.0,ISCO-08,8,medium
+MLI,Mali,Male,2022,0.1906,38,4232.6,0.997,0.0,ISCO-08,11,high
+MLI,Mali,Total,2022,0.2001,40,6736.2,0.998,0.0,ISCO-08,10,high
+MMR,Myanmar,Female,2020,0.2542,37,9131.6,0.999,0.0,ISCO-08,11,high
+MMR,Myanmar,Male,2020,0.212,39,13128.2,0.999,0.0,ISCO-08,5,high
+MMR,Myanmar,Total,2020,0.2293,39,22262.1,0.999,0.0,ISCO-08,2,high
+MNE,Montenegro,Female,2024,0.3558,30,125.0,0.99,0.0,ISCO-08,6,high
+MNE,Montenegro,Male,2024,0.2883,36,154.5,0.988,0.0,ISCO-08,4,high
+MNE,Montenegro,Total,2024,0.3181,37,280.6,0.993,0.0,ISCO-08,2,high
+MNG,Mongolia,Female,2024,0.2882,35,623.2,0.997,0.0,ISCO-08,1,high
+MNG,Mongolia,Male,2024,0.2416,37,739.8,0.993,0.001,ISCO-08,4,high
+MNG,Mongolia,Total,2024,0.263,38,1363.8,0.995,0.001,ISCO-08,1,high
+MOZ,Mozambique,Female,2022,0.1566,35,6327.1,0.999,0.0,ISCO-08,11,medium
+MOZ,Mozambique,Male,2022,0.1674,39,5847.0,0.998,0.0,ISCO-08,3,high
+MOZ,Mozambique,Total,2022,0.1618,39,12176.0,0.999,0.0,ISCO-08,0,high
+MSR,Montserrat,Female,2020,0.3276,22,1.2,0.95,0.0,ISCO-08,10,medium
+MSR,Montserrat,Male,2020,0.2559,25,1.2,0.935,0.0,ISCO-08,17,medium
+MSR,Montserrat,Total,2020,0.2904,32,2.5,0.985,0.0,ISCO-08,11,medium
+MUS,Mauritius,Female,2024,0.3265,38,230.3,0.998,0.001,ISCO-08,4,high
+MUS,Mauritius,Male,2024,0.2625,39,316.2,0.999,0.001,ISCO-08,1,high
+MUS,Mauritius,Total,2024,0.2894,39,546.6,0.999,0.001,ISCO-08,1,high
+MWI,Malawi,Female,2024,0.2273,37,2365.4,0.997,0.002,ISCO-08,9,high
+MWI,Malawi,Male,2024,0.2182,40,2613.4,0.995,0.005,ISCO-08,2,high
+MWI,Malawi,Total,2024,0.2225,40,4979.6,0.996,0.004,ISCO-08,0,high
+NER,Niger,Female,2017,0.2792,19,616.9,0.956,0.017,ISCO-08,3,high
+NER,Niger,Male,2017,0.2248,37,1445.7,0.976,0.016,ISCO-08,8,high
+NER,Niger,Total,2017,0.2412,38,2078.9,0.978,0.017,ISCO-08,8,high
+NGA,Nigeria,Female,2024,0.2588,37,34996.4,0.746,0.254,ISCO-08,6,low
+NGA,Nigeria,Male,2024,0.2101,40,36402.8,0.788,0.211,ISCO-08,2,low
+NGA,Nigeria,Total,2024,0.234,40,71406.9,0.767,0.233,ISCO-08,1,low
+NIU,Niue,Female,2022,0.3471,24,0.4,0.927,0.0,ISCO-08,17,medium
+NIU,Niue,Male,2022,0.2907,25,0.4,0.917,0.0,ISCO-08,11,medium
+NIU,Niue,Total,2022,0.3137,31,0.7,0.971,0.0,ISCO-08,12,medium
+NLD,Netherlands,Female,2024,0.3419,37,4611.2,0.992,0.007,ISCO-08,0,high
+NLD,Netherlands,Male,2024,0.3365,38,5133.3,0.984,0.011,ISCO-08,1,high
+NLD,Netherlands,Total,2024,0.3391,38,9744.5,0.988,0.01,ISCO-08,1,high
+NOR,Norway,Female,2024,0.3269,36,1338.9,0.977,0.02,ISCO-08,8,high
+NOR,Norway,Male,2024,0.3133,37,1507.5,0.981,0.014,ISCO-08,2,high
+NOR,Norway,Total,2024,0.3196,38,2849.6,0.98,0.017,ISCO-08,1,high
+NPL,Nepal,Female,2017,0.2359,35,2825.5,0.997,0.0,ISCO-08,11,medium
+NPL,Nepal,Male,2017,0.2305,39,4542.7,0.995,0.0,ISCO-08,1,high
+NPL,Nepal,Total,2017,0.2326,39,7374.1,0.997,0.0,ISCO-08,0,high
+NRU,Nauru,Female,2021,0.2845,27,0.7,0.386,0.607,ISCO-08,11,low
+NRU,Nauru,Male,2021,0.2131,25,1.0,0.391,0.597,ISCO-08,11,low
+NRU,Nauru,Total,2021,0.2454,34,1.8,0.397,0.601,ISCO-08,8,low
+PAK,Pakistan,Female,2025,0.197,37,18762.5,0.999,0.0,ISCO-08,6,high
+PAK,Pakistan,Male,2025,0.2338,39,58837.3,1.0,0.0,ISCO-08,0,high
+PAK,Pakistan,Total,2025,0.225,40,77608.6,1.0,0.0,ISCO-08,0,high
+PAN,Panama,Female,2024,0.2691,38,799.8,0.999,0.001,ISCO-08,6,high
+PAN,Panama,Male,2024,0.2052,40,1122.5,1.0,0.0,ISCO-08,1,high
+PAN,Panama,Total,2024,0.2318,40,1922.5,0.999,0.001,ISCO-08,1,high
+PER,Peru,Female,2025,0.2563,38,7994.4,0.998,0.0,ISCO-08,0,high
+PER,Peru,Male,2025,0.2324,39,9723.0,0.99,0.0,ISCO-08,1,high
+PER,Peru,Total,2025,0.2432,39,17717.4,0.993,0.0,ISCO-08,1,high
+PHL,Philippines,Female,2023,0.2964,40,19288.5,1.0,0.0,ISCO-08,0,high
+PHL,Philippines,Male,2023,0.2214,40,27557.6,0.997,0.0,ISCO-08,0,high
+PHL,Philippines,Total,2023,0.2523,40,46846.2,0.998,0.0,ISCO-08,0,high
+PLW,Palau,Female,2020,0.3587,37,3.8,0.998,0.0,ISCO-08,6,high
+PLW,Palau,Male,2020,0.2521,39,5.7,0.999,0.0,ISCO-08,3,high
+PLW,Palau,Total,2020,0.2949,39,9.5,0.999,0.0,ISCO-08,1,high
+PNG,Papua New Guinea,Female,2022,0.246,33,1910.0,0.996,0.0,ISCO-08,13,medium
+PNG,Papua New Guinea,Male,2022,0.2268,35,2071.6,0.994,0.0,ISCO-08,3,high
+PNG,Papua New Guinea,Total,2022,0.2364,38,3989.3,0.997,0.0,ISCO-08,4,high
+POL,Poland,Female,2024,0.35,39,7907.9,0.99,0.008,ISCO-08,1,high
+POL,Poland,Male,2024,0.2875,39,9129.3,0.977,0.009,ISCO-08,0,high
+POL,Poland,Total,2024,0.3165,39,17037.3,0.983,0.008,ISCO-08,0,high
+PRT,Portugal,Female,2025,0.3308,39,2578.6,0.996,0.003,ISCO-08,0,high
+PRT,Portugal,Male,2025,0.2975,39,2650.6,0.989,0.004,ISCO-08,0,high
+PRT,Portugal,Total,2025,0.3139,39,5229.2,0.992,0.003,ISCO-08,0,high
+PSE,Palestine (State of),Female,2025,0.3247,32,137.4,0.982,0.0,ISCO-08,4,high
+PSE,Palestine (State of),Male,2025,0.2355,39,548.7,0.946,0.0,ISCO-08,3,high
+PSE,Palestine (State of),Total,2025,0.2534,39,686.7,0.954,0.0,ISCO-08,2,high
+ROU,Romania,Female,2024,0.3159,37,3354.2,0.999,0.0,ISCO-08,0,high
+ROU,Romania,Male,2024,0.2385,38,4452.5,0.99,0.0,ISCO-08,0,high
+ROU,Romania,Total,2024,0.2717,39,7807.8,0.994,0.0,ISCO-08,1,high
+RUS,Russian Federation,Female,2025,0.3343,40,35955.6,1.0,0.0,ISCO-08,0,high
+RUS,Russian Federation,Male,2025,0.2636,40,37501.8,1.0,0.0,ISCO-08,0,high
+RUS,Russian Federation,Total,2025,0.2982,40,73457.4,1.0,0.0,ISCO-08,0,high
+RWA,Rwanda,Female,2024,0.189,37,2263.1,1.0,0.0,ISCO-08,8,high
+RWA,Rwanda,Male,2024,0.1837,38,2588.1,1.0,0.0,ISCO-08,1,high
+RWA,Rwanda,Total,2024,0.1862,39,4852.1,1.0,0.0,ISCO-08,1,high
+SDN,Sudan,Female,2022,0.2088,25,1423.8,0.88,0.094,ISCO-08,13,medium
+SDN,Sudan,Male,2022,0.213,35,6501.4,0.874,0.09,ISCO-08,10,high
+SDN,Sudan,Total,2022,0.2128,37,7961.2,0.879,0.091,ISCO-08,7,high
+SEN,Senegal,Female,2024,0.2217,25,411.6,0.253,0.737,ISCO-08,11,low
+SEN,Senegal,Male,2024,0.2143,37,1091.0,0.359,0.631,ISCO-08,7,low
+SEN,Senegal,Total,2024,0.2173,39,1516.4,0.325,0.668,ISCO-08,7,low
+SGP,Singapore,Female,2024,0.3916,36,1083.9,0.961,0.039,ISCO-08,3,high
+SGP,Singapore,Male,2024,0.3455,37,1175.5,0.95,0.05,ISCO-08,0,high
+SGP,Singapore,Total,2024,0.3676,37,2259.5,0.955,0.045,ISCO-08,0,high
+SLB,Solomon Islands,Female,2013,0.1964,35,163.7,0.845,0.154,ISCO-08,11,medium
+SLB,Solomon Islands,Male,2013,0.2015,38,198.9,0.913,0.086,ISCO-08,4,high
+SLB,Solomon Islands,Total,2013,0.1992,39,362.9,0.882,0.118,ISCO-08,3,medium
+SLE,Sierra Leone,Female,2018,0.2169,27,1651.0,0.985,0.012,ISCO-08,10,medium
+SLE,Sierra Leone,Male,2018,0.1911,37,1501.8,0.981,0.011,ISCO-08,6,high
+SLE,Sierra Leone,Total,2018,0.2047,39,3157.2,0.984,0.012,ISCO-08,5,high
+SLV,El Salvador,Female,2024,0.2828,38,1223.3,0.999,0.0,ISCO-08,4,high
+SLV,El Salvador,Male,2024,0.2276,39,1650.7,0.99,0.0,ISCO-08,0,high
+SLV,El Salvador,Total,2024,0.2511,39,2874.5,0.994,0.0,ISCO-08,0,high
+SOM,Somalia,Female,2019,0.2609,21,308.8,0.96,0.0,ISCO-08,3,high
+SOM,Somalia,Male,2019,0.256,37,686.4,0.961,0.0,ISCO-08,13,medium
+SOM,Somalia,Total,2019,0.2586,39,1010.5,0.975,0.0,ISCO-08,8,high
+SRB,Serbia,Female,2025,0.3094,38,5623.1,0.998,0.0,ISCO-08,0,high
+SRB,Serbia,Male,2025,0.2635,39,6560.3,0.989,0.0,ISCO-08,0,high
+SRB,Serbia,Total,2025,0.2847,39,12183.7,0.993,0.0,ISCO-08,0,high
+STP,Sao Tome and Principe,Female,2017,0.2307,29,13.2,0.935,0.024,ISCO-08,13,medium
+STP,Sao Tome and Principe,Male,2017,0.2215,27,13.3,0.921,0.039,ISCO-08,10,medium
+STP,Sao Tome and Principe,Total,2017,0.23,35,27.2,0.954,0.032,ISCO-08,13,medium
+SUR,Suriname,Female,2016,0.3153,33,73.3,0.97,0.012,ISCO-08,14,medium
+SUR,Suriname,Male,2016,0.2395,37,110.3,0.966,0.013,ISCO-08,8,high
+SUR,Suriname,Total,2016,0.2703,40,185.4,0.978,0.013,ISCO-08,6,high
+SVN,Slovenia,Female,2024,0.3307,37,449.8,0.993,0.004,ISCO-08,2,high
+SVN,Slovenia,Male,2024,0.2817,38,534.9,0.981,0.007,ISCO-08,0,high
+SVN,Slovenia,Total,2024,0.3041,38,984.8,0.986,0.005,ISCO-08,0,high
+SWE,Sweden,Female,2024,0.3451,38,2514.6,0.998,0.001,ISCO-08,1,high
+SWE,Sweden,Male,2024,0.324,38,2760.8,0.992,0.002,ISCO-08,0,high
+SWE,Sweden,Total,2024,0.334,38,5275.5,0.995,0.002,ISCO-08,0,high
+SWZ,Eswatini,Female,2023,0.2596,28,106.9,0.963,0.022,ISCO-08,10,medium
+SWZ,Eswatini,Male,2023,0.226,31,108.2,0.954,0.022,ISCO-08,12,medium
+SWZ,Eswatini,Total,2023,0.2438,34,216.9,0.967,0.022,ISCO-08,5,high
+SYC,Seychelles,Female,2024,0.3177,30,13.7,0.487,0.508,ISCO-08,8,low
+SYC,Seychelles,Male,2024,0.2491,36,12.4,0.462,0.532,ISCO-08,12,low
+SYC,Seychelles,Total,2024,0.2853,38,26.2,0.477,0.519,ISCO-08,5,low
+TGO,Togo,Female,2022,0.2567,21,1768.5,0.994,0.0,ISCO-08,6,high
+TGO,Togo,Male,2022,0.2104,35,1571.8,0.991,0.0,ISCO-08,9,high
+TGO,Togo,Total,2022,0.2353,36,3348.4,0.995,0.0,ISCO-08,8,high
+THA,Thailand,Female,2024,0.2777,40,18350.2,0.998,0.002,ISCO-08,0,high
+THA,Thailand,Male,2024,0.2262,40,21327.6,0.996,0.002,ISCO-08,0,high
+THA,Thailand,Total,2024,0.25,40,39677.8,0.997,0.002,ISCO-08,0,high
+TJK,Tajikistan,Female,2016,0.2235,32,627.0,0.993,0.0,ISCO-08,13,medium
+TJK,Tajikistan,Male,2016,0.2208,37,1624.4,0.993,0.002,ISCO-08,8,high
+TJK,Tajikistan,Total,2016,0.2216,38,2254.9,0.995,0.001,ISCO-08,3,high
+TKL,Tokelau,Female,2022,0.2842,15,0.2,0.833,0.0,ISCO-08,9,medium
+TKL,Tokelau,Male,2022,0.2568,12,0.2,0.843,0.0,ISCO-08,7,medium
+TKL,Tokelau,Total,2022,0.2727,21,0.4,0.927,0.0,ISCO-08,12,medium
+TLS,Timor-Leste,Female,2022,0.2123,37,157.3,0.904,0.091,ISCO-08,3,high
+TLS,Timor-Leste,Male,2022,0.2037,38,197.0,0.864,0.127,ISCO-08,2,medium
+TLS,Timor-Leste,Total,2022,0.2076,39,354.3,0.881,0.112,ISCO-08,3,medium
+TON,Tonga,Female,2023,0.2988,32,14.6,0.985,0.0,ISCO-08,11,medium
+TON,Tonga,Male,2023,0.2267,37,18.0,0.986,0.0,ISCO-08,8,high
+TON,Tonga,Total,2023,0.259,38,32.8,0.991,0.0,ISCO-08,2,high
+TUN,Tunisia,Female,2021,0.2539,39,1874.9,1.0,0.0,ISCO-08,3,high
+TUN,Tunisia,Male,2021,0.2272,39,3565.8,1.0,0.0,ISCO-08,1,high
+TUN,Tunisia,Total,2021,0.2364,39,5440.7,1.0,0.0,ISCO-08,0,high
+TUR,Türkiye,Female,2024,0.2772,39,10810.9,1.0,0.0,ISCO-08,0,high
+TUR,Türkiye,Male,2024,0.2593,39,21809.4,1.0,0.0,ISCO-08,0,high
+TUR,Türkiye,Total,2024,0.2652,39,32620.3,1.0,0.0,ISCO-08,0,high
+TUV,Tuvalu,Female,2022,0.3676,28,1.1,0.979,0.0,ISCO-08,9,medium
+TUV,Tuvalu,Male,2022,0.268,38,1.8,0.996,0.0,ISCO-08,11,high
+TUV,Tuvalu,Total,2022,0.3055,39,2.9,0.998,0.0,ISCO-08,3,high
+TZA,"Tanzania, United Republic of",Female,2024,0.1717,28,15400.7,0.999,0.0,ISCO-08,4,high
+TZA,"Tanzania, United Republic of",Male,2024,0.1749,29,15573.0,0.997,0.002,ISCO-08,0,high
+TZA,"Tanzania, United Republic of",Total,2024,0.1733,29,30978.0,0.998,0.001,ISCO-08,0,high
+UGA,Uganda,Female,2021,0.1804,31,8692.5,0.997,0.0,ISCO-08,10,medium
+UGA,Uganda,Male,2021,0.1832,38,9202.3,0.995,0.0,ISCO-08,8,high
+UGA,Uganda,Total,2021,0.182,39,17917.8,0.997,0.0,ISCO-08,4,high
+URY,Uruguay,Female,2024,0.3085,40,779.8,0.999,0.0,ISCO-08,1,high
+URY,Uruguay,Male,2024,0.2578,40,946.9,0.989,0.0,ISCO-08,0,high
+URY,Uruguay,Total,2024,0.2807,40,1726.7,0.994,0.0,ISCO-08,0,high
+USA,United States of America,Female,2025,0.345,40,76930.6,1.0,0.0,ISCO-08,0,high
+USA,United States of America,Male,2025,0.3024,40,86562.2,1.0,0.0,ISCO-08,0,high
+USA,United States of America,Total,2025,0.3225,40,163492.9,1.0,0.0,ISCO-08,0,high
+VNM,Viet Nam,Female,2024,0.2413,39,25474.0,0.96,0.038,ISCO-08,1,high
+VNM,Viet Nam,Male,2024,0.2108,39,27961.2,0.972,0.019,ISCO-08,0,high
+VNM,Viet Nam,Total,2024,0.2253,40,53436.1,0.967,0.028,ISCO-08,1,high
+VUT,Vanuatu,Female,2020,0.2322,39,31.0,0.921,0.074,ISCO-08,2,high
+VUT,Vanuatu,Male,2020,0.207,40,38.7,0.917,0.071,ISCO-08,0,high
+VUT,Vanuatu,Total,2020,0.2182,40,69.7,0.919,0.072,ISCO-08,0,high
+WLF,Wallis and Futuna,Female,2019,0.3317,24,1.6,0.903,0.066,ISCO-08,11,medium
+WLF,Wallis and Futuna,Male,2019,0.2486,27,1.7,0.673,0.295,ISCO-08,15,low
+WLF,Wallis and Futuna,Total,2019,0.2907,33,3.3,0.787,0.2,ISCO-08,10,medium
+WSM,Samoa,Female,2022,0.2916,31,18.2,0.97,0.013,ISCO-08,6,high
+WSM,Samoa,Male,2022,0.2101,34,33.8,0.983,0.01,ISCO-08,4,high
+WSM,Samoa,Total,2022,0.2394,38,52.5,0.987,0.011,ISCO-08,1,high
+ZMB,Zambia,Female,2024,0.195,30,3244.6,0.996,0.0,ISCO-08,10,medium
+ZMB,Zambia,Male,2024,0.1801,36,3868.1,0.992,0.0,ISCO-08,6,high
+ZMB,Zambia,Total,2024,0.1872,38,7126.2,0.996,0.0,ISCO-08,4,high
+ZWE,Zimbabwe,Female,2024,0.1974,35,2381.2,0.993,0.006,ISCO-08,5,high
+ZWE,Zimbabwe,Male,2024,0.1864,37,2538.3,0.982,0.014,ISCO-08,2,high
+ZWE,Zimbabwe,Total,2024,0.1918,38,4921.8,0.988,0.011,ISCO-08,1,high

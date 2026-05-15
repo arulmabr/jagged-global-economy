@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Jagged Global Economy</title>
+    <meta
+      name="description"
+      content="Project page for The Jagged Global Economy: Frontier AI Unevenly Exposes National Economies."
+    />
+    <link rel="stylesheet" href="styles.css?v=release-safe-20260515" />
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
+    <script src="assets/site.js?v=release-safe-20260515" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="paper-header">
+        <h1>
+          The Jagged Global<br class="mobile-only" />
+          Economy:<br />
+          Frontier AI Unevenly<br class="mobile-only" />
+          Exposes<br />
+          National Economies
+        </h1>
+
+        <div class="authors" aria-label="Authors and affiliations">
+          <div>
+            <a href="https://arulmurugan.me">Arul Murugan</a>
+            <span>UC Berkeley</span>
+          </div>
+          <div>
+            <a href="https://t6aguirre.github.io">Tomás Aguirre</a>
+            <span>University of São Paulo</span>
+          </div>
+          <div>
+            <a href="https://www.abhishekn.com">Abhishek Nagaraj</a>
+            <span>UC Berkeley</span>
+          </div>
+          <div>
+            <a href="https://rishibommasani.github.io/">Rishi Bommasani</a>
+            <span>Stanford University</span>
+          </div>
+        </div>
+
+        <nav class="links" aria-label="Project links">
+          <a href="assets/paper.pdf">Paper</a>
+          <a href="assets/dataset_release.zip">Dataset</a>
+          <a href="https://github.com/arulmabr/jagged-global-economy">Code</a>
+          <a href="#citation">Cite</a>
+        </nav>
+
+        <p class="lead">
+          We introduce a national AI exposure metric that combines occupation-level
+          exposure scores and international employment data for 141 countries.
+          The metric captures how strongly a national labor market aligns with
+          tasks frontier AI can already accelerate or transform; it is not a
+          forecast of adoption, wages, or net employment losses.
+        </p>
+      </header>
+
+      <hr />
+
+      <section id="findings">
+        <h2>Key Findings</h2>
+        <ol class="findings">
+          <li>
+            <strong>National AI exposure varies substantially across countries.</strong>
+            Luxembourg is 2.6× more exposed than Burundi, the least exposed country
+            in the measured sample.
+          </li>
+          <li>
+            <strong>High-income countries are more exposed.</strong>
+            Europe &amp; Central Asia are 50% more exposed than Sub-Saharan Africa,
+            reflecting cross-country differences in occupational composition.
+          </li>
+          <li>
+            <strong>Women are more exposed than men in 91% of studied countries.</strong>
+            The gender gap is driven by women's concentration in white-collar and
+            sales occupations, with exceptions where women's employment remains
+            concentrated in agriculture and household enterprises.
+          </li>
+          <li>
+            <strong>White-collar work explains much of national exposure.</strong>
+            White-collar employment share strongly predicts national AI exposure,
+            showing how labor composition shapes the global exposure map.
+          </li>
+          <li>
+            <strong>Exposure predicts observed AI adoption.</strong>
+            National exposure predicts usage statistics published by Anthropic,
+            OpenAI, and Microsoft; a 0.10 increase in exposure corresponds to 12×
+            growth in per-capita Claude usage and 19% higher national generative AI
+            adoption rate in the fitted relationships.
+          </li>
+          <li>
+            <strong>Remittances create indirect exposure.</strong>
+            Countries dependent on income earned abroad can inherit exposure from
+            the labor markets where migrant workers earn remittance income.
+          </li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="national-exposure" class="figure-section">
+        <h2>National AI Exposure</h2>
+        <p>
+          Darker countries are more exposed to frontier AI. Countries without
+          2-digit ISCO-08 employment data are shown in gray.
+        </p>
+        <figure class="interactive-figure">
+          <div
+            id="plot-national-exposure"
+            class="interactive-plot plot-map"
+            aria-label="Interactive world map shaded by national AI exposure."
+          ></div>
+          <img
+            class="plot-fallback"
+            src="assets/national_exposure_map.png"
+            alt="World map shaded by national AI exposure."
+          />
+          <figcaption>
+            Figure 1. National AI exposure varies substantially across countries.
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr />
+
+      <section id="labor-composition" class="figure-section">
+        <h2>Cross-Country Labor Composition</h2>
+        <p>
+          National exposure differs because countries allocate labor very
+          differently across office, service, agriculture, production, operator,
+          and elementary work.
+        </p>
+        <figure class="interactive-figure">
+          <div
+            id="plot-labor-composition"
+            class="interactive-plot"
+            aria-label="Interactive stacked bar chart comparing employment composition."
+          ></div>
+          <img
+            class="plot-fallback"
+            src="assets/cross_country_labor_composition.png"
+            alt="Stacked bar chart comparing employment composition in the United States, Jordan, Mexico, India, and Mozambique."
+          />
+          <figcaption>
+            Figure 2. Illustrative cross-country differences in labor composition.
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr />
+
+      <section id="white-collar" class="figure-section">
+        <h2>Explaining Exposure</h2>
+        <p>
+          White-collar employment share is a strong structural predictor of
+          national AI exposure. The paper also finds that log gross national
+          income predicts exposure, but less strongly than workforce composition.
+        </p>
+        <figure class="interactive-figure">
+          <div
+            id="plot-white-collar"
+            class="interactive-plot"
+            aria-label="Interactive scatter plot showing white-collar employment share and national AI exposure."
+          ></div>
+          <img
+            class="plot-fallback"
+            src="assets/white_collar_vs_exposure.png"
+            alt="Scatter plot showing white-collar employment share predicting national AI exposure."
+          />
+          <figcaption>
+            Figure 3. White-collar employment share predicts national AI exposure.
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr />
+
+      <section id="adoption" class="figure-section">
+        <h2>Predicting AI Adoption</h2>
+        <p>
+          National AI exposure predicts adoption statistics from Anthropic,
+          OpenAI, and Microsoft, even though the three organizations publish
+          different types of country-level usage measures.
+        </p>
+        <div class="three-panel adoption-panel">
+          <figure class="interactive-figure">
+            <div
+              id="plot-adoption-anthropic"
+              class="interactive-plot plot-small"
+              aria-label="Interactive scatter plot of national exposure versus Anthropic Claude usage."
+            ></div>
+            <img
+              class="plot-fallback"
+              src="assets/observed_outcomes_anthropic.png"
+              alt="National exposure versus Anthropic Claude usage."
+            />
+            <figcaption>Anthropic Claude usage per 100,000 working-age people.</figcaption>
+          </figure>
+          <figure class="interactive-figure">
+            <div
+              id="plot-adoption-openai"
+              class="interactive-plot plot-small"
+              aria-label="Interactive scatter plot of national exposure versus OpenAI Signals rank percentile."
+            ></div>
+            <img
+              class="plot-fallback"
+              src="assets/observed_outcomes_openai.png"
+              alt="National exposure versus OpenAI Signals rank percentile."
+            />
+            <figcaption>OpenAI Signals country-rank percentile.</figcaption>
+          </figure>
+          <figure class="static-panel">
+            <img
+              src="assets/observed_outcomes_microsoft.png"
+              alt="National exposure versus Microsoft generative AI adoption."
+            />
+            <figcaption>
+              Static reference panel: Microsoft generative AI adoption as percent of
+              working-age population. Country-level Microsoft rows are not
+              redistributed in this public release.
+            </figcaption>
+          </figure>
+        </div>
+        <p class="caption-note">
+          Figure 4. National AI exposure predicts national AI adoption.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="remittance" class="figure-section">
+        <h2>Indirect Exposure Through Remittances</h2>
+        <p>
+          The remittance channel raises measured exposure among highly
+          remittance-dependent countries: 18 of the 19 countries with remittances
+          above 10% of GDP move above the diagonal in the paper's remittance
+          analysis.
+        </p>
+        <figure class="interactive-figure">
+          <div
+            id="plot-remittance"
+            class="interactive-plot"
+            aria-label="Interactive scatter plot comparing remittance-accounted exposure against direct exposure."
+          ></div>
+          <img
+            class="plot-fallback"
+            src="assets/remittance_bilateral.png"
+            alt="Scatter plot comparing remittance-accounted national AI exposure against direct national AI exposure."
+          />
+          <figcaption>
+            Figure 5. Remittance-accounted vs. direct national AI exposure for
+            countries with remittance of at least 10% of GDP.
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr />
+
+      <section id="citation">
+        <h2>Citation</h2>
+        <button class="copy-button" type="button" data-copy-target="bibtex">Copy</button>
+        <pre id="bibtex"><code>@article{murugan2026jagged,
+  title={The Jagged Global Economy: Frontier AI Unevenly Exposes National Economies},
+  author={Murugan, Arul and Aguirre, Tomás and Nagaraj, Abhishek and Bommasani, Rishi},
+  year={2026},
+  note={Preprint}
+}</code></pre>
+      </section>
+
+      <footer>
+        © 2026 Murugan, Aguirre, Nagaraj, Bommasani
+      </footer>
+    </main>
+
+    <script>
+      document.querySelectorAll("[data-copy-target]").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const target = document.getElementById(button.dataset.copyTarget);
+          if (!target) return;
+          await navigator.clipboard.writeText(target.innerText.trim());
+          button.textContent = "Copied";
+          window.setTimeout(() => {
+            button.textContent = "Copy";
+          }, 1400);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+outcome_key,outcome_label,dependent_var,n_countries,predictor_set,includes_wc,includes_log_gni,includes_exposure,r2
+anthropic,Anthropic Claude,log10(Claude usage / 100k WAP),114,Intercept only,False,False,False,0.0
+anthropic,Anthropic Claude,log10(Claude usage / 100k WAP),114,WC,True,False,False,0.7918126207464891
+anthropic,Anthropic Claude,log10(Claude usage / 100k WAP),114,log GNI,False,True,False,0.8365852032050415
+anthropic,Anthropic Claude,log10(Claude usage / 100k WAP),114,Exposure,False,False,True,0.7692295193731337
+anthropic,Anthropic Claude,log10(Claude usage / 100k WAP),114,WC + log GNI,True,True,False,0.8633744514187949
+anthropic,Anthropic Claude,log10(Claude usage / 100k WAP),114,WC + Exposure,True,False,True,0.7989616212706846
+anthropic,Anthropic Claude,log10(Claude usage / 100k WAP),114,log GNI + Exposure,False,True,True,0.8536953954176913
+anthropic,Anthropic Claude,log10(Claude usage / 100k WAP),114,WC + log GNI + Exposure,True,True,True,0.863376018904762
+openai,OpenAI Signals,OpenAI rank percentile,88,Intercept only,False,False,False,0.0
+openai,OpenAI Signals,OpenAI rank percentile,88,WC,True,False,False,0.8277069597995603
+openai,OpenAI Signals,OpenAI rank percentile,88,log GNI,False,True,False,0.8739559856375467
+openai,OpenAI Signals,OpenAI rank percentile,88,Exposure,False,False,True,0.8118469574458638
+openai,OpenAI Signals,OpenAI rank percentile,88,WC + log GNI,True,True,False,0.9077900233735939
+openai,OpenAI Signals,OpenAI rank percentile,88,WC + Exposure,True,False,True,0.8385439926300562
+openai,OpenAI Signals,OpenAI rank percentile,88,log GNI + Exposure,False,True,True,0.8907441538637888
+openai,OpenAI Signals,OpenAI rank percentile,88,WC + log GNI + Exposure,True,True,True,0.9085834726344143
+microsoft,Microsoft AI Diffusion,MS GenAI adoption H2 2025 (% WAP),106,Intercept only,False,False,False,0.0
+microsoft,Microsoft AI Diffusion,MS GenAI adoption H2 2025 (% WAP),106,WC,True,False,False,0.6468157779955652
+microsoft,Microsoft AI Diffusion,MS GenAI adoption H2 2025 (% WAP),106,log GNI,False,True,False,0.5859253839707852
+microsoft,Microsoft AI Diffusion,MS GenAI adoption H2 2025 (% WAP),106,Exposure,False,False,True,0.6053219311140685
+microsoft,Microsoft AI Diffusion,MS GenAI adoption H2 2025 (% WAP),106,WC + log GNI,True,True,False,0.6628175653500689
+microsoft,Microsoft AI Diffusion,MS GenAI adoption H2 2025 (% WAP),106,WC + Exposure,True,False,True,0.6480416655871373
+microsoft,Microsoft AI Diffusion,MS GenAI adoption H2 2025 (% WAP),106,log GNI + Exposure,False,True,True,0.6315265128746252
+microsoft,Microsoft AI Diffusion,MS GenAI adoption H2 2025 (% WAP),106,WC + log GNI + Exposure,True,True,True,0.6629560904794887

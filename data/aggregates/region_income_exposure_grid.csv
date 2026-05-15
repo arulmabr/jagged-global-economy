@@ -1,0 +1,29 @@
+region,income_group,n_countries,macro_exposure,labor_force_weighted_exposure,total_employment_k,covered_population_2024,included_country_codes,n_wb_economies,wb_population_2024,country_coverage_share,population_coverage_share_2024,missing_exposure_country_codes,coverage_note
+East Asia & Pacific,Low income,0,,,0.0,0.0,,1,26498823.0,0.0,0.0,PRK,No measured exposure countries in this World Bank group
+East Asia & Pacific,Lower middle income,11,0.22187272727272725,0.23433443727505737,140535.8,310111860.0,FSM;KHM;KIR;LAO;MMR;PHL;PNG;SLB;TLS;VNM;VUT,11,310111860.0,1.0,1.0,,11 of 11 World Bank economies covered by measured exposure
+East Asia & Pacific,Upper middle income,8,0.26068749999999996,0.2438782117596386,180163.69999999998,359978902.0,FJI;IDN;MHL;MNG;THA;TON;TUV;WSM,10,1804511575.0,0.8,0.19948827538000138,CHN;MYS,8 of 10 World Bank economies covered by measured exposure
+East Asia & Pacific,High income,5,0.32148,0.31844738062117733,82958.6,157689459.0,AUS;BRN;JPN;PLW;SGP,16,223784337.0,0.3125,0.7046492221660714,ASM;GUM;HKG;KOR;MAC;MNP;NCL;NRU;NZL;PYF;TWN,5 of 16 World Bank economies covered by measured exposure
+Europe & Central Asia,Low income,0,,,0.0,0.0,,0,0.0,,,,No World Bank economies in this region-income cell
+Europe & Central Asia,Lower middle income,2,0.23085,0.23149297872779415,4846.700000000001,17812795.0,KGZ;TJK,3,54174654.0,0.6666666666666666,0.32880311519848376,UZB,2 of 3 World Bank economies covered by measured exposure
+Europe & Central Asia,Upper middle income,9,0.27268888888888887,0.2699460513258051,55321.1,114520941.0,ALB;BIH;BLR;GEO;KOS;MKD;MNE;SRB;TUR,15,196106867.0,0.6,0.5839721104717868,ARM;AZE;KAZ;MDA;TKM;UKR,9 of 15 World Bank economies covered by measured exposure
+Europe & Central Asia,High income,29,0.3166241379310345,0.3145857601403645,330454.1,671574984.0,AUT;BEL;BGR;CHE;CYP;CZE;DEU;DNK;ESP;EST;FIN;FRA;GBR;GRC;HRV;HUN;IRL;ITA;LTU;LUX;LVA;NLD;NOR;POL;PRT;ROU;RUS;SVN;SWE,40,677981687.0,0.725,0.9905503303070781,AND;CHI;FRO;GIB;GRL;IMN;ISL;LIE;MCO;SMR;SVK,29 of 40 World Bank economies covered by measured exposure
+Latin America & Caribbean,Low income,0,,,0.0,0.0,,0,0.0,,,,No World Bank economies in this region-income cell
+Latin America & Caribbean,Lower middle income,2,0.23635,0.23761535457727018,10858.0,23239018.0,BOL;HND,4,41927715.0,0.5,0.5542638801088969,HTI;NIC,2 of 4 World Bank economies covered by measured exposure
+Latin America & Caribbean,Upper middle income,13,0.258176923076923,0.26724279017350927,243842.9,544837998.0,ARG;BLZ;BRA;COL;CUB;DOM;ECU;GTM;JAM;MEX;PER;SLV;SUR,18,552230923.0,0.7222222222222222,0.9866126203874317,DMA;GRD;LCA;PRY;VCT,13 of 18 World Bank economies covered by measured exposure
+Latin America & Caribbean,High income,7,0.2687,0.271997042359914,15488.7,34311683.0,BHS;BRB;CHL;CRI;GUY;PAN;URY,19,39622207.0,0.3684210526315789,0.8659710197364826,ABW;ATG;CUW;CYM;KNA;MAF;PRI;SXM;TCA;TTO;VGB;VIR,7 of 19 World Bank economies covered by measured exposure
+"Middle East, North Africa, Afghanistan & Pakistan",Low income,1,0.1893,0.1893,7211.3,42647492.0,AFG,3,107903416.0,0.3333333333333333,0.3952376447470393,SYR;YEM,1 of 3 World Bank economies covered by measured exposure
+"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,6,0.24795,0.23431960046094794,117930.9,402732521.0,EGY;JOR;LBN;PAK;PSE;TUN,8,441982416.0,0.75,0.9111957996989636,DJI;MAR,6 of 8 World Bank economies covered by measured exposure
+"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,2,0.24830000000000002,0.25105146517692734,32095.1,137609753.0,IRN;IRQ,4,191805084.0,0.5,0.717445805555394,DZA;LBY,2 of 4 World Bank economies covered by measured exposure
+"Middle East, North Africa, Afghanistan & Pakistan",High income,2,0.30695,0.2995388124877212,11198.2,20960800.0,ARE;ISR,8,71455220.0,0.25,0.29334176005615825,BHR;KWT;MLT;OMN;QAT;SAU,2 of 8 World Bank economies covered by measured exposure
+North America,Low income,0,,,0.0,0.0,,0,0.0,,,,No World Bank economies in this region-income cell
+North America,Lower middle income,0,,,0.0,0.0,,0,0.0,,,,No World Bank economies in this region-income cell
+North America,Upper middle income,0,,,0.0,0.0,,0,0.0,,,,No World Bank economies in this region-income cell
+North America,High income,1,0.3225,0.3225,163492.9,340110988.0,USA,3,381464223.0,0.3333333333333333,0.8915934116316853,BMU;CAN,1 of 3 World Bank economies covered by measured exposure
+South Asia,Low income,0,,,0.0,0.0,,0,0.0,,,,No World Bank economies in this region-income cell
+South Asia,Lower middle income,5,0.22934000000000002,0.2172772393998004,566145.0,1676856733.0,BGD;BTN;IND;LKA;NPL,5,1676856733.0,1.0,1.0,,5 of 5 World Bank economies covered by measured exposure
+South Asia,Upper middle income,1,0.2797,0.2797,189.2,527799.0,MDV,1,527799.0,1.0,1.0,,1 of 1 World Bank economies covered by measured exposure
+South Asia,High income,0,,,0.0,0.0,,0,0.0,,,,No World Bank economies in this region-income cell
+Sub-Saharan Africa,Low income,16,0.20140624999999998,0.19050969425313813,120763.3,443484218.0,BDI;BFA;COD;GMB;GNB;MDG;MLI;MOZ;MWI;NER;RWA;SDN;SLE;SOM;TGO;UGA,21,490205859.0,0.7619047619047619,0.9046897540243394,CAF;ERI;LBR;SSD;TCD,16 of 21 World Bank economies covered by measured exposure
+Sub-Saharan Africa,Lower middle income,12,0.20999166666666666,0.19911909103429004,100930.1,300223213.0,AGO;BEN;CIV;GHA;GIN;KEN;LSO;STP;SWZ;TZA;ZMB;ZWE,19,595927534.0,0.631578947368421,0.5037914777738731,CMR;COG;COM;MRT;NAM;NGA;SEN,12 of 19 World Bank economies covered by measured exposure
+Sub-Saharan Africa,Upper middle income,3,0.24589999999999998,0.24927732864674865,1536.3,4291795.0,BWA;CPV;MUS,6,72730450.0,0.5,0.059009603267957234,GAB;GNQ;ZAF,3 of 6 World Bank economies covered by measured exposure
+Sub-Saharan Africa,High income,0,,,0.0,0.0,,1,121354.0,0.0,0.0,SYC,No measured exposure countries in this World Bank group

@@ -1,0 +1,203 @@
+country_code,country_name,weighted_exposure,outcome_value,source,source_key,metric_label,is_log_scale
+LUX,Luxembourg,0.3715,111.61049653792,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+SGP,Singapore,0.3676,122.01085605958,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+NLD,Netherlands,0.3391,88.74045949561,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+CHE,Switzerland,0.3349,107.01478785386,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+SWE,Sweden,0.334,74.22333672871,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+ISR,Israel,0.3333,114.75452267579,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+DEU,Germany,0.333,57.63124941121,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+IRL,Ireland,0.3307,73.06720651905,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+GBR,United Kingdom of Great Britain and Northern Ireland,0.3294,81.83557544801,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+DNK,Denmark,0.3239,66.91006069378,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BEL,Belgium,0.3231,63.85894339724,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+USA,United States of America,0.3225,100.98150717229,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+CYP,Cyprus,0.3219,72.33545807675999,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+AUS,Australia,0.3217,90.74855922541,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+AUT,Austria,0.3211,57.78093135638,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+NOR,Norway,0.3196,72.279660189,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+FRA,France,0.3193,76.91897400194,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+MNE,Montenegro,0.3181,42.05172362005,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+POL,Poland,0.3165,39.15197083493,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+JPN,Japan,0.3161,39.96893323825,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+GRC,Greece,0.3154,32.28963372557,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+PRT,Portugal,0.3139,65.69751646687,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+ITA,Italy,0.313,46.39474781438,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+EST,Estonia,0.3115,85.64058230972,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+HRV,Croatia,0.3107,44.58193740597,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+FIN,Finland,0.3089,59.16012249895999,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+LTU,Lithuania,0.3088,60.98082905218,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+HUN,Hungary,0.3086,26.66009256086,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BRN,Brunei Darussalam,0.3071,21.51958132459,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+LVA,Latvia,0.3042,60.91101694915,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+SVN,Slovenia,0.3041,56.57222659101,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+CZE,Czechia,0.3016,43.62818123956,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+ESP,Spain,0.3011,48.60173975583,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+ARG,Argentina,0.2937,16.53380474853,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BGR,Bulgaria,0.2924,38.34439227315,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+MUS,Mauritius,0.2894,35.34214855889,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+KOS,Kosovo,0.2879,9.270312863599644,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BRB,Barbados,0.2864,42.77685985766,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+MKD,North Macedonia,0.2862,34.94200740119,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+SRB,Serbia,0.2847,39.58912130463,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BHS,Bahamas,0.2824,30.48045706508,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+URY,Uruguay,0.2807,26.66731423719,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+ARE,United Arab Emirates,0.2806,52.66221254509,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+MDV,Maldives,0.2797,39.00965488958,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+CHL,Chile,0.2786,19.97403375611,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BRA,Brazil,0.2783,17.39324091632,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+CRI,Costa Rica,0.274,21.81786323421,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+ROU,Romania,0.2717,31.258657192339996,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+SUR,Suriname,0.2703,9.012149800902638,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+JAM,Jamaica,0.2662,17.73411074277,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+TUR,Türkiye,0.2652,15.707178723659998,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+DOM,Dominican Republic,0.264,16.609177638749998,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+LBN,Lebanon,0.2639,19.31324377289,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+MEX,Mexico,0.2638,11.08832204787,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+MNG,Mongolia,0.263,11.00069671079,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BIH,Bosnia and Herzegovina,0.2628,19.23562320245,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+COL,Colombia,0.2628,18.67343920337,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+FJI,Fiji,0.2585,7.942992011619462,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+JOR,Jordan,0.2547,9.108837789763216,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+EGY,Egypt,0.2543,6.254621805983024,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+PSE,Palestine (State of),0.2534,8.426055184480182,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+PHL,Philippines,0.2523,12.02229792344,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+SLV,El Salvador,0.2511,11.17789609874,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+THA,Thailand,0.25,12.41236029106,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+GUY,Guyana,0.247,8.446516656530846,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+SWZ,Eswatini,0.2438,5.416950411688232,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+PER,Peru,0.2432,14.67318306488,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+IRQ,Iraq,0.2428,9.338632271156817,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BLZ,Belize,0.2425,18.579020429910003,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BTN,Bhutan,0.2422,7.1351750206223965,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+IDN,Indonesia,0.2419,6.572969909345632,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BOL,Bolivia (Plurinational State of),0.2413,9.082379049346883,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+NER,Niger,0.2412,0.7354167763420647,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+KGZ,Kyrgyzstan,0.2401,10.0501098477,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+CIV,Côte d'Ivoire,0.2397,5.784214877599032,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+LKA,Sri Lanka,0.2373,16.97939535479,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+GEO,Georgia,0.237,56.69679504665,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+PNG,Papua New Guinea,0.2364,0.7797147023903953,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+TUN,Tunisia,0.2364,22.69534364134,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+TGO,Togo,0.2353,5.432692881245188,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+GTM,Guatemala,0.2337,6.272660413035033,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+GMB,Gambia,0.2337,1.2786178652323985,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+NPL,Nepal,0.2326,8.210162750926987,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+PAN,Panama,0.2318,18.82737453104,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+HND,Honduras,0.2314,5.21863299401791,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+ALB,Albania,0.2302,21.18943353581,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BWA,Botswana,0.2282,9.196225073880484,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BEN,Benin,0.2272,6.948147450186095,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+GIN,Guinea,0.2271,1.3398111986779233,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+VNM,Viet Nam,0.2253,9.219600174040789,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+PAK,Pakistan,0.225,5.8644147709446495,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+MWI,Malawi,0.2225,1.009743125420438,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+ECU,Ecuador,0.2222,9.73983161989154,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+TJK,Tajikistan,0.2216,2.1442374957450285,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+KHM,Cambodia,0.2208,4.134044306332152,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+CPV,Cabo Verde,0.2201,10.99248001623,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+GHA,Ghana,0.22,7.872436744922723,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BGD,Bangladesh,0.218,2.152055840387568,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+IND,India,0.2166,6.2251544911733,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+TLS,Timor-Leste,0.2076,2.221484325674279,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+AGO,Angola,0.2062,1.8747707155414892,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+LAO,Lao People's Democratic Republic,0.2054,3.3195453645512862,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+SLE,Sierra Leone,0.2047,1.1636734290556632,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+KEN,Kenya,0.1988,9.825919326906275,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BFA,Burkina Faso,0.1977,3.3255728987367643,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+ZWE,Zimbabwe,0.1918,3.9193752039536753,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+ZMB,Zambia,0.1872,2.6526535820107644,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+RWA,Rwanda,0.1862,6.0211622348403795,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+UGA,Uganda,0.182,1.768450902221281,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+LSO,Lesotho,0.1748,1.874451983135486,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+TZA,"Tanzania, United Republic of",0.1733,1.3186927348633977,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+MDG,Madagascar,0.1662,2.809898525016063,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+MOZ,Mozambique,0.1618,1.2312439142349416,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+BDI,Burundi,0.144,0.5935584340741392,Anthropic Claude,anthropic,Claude usage / 100k WAP (log),True
+SGP,Singapore,0.3676,1.0,OpenAI Signals,signals,OpenAI rank percentile,False
+NLD,Netherlands,0.3391,0.9914529914529916,OpenAI Signals,signals,OpenAI rank percentile,False
+CHE,Switzerland,0.3349,0.9743589743589745,OpenAI Signals,signals,OpenAI rank percentile,False
+SWE,Sweden,0.334,0.9230769230769232,OpenAI Signals,signals,OpenAI rank percentile,False
+ISR,Israel,0.3333,0.9829059829059827,OpenAI Signals,signals,OpenAI rank percentile,False
+DEU,Germany,0.333,0.8974358974358975,OpenAI Signals,signals,OpenAI rank percentile,False
+IRL,Ireland,0.3307,0.8461538461538461,OpenAI Signals,signals,OpenAI rank percentile,False
+GBR,United Kingdom of Great Britain and Northern Ireland,0.3294,0.7606837606837606,OpenAI Signals,signals,OpenAI rank percentile,False
+DNK,Denmark,0.3239,0.8888888888888888,OpenAI Signals,signals,OpenAI rank percentile,False
+BEL,Belgium,0.3231,0.9487179487179488,OpenAI Signals,signals,OpenAI rank percentile,False
+USA,United States of America,0.3225,0.7777777777777778,OpenAI Signals,signals,OpenAI rank percentile,False
+AUS,Australia,0.3217,0.905982905982906,OpenAI Signals,signals,OpenAI rank percentile,False
+AUT,Austria,0.3211,0.8803418803418803,OpenAI Signals,signals,OpenAI rank percentile,False
+NOR,Norway,0.3196,0.9316239316239316,OpenAI Signals,signals,OpenAI rank percentile,False
+FRA,France,0.3193,0.8632478632478633,OpenAI Signals,signals,OpenAI rank percentile,False
+POL,Poland,0.3165,0.7948717948717949,OpenAI Signals,signals,OpenAI rank percentile,False
+JPN,Japan,0.3161,0.6324786324786325,OpenAI Signals,signals,OpenAI rank percentile,False
+GRC,Greece,0.3154,0.8205128205128205,OpenAI Signals,signals,OpenAI rank percentile,False
+PRT,Portugal,0.3139,0.8547008547008547,OpenAI Signals,signals,OpenAI rank percentile,False
+ITA,Italy,0.313,0.6752136752136753,OpenAI Signals,signals,OpenAI rank percentile,False
+FIN,Finland,0.3089,0.9572649572649572,OpenAI Signals,signals,OpenAI rank percentile,False
+HUN,Hungary,0.3086,0.7264957264957265,OpenAI Signals,signals,OpenAI rank percentile,False
+CZE,Czechia,0.3016,0.8717948717948718,OpenAI Signals,signals,OpenAI rank percentile,False
+ESP,Spain,0.3011,0.8376068376068376,OpenAI Signals,signals,OpenAI rank percentile,False
+ARG,Argentina,0.2937,0.6581196581196581,OpenAI Signals,signals,OpenAI rank percentile,False
+BGR,Bulgaria,0.2924,0.7521367521367521,OpenAI Signals,signals,OpenAI rank percentile,False
+SRB,Serbia,0.2847,0.7863247863247863,OpenAI Signals,signals,OpenAI rank percentile,False
+ARE,United Arab Emirates,0.2806,0.9658119658119658,OpenAI Signals,signals,OpenAI rank percentile,False
+CHL,Chile,0.2786,0.6837606837606838,OpenAI Signals,signals,OpenAI rank percentile,False
+BRA,Brazil,0.2783,0.6068376068376069,OpenAI Signals,signals,OpenAI rank percentile,False
+CRI,Costa Rica,0.274,0.6923076923076923,OpenAI Signals,signals,OpenAI rank percentile,False
+ROU,Romania,0.2717,0.7008547008547008,OpenAI Signals,signals,OpenAI rank percentile,False
+TUR,Türkiye,0.2652,0.6153846153846154,OpenAI Signals,signals,OpenAI rank percentile,False
+DOM,Dominican Republic,0.264,0.5811965811965811,OpenAI Signals,signals,OpenAI rank percentile,False
+LBN,Lebanon,0.2639,0.7094017094017093,OpenAI Signals,signals,OpenAI rank percentile,False
+MEX,Mexico,0.2638,0.4957264957264957,OpenAI Signals,signals,OpenAI rank percentile,False
+COL,Colombia,0.2628,0.5726495726495726,OpenAI Signals,signals,OpenAI rank percentile,False
+SOM,Somalia,0.2586,0.3162393162393162,OpenAI Signals,signals,OpenAI rank percentile,False
+JOR,Jordan,0.2547,0.6239316239316239,OpenAI Signals,signals,OpenAI rank percentile,False
+EGY,Egypt,0.2543,0.4444444444444444,OpenAI Signals,signals,OpenAI rank percentile,False
+PSE,Palestine (State of),0.2534,0.5641025641025641,OpenAI Signals,signals,OpenAI rank percentile,False
+PHL,Philippines,0.2523,0.5384615384615384,OpenAI Signals,signals,OpenAI rank percentile,False
+SLV,El Salvador,0.2511,0.4700854700854701,OpenAI Signals,signals,OpenAI rank percentile,False
+THA,Thailand,0.25,0.4786324786324786,OpenAI Signals,signals,OpenAI rank percentile,False
+PER,Peru,0.2432,0.6666666666666667,OpenAI Signals,signals,OpenAI rank percentile,False
+IRQ,Iraq,0.2428,0.4529914529914529,OpenAI Signals,signals,OpenAI rank percentile,False
+IDN,Indonesia,0.2419,0.4273504273504274,OpenAI Signals,signals,OpenAI rank percentile,False
+BOL,Bolivia (Plurinational State of),0.2413,0.5042735042735043,OpenAI Signals,signals,OpenAI rank percentile,False
+NER,Niger,0.2412,0.0256410256410256,OpenAI Signals,signals,OpenAI rank percentile,False
+KGZ,Kyrgyzstan,0.2401,0.5555555555555556,OpenAI Signals,signals,OpenAI rank percentile,False
+CIV,Côte d'Ivoire,0.2397,0.2649572649572649,OpenAI Signals,signals,OpenAI rank percentile,False
+LKA,Sri Lanka,0.2373,0.4188034188034187,OpenAI Signals,signals,OpenAI rank percentile,False
+PNG,Papua New Guinea,0.2364,0.1367521367521367,OpenAI Signals,signals,OpenAI rank percentile,False
+TUN,Tunisia,0.2364,0.5897435897435898,OpenAI Signals,signals,OpenAI rank percentile,False
+TGO,Togo,0.2353,0.1623931623931623,OpenAI Signals,signals,OpenAI rank percentile,False
+GTM,Guatemala,0.2337,0.3931623931623932,OpenAI Signals,signals,OpenAI rank percentile,False
+NPL,Nepal,0.2326,0.4102564102564102,OpenAI Signals,signals,OpenAI rank percentile,False
+HND,Honduras,0.2314,0.4017094017094017,OpenAI Signals,signals,OpenAI rank percentile,False
+MMR,Myanmar,0.2293,0.1794871794871795,OpenAI Signals,signals,OpenAI rank percentile,False
+BEN,Benin,0.2272,0.2478632478632478,OpenAI Signals,signals,OpenAI rank percentile,False
+GIN,Guinea,0.2271,0.094017094017094,OpenAI Signals,signals,OpenAI rank percentile,False
+VNM,Viet Nam,0.2253,0.5470085470085471,OpenAI Signals,signals,OpenAI rank percentile,False
+PAK,Pakistan,0.225,0.3504273504273504,OpenAI Signals,signals,OpenAI rank percentile,False
+MWI,Malawi,0.2225,0.0854700854700855,OpenAI Signals,signals,OpenAI rank percentile,False
+ECU,Ecuador,0.2222,0.641025641025641,OpenAI Signals,signals,OpenAI rank percentile,False
+TJK,Tajikistan,0.2216,0.3076923076923077,OpenAI Signals,signals,OpenAI rank percentile,False
+KHM,Cambodia,0.2208,0.376068376068376,OpenAI Signals,signals,OpenAI rank percentile,False
+GHA,Ghana,0.22,0.3333333333333333,OpenAI Signals,signals,OpenAI rank percentile,False
+BGD,Bangladesh,0.218,0.3418803418803419,OpenAI Signals,signals,OpenAI rank percentile,False
+IND,India,0.2166,0.3589743589743589,OpenAI Signals,signals,OpenAI rank percentile,False
+SDN,Sudan,0.2128,0.0683760683760683,OpenAI Signals,signals,OpenAI rank percentile,False
+AGO,Angola,0.2062,0.188034188034188,OpenAI Signals,signals,OpenAI rank percentile,False
+LAO,Lao People's Democratic Republic,0.2054,0.282051282051282,OpenAI Signals,signals,OpenAI rank percentile,False
+SLE,Sierra Leone,0.2047,0.1282051282051282,OpenAI Signals,signals,OpenAI rank percentile,False
+MLI,Mali,0.2001,0.0598290598290598,OpenAI Signals,signals,OpenAI rank percentile,False
+KEN,Kenya,0.1988,0.3675213675213675,OpenAI Signals,signals,OpenAI rank percentile,False
+BFA,Burkina Faso,0.1977,0.1196581196581196,OpenAI Signals,signals,OpenAI rank percentile,False
+COD,"Congo, Democratic Republic of the",0.1969,0.0512820512820513,OpenAI Signals,signals,OpenAI rank percentile,False
+ZWE,Zimbabwe,0.1918,0.1538461538461538,OpenAI Signals,signals,OpenAI rank percentile,False
+AFG,Afghanistan,0.1893,0.2222222222222222,OpenAI Signals,signals,OpenAI rank percentile,False
+ZMB,Zambia,0.1872,0.1965811965811965,OpenAI Signals,signals,OpenAI rank percentile,False
+RWA,Rwanda,0.1862,0.2735042735042735,OpenAI Signals,signals,OpenAI rank percentile,False
+UGA,Uganda,0.182,0.1111111111111111,OpenAI Signals,signals,OpenAI rank percentile,False
+ETH,Ethiopia,0.1767,0.0769230769230768,OpenAI Signals,signals,OpenAI rank percentile,False
+TZA,"Tanzania, United Republic of",0.1733,0.1452991452991453,OpenAI Signals,signals,OpenAI rank percentile,False
+MDG,Madagascar,0.1662,0.2136752136752137,OpenAI Signals,signals,OpenAI rank percentile,False
+MOZ,Mozambique,0.1618,0.1709401709401709,OpenAI Signals,signals,OpenAI rank percentile,False
+BDI,Burundi,0.144,0.0427350427350426,OpenAI Signals,signals,OpenAI rank percentile,False

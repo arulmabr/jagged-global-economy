@@ -1,0 +1,7 @@
+country_code,country_name,weighted_exposure,total_employment_k,wb_country_code,wb_name,region,income_group,population_2024,exclusion_reason
+ETH,Ethiopia,0.1767,36491.5,ETH,Ethiopia,Sub-Saharan Africa,,132059767.0,missing_world_bank_income_group
+COK,Cook Islands,0.29,8.4,,,,,,not_in_world_bank_classification_file
+MSR,Montserrat,0.2904,2.5,,,,,,not_in_world_bank_classification_file
+NIU,Niue,0.3137,0.7,,,,,,not_in_world_bank_classification_file
+TKL,Tokelau,0.2727,0.4,,,,,,not_in_world_bank_classification_file
+WLF,Wallis and Futuna,0.2907,3.3,,,,,,not_in_world_bank_classification_file

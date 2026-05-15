@@ -1,0 +1,6 @@
+status,n_countries
+Included in baseline sample (medium/high reliability),141
+Observed but excluded for low reliability,6
+Excluded: TOTAL/NEC only,2
+Excluded: ISCO-88 only,9
+Excluded: major-group only,9
