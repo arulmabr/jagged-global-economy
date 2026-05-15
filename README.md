@@ -27,8 +27,6 @@ python3.11 scripts/build_interactive_data.py
 python3.11 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Then open `http://127.0.0.1:8765/`.
-
 To reproduce paper-facing release outputs:
 
 ```bash
