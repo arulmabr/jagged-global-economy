@@ -1,4 +1,4 @@
-PYTHON ?= python3
+PYTHON ?= python3.11
 DATA_DIR ?= ../data
 OUT_DIR ?= outputs
 
