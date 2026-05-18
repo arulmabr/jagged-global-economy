@@ -267,9 +267,9 @@
       xref: "paper",
       yref: "paper",
       x: options.x ?? 1,
-      y: options.y ?? -0.16,
+      y: options.y ?? 0.02,
       xanchor: options.xanchor || "right",
-      yanchor: options.yanchor || "top",
+      yanchor: options.yanchor || "bottom",
       showarrow: false,
       align: options.align || "right",
       text: SOURCE_TEXT,
@@ -328,7 +328,7 @@
         tickformat: ".2f",
       }),
       yaxis: adoptionAxis(adoptionYOptions(series, yTitle)),
-      annotations: [adoptionAnnotation(series), sourceAnnotation({ y: -0.25, size: 9 })],
+      annotations: [adoptionAnnotation(series), sourceAnnotation({ size: 9 })],
       showlegend: false,
     });
   }
@@ -503,7 +503,7 @@
             borderpad: 6,
             text: r2 ? `White-collar share R² = ${r2.toFixed(2)}` : "",
           },
-          sourceAnnotation({ y: -0.16 }),
+          sourceAnnotation(),
         ],
         showlegend: false,
       })
@@ -593,7 +593,7 @@
         margin: { l: 64, r: 72, t: 28, b: 72 },
         xaxis: { title: "Direct national AI exposure", range: [min, max] },
         yaxis: { title: "Remittance-accounted national AI exposure", range: [min, max] },
-        annotations: [sourceAnnotation({ y: -0.16 })],
+        annotations: [sourceAnnotation()],
         showlegend: false,
       })
     );
