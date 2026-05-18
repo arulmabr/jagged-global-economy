@@ -4,10 +4,48 @@
   const RED = "#aa4a44";
   const GRID = "#e8eaed";
   const AXIS = "#9aa0a6";
-  const SOURCE_TEXT = "Source: Murugan et al. (2026), The Jagged Global Economy";
+  const SOURCE_TEXT = "Source: The Jagged Global Economy (2026)";
   const ADOPTION_PLOT_HEIGHT = 340;
   const ADOPTION_X_RANGE = [0.14, 0.38];
   const ADOPTION_X_TICKS = [0.15, 0.2, 0.25, 0.3, 0.35];
+  const EXPORT_OPTIONS = {
+    "plot-national-exposure": {
+      filename: "jagged-global-economy-national-exposure-map",
+      label: "national exposure map",
+      width: 1400,
+      height: 850,
+    },
+    "plot-white-collar": {
+      filename: "jagged-global-economy-white-collar-exposure",
+      label: "white-collar exposure chart",
+      width: 1200,
+      height: 760,
+    },
+    "plot-adoption-anthropic": {
+      filename: "jagged-global-economy-anthropic-adoption",
+      label: "Anthropic adoption chart",
+      width: 900,
+      height: 620,
+    },
+    "plot-adoption-openai": {
+      filename: "jagged-global-economy-openai-adoption",
+      label: "OpenAI adoption chart",
+      width: 900,
+      height: 620,
+    },
+    "plot-adoption-microsoft": {
+      filename: "jagged-global-economy-microsoft-adoption",
+      label: "Microsoft adoption chart",
+      width: 900,
+      height: 620,
+    },
+    "plot-remittance": {
+      filename: "jagged-global-economy-remittance-exposure",
+      label: "remittance exposure chart",
+      width: 1200,
+      height: 760,
+    },
+  };
   const ADOPTION_MARKER = {
     color: BLUE,
     size: 8,
@@ -15,6 +53,7 @@
     line: { color: "white", width: 0.5 },
   };
   const ADOPTION_FIT_LINE = { color: RED, width: 2 };
+  let plotlyApi = null;
 
   const config = {
     responsive: true,
@@ -74,14 +113,89 @@
     if (figure) figure.classList.add("plot-ready");
   }
 
+  function getPlotly() {
+    if (plotlyApi) return plotlyApi;
+    if (window.Plotly) return window.Plotly;
+    if (typeof Plotly !== "undefined") return Plotly;
+    return null;
+  }
+
+  async function downloadPlotImage(el, options) {
+    const plotly = getPlotly();
+    if (!plotly) throw new Error("Plotly export API is unavailable");
+    if (typeof plotly.downloadImage === "function") {
+      return plotly.downloadImage(el, options);
+    }
+    if (typeof plotly.toImage !== "function") {
+      throw new Error("Plotly image export is unavailable");
+    }
+
+    const imageUrl = await plotly.toImage(el, options);
+    const link = document.createElement("a");
+    link.href = imageUrl;
+    link.download = `${options.filename}.${options.format}`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    return undefined;
+  }
+
+  function addDownloadControls(id, el) {
+    const figure = el.closest(".interactive-figure");
+    const target = el.parentElement;
+    const options = EXPORT_OPTIONS[id];
+    if (!figure || !target || !options || target.querySelector(".figure-downloads")) return;
+
+    const controls = document.createElement("div");
+    controls.className = "figure-downloads";
+
+    const label = document.createElement("span");
+    label.textContent = "Download";
+    controls.append(label);
+
+    ["png", "svg"].forEach((format) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = format.toUpperCase();
+      button.title = `Download ${options.label} as ${format.toUpperCase()}`;
+      button.addEventListener("click", async () => {
+        const previous = button.textContent;
+        button.disabled = true;
+        button.textContent = "...";
+        try {
+          await downloadPlotImage(el, {
+            format,
+            filename: options.filename,
+            width: options.width,
+            height: options.height,
+            scale: 2,
+          });
+        } catch (error) {
+          console.warn("Figure export failed", error);
+          button.textContent = "Retry";
+          return;
+        } finally {
+          button.disabled = false;
+        }
+        button.textContent = previous;
+      });
+      controls.append(button);
+    });
+
+    target.insertBefore(controls, el);
+  }
+
   async function plot(id, traces, layout) {
-    if (!window.Plotly) throw new Error("Plotly failed to load");
+    const plotly = getPlotly();
+    if (!plotly) throw new Error("Plotly failed to load");
+    plotlyApi = plotly;
     const el = document.getElementById(id);
     if (!el) throw new Error(`Missing plot element: ${id}`);
     const figure = el.closest(".interactive-figure");
     if (figure) figure.classList.add("plot-rendering");
-    await Plotly.newPlot(el, traces, layout, config);
+    await plotly.newPlot(el, traces, layout, config);
     if (figure) figure.classList.remove("plot-rendering");
+    addDownloadControls(id, el);
     markReady(id);
     return el;
   }

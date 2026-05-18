@@ -196,6 +196,40 @@ figure {
   background: var(--soft);
 }
 
+.figure-downloads {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.72rem;
+}
+
+.figure-downloads button {
+  appearance: none;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 3px 7px;
+  background: white;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.figure-downloads button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.figure-downloads button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
 .plot-map {
   min-height: 640px;
 }
@@ -214,6 +248,10 @@ figure {
 .interactive-figure.plot-rendering .interactive-plot,
 .interactive-figure.plot-ready .interactive-plot {
   display: block;
+}
+
+.interactive-figure.plot-ready .figure-downloads {
+  display: flex;
 }
 
 .interactive-figure.plot-ready .plot-fallback {
