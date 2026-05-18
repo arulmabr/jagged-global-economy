@@ -4,6 +4,7 @@
   const RED = "#aa4a44";
   const GRID = "#e8eaed";
   const AXIS = "#9aa0a6";
+  const SOURCE_TEXT = "Source: Murugan et al. (2026), The Jagged Global Economy";
   const ADOPTION_PLOT_HEIGHT = 340;
   const ADOPTION_X_RANGE = [0.14, 0.38];
   const ADOPTION_X_TICKS = [0.15, 0.2, 0.25, 0.3, 0.35];
@@ -147,6 +148,27 @@
     };
   }
 
+  function sourceAnnotation(options = {}) {
+    return {
+      xref: "paper",
+      yref: "paper",
+      x: options.x ?? 1,
+      y: options.y ?? -0.16,
+      xanchor: options.xanchor || "right",
+      yanchor: options.yanchor || "top",
+      showarrow: false,
+      align: options.align || "right",
+      text: SOURCE_TEXT,
+      font: {
+        family: "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+        size: options.size || 10,
+        color: "#73777c",
+      },
+      bgcolor: "rgba(255,255,255,0.74)",
+      borderpad: 1,
+    };
+  }
+
   function adoptionYOptions(series, yTitle) {
     if (series.isLogScale) {
       return {
@@ -182,7 +204,7 @@
     return baseLayout({
       autosize: true,
       height: ADOPTION_PLOT_HEIGHT,
-      margin: { l: 64, r: 14, t: 38, b: 58 },
+      margin: { l: 64, r: 14, t: 38, b: 70 },
       title: { text: title, font: { size: 15 }, x: 0.5, xanchor: "center" },
       xaxis: adoptionAxis({
         title: "National AI exposure",
@@ -192,7 +214,7 @@
         tickformat: ".2f",
       }),
       yaxis: adoptionAxis(adoptionYOptions(series, yTitle)),
-      annotations: [adoptionAnnotation(series)],
+      annotations: [adoptionAnnotation(series), sourceAnnotation({ y: -0.25, size: 9 })],
       showlegend: false,
     });
   }
@@ -275,7 +297,7 @@
         },
       ],
       baseLayout({
-        margin: { l: 0, r: 0, t: 0, b: 4 },
+        margin: { l: 0, r: 0, t: 0, b: 8 },
         geo: {
           projection: { type: "natural earth" },
           showframe: false,
@@ -286,6 +308,16 @@
           countrycolor: "white",
           bgcolor: "white",
         },
+        annotations: [
+          sourceAnnotation({
+            x: 0.01,
+            y: 0.02,
+            xanchor: "left",
+            yanchor: "bottom",
+            align: "left",
+            size: 11,
+          }),
+        ],
       })
     );
     updateCountryInspector(explorer.USA || explorer[rows[0]?.countryCode]);
@@ -332,6 +364,7 @@
       "plot-white-collar",
       traces,
       baseLayout({
+        margin: { l: 64, r: 72, t: 28, b: 72 },
         xaxis: {
           title: "White-collar employment share (%)",
           ticksuffix: "%",
@@ -356,6 +389,7 @@
             borderpad: 6,
             text: r2 ? `White-collar share R² = ${r2.toFixed(2)}` : "",
           },
+          sourceAnnotation({ y: -0.16 }),
         ],
         showlegend: false,
       })
@@ -442,8 +476,10 @@
         },
       ],
       baseLayout({
+        margin: { l: 64, r: 72, t: 28, b: 72 },
         xaxis: { title: "Direct national AI exposure", range: [min, max] },
         yaxis: { title: "Remittance-accounted national AI exposure", range: [min, max] },
+        annotations: [sourceAnnotation({ y: -0.16 })],
         showlegend: false,
       })
     );

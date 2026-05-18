@@ -220,6 +220,10 @@ figure {
   display: none;
 }
 
+.interactive-figure.plot-ready .embedded-source {
+  display: none;
+}
+
 figure img {
   display: block;
   width: 100%;
