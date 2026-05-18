@@ -288,7 +288,7 @@ figcaption,
 
 .atlas-grid {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(280px, 0.76fr);
+  grid-template-columns: minmax(0, 1.55fr) minmax(380px, 0.95fr);
   gap: 24px;
   align-items: stretch;
 }
@@ -319,12 +319,12 @@ figcaption,
 
 .country-inspector {
   align-self: stretch;
-  padding: 18px;
+  padding: 22px;
   border: 1px solid var(--line);
-  background: #fbfbfc;
+  background: white;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.42;
+  font-size: 0.92rem;
+  line-height: 1.45;
 }
 
 .inspector-kicker,
@@ -339,14 +339,15 @@ figcaption,
 }
 
 .country-inspector h3 {
-  margin: 0 0 4px;
+  margin: 0 0 6px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
-  line-height: 1.12;
+  font-size: clamp(1.45rem, 2vw, 1.72rem);
+  line-height: 1.08;
 }
 
 .inspector-meta {
-  margin-bottom: 16px;
+  max-width: 34rem;
+  margin: 0 0 18px;
   color: var(--muted);
 }
 
@@ -354,50 +355,70 @@ figcaption,
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .metric-grid div {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid var(--line);
-  background: white;
+  background: #fbfbfc;
 }
 
 .metric-grid strong {
   display: block;
-  font-size: 1.22rem;
-  line-height: 1.1;
+  font-size: 1.28rem;
+  line-height: 1.12;
 }
 
 .country-inspector h4 {
-  margin: 0 0 10px;
-  font-size: 0.9rem;
+  margin: 0;
+  padding-top: 2px;
+  font-size: 0.94rem;
 }
 
 .occupation-list {
   display: grid;
-  gap: 10px;
-  margin: 0;
-  padding-left: 20px;
+  gap: 0;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: occupation;
 }
 
 .occupation-list li {
-  padding-left: 2px;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+  counter-increment: occupation;
+}
+
+.occupation-list li::before {
+  content: counter(occupation);
+  color: var(--muted);
+  font-weight: 800;
+  grid-row: 1 / span 2;
+  line-height: 1.25;
+  text-align: right;
 }
 
 .occupation-main,
 .occupation-meta {
   display: block;
+  grid-column: 2;
 }
 
 .occupation-main {
   font-weight: 700;
+  line-height: 1.28;
 }
 
 .occupation-meta {
-  margin-top: 2px;
+  margin-top: 3px;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
+  line-height: 1.38;
 }
 
 .three-panel {
