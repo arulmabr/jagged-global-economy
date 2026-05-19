@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=elegant-layout-20260519";
+  const DATA_URL = "assets/interactive_data.json?v=aligned-layout-2-20260519";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#246b8f";
   const RED = "#b44f2a";
