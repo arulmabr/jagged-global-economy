@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=aligned-layout-2-20260519";
+  const DATA_URL = "assets/interactive_data.json?v=exposure-layout-20260519";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#246b8f";
   const RED = "#b44f2a";
@@ -452,6 +452,13 @@
       })
     );
     updateCountryInspector(explorer.USA || explorer[rows[0]?.countryCode]);
+    el.style.cursor = "pointer";
+    el.on("plotly_hover", () => {
+      el.style.cursor = "pointer";
+    });
+    el.on("plotly_unhover", () => {
+      el.style.cursor = "pointer";
+    });
     el.on("plotly_click", (event) => {
       const countryCode = event?.points?.[0]?.location;
       updateCountryInspector(explorer[countryCode]);

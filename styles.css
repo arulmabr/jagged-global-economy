@@ -10,7 +10,7 @@
   --accent: #b44f2a;
   --soft: #f7f8fa;
   --page-width: 1180px;
-  --text-width: 980px;
+  --text-width: 900px;
   --radius: 8px;
   --section-space: 46px;
   --gutter: clamp(18px, 4vw, 36px);
@@ -178,6 +178,18 @@ section > h2,
 section > p,
 #citation > h2 {
   max-width: var(--text-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section > h2,
+section > p:first-of-type,
+#citation > h2 {
+  text-align: center;
+}
+
+section > p + p {
+  text-align: left;
 }
 
 .findings {
@@ -275,6 +287,14 @@ figure {
 
 .plot-map {
   min-height: 620px;
+  cursor: pointer;
+}
+
+#plot-national-exposure,
+#plot-national-exposure .plotly,
+#plot-national-exposure .main-svg,
+#plot-national-exposure .choroplethlayer path {
+  cursor: pointer;
 }
 
 .plot-small {
@@ -344,14 +364,16 @@ figcaption,
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   column-gap: 12px;
-  align-items: center;
+  align-items: start;
   background: var(--panel);
 }
 
 .interaction-cue {
   display: inline-flex;
   align-items: center;
+  justify-self: start;
   min-height: 28px;
+  width: fit-content;
   max-width: 100%;
   margin: 0 0 8px;
   padding: 5px 9px;
