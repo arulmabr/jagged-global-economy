@@ -1,12 +1,12 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=website-review-20260519";
+  const DATA_URL = "assets/interactive_data.json?v=elegant-layout-20260519";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#246b8f";
   const RED = "#b44f2a";
   const GRID = "#e4e7eb";
   const AXIS = "#8c949e";
   const SOURCE_TEXT = "Source: Jagged Global Economy (2026)";
-  const ADOPTION_PLOT_HEIGHT = 340;
+  const ADOPTION_PLOT_HEIGHT = 360;
   const ADOPTION_X_RANGE = [0.14, 0.38];
   const ADOPTION_X_TICKS = [0.15, 0.2, 0.25, 0.3, 0.35];
   const EXPORT_OPTIONS = {
