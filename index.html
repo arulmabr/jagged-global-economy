@@ -8,15 +8,16 @@
       name="description"
       content="Project page for The Jagged Global Economy: Frontier AI Unevenly Exposes National Economies."
     />
-    <link rel="stylesheet" href="styles.css?v=source-row-20260518" />
+    <link rel="stylesheet" href="styles.css?v=website-review-axis-20260519" />
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
-    <script src="assets/site.js?v=source-row-20260518" defer></script>
+    <script src="assets/site.js?v=website-review-axis-20260519" defer></script>
   </head>
   <body>
     <main class="page">
       <header class="paper-header">
         <h1>The Jagged Global Economy</h1>
         <p class="subtitle">Frontier AI Unevenly Exposes National Economies</p>
+        <p class="hero-question">Which countries' workforces are most exposed to frontier AI?</p>
 
         <div class="authors" aria-label="Authors and affiliations">
           <div>
@@ -45,11 +46,11 @@
         </nav>
 
         <p class="lead">
-          We combine occupation-level frontier AI exposure scores with international
-          employment data to estimate structural AI exposure for 141 national
-          labor markets. The measure asks where existing work is concentrated in
-          tasks frontier AI can already accelerate or transform. It is an exposure
-          map, not a forecast of adoption, wages, or net employment losses.
+          We estimate exposure by combining occupation-level frontier AI exposure
+          scores with international employment data for 141 national labor
+          markets. Exposure means a country's current jobs are concentrated in
+          occupations whose tasks frontier AI can already accelerate or transform.
+          It is not a forecast of AI adoption, wages, or job loss.
         </p>
       </header>
 
@@ -58,13 +59,15 @@
       <section id="national-exposure" class="figure-section atlas-section">
         <h2>National AI Exposure</h2>
         <p>
-          Darker countries have labor markets more concentrated in occupations
-          exposed to frontier AI. Click a country to inspect the occupation groups
-          that contribute most to its national exposure score.
+          The map shows where existing work is most concentrated in occupations
+          exposed to frontier AI. Darker countries have higher exposure scores;
+          the side panel shows the large occupation groups behind each national
+          score.
         </p>
         <figure class="interactive-figure atlas-figure">
           <div class="atlas-grid">
             <div class="atlas-visual">
+              <p class="interaction-cue">Click any shaded country to update the details panel.</p>
               <div
                 id="plot-national-exposure"
                 class="interactive-plot plot-map"
@@ -86,10 +89,11 @@
               aria-label="Selected country exposure details"
             >
               <p class="inspector-kicker">Selected country</p>
-              <h3 id="inspector-country">Click a country</h3>
+              <h3 id="inspector-country">Loading country details</h3>
               <p id="inspector-meta" class="inspector-meta">
-                Select a measured country on the map to see its exposure score and
-                largest ISCO-08 occupation groups.
+                The panel opens with the United States when the interactive map
+                loads. Click any measured country to compare exposure and
+                occupation shares.
               </p>
               <div class="metric-grid">
                 <div>
@@ -101,10 +105,10 @@
                   <strong id="inspector-employment">--</strong>
                 </div>
               </div>
-              <h4>Largest occupation groups</h4>
-              <ol id="inspector-occupations" class="occupation-list">
-                <li>Select a country to load occupation contributions.</li>
-              </ol>
+              <h4>Largest occupation groups by employment share</h4>
+              <ul id="inspector-occupations" class="occupation-list">
+                <li>Loading occupation shares.</li>
+              </ul>
             </aside>
           </div>
         </figure>
@@ -175,7 +179,7 @@
           Sources:
           <a href="https://www.anthropic.com/economic-index">Anthropic Economic Index</a>,
           <a href="https://openai.com/signals/">OpenAI Signals</a>, and
-          <a href="https://www.microsoft.com/en-us/corporate-responsibility/topics/ai-economy-institute">Microsoft AI Economy Institute</a>.
+          <a href="https://github.com/microsoft/ai-diffusion-report">Microsoft AI Diffusion</a>.
         </p>
         <div class="three-panel adoption-panel">
           <figure class="interactive-figure">

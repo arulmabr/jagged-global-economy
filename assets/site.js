@@ -1,9 +1,10 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=atlas-feedback-20260518";
-  const BLUE = "#1f5f8b";
-  const RED = "#aa4a44";
-  const GRID = "#e8eaed";
-  const AXIS = "#9aa0a6";
+  const DATA_URL = "assets/interactive_data.json?v=website-review-20260519";
+  const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
+  const BLUE = "#246b8f";
+  const RED = "#b44f2a";
+  const GRID = "#e4e7eb";
+  const AXIS = "#8c949e";
   const SOURCE_TEXT = "Source: Jagged Global Economy (2026)";
   const ADOPTION_PLOT_HEIGHT = 340;
   const ADOPTION_X_RANGE = [0.14, 0.38];
@@ -95,8 +96,12 @@
       margin: { l: 64, r: 24, t: 28, b: 58 },
       paper_bgcolor: "white",
       plot_bgcolor: "white",
-      font: { family: "Georgia, Times New Roman, serif", size: 13, color: "#202124" },
-      hoverlabel: { bgcolor: "white", bordercolor: "#dadce0", font: { color: "#202124" } },
+      font: { family: FONT_FAMILY, size: 13, color: "#202124" },
+      hoverlabel: {
+        bgcolor: "white",
+        bordercolor: "#dadce0",
+        font: { family: FONT_FAMILY, color: "#202124" },
+      },
       ...extra,
     };
   }
@@ -169,14 +174,10 @@
 
     const actions = document.createElement("span");
     actions.className = "figure-download-actions";
-    const label = document.createElement("span");
-    label.textContent = "Download";
-    actions.append(label);
-
-    ["png", "svg"].forEach((format) => {
+    ["png"].forEach((format) => {
       const button = document.createElement("button");
       button.type = "button";
-      button.textContent = format.toUpperCase();
+      button.textContent = "Download PNG";
       button.title = `Download ${options.label} as ${format.toUpperCase()}`;
       button.addEventListener("click", async () => {
         const previous = button.textContent;
@@ -258,7 +259,8 @@
       ticklen: 3,
       tickcolor: AXIS,
       tickfont: { size: 12 },
-      titlefont: { size: 14 },
+      titlefont: { size: 13 },
+      automargin: true,
       ...extra,
     };
   }
@@ -336,10 +338,15 @@
   }
 
   function adoptionLayout(series, title, yTitle) {
+    const yOptions = adoptionYOptions(series, yTitle);
+    if (typeof yOptions.title === "string") {
+      yOptions.title = { text: yOptions.title, standoff: 12 };
+    }
+
     return baseLayout({
       autosize: true,
       height: ADOPTION_PLOT_HEIGHT,
-      margin: { l: 64, r: 14, t: 38, b: 70 },
+      margin: { l: 88, r: 14, t: 38, b: 70 },
       title: { text: title, font: { size: 15 }, x: 0.5, xanchor: "center" },
       xaxis: adoptionAxis({
         title: "National AI exposure",
@@ -348,7 +355,7 @@
         tickvals: ADOPTION_X_TICKS,
         tickformat: ".2f",
       }),
-      yaxis: adoptionAxis(adoptionYOptions(series, yTitle)),
+      yaxis: adoptionAxis(yOptions),
       annotations: [adoptionAnnotation(series)],
       showlegend: false,
     });
@@ -366,7 +373,8 @@
 
     if (name) name.textContent = country.countryName;
     if (meta) {
-      meta.textContent = `${country.region} · ${country.incomeGroup} · ${country.reliability} reliability`;
+      meta.textContent =
+        `${country.region} · ${country.incomeGroup} · ${country.reliability} reliability · ${country.countryCode}`;
     }
     if (exposure) exposure.textContent = country.exposure?.toFixed(3) || "n/a";
     if (employment) employment.textContent = `${formatEmployment(country.totalEmploymentK)} workers`;
@@ -385,11 +393,14 @@
       const item = document.createElement("li");
       const main = document.createElement("span");
       main.className = "occupation-main";
-      main.textContent = `ISCO ${occupation.iscoCode}: ${occupation.label}`;
+      const code = document.createElement("span");
+      code.className = "occupation-code";
+      code.textContent = `(ISCO ${occupation.iscoCode})`;
+      main.append(document.createTextNode(`${occupation.label} `), code);
       const detail = document.createElement("span");
       detail.className = "occupation-meta";
       detail.textContent =
-        `${formatPercent(occupation.employmentSharePct)} of employment · ` +
+        `${formatPercent(occupation.employmentSharePct)} of workers · ` +
         `exposure ${occupation.exposureScore.toFixed(3)} · ` +
         `${formatPercent(occupation.contributionPct)} of national score`;
       item.append(main, detail);
@@ -416,10 +427,10 @@
             row.employmentK,
           ]),
           colorscale: [
-            [0, "#edf3ee"],
-            [0.35, "#9bc8b3"],
-            [0.7, "#2c7da0"],
-            [1, "#08306b"],
+            [0, "#f2f5f3"],
+            [0.35, "#a8c7b8"],
+            [0.7, "#3a83a0"],
+            [1, "#123f5a"],
           ],
           marker: { line: { color: "rgba(255,255,255,0.6)", width: 0.35 } },
           colorbar: { title: "Exposure", thickness: 14, len: 0.78 },

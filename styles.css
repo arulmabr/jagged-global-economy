@@ -4,7 +4,9 @@
   --muted: #5f6368;
   --line: #dadce0;
   --link: #174ea6;
+  --accent: #b44f2a;
   --soft: #f7f8fa;
+  --panel: #ffffff;
 }
 
 * {
@@ -19,7 +21,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 18px;
   line-height: 1.55;
 }
@@ -31,7 +33,7 @@ a {
 }
 
 .page {
-  width: min(1180px, calc(100% - 36px));
+  width: min(1160px, calc(100% - 36px));
   margin: 0 auto;
   padding: 28px 0 34px;
 }
@@ -50,6 +52,7 @@ p {
 h1 {
   max-width: 1080px;
   margin: 0 auto 6px;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(32px, 3.6vw, 46px);
   line-height: 1.04;
   font-weight: 700;
@@ -67,9 +70,19 @@ h1 {
 
 h2 {
   margin-bottom: 14px;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.55rem, 2.6vw, 2.05rem);
   line-height: 1.16;
   text-align: left;
+}
+
+.hero-question {
+  max-width: 780px;
+  margin: 0 auto 16px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.24rem, 2.1vw, 1.7rem);
+  line-height: 1.18;
 }
 
 .authors {
@@ -113,9 +126,9 @@ h2 {
   min-height: 32px;
   display: inline-flex;
   align-items: center;
-  padding: 5px 12px;
+  padding: 5px 11px;
   border: 1px solid var(--line);
-  border-radius: 3px;
+  border-radius: 4px;
   background: var(--soft);
   color: var(--ink);
   font-weight: 700;
@@ -129,9 +142,9 @@ h2 {
 }
 
 .lead {
-  max-width: 920px;
+  max-width: 880px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   font-size: 1rem;
   overflow-wrap: break-word;
 }
@@ -193,6 +206,7 @@ figure {
   width: 100%;
   min-height: 480px;
   border: 1px solid var(--line);
+  border-radius: 6px;
   background: var(--soft);
 }
 
@@ -200,8 +214,9 @@ figure {
   display: none;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
-  margin: 0 0 6px;
+  gap: 12px;
+  margin: 0 0 8px;
+  padding: 0 2px;
   color: var(--muted);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.72rem;
@@ -209,23 +224,21 @@ figure {
 
 .figure-source {
   min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.25;
 }
 
 .figure-download-actions {
   display: inline-flex;
   flex: none;
   align-items: center;
-  gap: 6px;
+  gap: 0;
 }
 
 .figure-downloads button {
   appearance: none;
   border: 1px solid var(--line);
   border-radius: 4px;
-  padding: 3px 7px;
+  padding: 4px 8px;
   background: white;
   color: var(--ink);
   font: inherit;
@@ -281,6 +294,7 @@ figure img {
   width: 100%;
   height: auto;
   border: 1px solid var(--line);
+  border-radius: 6px;
   background: var(--soft);
 }
 
@@ -297,16 +311,14 @@ figcaption,
 }
 
 .atlas-figure {
-  width: min(1440px, calc(100vw - 36px));
+  width: 100%;
   margin-top: 12px;
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 
 .atlas-grid {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(400px, 0.8fr);
-  gap: 20px;
+  grid-template-columns: minmax(0, 1.65fr) minmax(340px, 0.9fr);
+  gap: 16px;
   align-items: stretch;
 }
 
@@ -314,6 +326,25 @@ figcaption,
   position: relative;
   min-width: 0;
   background: white;
+}
+
+.interaction-cue {
+  position: absolute;
+  left: 14px;
+  top: 42px;
+  z-index: 2;
+  max-width: min(360px, calc(100% - 28px));
+  margin: 0;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.25;
+  pointer-events: none;
 }
 
 .atlas-visual .interactive-plot,
@@ -336,9 +367,11 @@ figcaption,
 
 .country-inspector {
   align-self: stretch;
-  padding: 22px;
+  padding: 22px 22px 20px;
   border: 1px solid var(--line);
-  background: white;
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  background: var(--panel);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.92rem;
   line-height: 1.45;
@@ -378,6 +411,7 @@ figcaption,
 .metric-grid div {
   padding: 12px;
   border: 1px solid var(--line);
+  border-radius: 5px;
   background: #fbfbfc;
 }
 
@@ -399,31 +433,20 @@ figcaption,
   margin: 10px 0 0;
   padding: 0;
   list-style: none;
-  counter-reset: occupation;
 }
 
 .occupation-list li {
   display: grid;
-  grid-template-columns: 26px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 4px;
   padding: 10px 0;
   border-top: 1px solid var(--line);
-  counter-increment: occupation;
-}
-
-.occupation-list li::before {
-  content: counter(occupation);
-  color: var(--muted);
-  font-weight: 800;
-  grid-row: 1 / span 2;
-  line-height: 1.25;
-  text-align: right;
 }
 
 .occupation-main,
 .occupation-meta {
   display: block;
-  grid-column: 2;
+  grid-column: 1;
 }
 
 .occupation-main {
@@ -436,6 +459,11 @@ figcaption,
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.38;
+}
+
+.occupation-code {
+  color: var(--muted);
+  font-weight: 600;
 }
 
 .three-panel {
@@ -520,6 +548,10 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .interaction-cue {
+    top: 40px;
+  }
+
   .plot-map {
     min-height: 460px;
   }
@@ -536,10 +568,7 @@ footer {
   }
 
   .page {
-    width: min(calc(100vw - 26px), 360px);
-    max-width: 980px;
-    margin-left: 13px;
-    margin-right: 13px;
+    width: calc(100vw - 26px);
     padding-top: 34px;
   }
 
@@ -554,13 +583,13 @@ footer {
 
   .links {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .links a {
-    width: 100%;
     flex: none;
     justify-content: center;
+    text-align: center;
   }
 
   .findings li {
@@ -589,6 +618,12 @@ footer {
 
   .country-inspector {
     padding: 14px;
+  }
+
+  .interaction-cue {
+    position: static;
+    max-width: none;
+    margin-bottom: 8px;
   }
 
   .metric-grid {
