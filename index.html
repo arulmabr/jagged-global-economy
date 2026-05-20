@@ -8,9 +8,9 @@
       name="description"
       content="Project page for The Jagged Global Economy: Frontier AI Unevenly Exposes National Economies."
     />
-    <link rel="stylesheet" href="styles.css?v=remittance-copy-align-20260519" />
+    <link rel="stylesheet" href="styles.css?v=copy-align-20260520" />
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
-    <script src="assets/site.js?v=hide-modebar-20260519" defer></script>
+    <script src="assets/site.js?v=layout-polish-20260520" defer></script>
   </head>
   <body>
     <main class="page">
@@ -60,10 +60,9 @@
       <section id="national-exposure" class="figure-section atlas-section">
         <h2>National AI Exposure</h2>
         <p>
-          The map shows where today's jobs are most concentrated in frontier-AI
-          exposed occupations. Darker countries have higher exposure scores; the
-          side panel shows the largest occupation groups behind each national
-          score.
+          The map shades 141 national labor markets by AI exposure. Darker
+          countries score higher; click a country to see the occupations behind
+          its score.
         </p>
         <figure class="interactive-figure atlas-figure">
           <div class="atlas-grid">
@@ -103,7 +102,7 @@
                   <strong id="inspector-employment">--</strong>
                 </div>
               </div>
-              <h4>Largest occupation groups by employment share</h4>
+              <h4>Largest Occupation Groups</h4>
               <ul id="inspector-occupations" class="occupation-list">
                 <li>Loading occupation shares.</li>
               </ul>
@@ -145,12 +144,14 @@
 
       <section id="white-collar" class="figure-section">
         <h2>Explaining Exposure</h2>
-        <p>
-          White-collar employment share is a strong structural predictor of
-          national AI exposure. The relationship helps explain why richer regions
-          tend to be more exposed, while keeping the mechanism grounded in labor
-          composition rather than income alone.
-        </p>
+        <div class="section-copy">
+          <p>
+            White-collar employment share is a strong structural predictor of
+            national AI exposure. The relationship helps explain why richer regions
+            tend to be more exposed, while keeping the mechanism grounded in labor
+            composition rather than income alone.
+          </p>
+        </div>
         <figure class="interactive-figure">
           <div
             id="plot-white-collar"
@@ -169,16 +170,20 @@
 
       <section id="adoption" class="figure-section">
         <h2>Predicting AI Adoption</h2>
-        <p>
-          National AI exposure predicts adoption statistics from Anthropic,
-          OpenAI, and Microsoft, even though the three organizations publish
-          different types of country-level usage measures. The Anthropic panel uses
-          a log-spaced y-axis.
-          Sources:
-          <a href="https://www.anthropic.com/economic-index">Anthropic Economic Index</a>,
-          <a href="https://openai.com/signals/">OpenAI Signals</a>, and
-          <a href="https://github.com/microsoft/ai-diffusion-report">Microsoft AI Diffusion</a>.
-        </p>
+        <div class="section-copy">
+          <p>
+            National AI exposure predicts adoption statistics from Anthropic,
+            OpenAI, and Microsoft, even though the three organizations publish
+            different types of country-level usage measures. The Anthropic panel
+            uses a log-spaced y-axis.
+          </p>
+          <p class="source-links">
+            Sources:
+            <a href="https://www.anthropic.com/economic-index">Anthropic Economic Index</a>,
+            <a href="https://openai.com/signals/">OpenAI Signals</a>, and
+            <a href="https://github.com/microsoft/ai-diffusion-report">Microsoft AI Diffusion</a>.
+          </p>
+        </div>
         <div class="three-panel adoption-panel">
           <figure class="interactive-figure">
             <div
@@ -230,25 +235,32 @@
         <h2>Indirect Exposure Through Remittances</h2>
         <div class="section-copy">
           <p>
-            Remittances are earnings sent home by migrants. For countries where
-            those transfers are large, exposure is not only domestic: household
-            income and local spending can also depend on the labor markets where
-            migrants work. The remittance-accounted score asks how a country's
-            exposure changes after weighting remittance income by the exposure of
-            sender economies. It is not a forecast of job loss at home.
+            Remittances are earnings sent home by migrants. When those transfers
+            are large, local income can depend on labor markets where migrants
+            work. The remittance-accounted score reweights exposure by sender
+            economies, so it captures an indirect exposure channel rather than
+            job-loss risk at home. Points above the dashed line have higher
+            remittance-accounted exposure than direct domestic exposure.
           </p>
-          <p>
-            Tajikistan illustrates the mechanism. Its direct exposure is 0.222,
-            but its remittance-accounted exposure rises to 0.300 because
-            remittances are 47.9% of GDP and Russia accounts for 79.0% of covered
-            bilateral inflows. The Central America-US corridor shows a similar
-            pattern: Honduras, Guatemala, and El Salvador receive 82.4%, 91.5%,
-            and 89.6% of covered bilateral inflows from the United States,
-            respectively. Their remittance-accounted exposures rise to roughly
-            0.317-0.319, compared with direct exposures of 0.231-0.251. Points
-            above the dashed line have higher remittance-accounted exposure than
-            direct domestic exposure.
-          </p>
+        </div>
+        <div class="remittance-callouts" aria-label="Remittance examples">
+          <article>
+            <span>Tajikistan</span>
+            <p>
+              Direct exposure is 0.222, while remittance-accounted exposure rises
+              to 0.300. Remittances are 47.9% of GDP, and Russia accounts for
+              79.0% of covered bilateral inflows.
+            </p>
+          </article>
+          <article>
+            <span>Central America-US corridor</span>
+            <p>
+              Honduras, Guatemala, and El Salvador receive 82.4%, 91.5%, and
+              89.6% of covered bilateral inflows from the United States. Their
+              remittance-accounted exposures rise to roughly 0.317-0.319,
+              compared with direct exposures of 0.231-0.251.
+            </p>
+          </article>
         </div>
         <figure class="interactive-figure">
           <div

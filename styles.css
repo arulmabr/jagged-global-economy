@@ -11,6 +11,7 @@
   --soft: #f7f8fa;
   --page-width: 1180px;
   --text-width: 900px;
+  --copy-width: 760px;
   --radius: 8px;
   --section-space: 46px;
   --gutter: clamp(18px, 4vw, 36px);
@@ -154,9 +155,9 @@ h2 {
 }
 
 .lead {
-  max-width: var(--text-width);
+  max-width: var(--copy-width);
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   color: #38404a;
   font-size: 1rem;
   overflow-wrap: break-word;
@@ -175,25 +176,26 @@ section {
 }
 
 section > h2,
-section > p,
 #citation > h2 {
   max-width: var(--text-width);
   margin-left: auto;
   margin-right: auto;
 }
 
+section > p {
+  max-width: var(--copy-width);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
 section > h2,
-section > p:first-of-type,
 #citation > h2 {
   text-align: center;
 }
 
-section > p + p {
-  text-align: left;
-}
-
 .section-copy {
-  max-width: var(--text-width);
+  max-width: var(--copy-width);
   margin: 0 auto;
   color: var(--muted);
   text-align: left;
@@ -204,7 +206,45 @@ section > p + p {
 }
 
 .section-copy p + p {
-  margin-top: 16px;
+  margin-top: 12px;
+}
+
+.source-links {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.remittance-callouts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  max-width: var(--text-width);
+  margin: 18px auto 0;
+}
+
+.remittance-callouts article {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.remittance-callouts span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.remittance-callouts p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
 }
 
 .findings {
@@ -262,12 +302,12 @@ figure {
   display: none;
   justify-content: flex-end;
   align-items: center;
-  gap: 10px;
-  margin: 0 0 10px;
-  padding: 0 2px;
+  gap: 6px;
+  margin: 0 0 8px;
+  padding: 0;
   color: var(--muted);
   font-family: var(--sans);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
 }
 
 .figure-download-actions {
@@ -281,9 +321,9 @@ figure {
   appearance: none;
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 5px 10px;
+  padding: 4px 9px;
   background: var(--panel);
-  color: var(--ink);
+  color: #303842;
   font: inherit;
   font-weight: 700;
   line-height: 1.2;
@@ -353,8 +393,8 @@ figcaption,
   text-align: center;
 }
 
-.atlas-section p {
-  max-width: var(--text-width);
+.atlas-section > p {
+  max-width: var(--copy-width);
 }
 
 .atlas-figure {
@@ -368,7 +408,7 @@ figcaption,
 
 .atlas-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.68fr) minmax(330px, 0.82fr);
+  grid-template-columns: minmax(0, 1.72fr) minmax(350px, 0.86fr);
   gap: 16px;
   align-items: start;
 }
@@ -419,15 +459,15 @@ figcaption,
 
 .country-inspector {
   align-self: start;
-  padding: 18px 18px 16px;
+  padding: 17px 18px 15px;
   border: 1px solid var(--line);
   border-top: 4px solid var(--accent);
   border-radius: var(--radius);
   background: var(--panel);
   box-shadow: 0 1px 2px rgba(31, 35, 40, 0.04);
   font-family: var(--sans);
-  font-size: 0.92rem;
-  line-height: 1.45;
+  font-size: 0.88rem;
+  line-height: 1.38;
 }
 
 .inspector-kicker,
@@ -444,25 +484,33 @@ figcaption,
 .country-inspector h3 {
   margin: 0 0 6px;
   font-family: var(--serif);
-  font-size: clamp(1.45rem, 2vw, 1.72rem);
-  line-height: 1.08;
+  font-size: clamp(1.24rem, 1.65vw, 1.5rem);
+  line-height: 1.1;
 }
 
 .inspector-meta {
   max-width: 34rem;
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
+.country-inspector.is-loaded .inspector-meta {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .metric-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .metric-grid div {
-  padding: 12px;
+  padding: 10px;
   border: 1px solid var(--line);
   border-radius: 6px;
   background: #fafbfc;
@@ -470,20 +518,22 @@ figcaption,
 
 .metric-grid strong {
   display: block;
-  font-size: 1.28rem;
-  line-height: 1.12;
+  font-size: 1.02rem;
+  line-height: 1.15;
+  white-space: nowrap;
 }
 
 .country-inspector h4 {
   margin: 0;
   padding-top: 2px;
-  font-size: 0.94rem;
+  font-size: 0.9rem;
+  letter-spacing: 0;
 }
 
 .occupation-list {
   display: grid;
   gap: 0;
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -492,7 +542,7 @@ figcaption,
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 4px;
-  padding: 11px 0;
+  padding: 9px 0;
   border-top: 1px solid var(--line-soft);
 }
 
@@ -503,15 +553,16 @@ figcaption,
 }
 
 .occupation-main {
+  font-size: 0.88rem;
   font-weight: 700;
-  line-height: 1.28;
+  line-height: 1.22;
 }
 
 .occupation-meta {
-  margin-top: 3px;
+  margin-top: 1px;
   color: var(--muted);
-  font-size: 0.82rem;
-  line-height: 1.38;
+  font-size: 0.78rem;
+  line-height: 1.32;
 }
 
 .occupation-code {
@@ -521,19 +572,29 @@ figcaption,
 
 .three-panel {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
-  gap: 18px;
-  align-items: start;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
   margin-top: 24px;
 }
 
 .three-panel figure {
+  display: flex;
+  flex-direction: column;
   margin-top: 0;
 }
 
 .three-panel figcaption {
   font-size: 0.84rem;
   line-height: 1.35;
+}
+
+.adoption-panel figure {
+  min-height: 424px;
+}
+
+.adoption-panel figcaption {
+  min-height: 42px;
 }
 
 #citation {
@@ -578,6 +639,37 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 1100px) {
+  .atlas-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .plot-map {
+    min-height: 560px;
+  }
+
+  .country-inspector {
+    padding: 16px;
+  }
+
+  .occupation-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 22px;
+  }
+
+  .three-panel {
+    grid-template-columns: 1fr;
+    max-width: var(--copy-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .adoption-panel figure {
+    min-height: 0;
+  }
+}
+
 @media (max-width: 820px) {
   :root {
     --section-space: 40px;
@@ -596,14 +688,8 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .interactive-plot,
-  .plot-map {
+  .interactive-plot {
     min-height: 390px;
-  }
-
-  .atlas-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
   }
 
   .plot-map {
@@ -616,10 +702,16 @@ footer {
   }
 }
 
+@media (max-width: 700px) {
+  .remittance-callouts {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 560px) {
   :root {
     --gutter: 14px;
-    --section-space: 38px;
+    --section-space: 36px;
   }
 
   body {
@@ -632,29 +724,49 @@ footer {
   }
 
   .paper-header {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
   }
 
   h1 {
-    font-size: clamp(30px, 9vw, 39px);
+    font-size: clamp(27px, 8vw, 34px);
+    line-height: 1.08;
+  }
+
+  .subtitle {
+    margin-bottom: 9px;
+    font-size: 1rem;
+  }
+
+  .hero-question {
+    margin-bottom: 14px;
+    font-size: clamp(1.08rem, 5vw, 1.34rem);
   }
 
   .authors {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px 10px;
+    gap: 10px 8px;
+    margin-bottom: 14px;
     font-size: 0.8rem;
   }
 
   .links {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
+    gap: 7px;
+    margin-bottom: 16px;
   }
 
   .links a {
+    min-height: 30px;
+    padding: 4px 12px;
     flex: none;
     justify-content: center;
     text-align: center;
+  }
+
+  .lead {
+    font-size: 0.96rem;
+    line-height: 1.48;
   }
 
   .findings li {
@@ -681,7 +793,16 @@ footer {
   }
 
   .country-inspector {
-    padding: 16px;
+    padding: 14px;
+    font-size: 0.84rem;
+  }
+
+  .country-inspector h3 {
+    font-size: 1.18rem;
+  }
+
+  .inspector-meta {
+    margin-bottom: 11px;
   }
 
   .interaction-cue {
@@ -699,10 +820,41 @@ footer {
   }
 
   .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .metric-grid div {
+    padding: 9px;
+  }
+
+  .metric-grid strong {
+    font-size: 0.96rem;
+  }
+
+  .occupation-list {
     grid-template-columns: 1fr;
   }
 
+  .occupation-list li {
+    padding: 7px 0;
+  }
+
+  .occupation-meta {
+    font-size: 0.76rem;
+  }
+
   .figure-downloads {
-    justify-content: flex-start;
+    justify-content: flex-end;
+  }
+
+  .remittance-callouts {
+    grid-template-columns: 1fr;
+    margin-top: 14px;
+  }
+
+  .remittance-callouts article {
+    padding: 12px 13px;
   }
 }

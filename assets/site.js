@@ -1,10 +1,10 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=exposure-layout-20260519";
+  const DATA_URL = "assets/interactive_data.json?v=layout-polish-20260520";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#246b8f";
   const RED = "#b44f2a";
   const GRID = "#e4e7eb";
-  const AXIS = "#8c949e";
+  const AXIS = "#c5ccd4";
   const SOURCE_TEXT = "Source: Jagged Global Economy (2026)";
   const ADOPTION_PLOT_HEIGHT = 360;
   const ADOPTION_X_RANGE = [0.14, 0.38];
@@ -83,6 +83,11 @@
     return `${compactNumber(thousands, 0)}k`;
   }
 
+  function titleCase(value) {
+    if (!value) return "n/a";
+    return String(value).replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
+  }
+
   function baseLayout(extra = {}) {
     return {
       margin: { l: 64, r: 24, t: 28, b: 58 },
@@ -94,6 +99,23 @@
         bordercolor: "#dadce0",
         font: { family: FONT_FAMILY, color: "#202124" },
       },
+      ...extra,
+    };
+  }
+
+  function cartesianAxis(extra = {}) {
+    return {
+      showline: true,
+      linewidth: 1,
+      linecolor: AXIS,
+      gridcolor: GRID,
+      zeroline: false,
+      ticks: "outside",
+      ticklen: 3,
+      tickcolor: AXIS,
+      tickfont: { size: 12, color: "#2f3439" },
+      titlefont: { size: 13 },
+      automargin: true,
       ...extra,
     };
   }
@@ -115,6 +137,16 @@
     if (window.Plotly) return window.Plotly;
     if (typeof Plotly !== "undefined") return Plotly;
     return null;
+  }
+
+  function nextFrame() {
+    return new Promise((resolve) => {
+      if (window.requestAnimationFrame) {
+        window.requestAnimationFrame(() => resolve());
+        return;
+      }
+      window.setTimeout(resolve, 0);
+    });
   }
 
   async function downloadPlotImage(el, options) {
@@ -203,9 +235,14 @@
     const figure = el.closest(".interactive-figure");
     if (figure) figure.classList.add("plot-rendering");
     await plotly.newPlot(el, traces, layout, config);
-    if (figure) figure.classList.remove("plot-rendering");
     addDownloadControls(id, el);
+    if (figure) figure.classList.remove("plot-rendering");
     markReady(id);
+    if (plotly.Plots?.resize) {
+      nextFrame()
+        .then(() => plotly.Plots.resize(el))
+        .catch((error) => console.warn("Plot resize failed", error));
+    }
     return el;
   }
 
@@ -236,20 +273,7 @@
   }
 
   function adoptionAxis(extra = {}) {
-    return {
-      showline: true,
-      linewidth: 1,
-      linecolor: AXIS,
-      gridcolor: GRID,
-      zeroline: false,
-      ticks: "outside",
-      ticklen: 3,
-      tickcolor: AXIS,
-      tickfont: { size: 12 },
-      titlefont: { size: 13 },
-      automargin: true,
-      ...extra,
-    };
+    return cartesianAxis(extra);
   }
 
   function adoptionAnnotation(series) {
@@ -351,6 +375,7 @@
   function updateCountryInspector(country) {
     const root = document.getElementById("country-inspector");
     if (!root || !country) return;
+    root.classList.add("is-loaded");
 
     const name = document.getElementById("inspector-country");
     const meta = document.getElementById("inspector-meta");
@@ -361,7 +386,7 @@
     if (name) name.textContent = country.countryName;
     if (meta) {
       meta.textContent =
-        `${country.region} · ${country.incomeGroup} · ${country.reliability} reliability · ${country.countryCode}`;
+        `${country.region} · ${titleCase(country.incomeGroup)} · ${titleCase(country.reliability)} Reliability · ${country.countryCode}`;
     }
     if (exposure) exposure.textContent = country.exposure?.toFixed(3) || "n/a";
     if (employment) employment.textContent = `${formatEmployment(country.totalEmploymentK)} workers`;
@@ -387,9 +412,9 @@
       const detail = document.createElement("span");
       detail.className = "occupation-meta";
       detail.textContent =
-        `${formatPercent(occupation.employmentSharePct)} of workers · ` +
+        `${formatPercent(occupation.employmentSharePct)} workers · ` +
         `exposure ${occupation.exposureScore.toFixed(3)} · ` +
-        `${formatPercent(occupation.contributionPct)} of national score`;
+        `${formatPercent(occupation.contributionPct)} score`;
       item.append(main, detail);
       occupations.append(item);
     });
@@ -499,17 +524,13 @@
       traces,
       baseLayout({
         margin: { l: 64, r: 72, t: 28, b: 72 },
-        xaxis: {
+        xaxis: cartesianAxis({
           title: "White-collar employment share (%)",
           ticksuffix: "%",
-          zeroline: false,
-          gridcolor: GRID,
-        },
-        yaxis: {
+        }),
+        yaxis: cartesianAxis({
           title: "National AI exposure",
-          zeroline: false,
-          gridcolor: GRID,
-        },
+        }),
         annotations: [
           {
             xref: "paper",
@@ -610,8 +631,8 @@
       ],
       baseLayout({
         margin: { l: 64, r: 72, t: 28, b: 72 },
-        xaxis: { title: "Direct national AI exposure", range: [min, max] },
-        yaxis: { title: "Remittance-accounted national AI exposure", range: [min, max] },
+        xaxis: cartesianAxis({ title: "Direct national AI exposure", range: [min, max] }),
+        yaxis: cartesianAxis({ title: "Remittance-accounted national AI exposure", range: [min, max] }),
         showlegend: false,
       })
     );
@@ -638,7 +659,7 @@
         "plot-adoption-microsoft",
         data.adoption.microsoft,
         "Microsoft AI Diffusion",
-        "MS GenAI adoption Q1 2026 (% WAP)"
+        "MS adoption (% WAP)"
       ),
       renderRemittance(data),
     ]);
