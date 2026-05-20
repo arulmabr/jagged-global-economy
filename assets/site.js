@@ -352,13 +352,15 @@
         ticktext: ["0", "0.25", "0.50", "0.75", "1.00"],
       };
     }
+    const maxValue = Math.max(...series.points.map((point) => point.value).filter(Number.isFinite));
+    const yMax = Math.max(80, Math.ceil((maxValue * 1.12) / 5) * 5);
     return {
       title: yTitle,
       type: "linear",
-      range: [0, 70],
+      range: [0, yMax],
       tickmode: "array",
-      tickvals: [0, 20, 40, 60],
-      ticktext: ["0", "20", "40", "60"],
+      tickvals: [0, 20, 40, 60, 80],
+      ticktext: ["0", "20", "40", "60", "80"],
     };
   }
 
@@ -582,6 +584,7 @@
         text: rows.map((row) => row.countryName),
         customdata: rows.map((row) => [row.countryCode]),
         marker: ADOPTION_MARKER,
+        cliponaxis: true,
         hovertemplate:
           "<b>%{text}</b> (%{customdata[0]})<br>" +
           "Exposure: %{x:.3f}<br>" +
