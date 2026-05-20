@@ -120,6 +120,20 @@
     };
   }
 
+  function exposureColorbar(extra = {}) {
+    return {
+      title: {
+        text: "Exposure score",
+        side: "right",
+        font: { size: 11, color: "#2f3439" },
+      },
+      tickfont: { size: 11, color: "#2f3439" },
+      outlinecolor: AXIS,
+      outlinewidth: 1,
+      ...extra,
+    };
+  }
+
   async function loadData() {
     const response = await fetch(DATA_URL);
     if (!response.ok) throw new Error(`Could not load ${DATA_URL}: ${response.status}`);
@@ -412,9 +426,9 @@
       const detail = document.createElement("span");
       detail.className = "occupation-meta";
       detail.textContent =
-        `${formatPercent(occupation.employmentSharePct)} workers · ` +
-        `exposure ${occupation.exposureScore.toFixed(3)} · ` +
-        `${formatPercent(occupation.contributionPct)} score`;
+        `${formatPercent(occupation.employmentSharePct)} of workers · ` +
+        `occupation exposure score ${occupation.exposureScore.toFixed(3)} · ` +
+        `${formatPercent(occupation.contributionPct)} of national exposure`;
       item.append(main, detail);
       occupations.append(item);
     });
@@ -445,7 +459,7 @@
             [1, "#123f5a"],
           ],
           marker: { line: { color: "rgba(255,255,255,0.6)", width: 0.35 } },
-          colorbar: { title: "Exposure", thickness: 14, len: 0.78 },
+          colorbar: exposureColorbar({ thickness: 14, len: 0.78 }),
           hovertemplate:
             "<b>%{text}</b><br>" +
             "Exposure: %{z:.3f}<br>" +
@@ -505,7 +519,7 @@
           size: 8,
           opacity: 0.82,
           line: { color: "white", width: 0.5 },
-          colorbar: { title: "Exposure", thickness: 12 },
+          colorbar: exposureColorbar({ thickness: 12 }),
         },
         hovertemplate:
           "<b>%{text}</b> (%{customdata[0]})<br>" +
