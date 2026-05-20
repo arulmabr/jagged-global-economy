@@ -6,6 +6,12 @@
   const GRID = "#e4e7eb";
   const AXIS = "#c5ccd4";
   const SOURCE_TEXT = "Source: Jagged Global Economy (2026)";
+  const EXPOSURE_COLORSCALE = [
+    [0, "#f2f5f3"],
+    [0.35, "#a8c7b8"],
+    [0.7, "#3a83a0"],
+    [1, "#123f5a"],
+  ];
   const ADOPTION_PLOT_HEIGHT = 360;
   const ADOPTION_X_RANGE = [0.14, 0.38];
   const ADOPTION_X_TICKS = [0.15, 0.2, 0.25, 0.3, 0.35];
@@ -132,6 +138,17 @@
       outlinewidth: 1,
       ...extra,
     };
+  }
+
+  function updateExposureLegend(min, mid, max) {
+    [
+      ["legend-exposure-min", min],
+      ["legend-exposure-mid", mid],
+      ["legend-exposure-max", max],
+    ].forEach(([id, value]) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = value.toFixed(2);
+    });
   }
 
   async function loadData() {
@@ -401,8 +418,9 @@
 
     if (name) name.textContent = country.countryName;
     if (meta) {
-      meta.textContent =
-        `${country.region} · ${titleCase(country.incomeGroup)} · ${titleCase(country.reliability)} Reliability · ${country.countryCode}`;
+      meta.textContent = [country.region, titleCase(country.incomeGroup)]
+        .filter((value) => value && value !== "n/a")
+        .join(" · ");
     }
     if (exposure) exposure.textContent = country.exposure?.toFixed(3) || "n/a";
     if (employment) employment.textContent = `${formatEmployment(country.totalEmploymentK)} workers`;
@@ -439,6 +457,11 @@
   async function renderNationalExposure(data) {
     const rows = data.nationalExposure;
     const explorer = data.countryExplorer || {};
+    const exposureValues = rows.map((row) => row.exposure).filter((value) => Number.isFinite(value));
+    const exposureMin = exposureValues.length ? Math.min(...exposureValues) : 0;
+    const exposureMax = exposureValues.length ? Math.max(...exposureValues) : 1;
+    const exposureMid = (exposureMin + exposureMax) / 2;
+    updateExposureLegend(exposureMin, exposureMid, exposureMax);
     const el = await plot(
       "plot-national-exposure",
       [
@@ -454,14 +477,11 @@
             row.incomeGroup,
             row.employmentK,
           ]),
-          colorscale: [
-            [0, "#f2f5f3"],
-            [0.35, "#a8c7b8"],
-            [0.7, "#3a83a0"],
-            [1, "#123f5a"],
-          ],
+          colorscale: EXPOSURE_COLORSCALE,
+          zmin: exposureMin,
+          zmax: exposureMax,
           marker: { line: { color: "rgba(255,255,255,0.6)", width: 0.35 } },
-          colorbar: exposureColorbar({ thickness: 14, len: 0.78 }),
+          showscale: false,
           hovertemplate:
             "<b>%{text}</b><br>" +
             "Exposure: %{z:.3f}<br>" +
