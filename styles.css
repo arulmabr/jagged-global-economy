@@ -345,7 +345,7 @@ figure {
 
 .plot-map {
   min-height: 620px;
-  cursor: default;
+  cursor: pointer;
 }
 
 #plot-national-exposure,
@@ -355,18 +355,8 @@ figure {
 #plot-national-exposure .choroplethlayer,
 #plot-national-exposure .draglayer,
 #plot-national-exposure .draglayer *,
+#plot-national-exposure *,
 #plot-national-exposure .choroplethlayer path {
-  cursor: default !important;
-}
-
-#plot-national-exposure.is-hovering-country,
-#plot-national-exposure.is-hovering-country .plotly,
-#plot-national-exposure.is-hovering-country .main-svg,
-#plot-national-exposure.is-hovering-country .geolayer,
-#plot-national-exposure.is-hovering-country .choroplethlayer,
-#plot-national-exposure.is-hovering-country .draglayer,
-#plot-national-exposure.is-hovering-country .draglayer *,
-#plot-national-exposure.is-hovering-country .choroplethlayer path {
   cursor: pointer !important;
 }
 
