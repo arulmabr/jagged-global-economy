@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=layout-polish-20260520";
+  const DATA_URL = "assets/interactive_data.json?v=country-explorer-20260522";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#246b8f";
   const RED = "#b44f2a";
@@ -61,6 +61,9 @@
   };
   const ADOPTION_FIT_LINE = { color: RED, width: 2 };
   let plotlyApi = null;
+  let countryExplorer = {};
+  let currentCountryCode = null;
+  let occupationSort = "employment";
 
   const config = {
     responsive: true,
@@ -83,15 +86,56 @@
     return `${Number(value).toFixed(digits)}%`;
   }
 
+  function hasNumber(value) {
+    return typeof value === "number" && Number.isFinite(value);
+  }
+
+  function formatExposure(value) {
+    return hasNumber(value) ? value.toFixed(3) : "n/a";
+  }
+
   function formatEmployment(thousands) {
     if (thousands === null || thousands === undefined || Number.isNaN(thousands)) return "n/a";
     if (thousands >= 1000) return `${compactNumber(thousands / 1000, 1)}m`;
     return `${compactNumber(thousands, 0)}k`;
   }
 
+  function ordinal(value) {
+    const rounded = Math.round(value);
+    const mod100 = rounded % 100;
+    if (mod100 >= 11 && mod100 <= 13) return `${rounded}th`;
+    const mod10 = rounded % 10;
+    if (mod10 === 1) return `${rounded}st`;
+    if (mod10 === 2) return `${rounded}nd`;
+    if (mod10 === 3) return `${rounded}rd`;
+    return `${rounded}th`;
+  }
+
   function titleCase(value) {
     if (!value) return "n/a";
     return String(value).replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
+  }
+
+  function describeDelta(delta) {
+    if (!hasNumber(delta)) return null;
+    if (Math.abs(delta) < 0.001) return "about the same as";
+    return `${Math.abs(delta).toFixed(3)} ${delta > 0 ? "above" : "below"}`;
+  }
+
+  function adoptionLabel(sourceKey) {
+    return {
+      anthropic: "Anthropic Claude",
+      signals: "OpenAI Signals",
+      microsoft: "Microsoft AI Diffusion",
+    }[sourceKey] || titleCase(sourceKey);
+  }
+
+  function formatAdoptionValue(sourceKey, value) {
+    if (!hasNumber(value)) return "n/a";
+    if (sourceKey === "signals") return `${ordinal(value * 100)} percentile`;
+    if (sourceKey === "microsoft") return `${value.toFixed(1)}% WAP`;
+    if (sourceKey === "anthropic") return `${compactNumber(value, 1)} / 100k WAP`;
+    return compactNumber(value, 2);
   }
 
   function baseLayout(extra = {}) {
@@ -405,6 +449,201 @@
     });
   }
 
+  function populateCountrySelector(defaultCountryCode) {
+    const selector = document.getElementById("country-selector");
+    if (!selector) return;
+    selector.replaceChildren();
+    Object.values(countryExplorer)
+      .sort((a, b) => a.countryName.localeCompare(b.countryName))
+      .forEach((country) => {
+        const option = document.createElement("option");
+        option.value = country.countryCode;
+        option.textContent = country.countryName;
+        selector.append(option);
+      });
+    selector.value = defaultCountryCode;
+    if (selector.dataset.bound === "true") return;
+    selector.dataset.bound = "true";
+    selector.addEventListener("change", () => {
+      selectCountry(selector.value);
+    });
+  }
+
+  function setSelectedCountry(countryCode) {
+    const selector = document.getElementById("country-selector");
+    if (selector && selector.value !== countryCode) selector.value = countryCode;
+  }
+
+  function selectCountry(countryCode) {
+    const country = countryExplorer[countryCode];
+    if (!country) return;
+    currentCountryCode = countryCode;
+    setSelectedCountry(countryCode);
+    updateCountryInspector(country);
+  }
+
+  function appendDetailRow(parent, label, value, note = "") {
+    if (!value || value === "n/a") return;
+    const row = document.createElement("div");
+    row.className = "detail-row";
+    const labelEl = document.createElement("span");
+    labelEl.className = "detail-label";
+    labelEl.textContent = label;
+    const valueEl = document.createElement("strong");
+    valueEl.textContent = value;
+    row.append(labelEl, valueEl);
+    if (note) {
+      const noteEl = document.createElement("span");
+      noteEl.className = "detail-note";
+      noteEl.textContent = note;
+      row.append(noteEl);
+    }
+    parent.append(row);
+  }
+
+  function renderLaborStructure(country) {
+    const target = document.getElementById("inspector-labor");
+    const details = document.getElementById("inspector-labor-details");
+    if (!target || !details) return;
+    target.replaceChildren();
+    const labor = country.laborStructure || {};
+    appendDetailRow(target, "White-collar share", formatPercent(labor.whiteCollarSharePct));
+    appendDetailRow(target, "White-collar exposure", formatExposure(labor.whiteCollarExposure));
+    appendDetailRow(target, "Blue-collar exposure", formatExposure(labor.blueCollarExposure));
+    details.hidden = target.children.length === 0;
+  }
+
+  function renderContext(country) {
+    const target = document.getElementById("inspector-context");
+    const details = document.getElementById("inspector-context-details");
+    if (!target || !details) return;
+    target.replaceChildren();
+
+    const gender = country.gender;
+    if (gender && hasNumber(gender.gap)) {
+      appendDetailRow(
+        target,
+        "Gender exposure",
+        `${gender.gap >= 0 ? "women" : "men"} higher by ${Math.abs(gender.gap).toFixed(3)}`,
+        `Women ${formatExposure(gender.femaleExposure)}; men ${formatExposure(gender.maleExposure)}`
+      );
+    }
+
+    Object.entries(country.adoption || {}).forEach(([sourceKey, observation]) => {
+      appendDetailRow(
+        target,
+        adoptionLabel(sourceKey),
+        formatAdoptionValue(sourceKey, observation.value),
+        observation.metricLabel || ""
+      );
+    });
+
+    const remittance = country.remittance;
+    const corridors = country.remittanceCorridors || [];
+    if (
+      remittance &&
+      hasNumber(remittance.remittancePctGdp) &&
+      (remittance.remittancePctGdp >= 10 || corridors.length > 0)
+    ) {
+      appendDetailRow(
+        target,
+        "Remittances",
+        `${formatPercent(remittance.remittancePctGdp)} of GDP`,
+        hasNumber(remittance.remittanceExposure)
+          ? `Adjusted exposure ${formatExposure(remittance.remittanceExposure)}`
+          : ""
+      );
+      const corridor = corridors[0];
+      if (corridor) {
+        appendDetailRow(
+          target,
+          "Largest covered corridor",
+          corridor.senderName,
+          `${formatPercent(corridor.senderShareInflowPct)} of covered inflows`
+        );
+      }
+    }
+
+    details.hidden = target.children.length === 0;
+  }
+
+  function renderOccupationBars(country) {
+    const occupations = document.getElementById("inspector-occupations");
+    if (!occupations) return;
+    occupations.replaceChildren();
+    const rows =
+      occupationSort === "contribution"
+        ? country.topOccupationsByContribution || country.topOccupations || []
+        : country.topOccupationsByEmployment || country.topOccupations || [];
+
+    if (!rows.length) {
+      const item = document.createElement("li");
+      item.textContent = "No occupation contribution rows are available for this country.";
+      occupations.append(item);
+      return;
+    }
+
+    const valueKey = occupationSort === "contribution" ? "contributionPct" : "employmentSharePct";
+    const maxValue = Math.max(...rows.map((occupation) => occupation[valueKey] || 0), 1);
+    rows.forEach((occupation) => {
+      const item = document.createElement("li");
+      const main = document.createElement("span");
+      main.className = "occupation-main";
+      const code = document.createElement("span");
+      code.className = "occupation-code";
+      code.textContent = `(ISCO ${occupation.iscoCode})`;
+      main.append(document.createTextNode(`${occupation.label} `), code);
+
+      const barRow = document.createElement("span");
+      barRow.className = "occupation-bar-row";
+      const track = document.createElement("span");
+      track.className = "occupation-track";
+      const bar = document.createElement("span");
+      bar.className = "occupation-bar";
+      bar.style.width = `${Math.max(3, ((occupation[valueKey] || 0) / maxValue) * 100)}%`;
+      track.append(bar);
+      const value = document.createElement("span");
+      value.className = "occupation-value";
+      value.textContent =
+        occupationSort === "contribution"
+          ? `${formatPercent(occupation.contributionPct)} of score`
+          : `${formatPercent(occupation.employmentSharePct)} workers`;
+      barRow.append(track, value);
+
+      const detail = document.createElement("span");
+      detail.className = "occupation-meta";
+      detail.textContent =
+        `Occupation exposure ${formatExposure(occupation.exposureScore)} · ` +
+        `Workers ${formatPercent(occupation.employmentSharePct)} · ` +
+        `Score contribution ${formatPercent(occupation.contributionPct)} of national score`;
+
+      item.append(main, barRow, detail);
+      occupations.append(item);
+    });
+  }
+
+  function updateOccupationSortButtons() {
+    document.querySelectorAll("[data-occupation-sort]").forEach((button) => {
+      const selected = button.dataset.occupationSort === occupationSort;
+      button.setAttribute("aria-pressed", selected ? "true" : "false");
+    });
+  }
+
+  function bindOccupationSortButtons() {
+    document.querySelectorAll("[data-occupation-sort]").forEach((button) => {
+      if (button.dataset.bound === "true") return;
+      button.dataset.bound = "true";
+      button.addEventListener("click", () => {
+        occupationSort = button.dataset.occupationSort || "employment";
+        updateOccupationSortButtons();
+        if (currentCountryCode && countryExplorer[currentCountryCode]) {
+          renderOccupationBars(countryExplorer[currentCountryCode]);
+        }
+      });
+    });
+    updateOccupationSortButtons();
+  }
+
   function updateCountryInspector(country) {
     const root = document.getElementById("country-inspector");
     if (!root || !country) return;
@@ -413,9 +652,10 @@
     const name = document.getElementById("inspector-country");
     const meta = document.getElementById("inspector-meta");
     const exposure = document.getElementById("inspector-exposure");
+    const rank = document.getElementById("inspector-rank");
+    const percentile = document.getElementById("inspector-percentile");
     const employment = document.getElementById("inspector-employment");
     const summary = document.getElementById("inspector-summary");
-    const occupations = document.getElementById("inspector-occupations");
 
     if (name) name.textContent = country.countryName;
     if (meta) {
@@ -427,48 +667,36 @@
         .filter((value) => value && value !== "n/a")
         .join(" · ");
     }
-    if (exposure) {
-      exposure.textContent = Number.isFinite(country.exposure) ? country.exposure.toFixed(3) : "n/a";
+    if (exposure) exposure.textContent = formatExposure(country.exposure);
+    if (rank) rank.textContent = country.exposureRank ? `#${country.exposureRank}` : "n/a";
+    if (percentile) {
+      percentile.textContent = hasNumber(country.exposurePercentile)
+        ? `higher than ${country.exposurePercentile.toFixed(0)}%`
+        : "";
     }
-    if (employment) employment.textContent = `${formatEmployment(country.totalEmploymentK)} workers`;
+    if (employment) employment.textContent = formatEmployment(country.totalEmploymentK);
     if (summary) {
+      const regionDelta = describeDelta(country.regionExposureDelta);
+      const incomeDelta = describeDelta(country.incomeExposureDelta);
+      const regionPart = regionDelta
+        ? `${regionDelta} the ${country.region} average (${formatExposure(country.regionAverageExposure)})`
+        : "not comparable to a region average";
+      const incomePart = incomeDelta
+        ? `${incomeDelta} the ${titleCase(country.incomeGroup)} average (${formatExposure(country.incomeAverageExposure)})`
+        : "not comparable to an income-group average";
       summary.textContent =
-        `For ${country.countryName}, this score reflects how much of today's employment is in ` +
-        "occupations with tasks frontier AI can help perform. It is not a job-loss forecast.";
+        `${country.countryName} ranks #${country.exposureRank} of ${country.nCountries} measured countries. ` +
+        `Its exposure score is ${regionPart} and ${incomePart}.`;
     }
-    if (!occupations) return;
-
-    occupations.replaceChildren();
-    const topOccupations = country.topOccupations || [];
-    if (!topOccupations.length) {
-      const item = document.createElement("li");
-      item.textContent = "No occupation contribution rows are available for this country.";
-      occupations.append(item);
-      return;
-    }
-
-    topOccupations.forEach((occupation) => {
-      const item = document.createElement("li");
-      const main = document.createElement("span");
-      main.className = "occupation-main";
-      const code = document.createElement("span");
-      code.className = "occupation-code";
-      code.textContent = `(ISCO ${occupation.iscoCode})`;
-      main.append(document.createTextNode(`${occupation.label} `), code);
-      const detail = document.createElement("span");
-      detail.className = "occupation-meta";
-      detail.textContent =
-        `Workers: ${formatPercent(occupation.employmentSharePct)} · ` +
-        `Occupation exposure: ${occupation.exposureScore.toFixed(3)} · ` +
-        `Share of national score: ${formatPercent(occupation.contributionPct)}`;
-      item.append(main, detail);
-      occupations.append(item);
-    });
+    bindOccupationSortButtons();
+    renderOccupationBars(country);
+    renderLaborStructure(country);
+    renderContext(country);
   }
 
   async function renderNationalExposure(data) {
     const rows = data.nationalExposure;
-    const explorer = data.countryExplorer || {};
+    countryExplorer = data.countryExplorer || {};
     const exposureValues = rows.map((row) => row.exposure).filter((value) => Number.isFinite(value));
     const exposureMin = exposureValues.length ? Math.min(...exposureValues) : 0;
     const exposureMax = exposureValues.length ? Math.max(...exposureValues) : 1;
@@ -516,10 +744,12 @@
         },
       })
     );
-    updateCountryInspector(explorer.USA || explorer[rows[0]?.countryCode]);
+    const defaultCountryCode = countryExplorer.USA ? "USA" : rows[0]?.countryCode;
+    populateCountrySelector(defaultCountryCode);
+    selectCountry(defaultCountryCode);
     el.on("plotly_click", (event) => {
       const countryCode = event?.points?.[0]?.location;
-      updateCountryInspector(explorer[countryCode]);
+      selectCountry(countryCode);
     });
   }
 

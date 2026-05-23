@@ -8,9 +8,9 @@
       name="description"
       content="Project page for The Jagged Global Economy: Frontier AI Unevenly Exposes National Economies."
     />
-    <link rel="stylesheet" href="styles.css?v=viewer-polish-20260522" />
+    <link rel="stylesheet" href="styles.css?v=country-explorer-20260522" />
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
-    <script src="assets/site.js?v=viewer-polish-20260522" defer></script>
+    <script src="assets/site.js?v=country-explorer-20260522" defer></script>
   </head>
   <body>
     <main class="page">
@@ -98,7 +98,15 @@
         <figure class="interactive-figure atlas-figure">
           <div class="atlas-grid">
             <div class="atlas-visual">
-              <p class="interaction-cue">Click any shaded country to update the details panel.</p>
+              <div class="atlas-tools">
+                <p class="interaction-cue">Click any shaded country to update the details panel.</p>
+                <label class="country-picker" for="country-selector">
+                  <span>Find a country</span>
+                  <select id="country-selector" aria-label="Find a country">
+                    <option value="">Loading countries</option>
+                  </select>
+                </label>
+              </div>
               <div
                 id="plot-national-exposure"
                 class="interactive-plot plot-map"
@@ -144,28 +152,55 @@
                   <strong id="inspector-exposure">--</strong>
                 </div>
                 <div>
+                  <span class="metric-label">Rank</span>
+                  <strong id="inspector-rank">--</strong>
+                  <span id="inspector-percentile" class="metric-note"></span>
+                </div>
+                <div>
                   <span class="metric-label">Employment</span>
                   <strong id="inspector-employment">--</strong>
+                  <span class="metric-note">workers</span>
                 </div>
               </div>
               <p id="inspector-summary" class="inspector-summary">
                 Click a country to see how its current workforce composition
                 relates to frontier AI exposure.
               </p>
-              <details id="inspector-advanced" class="inspector-advanced">
-                <summary>
-                  <span class="summary-icon" aria-hidden="true">i</span>
-                  Advanced details
-                </summary>
-                <h4>Largest Worker Groups by Employment Share</h4>
-                <p class="inspector-note">
-                  Sorted by worker share. These rows show which occupation groups
-                  contribute most to the selected country's score.
-                </p>
-                <ul id="inspector-occupations" class="occupation-list">
-                  <li>Loading occupation shares.</li>
-                </ul>
-              </details>
+              <div class="inspector-accordion">
+                <details id="inspector-workforce" class="inspector-details">
+                  <summary>
+                    <span class="summary-icon" aria-hidden="true">i</span>
+                    Workforce drivers
+                  </summary>
+                  <p class="inspector-note">
+                    Bars show the selected country's largest worker groups or the
+                    groups contributing most to its national exposure score. Score
+                    contribution is the share of the country's overall exposure
+                    score attributable to that occupation group.
+                  </p>
+                  <div class="occupation-toggle" role="group" aria-label="Sort occupation drivers">
+                    <button type="button" data-occupation-sort="employment" aria-pressed="true">Workers</button>
+                    <button type="button" data-occupation-sort="contribution" aria-pressed="false">Score contribution</button>
+                  </div>
+                  <ul id="inspector-occupations" class="occupation-list occupation-bars">
+                    <li>Loading occupation shares.</li>
+                  </ul>
+                </details>
+                <details id="inspector-labor-details" class="inspector-details">
+                  <summary>
+                    <span class="summary-icon" aria-hidden="true">i</span>
+                    Labor structure
+                  </summary>
+                  <div id="inspector-labor" class="detail-rows"></div>
+                </details>
+                <details id="inspector-context-details" class="inspector-details">
+                  <summary>
+                    <span class="summary-icon" aria-hidden="true">i</span>
+                    Gender, adoption, remittances
+                  </summary>
+                  <div id="inspector-context" class="detail-rows"></div>
+                </details>
+              </div>
             </aside>
           </div>
         </figure>

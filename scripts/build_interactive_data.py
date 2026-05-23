@@ -35,6 +35,13 @@ def as_bool(value: str | None) -> bool:
     return str(value).strip().lower() == "true"
 
 
+def mean(values: list[float]) -> float | None:
+    clean = [value for value in values if value is not None and math.isfinite(value)]
+    if not clean:
+        return None
+    return sum(clean) / len(clean)
+
+
 def require_fields(rows: list[dict], fields: list[str], name: str) -> None:
     missing = [
         (idx, field)
@@ -151,6 +158,10 @@ def build_white_collar(national_lookup: dict[str, dict]) -> dict:
 def build_country_explorer(national_lookup: dict[str, dict]) -> dict:
     enriched_rows = read_csv(DATA_DIR / "core/nation_exposure_enriched.csv")
     contribution_rows = read_csv(DATA_DIR / "mechanisms/occupation_contributions.csv")
+    gender_rows = read_csv(DATA_DIR / "mechanisms/gender_gap.csv")
+    adoption_rows = read_csv(DATA_DIR / "validation/observed_outcomes_vs_exposure.csv")
+    remittance_rows = read_csv(DATA_DIR / "indirect/remittance_weighted_exposure.csv")
+    corridor_rows = read_csv(DATA_DIR / "indirect/remittance_corridor_evidence.csv")
     occupations_by_country: dict[str, list[dict]] = {}
 
     for row in contribution_rows:
@@ -162,17 +173,105 @@ def build_country_explorer(national_lookup: dict[str, dict]) -> dict:
             "isWhiteCollar": as_bool(row["is_white_collar"]),
             "employmentSharePct": (as_float(row["employment_share"]) or 0) * 100,
             "exposureScore": as_float(row["exposure_score"]),
+            "contribution": as_float(row["contribution"]),
             "contributionPct": as_float(row["contribution_pct"]),
         }
         occupations_by_country.setdefault(country_code, []).append(occupation)
+
+    exposure_points = [
+        {
+            "countryCode": row["country_code"],
+            "exposure": as_float(row["weighted_exposure"]),
+            "region": national_lookup.get(row["country_code"], {}).get("region"),
+            "incomeGroup": national_lookup.get(row["country_code"], {}).get("incomeGroup"),
+        }
+        for row in enriched_rows
+    ]
+    exposure_points = [point for point in exposure_points if point["exposure"] is not None]
+    n_countries = len(exposure_points)
+    sorted_by_exposure = sorted(exposure_points, key=lambda point: point["exposure"], reverse=True)
+    rank_lookup = {
+        point["countryCode"]: {
+            "rank": rank,
+            "percentile": ((n_countries - rank) / (n_countries - 1) * 100) if n_countries > 1 else None,
+            "nCountries": n_countries,
+        }
+        for rank, point in enumerate(sorted_by_exposure, start=1)
+    }
+
+    region_average_lookup = {
+        region: mean([point["exposure"] for point in exposure_points if point["region"] == region])
+        for region in {point["region"] for point in exposure_points}
+    }
+    income_average_lookup = {
+        income_group: mean([point["exposure"] for point in exposure_points if point["incomeGroup"] == income_group])
+        for income_group in {point["incomeGroup"] for point in exposure_points}
+    }
+
+    gender_lookup = {}
+    for row in gender_rows:
+        if not as_bool(row.get("reliable")):
+            continue
+        gender_lookup[row["country_code"]] = {
+            "maleExposure": as_float(row["male_exposure"]),
+            "femaleExposure": as_float(row["female_exposure"]),
+            "gap": as_float(row["gender_gap"]),
+            "relativeGapPct": (
+                as_float(row["relative_gender_gap"]) * 100
+                if as_float(row["relative_gender_gap"]) is not None
+                else None
+            ),
+        }
+
+    adoption_lookup: dict[str, dict[str, dict]] = {}
+    for row in adoption_rows:
+        country_code = row["country_code"]
+        source_key = row["source_key"]
+        adoption_lookup.setdefault(country_code, {})[source_key] = {
+            "source": row["source"],
+            "metricLabel": row["metric_label"],
+            "value": as_float(row["outcome_value"]),
+            "isLogScale": as_bool(row["is_log_scale"]),
+        }
+
+    remittance_lookup = {
+        row["country_code"]: {
+            "domesticExposure": as_float(row["domestic_exposure"]),
+            "remittanceExposure": as_float(row["remit_weighted_exposure"]),
+            "remittancePctGdp": as_float(row["remittance_pct_gdp"]),
+            "sourceShareCovered": as_float(row["source_share_covered"]),
+            "totalInflowM": as_float(row["total_inflow_m"]),
+        }
+        for row in remittance_rows
+    }
+    corridors_by_receiver: dict[str, list[dict]] = {}
+    for row in corridor_rows:
+        corridors_by_receiver.setdefault(row["receiver_code"], []).append(
+            {
+                "senderCode": row["sender_code"],
+                "senderName": row["sender_name"],
+                "senderShareInflowPct": (as_float(row["sender_share_inflow"]) or 0) * 100,
+                "senderExposure": as_float(row["sender_direct_exposure"]),
+                "matrixYear": as_float(row["matrix_year"]),
+            }
+        )
 
     explorer = {}
     for row in enriched_rows:
         country_code = row["country_code"]
         extra = national_lookup.get(country_code, {})
-        top_occupations = sorted(
-            occupations_by_country.get(country_code, []),
+        exposure = as_float(row["weighted_exposure"])
+        region_average = region_average_lookup.get(extra.get("region"))
+        income_average = income_average_lookup.get(extra.get("incomeGroup"))
+        all_occupations = occupations_by_country.get(country_code, [])
+        top_occupations_by_employment = sorted(
+            all_occupations,
             key=lambda occupation: occupation["employmentSharePct"],
+            reverse=True,
+        )[:5]
+        top_occupations_by_contribution = sorted(
+            occupations_by_country.get(country_code, []),
+            key=lambda occupation: occupation["contributionPct"] if occupation["contributionPct"] is not None else -1,
             reverse=True,
         )[:5]
         explorer[country_code] = {
@@ -181,9 +280,33 @@ def build_country_explorer(national_lookup: dict[str, dict]) -> dict:
             "region": extra.get("region"),
             "incomeGroup": extra.get("incomeGroup"),
             "reliability": row["reliability"],
-            "exposure": as_float(row["weighted_exposure"]),
+            "exposure": exposure,
+            "exposureRank": rank_lookup.get(country_code, {}).get("rank"),
+            "exposurePercentile": rank_lookup.get(country_code, {}).get("percentile"),
+            "nCountries": rank_lookup.get(country_code, {}).get("nCountries"),
+            "regionAverageExposure": region_average,
+            "regionExposureDelta": exposure - region_average if exposure is not None and region_average is not None else None,
+            "incomeAverageExposure": income_average,
+            "incomeExposureDelta": exposure - income_average if exposure is not None and income_average is not None else None,
             "totalEmploymentK": as_float(row["total_employment_k"]),
-            "topOccupations": top_occupations,
+            "laborStructure": {
+                "whiteCollarSharePct": as_float(row["wc_share"]) * 100
+                if as_float(row["wc_share"]) is not None
+                else None,
+                "whiteCollarExposure": as_float(row["wc_exposure"]),
+                "blueCollarExposure": as_float(row["bc_exposure"]),
+            },
+            "gender": gender_lookup.get(country_code),
+            "adoption": adoption_lookup.get(country_code, {}),
+            "remittance": remittance_lookup.get(country_code),
+            "remittanceCorridors": sorted(
+                corridors_by_receiver.get(country_code, []),
+                key=lambda corridor: corridor["senderShareInflowPct"],
+                reverse=True,
+            ),
+            "topOccupations": top_occupations_by_employment,
+            "topOccupationsByEmployment": top_occupations_by_employment,
+            "topOccupationsByContribution": top_occupations_by_contribution,
         }
 
     critical_country_fields = [
@@ -193,6 +316,10 @@ def build_country_explorer(national_lookup: dict[str, dict]) -> dict:
         "incomeGroup",
         "reliability",
         "exposure",
+        "exposureRank",
+        "nCountries",
+        "regionAverageExposure",
+        "incomeAverageExposure",
         "totalEmploymentK",
     ]
     missing = [
@@ -209,7 +336,7 @@ def build_country_explorer(national_lookup: dict[str, dict]) -> dict:
     occupation_missing = [
         (country_code, idx, field)
         for country_code, country in explorer.items()
-        for idx, occupation in enumerate(country["topOccupations"])
+        for idx, occupation in enumerate(country["topOccupationsByEmployment"] + country["topOccupationsByContribution"])
         for field in occupation_fields
         if occupation.get(field) is None or occupation.get(field) == ""
     ]
