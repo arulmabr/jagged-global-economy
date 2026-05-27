@@ -8,9 +8,10 @@
       name="description"
       content="Project page for The Jagged Global Economy: Frontier AI Unevenly Exposes National Economies."
     />
-    <link rel="stylesheet" href="styles.css?v=country-explorer-20260522" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css?v=feedback-polish-20260527" />
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
-    <script src="assets/site.js?v=country-explorer-20260522" defer></script>
+    <script src="assets/site.js?v=feedback-polish-20260527" defer></script>
   </head>
   <body>
     <main class="page">
@@ -51,8 +52,9 @@
           </a>
           <a class="btn-secondary" href="data/core/nation_exposure_enriched.csv" target="_blank" rel="noopener noreferrer">
             <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4 5h16v14H4z" />
-              <path d="M4 10h16M9 5v14M15 5v14" />
+              <ellipse cx="12" cy="5" rx="7" ry="3" />
+              <path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5" />
+              <path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" />
             </svg>
             Data
           </a>
@@ -64,10 +66,10 @@
             </svg>
             Code
           </a>
-          <button class="btn-secondary" type="button" data-copy-target="bibtex" data-copy-label="Cite">
+          <button class="btn-secondary" type="button" data-copy-target="bibtex" data-copy-label="Cite" aria-label="Copy BibTeX citation">
             <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 17h4V9H5v8a4 4 0 0 1-2 3" />
-              <path d="M17 17h4V9h-6v8a4 4 0 0 1-2 3" />
+              <rect x="8" y="8" width="11" height="11" rx="2" />
+              <path d="M5 15H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" />
             </svg>
             <span>Cite</span>
           </button>
@@ -76,12 +78,14 @@
 
       <div class="overview" aria-label="Overview">
         <p class="overview-text">
-          How will frontier AI exposure differ across countries? We study
-          <span class="highlight">141 national labor markets</span> by combining
-          occupation-level AI exposure scores with employment data. Our score
-          measures how much of a country's current workforce is in jobs whose
-          tasks frontier AI can already help perform. It captures workforce
-          structure, not forecasts of job loss, wages, or AI adoption.
+          Frontier AI is being built by a small number of companies, but its
+          economic effects will not stay local. We study
+          <span class="highlight">141 national labor markets</span> to ask how
+          exposure to frontier AI differs across countries. Our measure combines
+          occupation-level AI exposure scores with each country's employment mix:
+          it asks how much of today's workforce is in jobs whose tasks frontier AI
+          can already help perform. It is a measure of workforce structure, not a
+          forecast of job loss, wages, or AI adoption.
         </p>
       </div>
 
@@ -90,28 +94,29 @@
       <section id="national-exposure" class="figure-section atlas-section">
         <h2>National AI Exposure</h2>
         <p>
-          The map shows the national exposure score for each measured country.
-          Darker shading means more of the workforce is in AI-exposed jobs. Click
-          a country to compare its exposure and see the main worker groups behind
-          the score.
+          Darker shading means a larger share of the country's current workforce
+          is in jobs with tasks frontier AI can help perform. Choose a country or
+          click the map to see how the score compares with similar economies.
         </p>
         <figure class="interactive-figure atlas-figure">
           <div class="atlas-grid">
             <div class="atlas-visual">
-              <div class="atlas-tools">
-                <p class="interaction-cue">Click any shaded country to update the details panel.</p>
-                <label class="country-picker" for="country-selector">
-                  <span>Find a country</span>
-                  <select id="country-selector" aria-label="Find a country">
-                    <option value="">Loading countries</option>
-                  </select>
-                </label>
-              </div>
               <div
                 id="plot-national-exposure"
                 class="interactive-plot plot-map"
                 aria-label="Interactive world map shaded by national AI exposure."
               ></div>
+              <img
+                class="plot-fallback"
+                src="assets/national_exposure_map.png"
+                alt="World map shaded by national AI exposure."
+              />
+              <div class="atlas-tools">
+                <p class="interaction-cue">Click a shaded country, or choose one below.</p>
+                <select id="country-selector" aria-label="Choose a country">
+                  <option value="">Loading countries</option>
+                </select>
+              </div>
               <div
                 id="national-exposure-legend"
                 class="map-legend"
@@ -127,11 +132,6 @@
                   </span>
                 </div>
               </div>
-              <img
-                class="plot-fallback"
-                src="assets/national_exposure_map.png"
-                alt="World map shaded by national AI exposure."
-              />
             </div>
             <aside
               id="country-inspector"
@@ -144,39 +144,31 @@
               <p id="inspector-meta" class="inspector-meta">
                 The panel opens with the United States when the interactive map
                 loads. Click any measured country to compare exposure and
-                employment.
+                workforce composition.
               </p>
               <div class="metric-grid">
                 <div>
                   <span class="metric-label">Exposure</span>
                   <strong id="inspector-exposure">--</strong>
+                  <span id="inspector-exposure-note" class="metric-note"></span>
                 </div>
                 <div>
-                  <span class="metric-label">Rank</span>
-                  <strong id="inspector-rank">--</strong>
-                  <span id="inspector-percentile" class="metric-note"></span>
-                </div>
-                <div>
-                  <span class="metric-label">Employment</span>
+                  <span class="metric-label">Workforce</span>
                   <strong id="inspector-employment">--</strong>
                   <span class="metric-note">workers</span>
                 </div>
               </div>
-              <p id="inspector-summary" class="inspector-summary">
-                Click a country to see how its current workforce composition
-                relates to frontier AI exposure.
-              </p>
+              <div id="inspector-comparison" class="comparison-list" aria-label="Peer comparisons"></div>
+              <div id="inspector-snapshot" class="snapshot-grid" aria-label="Country snapshot"></div>
               <div class="inspector-accordion">
-                <details id="inspector-workforce" class="inspector-details">
+                <details id="inspector-breakdown" class="inspector-details">
                   <summary>
                     <span class="summary-icon" aria-hidden="true">i</span>
-                    Workforce drivers
+                    Detailed occupation breakdown
                   </summary>
                   <p class="inspector-note">
-                    Bars show the selected country's largest worker groups or the
-                    groups contributing most to its national exposure score. Score
-                    contribution is the share of the country's overall exposure
-                    score attributable to that occupation group.
+                    Bars show either the largest worker groups or the occupation
+                    groups that contribute most to the country's exposure score.
                   </p>
                   <div class="occupation-toggle" role="group" aria-label="Sort occupation drivers">
                     <button type="button" data-occupation-sort="employment" aria-pressed="true">Workers</button>
@@ -185,20 +177,6 @@
                   <ul id="inspector-occupations" class="occupation-list occupation-bars">
                     <li>Loading occupation shares.</li>
                   </ul>
-                </details>
-                <details id="inspector-labor-details" class="inspector-details">
-                  <summary>
-                    <span class="summary-icon" aria-hidden="true">i</span>
-                    Labor structure
-                  </summary>
-                  <div id="inspector-labor" class="detail-rows"></div>
-                </details>
-                <details id="inspector-context-details" class="inspector-details">
-                  <summary>
-                    <span class="summary-icon" aria-hidden="true">i</span>
-                    Gender, adoption, remittances
-                  </summary>
-                  <div id="inspector-context" class="detail-rows"></div>
                 </details>
               </div>
             </aside>
@@ -238,20 +216,26 @@
       <hr />
 
       <section id="white-collar" class="figure-section">
-        <h2>Explaining Exposure</h2>
+        <h2>Explaining National AI Exposure</h2>
         <div class="section-copy">
           <p>
-            White-collar employment share is a strong structural predictor of
-            national AI exposure. The relationship helps explain why richer regions
-            tend to be more exposed, while keeping the mechanism grounded in labor
-            composition rather than income alone.
+            Exposure is strongly tied to workforce composition. Use the buttons
+            below to toggle one or more explanations from the release data. The
+            x-axis shows where each country falls in the selected factor's
+            cross-country distribution.
           </p>
         </div>
         <figure class="interactive-figure">
+          <div class="factor-controls" aria-label="Exposure explanation selector">
+            <button type="button" data-exposure-factor="wcSharePct" aria-pressed="true">White-collar share</button>
+            <button type="button" data-exposure-factor="internetPct" aria-pressed="false">Internet access</button>
+            <button type="button" data-exposure-factor="logGni" aria-pressed="false">Income</button>
+            <button type="button" data-exposure-factor="cmpNational" aria-pressed="false">Task-composition index</button>
+          </div>
           <div
             id="plot-white-collar"
             class="interactive-plot"
-            aria-label="Interactive scatter plot showing white-collar employment share and national AI exposure."
+            aria-label="Interactive scatter plot comparing country-level predictors with national AI exposure."
           ></div>
           <img
             class="plot-fallback"
@@ -264,19 +248,18 @@
       <hr />
 
       <section id="adoption" class="figure-section">
-        <h2>Predicting AI Adoption</h2>
+        <h2>National Exposure Predicts National Adoption</h2>
         <div class="section-copy">
           <p>
             National AI exposure predicts adoption statistics from Anthropic,
             OpenAI, and Microsoft, even though the three organizations publish
-            different types of country-level usage measures. The Anthropic panel
-            uses a log-spaced y-axis.
+            different types of country-level usage measures.
           </p>
           <p class="source-links">
             Sources:
-            <a href="https://www.anthropic.com/economic-index">Anthropic Economic Index</a>,
-            <a href="https://openai.com/signals/">OpenAI Signals</a>, and
-            <a href="https://github.com/microsoft/ai-diffusion-report">Microsoft AI Diffusion</a>.
+            <a href="https://www.anthropic.com/economic-index" target="_blank" rel="noopener noreferrer">Anthropic Economic Index</a>,
+            <a href="https://openai.com/signals/" target="_blank" rel="noopener noreferrer">OpenAI Signals</a>, and
+            <a href="https://github.com/microsoft/ai-diffusion-report" target="_blank" rel="noopener noreferrer">Microsoft AI Diffusion</a>.
           </p>
         </div>
         <div class="three-panel adoption-panel">
@@ -291,7 +274,10 @@
               src="assets/observed_outcomes_anthropic.png"
               alt="National exposure versus Anthropic Claude usage."
             />
-            <figcaption>Anthropic Claude usage per 100,000 working-age people.</figcaption>
+            <figcaption>
+              Anthropic Claude usage per 100,000 working-age people; y-axis is
+              log-spaced.
+            </figcaption>
           </figure>
           <figure class="interactive-figure">
             <div
@@ -322,6 +308,9 @@
             </figcaption>
           </figure>
         </div>
+        <div id="adoption-downloads" class="figure-downloads group-downloads" aria-label="Download adoption figures">
+          <button id="download-adoption-pngs" type="button">Download adoption PNGs</button>
+        </div>
       </section>
 
       <hr />
@@ -334,26 +323,26 @@
             are large, local income can depend on labor markets where migrants
             work. The remittance-accounted score reweights exposure by sender
             economies, so it captures an indirect exposure channel rather than
-            job-loss risk at home. Points above the dashed line have higher
-            remittance-accounted exposure than direct domestic exposure.
+            job-loss risk at home.
           </p>
         </div>
         <div class="remittance-callouts" aria-label="Remittance examples">
           <article>
             <span>Tajikistan</span>
             <p>
-              Direct exposure is 0.222, while remittance-accounted exposure rises
-              to 0.300. Remittances are 47.9% of GDP, and Russia accounts for
-              79.0% of covered bilateral inflows.
+              Tajikistan's direct exposure is 0.222. When remittance income is
+              weighted by where migrants work, the score rises to 0.300.
+              Remittances equal 47.9% of GDP, and Russia accounts for 79.0% of
+              covered inflows.
             </p>
           </article>
           <article>
-            <span>Central America-US corridor</span>
+            <span>Central America and the US</span>
             <p>
               Honduras, Guatemala, and El Salvador receive 82.4%, 91.5%, and
-              89.6% of covered bilateral inflows from the United States. Their
-              remittance-accounted exposures rise to roughly 0.317-0.319,
-              compared with direct exposures of 0.231-0.251.
+              89.6% of covered inflows from the United States. Their
+              remittance-accounted exposure scores rise to roughly 0.317-0.319,
+              compared with direct domestic scores of 0.231-0.251.
             </p>
           </article>
         </div>
@@ -421,7 +410,8 @@
           const label = button.dataset.copyLabel || button.textContent.trim() || "Copy";
           if (!button.dataset.originalHtml) button.dataset.originalHtml = button.innerHTML;
           const copied = await copyTextToClipboard(target.innerText.trim());
-          button.textContent = copied ? "Copied" : "Copy failed";
+          const labelTarget = button.querySelector("span") || button;
+          labelTarget.textContent = copied ? "Copied" : "Copy failed";
           window.setTimeout(() => {
             button.innerHTML = button.dataset.originalHtml || label;
           }, 1400);

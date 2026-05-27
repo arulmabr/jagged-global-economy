@@ -1270,6 +1270,164 @@
       "population2024": 14047786.0
     }
   ],
+  "missingCountries": [
+    {
+      "countryCode": "DZA",
+      "countryName": "Algeria",
+      "reason": "Major-group only",
+      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+    },
+    {
+      "countryCode": "ARM",
+      "countryName": "Armenia",
+      "reason": "ISCO-88 only",
+      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+    },
+    {
+      "countryCode": "CAN",
+      "countryName": "Canada",
+      "reason": "Major-group only",
+      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "reason": "Major-group only",
+      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+    },
+    {
+      "countryCode": "GRD",
+      "countryName": "Grenada",
+      "reason": "Low reliability",
+      "explanation": "Available occupation data did not meet the release reliability threshold."
+    },
+    {
+      "countryCode": "ISL",
+      "countryName": "Iceland",
+      "reason": "TOTAL/NEC only",
+      "explanation": "Available employment data do not include usable occupation detail."
+    },
+    {
+      "countryCode": "KAZ",
+      "countryName": "Kazakhstan",
+      "reason": "Major-group only",
+      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+    },
+    {
+      "countryCode": "LBR",
+      "countryName": "Liberia",
+      "reason": "Low reliability",
+      "explanation": "Available occupation data did not meet the release reliability threshold."
+    },
+    {
+      "countryCode": "MYS",
+      "countryName": "Malaysia",
+      "reason": "ISCO-88 only",
+      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+    },
+    {
+      "countryCode": "MLT",
+      "countryName": "Malta",
+      "reason": "ISCO-88 only",
+      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+    },
+    {
+      "countryCode": "MAR",
+      "countryName": "Morocco",
+      "reason": "Major-group only",
+      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+    },
+    {
+      "countryCode": "NAM",
+      "countryName": "Namibia",
+      "reason": "ISCO-88 only",
+      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+    },
+    {
+      "countryCode": "NRU",
+      "countryName": "Nauru",
+      "reason": "Low reliability",
+      "explanation": "Available occupation data did not meet the release reliability threshold."
+    },
+    {
+      "countryCode": "NZL",
+      "countryName": "New Zealand",
+      "reason": "Major-group only",
+      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+    },
+    {
+      "countryCode": "NIC",
+      "countryName": "Nicaragua",
+      "reason": "ISCO-88 only",
+      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "reason": "Low reliability",
+      "explanation": "Available occupation data did not meet the release reliability threshold."
+    },
+    {
+      "countryCode": "KOR",
+      "countryName": "Republic of Korea",
+      "reason": "Major-group only",
+      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+    },
+    {
+      "countryCode": "SAU",
+      "countryName": "Saudi Arabia",
+      "reason": "Major-group only",
+      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+    },
+    {
+      "countryCode": "SEN",
+      "countryName": "Senegal",
+      "reason": "Low reliability",
+      "explanation": "Available occupation data did not meet the release reliability threshold."
+    },
+    {
+      "countryCode": "SYC",
+      "countryName": "Seychelles",
+      "reason": "Low reliability",
+      "explanation": "Available occupation data did not meet the release reliability threshold."
+    },
+    {
+      "countryCode": "SVK",
+      "countryName": "Slovakia",
+      "reason": "TOTAL/NEC only",
+      "explanation": "Available employment data do not include usable occupation detail."
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "reason": "ISCO-88 only",
+      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+    },
+    {
+      "countryCode": "TTO",
+      "countryName": "Trinidad and Tobago",
+      "reason": "ISCO-88 only",
+      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+    },
+    {
+      "countryCode": "UKR",
+      "countryName": "Ukraine",
+      "reason": "ISCO-88 only",
+      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+    },
+    {
+      "countryCode": "UZB",
+      "countryName": "Uzbekistan",
+      "reason": "Major-group only",
+      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+    },
+    {
+      "countryCode": "YEM",
+      "countryName": "Yemen",
+      "reason": "ISCO-88 only",
+      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+    }
+  ],
   "laborComposition": {
     "categories": [
       "Office and knowledge work (ISCO 1--4)",
@@ -31629,6 +31787,1665 @@
       ],
       "slope": 0.0024174412941984445,
       "intercept": 0.18335901730018692
+    }
+  },
+  "exposureDrivers": {
+    "points": [
+      {
+        "countryCode": "AFG",
+        "countryName": "Afghanistan",
+        "exposure": 0.1893,
+        "wcSharePct": 8.697744309187,
+        "internetPct": 17.7089,
+        "logGni": 7.700747794511798,
+        "cmpNational": 0.1407502398009719,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "AGO",
+        "countryName": "Angola",
+        "exposure": 0.2062,
+        "wcSharePct": 8.97045841767125,
+        "internetPct": 44.7581,
+        "logGni": 9.154827662045925,
+        "cmpNational": 0.2506541646563378,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "ALB",
+        "countryName": "Albania",
+        "exposure": 0.2302,
+        "wcSharePct": 22.30246920991105,
+        "internetPct": 83.1356,
+        "logGni": 10.184900011974314,
+        "cmpNational": 0.5903787441427616,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "ARE",
+        "countryName": "United Arab Emirates",
+        "exposure": 0.2806,
+        "wcSharePct": 43.81220003370528,
+        "internetPct": 100.0,
+        "logGni": 11.308726329656956,
+        "cmpNational": 1.0106697988295927,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "ARG",
+        "countryName": "Argentina",
+        "exposure": 0.2937,
+        "wcSharePct": 38.01806856921887,
+        "internetPct": 89.229,
+        "logGni": 10.302263672493496,
+        "cmpNational": 0.954153234789657,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "AUS",
+        "countryName": "Australia",
+        "exposure": 0.3217,
+        "wcSharePct": 58.301500803101156,
+        "internetPct": 97.0631,
+        "logGni": 11.150519846322512,
+        "cmpNational": 1.3774076430905433,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "AUT",
+        "countryName": "Austria",
+        "exposure": 0.3211,
+        "wcSharePct": 56.08959570090347,
+        "internetPct": 95.3347,
+        "logGni": 11.213980200239737,
+        "cmpNational": 1.311218026127579,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "BDI",
+        "countryName": "Burundi",
+        "exposure": 0.144,
+        "wcSharePct": 3.09186940144,
+        "internetPct": 11.0784,
+        "logGni": 7.090076835776092,
+        "cmpNational": -0.3089087729754874,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "BEL",
+        "countryName": "Belgium",
+        "exposure": 0.3231,
+        "wcSharePct": 59.77152625253319,
+        "internetPct": 94.6263,
+        "logGni": 11.222172013993962,
+        "cmpNational": 1.3711728560214198,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "BEN",
+        "countryName": "Benin",
+        "exposure": 0.2272,
+        "wcSharePct": 5.639136823857751,
+        "internetPct": 32.2083,
+        "logGni": 8.387084506069217,
+        "cmpNational": 0.3870825853545532,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "BFA",
+        "countryName": "Burkina Faso",
+        "exposure": 0.1977,
+        "wcSharePct": 12.791239616198599,
+        "internetPct": 17.0226,
+        "logGni": 7.908387159290043,
+        "cmpNational": 0.1627429755836267,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "BGD",
+        "countryName": "Bangladesh",
+        "exposure": 0.218,
+        "wcSharePct": 9.556692520131579,
+        "internetPct": 44.5027,
+        "logGni": 9.21632244365373,
+        "cmpNational": 0.3790510015013181,
+        "region": "South Asia",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "BGR",
+        "countryName": "Bulgaria",
+        "exposure": 0.2924,
+        "wcSharePct": 40.98780809285816,
+        "internetPct": 80.3896,
+        "logGni": 10.592877684218362,
+        "cmpNational": 1.0539279360037237,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "BHS",
+        "countryName": "Bahamas",
+        "exposure": 0.2824,
+        "wcSharePct": 37.12715893304352,
+        "internetPct": 94.8186,
+        "logGni": 10.5853209731958,
+        "cmpNational": 0.9454574915842968,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "BIH",
+        "countryName": "Bosnia and Herzegovina",
+        "exposure": 0.2628,
+        "wcSharePct": 32.65076238461682,
+        "internetPct": 83.3772,
+        "logGni": 10.126231023828998,
+        "cmpNational": 0.7910844901318992,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "BLR",
+        "countryName": "Belarus",
+        "exposure": 0.2821,
+        "wcSharePct": 45.9212109373126,
+        "internetPct": 91.5125,
+        "logGni": 10.382822509210747,
+        "cmpNational": 1.1338625209704427,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "BLZ",
+        "countryName": "Belize",
+        "exposure": 0.2425,
+        "wcSharePct": 20.160485643512448,
+        "internetPct": 72.3595,
+        "logGni": 9.529521111487334,
+        "cmpNational": 0.5788810861536186,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "BOL",
+        "countryName": "Bolivia (Plurinational State of)",
+        "exposure": 0.2413,
+        "wcSharePct": 18.155332670359712,
+        "internetPct": 70.2368,
+        "logGni": 9.443038136095204,
+        "cmpNational": 0.5651584345937181,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "BRA",
+        "countryName": "Brazil",
+        "exposure": 0.2783,
+        "wcSharePct": 34.702854700736516,
+        "internetPct": 84.1506,
+        "logGni": 9.979985523508853,
+        "cmpNational": 0.8550569983729477,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "BRB",
+        "countryName": "Barbados",
+        "exposure": 0.2864,
+        "wcSharePct": 41.79971741434116,
+        "internetPct": 79.9923,
+        "logGni": 10.079539496316487,
+        "cmpNational": 1.005965687669205,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "BRN",
+        "countryName": "Brunei Darussalam",
+        "exposure": 0.3071,
+        "wcSharePct": 51.061440119801915,
+        "internetPct": 99.0336,
+        "logGni": 11.437662980469682,
+        "cmpNational": 1.192505117319943,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "BTN",
+        "countryName": "Bhutan",
+        "exposure": 0.2422,
+        "wcSharePct": 28.57393204401878,
+        "internetPct": 88.426,
+        "logGni": 9.636914443294582,
+        "cmpNational": 0.7040398009604389,
+        "region": "South Asia",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "BWA",
+        "countryName": "Botswana",
+        "exposure": 0.2282,
+        "wcSharePct": 24.57323117470746,
+        "internetPct": 81.36,
+        "logGni": 9.931588982647003,
+        "cmpNational": 0.5169034474165202,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "CHE",
+        "countryName": "Switzerland",
+        "exposure": 0.3349,
+        "wcSharePct": 65.36941661479804,
+        "internetPct": 97.3444,
+        "logGni": 11.419822846707904,
+        "cmpNational": 1.4631603133754614,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "CHL",
+        "countryName": "Chile",
+        "exposure": 0.2786,
+        "wcSharePct": 38.65519954647643,
+        "internetPct": 94.4574,
+        "logGni": 10.443483553601899,
+        "cmpNational": 0.97052127404011,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "CIV",
+        "countryName": "Côte d'Ivoire",
+        "exposure": 0.2397,
+        "wcSharePct": 8.12449673937601,
+        "internetPct": 40.6528,
+        "logGni": 8.903815211722922,
+        "cmpNational": 0.4899848456701808,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "COD",
+        "countryName": "Congo, Democratic Republic of the",
+        "exposure": 0.1969,
+        "wcSharePct": 10.77202672158333,
+        "internetPct": 30.548,
+        "logGni": 7.473069088032197,
+        "cmpNational": 0.2088446326830606,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "COK",
+        "countryName": "Cook Islands",
+        "exposure": 0.29,
+        "wcSharePct": 44.23467558848121,
+        "internetPct": null,
+        "logGni": null,
+        "cmpNational": 1.0742818262045464,
+        "region": "Not classified",
+        "incomeGroup": "Not classified"
+      },
+      {
+        "countryCode": "COL",
+        "countryName": "Colombia",
+        "exposure": 0.2628,
+        "wcSharePct": 29.79819798371448,
+        "internetPct": 77.3369,
+        "logGni": 9.993785190516908,
+        "cmpNational": 0.7683006757997279,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "CPV",
+        "countryName": "Cabo Verde",
+        "exposure": 0.2201,
+        "wcSharePct": 16.38203572887191,
+        "internetPct": 73.539,
+        "logGni": 9.305650551780507,
+        "cmpNational": null,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "CRI",
+        "countryName": "Costa Rica",
+        "exposure": 0.274,
+        "wcSharePct": 34.402876506774774,
+        "internetPct": 85.3951,
+        "logGni": 10.269518591398885,
+        "cmpNational": 0.8568840220117485,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "CUB",
+        "countryName": "Cuba",
+        "exposure": 0.2645,
+        "wcSharePct": 38.011127080329935,
+        "internetPct": 71.275,
+        "logGni": null,
+        "cmpNational": null,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "CYP",
+        "countryName": "Cyprus",
+        "exposure": 0.3219,
+        "wcSharePct": 53.02091450430658,
+        "internetPct": 91.2211,
+        "logGni": 10.936672035881783,
+        "cmpNational": 1.273226354102917,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "CZE",
+        "countryName": "Czechia",
+        "exposure": 0.3016,
+        "wcSharePct": 48.947228717835536,
+        "internetPct": 85.994,
+        "logGni": 10.911445472936107,
+        "cmpNational": 1.1940617207147604,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "DEU",
+        "countryName": "Germany",
+        "exposure": 0.333,
+        "wcSharePct": 60.93726092591126,
+        "internetPct": 92.4764,
+        "logGni": 11.240854240032595,
+        "cmpNational": 1.3940529739875276,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "DNK",
+        "countryName": "Denmark",
+        "exposure": 0.3239,
+        "wcSharePct": 57.25139837106737,
+        "internetPct": 98.7756,
+        "logGni": 11.346634725248801,
+        "cmpNational": 1.3919818686732546,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "DOM",
+        "countryName": "Dominican Republic",
+        "exposure": 0.264,
+        "wcSharePct": 27.34456829517245,
+        "internetPct": 84.6161,
+        "logGni": 10.167773047181512,
+        "cmpNational": 0.7014258484026419,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "ECU",
+        "countryName": "Ecuador",
+        "exposure": 0.2222,
+        "wcSharePct": 15.95662392150147,
+        "internetPct": 72.6943,
+        "logGni": 9.642771928314161,
+        "cmpNational": 0.4380773599223085,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "EGY",
+        "countryName": "Egypt",
+        "exposure": 0.2543,
+        "wcSharePct": 27.01745481422465,
+        "internetPct": 72.6899,
+        "logGni": 9.810823867672708,
+        "cmpNational": 0.7060737180576566,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "ESP",
+        "countryName": "Spain",
+        "exposure": 0.3011,
+        "wcSharePct": 46.23406261179078,
+        "internetPct": 95.4456,
+        "logGni": 10.962492386609458,
+        "cmpNational": 1.116784675135799,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "EST",
+        "countryName": "Estonia",
+        "exposure": 0.3115,
+        "wcSharePct": 53.43555632219618,
+        "internetPct": 93.1834,
+        "logGni": 10.797123593845477,
+        "cmpNational": 1.275428454726364,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "ETH",
+        "countryName": "Ethiopia",
+        "exposure": 0.1767,
+        "wcSharePct": 5.0083083679460705,
+        "internetPct": null,
+        "logGni": 8.09559870137819,
+        "cmpNational": -0.009021577963987,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Not classified"
+      },
+      {
+        "countryCode": "FIN",
+        "countryName": "Finland",
+        "exposure": 0.3089,
+        "wcSharePct": 53.526881745467094,
+        "internetPct": 93.5139,
+        "logGni": 11.091940545204027,
+        "cmpNational": 1.2946964265727785,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "FJI",
+        "countryName": "Fiji",
+        "exposure": 0.2585,
+        "wcSharePct": 29.340208124373042,
+        "internetPct": 79.3485,
+        "logGni": 9.581214035314728,
+        "cmpNational": 0.7141141423854179,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "FRA",
+        "countryName": "France",
+        "exposure": 0.3193,
+        "wcSharePct": 58.59665577924683,
+        "internetPct": 86.8364,
+        "logGni": 11.064761602328948,
+        "cmpNational": 1.348595972043735,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "FSM",
+        "countryName": "Micronesia (Federated States of)",
+        "exposure": 0.2188,
+        "wcSharePct": 26.027669951229136,
+        "internetPct": null,
+        "logGni": 8.453187861440325,
+        "cmpNational": null,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "GBR",
+        "countryName": "United Kingdom of Great Britain and Northern Ireland",
+        "exposure": 0.3294,
+        "wcSharePct": 64.44655061600663,
+        "internetPct": 96.2988,
+        "logGni": 11.026141835684475,
+        "cmpNational": 1.4568369944984931,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "GEO",
+        "countryName": "Georgia",
+        "exposure": 0.237,
+        "wcSharePct": 29.09596142833547,
+        "internetPct": 81.8843,
+        "logGni": 10.173514689749188,
+        "cmpNational": 0.6005637665653465,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "GHA",
+        "countryName": "Ghana",
+        "exposure": 0.22,
+        "wcSharePct": 11.152011887186381,
+        "internetPct": 69.9445,
+        "logGni": 8.951569643018821,
+        "cmpNational": 0.3662620463351898,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "GIN",
+        "countryName": "Guinea",
+        "exposure": 0.2271,
+        "wcSharePct": 8.65642848318388,
+        "internetPct": 26.5014,
+        "logGni": 8.326032685955079,
+        "cmpNational": 0.3366021464543748,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "GMB",
+        "countryName": "Gambia",
+        "exposure": 0.2337,
+        "wcSharePct": 11.725755987433251,
+        "internetPct": 45.9137,
+        "logGni": 8.140315540159985,
+        "cmpNational": 0.4787258069594517,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "GNB",
+        "countryName": "Guinea-Bissau",
+        "exposure": 0.1788,
+        "wcSharePct": 6.7395098564106,
+        "internetPct": 32.4661,
+        "logGni": 8.0519780789023,
+        "cmpNational": -0.0292373516932971,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "GRC",
+        "countryName": "Greece",
+        "exposure": 0.3154,
+        "wcSharePct": 44.49932128087917,
+        "internetPct": 85.0102,
+        "logGni": 10.67683127509035,
+        "cmpNational": 1.1393368021743535,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "GTM",
+        "countryName": "Guatemala",
+        "exposure": 0.2337,
+        "wcSharePct": 15.27295183648608,
+        "internetPct": 56.0535,
+        "logGni": 9.558882332684727,
+        "cmpNational": 0.4724210941850731,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "GUY",
+        "countryName": "Guyana",
+        "exposure": 0.247,
+        "wcSharePct": 24.63345443269758,
+        "internetPct": 81.7221,
+        "logGni": 10.864560427182177,
+        "cmpNational": 0.6877023337458763,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "HND",
+        "countryName": "Honduras",
+        "exposure": 0.2314,
+        "wcSharePct": 16.676082240396738,
+        "internetPct": 58.2789,
+        "logGni": 8.83927669058535,
+        "cmpNational": 0.4649129870191828,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "HRV",
+        "countryName": "Croatia",
+        "exposure": 0.3107,
+        "wcSharePct": 51.731774112124555,
+        "internetPct": 83.2412,
+        "logGni": 10.814564717357396,
+        "cmpNational": 1.244890316734447,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "HUN",
+        "countryName": "Hungary",
+        "exposure": 0.3086,
+        "wcSharePct": 49.246082172183556,
+        "internetPct": 91.4501,
+        "logGni": 10.764054135637922,
+        "cmpNational": 1.193116187782364,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "IDN",
+        "countryName": "Indonesia",
+        "exposure": 0.2419,
+        "wcSharePct": 15.34518810359809,
+        "internetPct": 69.2084,
+        "logGni": 9.68096880599076,
+        "cmpNational": 0.5196162203707734,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "IND",
+        "countryName": "India",
+        "exposure": 0.2166,
+        "wcSharePct": 13.89416956559389,
+        "internetPct": 70.0,
+        "logGni": 9.305650551780507,
+        "cmpNational": 0.396013032426427,
+        "region": "South Asia",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "IRL",
+        "countryName": "Ireland",
+        "exposure": 0.3307,
+        "wcSharePct": 59.658596823629296,
+        "internetPct": 96.4974,
+        "logGni": 11.524656387845926,
+        "cmpNational": 1.41556798047175,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "IRN",
+        "countryName": "Iran (Islamic Republic of)",
+        "exposure": 0.2538,
+        "wcSharePct": 25.14868610281494,
+        "internetPct": 79.6309,
+        "logGni": 9.894446807883979,
+        "cmpNational": 0.7264965818860614,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "IRQ",
+        "countryName": "Iraq",
+        "exposure": 0.2428,
+        "wcSharePct": 26.230911325902888,
+        "internetPct": 81.7291,
+        "logGni": 9.583970756564328,
+        "cmpNational": 0.7381928585532324,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "ISR",
+        "countryName": "Israel",
+        "exposure": 0.3333,
+        "wcSharePct": 61.920956432779185,
+        "internetPct": 87.0384,
+        "logGni": 10.947115532871479,
+        "cmpNational": 1.5343549822363929,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "ITA",
+        "countryName": "Italy",
+        "exposure": 0.313,
+        "wcSharePct": 50.04759524386825,
+        "internetPct": 87.0278,
+        "logGni": 11.028741772150658,
+        "cmpNational": 1.174674628423628,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "JAM",
+        "countryName": "Jamaica",
+        "exposure": 0.2662,
+        "wcSharePct": 31.306508839950443,
+        "internetPct": 89.473,
+        "logGni": 9.448569560708433,
+        "cmpNational": null,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "JOR",
+        "countryName": "Jordan",
+        "exposure": 0.2547,
+        "wcSharePct": 24.85889021598877,
+        "internetPct": 92.5344,
+        "logGni": 9.265775078864284,
+        "cmpNational": 0.8042820595210457,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "JPN",
+        "countryName": "Japan",
+        "exposure": 0.3161,
+        "wcSharePct": 42.462288049519806,
+        "internetPct": 86.9815,
+        "logGni": 10.923958103319947,
+        "cmpNational": 1.062022473891497,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "KEN",
+        "countryName": "Kenya",
+        "exposure": 0.1988,
+        "wcSharePct": 13.45126597504563,
+        "internetPct": 35.0,
+        "logGni": 8.785692444451245,
+        "cmpNational": 0.250331728537733,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "KGZ",
+        "countryName": "Kyrgyzstan",
+        "exposure": 0.2401,
+        "wcSharePct": 23.39759851501624,
+        "internetPct": 88.4701,
+        "logGni": 8.974618038455112,
+        "cmpNational": 0.6543075659420093,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "KHM",
+        "countryName": "Cambodia",
+        "exposure": 0.2208,
+        "wcSharePct": 10.22384444274928,
+        "internetPct": 60.7171,
+        "logGni": 8.9758830607617,
+        "cmpNational": 0.3345776634142057,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "KIR",
+        "countryName": "Kiribati",
+        "exposure": 0.2273,
+        "wcSharePct": 22.45950284574589,
+        "internetPct": 88.0,
+        "logGni": 8.70946507906336,
+        "cmpNational": 0.538222441834019,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "KOS",
+        "countryName": "Kosovo",
+        "exposure": 0.2879,
+        "wcSharePct": 40.01793129482813,
+        "internetPct": null,
+        "logGni": 9.814109741384911,
+        "cmpNational": 1.026491707532755,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "LAO",
+        "countryName": "Lao People's Democratic Republic",
+        "exposure": 0.2054,
+        "wcSharePct": 9.29300863187806,
+        "internetPct": 63.6255,
+        "logGni": 9.122601457668177,
+        "cmpNational": 0.2377927338967487,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "LBN",
+        "countryName": "Lebanon",
+        "exposure": 0.2639,
+        "wcSharePct": 33.50380438265401,
+        "internetPct": 83.4933,
+        "logGni": 9.42706335548747,
+        "cmpNational": 0.8602775504773861,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "LKA",
+        "countryName": "Sri Lanka",
+        "exposure": 0.2373,
+        "wcSharePct": 24.39120527127672,
+        "internetPct": 51.2,
+        "logGni": 9.631678829240638,
+        "cmpNational": 0.5692120803891574,
+        "region": "South Asia",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "LSO",
+        "countryName": "Lesotho",
+        "exposure": 0.1748,
+        "wcSharePct": 9.605379282412239,
+        "internetPct": 47.991,
+        "logGni": 8.183118079394745,
+        "cmpNational": 0.0499698780832737,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "LTU",
+        "countryName": "Lithuania",
+        "exposure": 0.3088,
+        "wcSharePct": 52.50737341756951,
+        "internetPct": 88.5029,
+        "logGni": 10.895256745586188,
+        "cmpNational": 1.280775731583827,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "LUX",
+        "countryName": "Luxembourg",
+        "exposure": 0.3715,
+        "wcSharePct": 74.33635057060991,
+        "internetPct": 99.3479,
+        "logGni": 11.614127345479195,
+        "cmpNational": 1.7944511350898968,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "LVA",
+        "countryName": "Latvia",
+        "exposure": 0.3042,
+        "wcSharePct": 51.5304051962701,
+        "internetPct": 92.1879,
+        "logGni": 10.661016992025342,
+        "cmpNational": 1.250184348838436,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "MDG",
+        "countryName": "Madagascar",
+        "exposure": 0.1662,
+        "wcSharePct": 5.07978525122849,
+        "internetPct": 20.3671,
+        "logGni": 7.512071245835466,
+        "cmpNational": -0.086515624648515,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "MDV",
+        "countryName": "Maldives",
+        "exposure": 0.2797,
+        "wcSharePct": 45.4098005318445,
+        "internetPct": 84.6851,
+        "logGni": 10.060491301345794,
+        "cmpNational": 0.9452247306139108,
+        "region": "South Asia",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "MEX",
+        "countryName": "Mexico",
+        "exposure": 0.2638,
+        "wcSharePct": 27.99800868412916,
+        "internetPct": 81.1832,
+        "logGni": 10.144863872111397,
+        "cmpNational": 0.7297846815457244,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "MHL",
+        "countryName": "Marshall Islands",
+        "exposure": 0.2682,
+        "wcSharePct": 39.01570341589761,
+        "internetPct": 65.7177,
+        "logGni": 9.177817180270623,
+        "cmpNational": 0.9566575771339322,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "MKD",
+        "countryName": "North Macedonia",
+        "exposure": 0.2862,
+        "wcSharePct": 40.49138610061994,
+        "internetPct": 87.1819,
+        "logGni": 10.15073817919357,
+        "cmpNational": 0.9981543674294886,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "MLI",
+        "countryName": "Mali",
+        "exposure": 0.2001,
+        "wcSharePct": 4.608989303142439,
+        "internetPct": 35.0921,
+        "logGni": 8.080237416216702,
+        "cmpNational": 0.1737949410884241,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "MMR",
+        "countryName": "Myanmar",
+        "exposure": 0.2293,
+        "wcSharePct": 8.181235943568831,
+        "internetPct": 58.5357,
+        "logGni": 8.681011276645632,
+        "cmpNational": 0.3634982832325149,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "MNE",
+        "countryName": "Montenegro",
+        "exposure": 0.3181,
+        "wcSharePct": 48.255314599333474,
+        "internetPct": 89.8052,
+        "logGni": 10.43323306115463,
+        "cmpNational": 1.2012109681533063,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "MNG",
+        "countryName": "Mongolia",
+        "exposure": 0.263,
+        "wcSharePct": 33.22381059923908,
+        "internetPct": 83.0162,
+        "logGni": 9.740968623038354,
+        "cmpNational": 0.8943032071665579,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "MOZ",
+        "countryName": "Mozambique",
+        "exposure": 0.1618,
+        "wcSharePct": 4.919351825121971,
+        "internetPct": 19.8434,
+        "logGni": 7.326465613840322,
+        "cmpNational": -0.1599424626598015,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "MSR",
+        "countryName": "Montserrat",
+        "exposure": 0.2904,
+        "wcSharePct": 47.51223491027724,
+        "internetPct": null,
+        "logGni": null,
+        "cmpNational": 1.1157979466523638,
+        "region": "Not classified",
+        "incomeGroup": "Not classified"
+      },
+      {
+        "countryCode": "MUS",
+        "countryName": "Mauritius",
+        "exposure": 0.2894,
+        "wcSharePct": 39.57802032146991,
+        "internetPct": 79.5,
+        "logGni": 10.465956409453957,
+        "cmpNational": 0.97837422358541,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "MWI",
+        "countryName": "Malawi",
+        "exposure": 0.2225,
+        "wcSharePct": 20.64660666351105,
+        "internetPct": 17.9881,
+        "logGni": 7.512071245835466,
+        "cmpNational": 0.4825231916010882,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "NER",
+        "countryName": "Niger",
+        "exposure": 0.2412,
+        "wcSharePct": 16.72069402588399,
+        "internetPct": 23.1879,
+        "logGni": 7.615791072035833,
+        "cmpNational": 0.5623161773501986,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "NIU",
+        "countryName": "Niue",
+        "exposure": 0.3137,
+        "wcSharePct": 60.91030789825962,
+        "internetPct": null,
+        "logGni": null,
+        "cmpNational": 1.3856215785640955,
+        "region": "Not classified",
+        "incomeGroup": "Not classified"
+      },
+      {
+        "countryCode": "NLD",
+        "countryName": "Netherlands",
+        "exposure": 0.3391,
+        "wcSharePct": 63.54953530268044,
+        "internetPct": 97.0068,
+        "logGni": 11.350053531997586,
+        "cmpNational": 1.5011459078937437,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "NOR",
+        "countryName": "Norway",
+        "exposure": 0.3196,
+        "wcSharePct": 58.861976635235145,
+        "internetPct": 99.0,
+        "logGni": 11.578994064939932,
+        "cmpNational": 1.4289888595166156,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "NPL",
+        "countryName": "Nepal",
+        "exposure": 0.2326,
+        "wcSharePct": 16.24365027908997,
+        "internetPct": 55.7716,
+        "logGni": 8.670772279344538,
+        "cmpNational": 0.4701641910567827,
+        "region": "South Asia",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "PAK",
+        "countryName": "Pakistan",
+        "exposure": 0.225,
+        "wcSharePct": 14.465745302412289,
+        "internetPct": 27.3759,
+        "logGni": 8.716044050161402,
+        "cmpNational": null,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "PAN",
+        "countryName": "Panama",
+        "exposure": 0.2318,
+        "wcSharePct": 27.546772734625602,
+        "internetPct": 68.5485,
+        "logGni": 10.577961467830452,
+        "cmpNational": 0.6603172373968399,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "PER",
+        "countryName": "Peru",
+        "exposure": 0.2432,
+        "wcSharePct": 22.474257701523857,
+        "internetPct": 79.4848,
+        "logGni": 9.727942980021197,
+        "cmpNational": 0.5674508756405087,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "PHL",
+        "countryName": "Philippines",
+        "exposure": 0.2523,
+        "wcSharePct": 21.50710474151778,
+        "internetPct": 83.7661,
+        "logGni": 9.497772413172754,
+        "cmpNational": 0.58164246863842,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "PLW",
+        "countryName": "Palau",
+        "exposure": 0.2949,
+        "wcSharePct": 44.0803382663847,
+        "internetPct": null,
+        "logGni": 9.815748638228122,
+        "cmpNational": 1.0564928050529907,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "PNG",
+        "countryName": "Papua New Guinea",
+        "exposure": 0.2364,
+        "wcSharePct": 16.48740542285724,
+        "internetPct": 24.0667,
+        "logGni": 8.429454277108231,
+        "cmpNational": 0.5770208504120091,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "POL",
+        "countryName": "Poland",
+        "exposure": 0.3165,
+        "wcSharePct": 53.16104998438122,
+        "internetPct": 86.4147,
+        "logGni": 10.810535703043351,
+        "cmpNational": 1.283058618126568,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "PRT",
+        "countryName": "Portugal",
+        "exposure": 0.3139,
+        "wcSharePct": 50.79735982307021,
+        "internetPct": 85.7901,
+        "logGni": 10.834272730560736,
+        "cmpNational": 1.2511919012974535,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "PSE",
+        "countryName": "Palestine (State of)",
+        "exposure": 0.2534,
+        "wcSharePct": 28.51575867808541,
+        "internetPct": 86.6377,
+        "logGni": 8.446770727119691,
+        "cmpNational": null,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "ROU",
+        "countryName": "Romania",
+        "exposure": 0.2717,
+        "wcSharePct": 32.71711787450036,
+        "internetPct": 89.2034,
+        "logGni": 10.777288232789331,
+        "cmpNational": 0.8929609508837225,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "RUS",
+        "countryName": "Russian Federation",
+        "exposure": 0.2982,
+        "wcSharePct": 51.428883174009556,
+        "internetPct": 92.245,
+        "logGni": 10.75321104013817,
+        "cmpNational": 1.2313544271958854,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "RWA",
+        "countryName": "Rwanda",
+        "exposure": 0.1862,
+        "wcSharePct": 9.19553424714552,
+        "internetPct": 34.2005,
+        "logGni": 8.194229304819817,
+        "cmpNational": 0.1006954016147179,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "SDN",
+        "countryName": "Sudan",
+        "exposure": 0.2128,
+        "wcSharePct": 10.37058046305248,
+        "internetPct": null,
+        "logGni": 7.6255950721324535,
+        "cmpNational": 0.3194092862893118,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "SGP",
+        "countryName": "Singapore",
+        "exposure": 0.3676,
+        "wcSharePct": 73.7596734890414,
+        "internetPct": 94.2852,
+        "logGni": 11.745543986646956,
+        "cmpNational": 1.7367722157394283,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "SLB",
+        "countryName": "Solomon Islands",
+        "exposure": 0.1992,
+        "wcSharePct": 16.75415319925151,
+        "internetPct": 42.4597,
+        "logGni": 7.893572073504902,
+        "cmpNational": null,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "SLE",
+        "countryName": "Sierra Leone",
+        "exposure": 0.2047,
+        "wcSharePct": 6.3015771759573,
+        "internetPct": 20.635,
+        "logGni": 8.157657015196472,
+        "cmpNational": 0.3849703933880104,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "SLV",
+        "countryName": "El Salvador",
+        "exposure": 0.2511,
+        "wcSharePct": 20.07110764772484,
+        "internetPct": 67.6558,
+        "logGni": 9.42706335548747,
+        "cmpNational": 0.5950653717852792,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "SOM",
+        "countryName": "Somalia",
+        "exposure": 0.2586,
+        "wcSharePct": 36.7410316220123,
+        "internetPct": null,
+        "logGni": 7.396335293800808,
+        "cmpNational": 0.8660084284655984,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "SRB",
+        "countryName": "Serbia",
+        "exposure": 0.2847,
+        "wcSharePct": 40.48457970078571,
+        "internetPct": 85.3575,
+        "logGni": 10.334295468316087,
+        "cmpNational": 0.9480533955547104,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "STP",
+        "countryName": "Sao Tome and Principe",
+        "exposure": 0.23,
+        "wcSharePct": 14.63002424865891,
+        "internetPct": 61.4607,
+        "logGni": 8.738735461363474,
+        "cmpNational": 0.5330227403624327,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "SUR",
+        "countryName": "Suriname",
+        "exposure": 0.2703,
+        "wcSharePct": 37.93358212174805,
+        "internetPct": 78.3958,
+        "logGni": 9.903487552536127,
+        "cmpNational": 0.8755628139183291,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "SVN",
+        "countryName": "Slovenia",
+        "exposure": 0.3041,
+        "wcSharePct": 49.93638308653211,
+        "internetPct": 90.3779,
+        "logGni": 10.942349836798464,
+        "cmpNational": 1.1964536518308129,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "SWE",
+        "countryName": "Sweden",
+        "exposure": 0.334,
+        "wcSharePct": 64.15312686297673,
+        "internetPct": 95.7033,
+        "logGni": 11.225243392518447,
+        "cmpNational": 1.5418963913436088,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "SWZ",
+        "countryName": "Eswatini",
+        "exposure": 0.2438,
+        "wcSharePct": 23.56951871657746,
+        "internetPct": 57.62,
+        "logGni": 9.283590833715776,
+        "cmpNational": 0.6515695147938829,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "TGO",
+        "countryName": "Togo",
+        "exposure": 0.2353,
+        "wcSharePct": 8.03656862709955,
+        "internetPct": 37.0223,
+        "logGni": 8.125630988477065,
+        "cmpNational": 0.3879027970209184,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "THA",
+        "countryName": "Thailand",
+        "exposure": 0.25,
+        "wcSharePct": 18.12935621957605,
+        "internetPct": 89.5353,
+        "logGni": 10.084141052229386,
+        "cmpNational": 0.6087534691716325,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "TJK",
+        "countryName": "Tajikistan",
+        "exposure": 0.2216,
+        "wcSharePct": 24.61524679507212,
+        "internetPct": 56.791,
+        "logGni": 8.867850063029406,
+        "cmpNational": 0.4910608642035469,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "TKL",
+        "countryName": "Tokelau",
+        "exposure": 0.2727,
+        "wcSharePct": 56.51105651105648,
+        "internetPct": null,
+        "logGni": null,
+        "cmpNational": 1.2156216427759052,
+        "region": "Not classified",
+        "incomeGroup": "Not classified"
+      },
+      {
+        "countryCode": "TLS",
+        "countryName": "Timor-Leste",
+        "exposure": 0.2076,
+        "wcSharePct": 9.53734384790368,
+        "internetPct": 34.0207,
+        "logGni": 8.525161361065415,
+        "cmpNational": 0.234835119053565,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "TON",
+        "countryName": "Tonga",
+        "exposure": 0.259,
+        "wcSharePct": 35.582784686661704,
+        "internetPct": 58.5334,
+        "logGni": 9.035986984831405,
+        "cmpNational": 0.8480454353256993,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "TUN",
+        "countryName": "Tunisia",
+        "exposure": 0.2364,
+        "wcSharePct": 23.84327920654056,
+        "internetPct": 72.3542,
+        "logGni": 9.563107691083898,
+        "cmpNational": 0.607572110019535,
+        "region": "Middle East, North Africa, Afghanistan & Pakistan",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "TUR",
+        "countryName": "Türkiye",
+        "exposure": 0.2652,
+        "wcSharePct": 32.12189979415898,
+        "internetPct": 85.9607,
+        "logGni": 10.705489138008156,
+        "cmpNational": 0.8294026537250566,
+        "region": "Europe & Central Asia",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "TUV",
+        "countryName": "Tuvalu",
+        "exposure": 0.3055,
+        "wcSharePct": 56.347589952477875,
+        "internetPct": 74.3146,
+        "logGni": 9.026417533815254,
+        "cmpNational": 1.2701925156202618,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "TZA",
+        "countryName": "Tanzania, United Republic of",
+        "exposure": 0.1733,
+        "wcSharePct": 4.34452107240109,
+        "internetPct": 29.0638,
+        "logGni": 8.326032685955079,
+        "cmpNational": 0.0577816583597954,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "UGA",
+        "countryName": "Uganda",
+        "exposure": 0.182,
+        "wcSharePct": 5.56226148720688,
+        "internetPct": 15.2524,
+        "logGni": 8.06777619577889,
+        "cmpNational": 0.0191657982193578,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Low income"
+      },
+      {
+        "countryCode": "URY",
+        "countryName": "Uruguay",
+        "exposure": 0.2807,
+        "wcSharePct": 35.77500157819042,
+        "internetPct": 89.896,
+        "logGni": 10.439103345109338,
+        "cmpNational": 0.8910339583830189,
+        "region": "Latin America & Caribbean",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "USA",
+        "countryName": "United States of America",
+        "exposure": 0.3225,
+        "wcSharePct": 60.74466198564268,
+        "internetPct": 93.1444,
+        "logGni": 11.361869990050273,
+        "cmpNational": 1.3660142731949243,
+        "region": "North America",
+        "incomeGroup": "High income"
+      },
+      {
+        "countryCode": "VNM",
+        "countryName": "Viet Nam",
+        "exposure": 0.2253,
+        "wcSharePct": 13.48121300160646,
+        "internetPct": 78.08,
+        "logGni": 9.670924779305427,
+        "cmpNational": 0.3751346326889596,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "VUT",
+        "countryName": "Vanuatu",
+        "exposure": 0.2182,
+        "wcSharePct": 18.13745891875591,
+        "internetPct": 45.7313,
+        "logGni": 8.32845106681936,
+        "cmpNational": 0.4063962836331824,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "WLF",
+        "countryName": "Wallis and Futuna",
+        "exposure": 0.2907,
+        "wcSharePct": 44.06576980568003,
+        "internetPct": null,
+        "logGni": null,
+        "cmpNational": 1.0291609380318547,
+        "region": "Not classified",
+        "incomeGroup": "Not classified"
+      },
+      {
+        "countryCode": "WSM",
+        "countryName": "Samoa",
+        "exposure": 0.2394,
+        "wcSharePct": 26.63921927416888,
+        "internetPct": 58.1386,
+        "logGni": 9.061840363657739,
+        "cmpNational": 0.6100408595519152,
+        "region": "East Asia & Pacific",
+        "incomeGroup": "Upper middle income"
+      },
+      {
+        "countryCode": "ZMB",
+        "countryName": "Zambia",
+        "exposure": 0.1872,
+        "wcSharePct": 8.20856168026287,
+        "internetPct": 33.0,
+        "logGni": 8.25582842728183,
+        "cmpNational": 0.0581054509274425,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      },
+      {
+        "countryCode": "ZWE",
+        "countryName": "Zimbabwe",
+        "exposure": 0.1918,
+        "wcSharePct": 11.493025396273831,
+        "internetPct": 38.4266,
+        "logGni": 8.677609912822142,
+        "cmpNational": 0.2265794211135076,
+        "region": "Sub-Saharan Africa",
+        "incomeGroup": "Lower middle income"
+      }
+    ],
+    "predictors": {
+      "wcSharePct": {
+        "label": "White-collar share",
+        "xTitle": "White-collar employment share (%)",
+        "tickSuffix": "%",
+        "xMin": 0,
+        "note": "Share of workers in ISCO 1-4 occupations."
+      },
+      "internetPct": {
+        "label": "Internet access",
+        "xTitle": "Individuals using the internet (%)",
+        "tickSuffix": "%",
+        "xMin": 0,
+        "note": "Country-level internet use from the release predictor panel."
+      },
+      "logGni": {
+        "label": "Income",
+        "xTitle": "log GNI per capita, PPP",
+        "tickSuffix": "",
+        "xMin": null,
+        "note": "Logged GNI per capita, PPP."
+      },
+      "cmpNational": {
+        "label": "Task-composition index",
+        "xTitle": "Task-composition index",
+        "tickSuffix": "",
+        "xMin": 0,
+        "note": "Country-level composition measure from the release predictor panel."
+      }
+    },
+    "metrics": {
+      "wcSharePct": {
+        "nCountries": 141,
+        "rSquared": 0.9068201994205446,
+        "fit": {
+          "points": [
+            {
+              "x": 3.09186940144,
+              "y": 0.19083343006749687
+            },
+            {
+              "x": 74.33635057060991,
+              "y": 0.36306278082959176
+            }
+          ],
+          "slope": 0.002417441294198445,
+          "intercept": 0.1833590173001872
+        }
+      },
+      "internetPct": {
+        "nCountries": 130,
+        "rSquared": 0.668721186714348,
+        "fit": {
+          "points": [
+            {
+              "x": 11.0784,
+              "y": 0.1661695440066457
+            },
+            {
+              "x": 100.0,
+              "y": 0.3054210848299844
+            }
+          ],
+          "slope": 0.0015660035449580158,
+          "intercept": 0.1488207303341828
+        }
+      },
+      "logGni": {
+        "nCountries": 135,
+        "rSquared": 0.7724633960420931,
+        "fit": {
+          "points": [
+            {
+              "x": 7.090076835776092,
+              "y": 0.1667653488241121
+            },
+            {
+              "x": 11.745543986646956,
+              "y": 0.33217462255506586
+            }
+          ],
+          "slope": 0.035530112955476846,
+          "intercept": -0.08514588201402229
+        }
+      },
+      "cmpNational": {
+        "nCountries": 134,
+        "rSquared": 0.9731559755430441,
+        "fit": {
+          "points": [
+            {
+              "x": -0.3089087729754874,
+              "y": 0.14610079788340144
+            },
+            {
+              "x": 1.7944511350898968,
+              "y": 0.3675085399069721
+            }
+          ],
+          "slope": 0.10526384056983176,
+          "intercept": 0.1786177217125155
+        }
+      }
     }
   },
   "adoption": {

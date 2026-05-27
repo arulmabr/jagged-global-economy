@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=country-explorer-20260522";
+  const DATA_URL = "assets/interactive_data.json?v=feedback-polish-20260527";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#246b8f";
   const RED = "#b44f2a";
@@ -28,24 +28,6 @@
       width: 1200,
       height: 760,
     },
-    "plot-adoption-anthropic": {
-      filename: "jagged-global-economy-anthropic-adoption",
-      label: "Anthropic adoption chart",
-      width: 900,
-      height: 620,
-    },
-    "plot-adoption-openai": {
-      filename: "jagged-global-economy-openai-adoption",
-      label: "OpenAI adoption chart",
-      width: 900,
-      height: 620,
-    },
-    "plot-adoption-microsoft": {
-      filename: "jagged-global-economy-microsoft-adoption",
-      label: "Microsoft adoption chart",
-      width: 900,
-      height: 620,
-    },
     "plot-remittance": {
       filename: "jagged-global-economy-remittance-exposure",
       label: "remittance exposure chart",
@@ -64,6 +46,7 @@
   let countryExplorer = {};
   let currentCountryCode = null;
   let occupationSort = "employment";
+  let exposureFactors = new Set(["wcSharePct"]);
 
   const config = {
     responsive: true,
@@ -122,6 +105,17 @@
     return `${Math.abs(delta).toFixed(3)} ${delta > 0 ? "above" : "below"}`;
   }
 
+  function comparisonPhrase(delta, peerLabel) {
+    if (!hasNumber(delta)) return null;
+    if (Math.abs(delta) < 0.005) return `Near ${peerLabel} average`;
+    return delta > 0 ? `Above ${peerLabel} average` : `Below ${peerLabel} average`;
+  }
+
+  function reliabilityLabel(value) {
+    if (!value) return null;
+    return `${titleCase(value)} data reliability`;
+  }
+
   function adoptionLabel(sourceKey) {
     return {
       anthropic: "Anthropic Claude",
@@ -136,6 +130,13 @@
     if (sourceKey === "microsoft") return `${value.toFixed(1)}% WAP`;
     if (sourceKey === "anthropic") return `${compactNumber(value, 1)} / 100k WAP`;
     return compactNumber(value, 2);
+  }
+
+  function formatFactorValue(key, value, predictor) {
+    if (!hasNumber(value)) return "n/a";
+    if (predictor.tickSuffix === "%") return `${value.toFixed(1)}%`;
+    if (key === "logGni") return value.toFixed(2);
+    return value.toFixed(2);
   }
 
   function baseLayout(extra = {}) {
@@ -298,7 +299,7 @@
     });
 
     controls.append(actions);
-    target.insertBefore(controls, el);
+    target.append(controls);
   }
 
   async function plot(id, traces, layout) {
@@ -344,6 +345,32 @@
       y: points.map((point) => point.y),
       line: options.line || { color, width: 2 },
       hoverinfo: "skip",
+    };
+  }
+
+  function linearFitClient(points, xKey, yKey) {
+    const clean = points
+      .map((point) => ({ x: point[xKey], y: point[yKey] }))
+      .filter((point) => hasNumber(point.x) && hasNumber(point.y));
+    if (clean.length < 2) return { points: [], slope: null, intercept: null };
+    const xMean = clean.reduce((sum, point) => sum + point.x, 0) / clean.length;
+    const yMean = clean.reduce((sum, point) => sum + point.y, 0) / clean.length;
+    const denom = clean.reduce((sum, point) => sum + (point.x - xMean) ** 2, 0);
+    if (denom === 0) return { points: [], slope: null, intercept: null };
+    const slope = clean.reduce(
+      (sum, point) => sum + (point.x - xMean) * (point.y - yMean),
+      0
+    ) / denom;
+    const intercept = yMean - slope * xMean;
+    const xMin = Math.min(...clean.map((point) => point.x));
+    const xMax = Math.max(...clean.map((point) => point.x));
+    return {
+      points: [
+        { x: xMin, y: intercept + slope * xMin },
+        { x: xMax, y: intercept + slope * xMax },
+      ],
+      slope,
+      intercept,
     };
   }
 
@@ -482,89 +509,118 @@
     updateCountryInspector(country);
   }
 
-  function appendDetailRow(parent, label, value, note = "") {
-    if (!value || value === "n/a") return;
-    const row = document.createElement("div");
-    row.className = "detail-row";
-    const labelEl = document.createElement("span");
-    labelEl.className = "detail-label";
-    labelEl.textContent = label;
-    const valueEl = document.createElement("strong");
-    valueEl.textContent = value;
-    row.append(labelEl, valueEl);
-    if (note) {
-      const noteEl = document.createElement("span");
-      noteEl.className = "detail-note";
-      noteEl.textContent = note;
-      row.append(noteEl);
+  function peerLabelFromIncome(value) {
+    if (!value) return "income group";
+    return String(value)
+      .toLowerCase()
+      .replace("high income", "high-income")
+      .replace("upper middle income", "upper-middle-income")
+      .replace("lower middle income", "lower-middle-income")
+      .replace("low income", "low-income");
+  }
+
+  function appendComparison(parent, label, value) {
+    if (!label) return;
+    const item = document.createElement("span");
+    item.className = "comparison-pill";
+    item.textContent = value ? `${label} (${value})` : label;
+    parent.append(item);
+  }
+
+  function renderComparison(country) {
+    const target = document.getElementById("inspector-comparison");
+    if (!target) return;
+    target.replaceChildren();
+    appendComparison(
+      target,
+      comparisonPhrase(country.incomeExposureDelta, peerLabelFromIncome(country.incomeGroup)),
+      formatExposure(country.incomeAverageExposure)
+    );
+    appendComparison(
+      target,
+      comparisonPhrase(country.regionExposureDelta, country.region),
+      formatExposure(country.regionAverageExposure)
+    );
+  }
+
+  function appendSnapshotCard(parent, title, body, meta = "", extraNode = null) {
+    if (!body && !extraNode) return;
+    const card = document.createElement("article");
+    card.className = "snapshot-card";
+    const heading = document.createElement("span");
+    heading.className = "snapshot-label";
+    heading.textContent = title;
+    const strong = document.createElement("strong");
+    strong.textContent = body || "";
+    card.append(heading, strong);
+    if (meta) {
+      const note = document.createElement("span");
+      note.className = "snapshot-note";
+      note.textContent = meta;
+      card.append(note);
     }
-    parent.append(row);
+    if (extraNode) card.append(extraNode);
+    parent.append(card);
   }
 
-  function renderLaborStructure(country) {
-    const target = document.getElementById("inspector-labor");
-    const details = document.getElementById("inspector-labor-details");
-    if (!target || !details) return;
+  function renderLaborSplit(labor) {
+    if (!hasNumber(labor.whiteCollarSharePct)) return null;
+    const blueShare = Math.max(0, 100 - labor.whiteCollarSharePct);
+    const wrap = document.createElement("span");
+    wrap.className = "labor-split";
+    const bar = document.createElement("span");
+    bar.className = "labor-split-bar";
+    const wc = document.createElement("span");
+    wc.className = "labor-split-wc";
+    wc.style.width = `${Math.max(0, Math.min(100, labor.whiteCollarSharePct))}%`;
+    bar.append(wc);
+    const labels = document.createElement("span");
+    labels.className = "labor-split-labels";
+    labels.textContent = `${formatPercent(labor.whiteCollarSharePct)} white-collar · ${formatPercent(blueShare)} other workers`;
+    wrap.append(bar, labels);
+    return wrap;
+  }
+
+  function renderSnapshot(country) {
+    const target = document.getElementById("inspector-snapshot");
+    if (!target) return;
     target.replaceChildren();
+
     const labor = country.laborStructure || {};
-    appendDetailRow(target, "White-collar share", formatPercent(labor.whiteCollarSharePct));
-    appendDetailRow(target, "White-collar exposure", formatExposure(labor.whiteCollarExposure));
-    appendDetailRow(target, "Blue-collar exposure", formatExposure(labor.blueCollarExposure));
-    details.hidden = target.children.length === 0;
-  }
-
-  function renderContext(country) {
-    const target = document.getElementById("inspector-context");
-    const details = document.getElementById("inspector-context-details");
-    if (!target || !details) return;
-    target.replaceChildren();
+    appendSnapshotCard(
+      target,
+      "Labor composition",
+      hasNumber(labor.whiteCollarSharePct) ? `${formatPercent(labor.whiteCollarSharePct)} white-collar` : "",
+      hasNumber(labor.whiteCollarExposure) && hasNumber(labor.blueCollarExposure)
+        ? `WC exposure ${formatExposure(labor.whiteCollarExposure)}; other workers ${formatExposure(labor.blueCollarExposure)}`
+        : "",
+      renderLaborSplit(labor)
+    );
 
     const gender = country.gender;
     if (gender && hasNumber(gender.gap)) {
-      appendDetailRow(
+      const direction = gender.gap >= 0 ? "Women higher" : "Men higher";
+      appendSnapshotCard(
         target,
-        "Gender exposure",
-        `${gender.gap >= 0 ? "women" : "men"} higher by ${Math.abs(gender.gap).toFixed(3)}`,
+        "Gender",
+        `${direction} by ${Math.abs(gender.gap).toFixed(3)}`,
         `Women ${formatExposure(gender.femaleExposure)}; men ${formatExposure(gender.maleExposure)}`
       );
     }
 
-    Object.entries(country.adoption || {}).forEach(([sourceKey, observation]) => {
-      appendDetailRow(
-        target,
-        adoptionLabel(sourceKey),
-        formatAdoptionValue(sourceKey, observation.value),
-        observation.metricLabel || ""
-      );
-    });
-
-    const remittance = country.remittance;
-    const corridors = country.remittanceCorridors || [];
-    if (
-      remittance &&
-      hasNumber(remittance.remittancePctGdp) &&
-      (remittance.remittancePctGdp >= 10 || corridors.length > 0)
-    ) {
-      appendDetailRow(
-        target,
-        "Remittances",
-        `${formatPercent(remittance.remittancePctGdp)} of GDP`,
-        hasNumber(remittance.remittanceExposure)
-          ? `Adjusted exposure ${formatExposure(remittance.remittanceExposure)}`
-          : ""
-      );
-      const corridor = corridors[0];
-      if (corridor) {
-        appendDetailRow(
-          target,
-          "Largest covered corridor",
-          corridor.senderName,
-          `${formatPercent(corridor.senderShareInflowPct)} of covered inflows`
-        );
-      }
+    const adoption = country.adoption || {};
+    const adoptionEntries = Object.entries(adoption);
+    if (adoptionEntries.length) {
+      const chips = document.createElement("span");
+      chips.className = "mini-chip-row";
+      adoptionEntries.forEach(([sourceKey, observation]) => {
+        const chip = document.createElement("span");
+        chip.className = "mini-chip";
+        chip.textContent = `${adoptionLabel(sourceKey)}: ${formatAdoptionValue(sourceKey, observation.value)}`;
+        chips.append(chip);
+      });
+      appendSnapshotCard(target, "Observed adoption", "Available validation data", "", chips);
     }
-
-    details.hidden = target.children.length === 0;
   }
 
   function renderOccupationBars(country) {
@@ -652,50 +708,37 @@
     const name = document.getElementById("inspector-country");
     const meta = document.getElementById("inspector-meta");
     const exposure = document.getElementById("inspector-exposure");
-    const rank = document.getElementById("inspector-rank");
-    const percentile = document.getElementById("inspector-percentile");
+    const exposureNote = document.getElementById("inspector-exposure-note");
     const employment = document.getElementById("inspector-employment");
-    const summary = document.getElementById("inspector-summary");
 
     if (name) name.textContent = country.countryName;
     if (meta) {
       meta.textContent = [
         country.region,
         titleCase(country.incomeGroup),
-        country.reliability ? `${titleCase(country.reliability)} reliability` : null,
+        reliabilityLabel(country.reliability),
       ]
         .filter((value) => value && value !== "n/a")
         .join(" · ");
     }
     if (exposure) exposure.textContent = formatExposure(country.exposure);
-    if (rank) rank.textContent = country.exposureRank ? `#${country.exposureRank}` : "n/a";
-    if (percentile) {
-      percentile.textContent = hasNumber(country.exposurePercentile)
-        ? `higher than ${country.exposurePercentile.toFixed(0)}%`
+    if (exposureNote) {
+      const rankText = country.exposureRank ? `#${country.exposureRank} of ${country.nCountries}` : "";
+      const percentileText = hasNumber(country.exposurePercentile)
+        ? `${ordinal(country.exposurePercentile)} percentile`
         : "";
+      exposureNote.textContent = [rankText, percentileText].filter(Boolean).join(" · ");
     }
     if (employment) employment.textContent = formatEmployment(country.totalEmploymentK);
-    if (summary) {
-      const regionDelta = describeDelta(country.regionExposureDelta);
-      const incomeDelta = describeDelta(country.incomeExposureDelta);
-      const regionPart = regionDelta
-        ? `${regionDelta} the ${country.region} average (${formatExposure(country.regionAverageExposure)})`
-        : "not comparable to a region average";
-      const incomePart = incomeDelta
-        ? `${incomeDelta} the ${titleCase(country.incomeGroup)} average (${formatExposure(country.incomeAverageExposure)})`
-        : "not comparable to an income-group average";
-      summary.textContent =
-        `${country.countryName} ranks #${country.exposureRank} of ${country.nCountries} measured countries. ` +
-        `Its exposure score is ${regionPart} and ${incomePart}.`;
-    }
     bindOccupationSortButtons();
     renderOccupationBars(country);
-    renderLaborStructure(country);
-    renderContext(country);
+    renderComparison(country);
+    renderSnapshot(country);
   }
 
   async function renderNationalExposure(data) {
     const rows = data.nationalExposure;
+    const missingRows = data.missingCountries || [];
     countryExplorer = data.countryExplorer || {};
     const exposureValues = rows.map((row) => row.exposure).filter((value) => Number.isFinite(value));
     const exposureMin = exposureValues.length ? Math.min(...exposureValues) : 0;
@@ -705,6 +748,24 @@
     const el = await plot(
       "plot-national-exposure",
       [
+        {
+          type: "choropleth",
+          locationmode: "ISO-3",
+          locations: missingRows.map((row) => row.countryCode),
+          z: missingRows.map(() => 0),
+          text: missingRows.map((row) => row.countryName),
+          customdata: missingRows.map((row) => [row.reason, row.explanation]),
+          colorscale: [
+            [0, "#d9dde3"],
+            [1, "#d9dde3"],
+          ],
+          showscale: false,
+          marker: { line: { color: "rgba(255,255,255,0.75)", width: 0.35 } },
+          hovertemplate:
+            "<b>%{text}</b><br>" +
+            "No released exposure score<br>" +
+            "%{customdata[1]}<extra></extra>",
+        },
         {
           type: "choropleth",
           locationmode: "ISO-3",
@@ -734,6 +795,7 @@
         margin: { l: 0, r: 0, t: 0, b: 8 },
         geo: {
           projection: { type: "natural earth" },
+          lataxis: { range: [-58, 84] },
           showframe: false,
           showcoastlines: false,
           showland: true,
@@ -753,51 +815,99 @@
     });
   }
 
-  async function renderWhiteCollar(data) {
-    const wc = data.whiteCollar;
-    const rows = wc.points;
-    const fit = scatterFitTrace(wc.fit, "Linear fit", RED);
-    const traces = [
-      {
+  function updateExposureFactorButtons() {
+    document.querySelectorAll("[data-exposure-factor]").forEach((button) => {
+      const selected = exposureFactors.has(button.dataset.exposureFactor);
+      button.setAttribute("aria-pressed", selected ? "true" : "false");
+    });
+  }
+
+  function bindExposureFactorButtons(data) {
+    document.querySelectorAll("[data-exposure-factor]").forEach((button) => {
+      if (button.dataset.bound === "true") return;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const key = button.dataset.exposureFactor || "wcSharePct";
+        if (exposureFactors.has(key)) {
+          exposureFactors.delete(key);
+        } else {
+          exposureFactors.add(key);
+        }
+        if (exposureFactors.size === 0) exposureFactors.add("wcSharePct");
+        updateExposureFactorButtons();
+        await renderExposureDrivers(data);
+      });
+    });
+    updateExposureFactorButtons();
+  }
+
+  async function renderExposureDrivers(data) {
+    const drivers = data.exposureDrivers || {};
+    const selectedKeys = Object.keys(drivers.predictors || {}).filter((key) => exposureFactors.has(key));
+    const colors = ["#246b8f", "#8b2332", "#60723c", "#7a5aa6"];
+    const traces = [];
+    const metricNotes = [];
+    selectedKeys.forEach((key, index) => {
+      const predictor = drivers.predictors[key];
+      const rows = (drivers.points || []).filter((row) => hasNumber(row[key]) && hasNumber(row.exposure));
+      const sortedValues = [...rows].sort((a, b) => a[key] - b[key]);
+      const percentileByCountry = new Map(
+        sortedValues.map((row, rank) => [
+          row.countryCode,
+          rows.length > 1 ? (rank / (rows.length - 1)) * 100 : 50,
+        ])
+      );
+      const points = rows.map((row) => ({
+        ...row,
+        predictorPercentile: percentileByCountry.get(row.countryCode),
+      }));
+      const fit = scatterFitTrace(
+        linearFitClient(points, "predictorPercentile", "exposure"),
+        `${predictor.label} fit`,
+        colors[index % colors.length],
+        { line: { color: colors[index % colors.length], width: 2 } }
+      );
+      traces.push({
         type: "scatter",
         mode: "markers",
-        name: "Countries",
-        x: rows.map((row) => row.wcSharePct),
-        y: rows.map((row) => row.exposure),
-        text: rows.map((row) => row.countryName),
-        customdata: rows.map((row) => [row.countryCode, row.region, row.incomeGroup, row.employmentK]),
+        name: predictor.label,
+        x: points.map((row) => row.predictorPercentile),
+        y: points.map((row) => row.exposure),
+        text: points.map((row) => row.countryName),
+        customdata: points.map((row) => [
+          row.countryCode,
+          row.region,
+          row.incomeGroup,
+          formatFactorValue(key, row[key], predictor),
+        ]),
         marker: {
-          color: rows.map((row) => row.exposure),
-          colorscale: [
-            [0, "#dbe8ff"],
-            [0.45, "#6f8ff2"],
-            [1, "#0b2aa8"],
-          ],
+          color: colors[index % colors.length],
           size: 8,
-          opacity: 0.82,
+          opacity: selectedKeys.length > 1 ? 0.55 : 0.78,
           line: { color: "white", width: 0.5 },
-          colorbar: exposureColorbar({ thickness: 12 }),
         },
         hovertemplate:
           "<b>%{text}</b> (%{customdata[0]})<br>" +
-          "White-collar share: %{x:.1f}%<br>" +
+          `${predictor.label}: %{customdata[3]}<br>` +
+          "Predictor percentile: %{x:.0f}<br>" +
           "Exposure: %{y:.3f}<br>" +
           "Region: %{customdata[1]}<br>" +
-          "Income group: %{customdata[2]}<br>" +
-          "Employment: %{customdata[3]:,.0f}k<extra></extra>",
-      },
-    ];
-    if (fit) traces.push(fit);
+          "Income group: %{customdata[2]}<extra></extra>",
+      });
+      if (fit) traces.push(fit);
+      const metric = drivers.metrics?.[key];
+      if (metric?.rSquared) metricNotes.push(`${predictor.label} R² = ${metric.rSquared.toFixed(2)}`);
+    });
 
-    const r2 = wc.metrics["White-collar share only"]?.rSquared;
     await plot(
       "plot-white-collar",
       traces,
       baseLayout({
         margin: { l: 64, r: 72, t: 28, b: 72 },
         xaxis: cartesianAxis({
-          title: "White-collar employment share (%)",
-          ticksuffix: "%",
+          title: "Predictor percentile among measured countries",
+          range: [0, 100],
+          ticksuffix: "",
         }),
         yaxis: cartesianAxis({
           title: "National AI exposure",
@@ -813,12 +923,21 @@
             bgcolor: "rgba(255,255,255,0.86)",
             bordercolor: "#dadce0",
             borderpad: 6,
-            text: r2 ? `White-collar share R² = ${r2.toFixed(2)}` : "",
+            text: metricNotes.join("<br>"),
           },
         ],
-        showlegend: false,
+        showlegend: selectedKeys.length > 1,
+        legend: {
+          orientation: "h",
+          x: 0.5,
+          xanchor: "center",
+          y: -0.25,
+          yanchor: "top",
+          font: { size: 11 },
+        },
       })
     );
+    bindExposureFactorButtons(data);
   }
 
   async function renderAdoptionPanel(id, series, title, yTitle) {
@@ -859,6 +978,7 @@
     const exposures = rows.flatMap((row) => [row.domesticExposure, row.remittanceExposure]);
     const min = Math.min(...exposures) - 0.01;
     const max = Math.max(...exposures) + 0.01;
+    const labelCodes = new Set(["TJK", "HND", "GTM", "SLV", "KGZ"]);
     await plot(
       "plot-remittance",
       [
@@ -873,13 +993,16 @@
         },
         {
           type: "scatter",
-          mode: "markers",
+          mode: "markers+text",
           name: "Countries",
           x: rows.map((row) => row.domesticExposure),
           y: rows.map((row) => row.remittanceExposure),
-          text: rows.map((row) => row.countryName),
+          text: rows.map((row) => (labelCodes.has(row.countryCode) ? row.countryCode : "")),
+          textposition: "top center",
+          textfont: { size: 11, color: "#303842" },
           customdata: rows.map((row) => [
             row.countryCode,
+            row.countryName,
             row.remittancePctGdp,
             row.sourceShareCovered,
             row.totalInflowM,
@@ -893,28 +1016,96 @@
             colorbar: { title: "Remittance<br>% GDP", thickness: 12 },
           },
           hovertemplate:
-            "<b>%{text}</b> (%{customdata[0]})<br>" +
+            "<b>%{customdata[1]}</b> (%{customdata[0]})<br>" +
             "Direct exposure: %{x:.3f}<br>" +
             "Remittance-accounted exposure: %{y:.3f}<br>" +
-            "Remittance: %{customdata[1]:.1f}% GDP<br>" +
-            "Source share covered: %{customdata[2]:.1%}<br>" +
-            "Total inflow: $%{customdata[3]:,.0f}m<extra></extra>",
+            "Remittance: %{customdata[2]:.1f}% GDP<br>" +
+            "Source share covered: %{customdata[3]:.1%}<br>" +
+            "Total inflow: $%{customdata[4]:,.0f}m<extra></extra>",
         },
       ],
       baseLayout({
         margin: { l: 64, r: 72, t: 28, b: 72 },
         xaxis: cartesianAxis({ title: "Direct national AI exposure", range: [min, max] }),
         yaxis: cartesianAxis({ title: "Remittance-accounted national AI exposure", range: [min, max] }),
+        annotations: [
+          {
+            xref: "paper",
+            yref: "paper",
+            x: 0.03,
+            y: 0.96,
+            showarrow: false,
+            align: "left",
+            bgcolor: "rgba(255,255,255,0.86)",
+            bordercolor: "#dadce0",
+            borderpad: 6,
+            text: "Countries with remittances ≥10% of GDP",
+          },
+          {
+            xref: "paper",
+            yref: "paper",
+            x: 0.66,
+            y: 0.72,
+            axref: "paper",
+            ayref: "paper",
+            ax: 0.56,
+            ay: 0.61,
+            showarrow: true,
+            arrowcolor: "#7b8490",
+            arrowwidth: 1,
+            align: "left",
+            font: { size: 11, color: "#555f69" },
+            text: "above line: higher<br>remittance-linked exposure",
+          },
+        ],
         showlegend: false,
       })
     );
+  }
+
+  function bindAdoptionDownload() {
+    const wrap = document.getElementById("adoption-downloads");
+    const button = document.getElementById("download-adoption-pngs");
+    if (!wrap || !button || button.dataset.bound === "true") return;
+    wrap.classList.add("is-visible");
+    button.dataset.bound = "true";
+    button.addEventListener("click", async () => {
+      const previous = button.textContent;
+      button.disabled = true;
+      button.textContent = "Downloading...";
+      const ids = [
+        ["plot-adoption-anthropic", "jagged-global-economy-anthropic-adoption"],
+        ["plot-adoption-openai", "jagged-global-economy-openai-adoption"],
+        ["plot-adoption-microsoft", "jagged-global-economy-microsoft-adoption"],
+      ];
+      try {
+        for (const [id, filename] of ids) {
+          const el = document.getElementById(id);
+          if (!el) continue;
+          await downloadPlotImage(el, {
+            format: "png",
+            filename,
+            width: 900,
+            height: 620,
+            scale: 2,
+          });
+        }
+      } catch (error) {
+        console.warn("Adoption figure export failed", error);
+        button.textContent = "Retry download";
+        return;
+      } finally {
+        button.disabled = false;
+      }
+      button.textContent = previous;
+    });
   }
 
   try {
     const data = await loadData();
     await Promise.all([
       renderNationalExposure(data),
-      renderWhiteCollar(data),
+      renderExposureDrivers(data),
       renderAdoptionPanel(
         "plot-adoption-anthropic",
         data.adoption.anthropic,
@@ -935,6 +1126,7 @@
       ),
       renderRemittance(data),
     ]);
+    bindAdoptionDownload();
   } catch (error) {
     document.documentElement.classList.add("plot-error");
     console.warn("Interactive plots were not rendered; static fallbacks remain visible.", error);

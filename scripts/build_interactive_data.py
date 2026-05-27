@@ -15,6 +15,42 @@ DATA_DIR = REPO_ROOT / "data"
 MICROSOFT_ADOPTION_PATH = DATA_DIR / "validation/microsoft_ai_diffusion_country_adoption.csv"
 OUT_PATH = REPO_ROOT / "assets/interactive_data.json"
 
+EXCLUSION_COUNTRY_CODES = {
+    "Grenada": "GRD",
+    "Liberia": "LBR",
+    "Nigeria": "NGA",
+    "Nauru": "NRU",
+    "Senegal": "SEN",
+    "Seychelles": "SYC",
+    "Armenia": "ARM",
+    "Malta": "MLT",
+    "Malaysia": "MYS",
+    "Namibia": "NAM",
+    "Nicaragua": "NIC",
+    "Trinidad and Tobago": "TTO",
+    "Ukraine": "UKR",
+    "Yemen": "YEM",
+    "South Africa": "ZAF",
+    "Canada": "CAN",
+    "China": "CHN",
+    "Algeria": "DZA",
+    "Kazakhstan": "KAZ",
+    "Republic of Korea": "KOR",
+    "Morocco": "MAR",
+    "New Zealand": "NZL",
+    "Saudi Arabia": "SAU",
+    "Uzbekistan": "UZB",
+    "Iceland": "ISL",
+    "Slovakia": "SVK",
+}
+
+EXCLUSION_EXPLANATIONS = {
+    "Low reliability": "Available occupation data did not meet the release reliability threshold.",
+    "ISCO-88 only": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here.",
+    "Major-group only": "Available employment data are too aggregated for the occupation-level exposure measure.",
+    "TOTAL/NEC only": "Available employment data do not include usable occupation detail.",
+}
+
 
 def read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8") as handle:
@@ -92,6 +128,24 @@ def linear_fit(points: list[dict], x_key: str, y_key: str, *, log_y: bool = Fals
     }
 
 
+def r_squared(points: list[dict], x_key: str, y_key: str) -> float | None:
+    clean = [
+        (point[x_key], point[y_key])
+        for point in points
+        if point.get(x_key) is not None and point.get(y_key) is not None
+    ]
+    if len(clean) < 2:
+        return None
+    x_mean = sum(x for x, _ in clean) / len(clean)
+    y_mean = sum(y for _, y in clean) / len(clean)
+    x_ss = sum((x - x_mean) ** 2 for x, _ in clean)
+    y_ss = sum((y - y_mean) ** 2 for _, y in clean)
+    if x_ss == 0 or y_ss == 0:
+        return None
+    xy = sum((x - x_mean) * (y - y_mean) for x, y in clean)
+    return (xy**2) / (x_ss * y_ss)
+
+
 def build_national_exposure() -> list[dict]:
     rows = read_csv(DATA_DIR / "aggregates/national_exposure_map_data.csv")
     points = []
@@ -108,6 +162,31 @@ def build_national_exposure() -> list[dict]:
         points.append(point)
     require_fields(points, ["countryCode", "countryName", "exposure"], "nationalExposure")
     return points
+
+
+def build_missing_countries(measured_codes: set[str]) -> list[dict]:
+    rows = read_csv(DATA_DIR / "coverage/country_exclusion_lists.csv")
+    countries = []
+    for row in rows:
+        reason = row["reason"]
+        for country_name in row["countries"].split(";"):
+            country_name = country_name.strip()
+            country_code = EXCLUSION_COUNTRY_CODES.get(country_name)
+            if not country_code or country_code in measured_codes:
+                continue
+            countries.append(
+                {
+                    "countryCode": country_code,
+                    "countryName": country_name,
+                    "reason": reason,
+                    "explanation": EXCLUSION_EXPLANATIONS.get(
+                        reason,
+                        "This country is not in the released national exposure sample.",
+                    ),
+                }
+            )
+    require_fields(countries, ["countryCode", "countryName", "reason", "explanation"], "missingCountries")
+    return sorted(countries, key=lambda country: country["countryName"])
 
 
 def build_labor_composition() -> dict:
@@ -153,6 +232,67 @@ def build_white_collar(national_lookup: dict[str, dict]) -> dict:
         for row in metrics_rows
     }
     return {"points": points, "metrics": metrics, "fit": linear_fit(points, "wcSharePct", "exposure")}
+
+
+def build_exposure_drivers(national_lookup: dict[str, dict]) -> dict:
+    rows = read_csv(DATA_DIR / "validation/exposure_predictor_country_panel.csv")
+    points = []
+    for row in rows:
+        extra = national_lookup.get(row["country_code"], {})
+        wc_share = as_float(row["wc_share"])
+        point = {
+            "countryCode": row["country_code"],
+            "countryName": row["country_name"],
+            "exposure": as_float(row["weighted_exposure"]),
+            "wcSharePct": wc_share * 100 if wc_share is not None else None,
+            "internetPct": as_float(row["internet_pct"]),
+            "logGni": as_float(row["log_gni"]),
+            "cmpNational": as_float(row["cmp_national"]),
+            "region": extra.get("region"),
+            "incomeGroup": extra.get("incomeGroup"),
+        }
+        points.append(point)
+
+    predictors = {
+        "wcSharePct": {
+            "label": "White-collar share",
+            "xTitle": "White-collar employment share (%)",
+            "tickSuffix": "%",
+            "xMin": 0,
+            "note": "Share of workers in ISCO 1-4 occupations.",
+        },
+        "internetPct": {
+            "label": "Internet access",
+            "xTitle": "Individuals using the internet (%)",
+            "tickSuffix": "%",
+            "xMin": 0,
+            "note": "Country-level internet use from the release predictor panel.",
+        },
+        "logGni": {
+            "label": "Income",
+            "xTitle": "log GNI per capita, PPP",
+            "tickSuffix": "",
+            "xMin": None,
+            "note": "Logged GNI per capita, PPP.",
+        },
+        "cmpNational": {
+            "label": "Task-composition index",
+            "xTitle": "Task-composition index",
+            "tickSuffix": "",
+            "xMin": 0,
+            "note": "Country-level composition measure from the release predictor panel.",
+        },
+    }
+    metrics = {}
+    for key in predictors:
+        valid = [point for point in points if point[key] is not None and point["exposure"] is not None]
+        metrics[key] = {
+            "nCountries": len(valid),
+            "rSquared": r_squared(valid, key, "exposure"),
+            "fit": linear_fit(valid, key, "exposure"),
+        }
+    require_fields(points, ["countryCode", "countryName", "exposure"], "exposureDrivers")
+    return {"points": points, "predictors": predictors, "metrics": metrics}
 
 
 def build_country_explorer(national_lookup: dict[str, dict]) -> dict:
@@ -450,9 +590,11 @@ def main() -> None:
     national_lookup = {row["countryCode"]: row for row in national}
     payload = {
         "nationalExposure": national,
+        "missingCountries": build_missing_countries(set(national_lookup)),
         "laborComposition": build_labor_composition(),
         "countryExplorer": build_country_explorer(national_lookup),
         "whiteCollar": build_white_collar(national_lookup),
+        "exposureDrivers": build_exposure_drivers(national_lookup),
         "adoption": build_adoption(),
         "remittance": build_remittance(),
     }
@@ -461,7 +603,9 @@ def main() -> None:
     print(
         "Counts:",
         f"national={len(payload['nationalExposure'])}",
+        f"missing={len(payload['missingCountries'])}",
         f"country_explorer={len(payload['countryExplorer'])}",
+        f"exposure_drivers={len(payload['exposureDrivers']['points'])}",
         f"white_collar={len(payload['whiteCollar']['points'])}",
         f"anthropic={len(payload['adoption']['anthropic']['points'])}",
         f"openai={len(payload['adoption']['signals']['points'])}",
