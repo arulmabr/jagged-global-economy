@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=final-polish-20260527";
+  const DATA_URL = "assets/interactive_data.json?v=labor-complement-20260527";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#246b8f";
   const RED = "#b44f2a";
@@ -576,7 +576,7 @@
     bar.append(wc);
     const labels = document.createElement("span");
     labels.className = "labor-split-labels";
-    labels.textContent = `${formatPercent(blueShare)} other workers`;
+    labels.textContent = `Remaining ${formatPercent(blueShare)} non-white-collar workers`;
     wrap.append(bar, labels);
     return wrap;
   }
@@ -592,7 +592,7 @@
       "Labor composition",
       hasNumber(labor.whiteCollarSharePct) ? `${formatPercent(labor.whiteCollarSharePct)} white-collar` : "",
       hasNumber(labor.whiteCollarExposure) && hasNumber(labor.blueCollarExposure)
-        ? `Exposure: white-collar ${formatExposure(labor.whiteCollarExposure)}, other ${formatExposure(labor.blueCollarExposure)}`
+        ? `Exposure: white-collar ${formatExposure(labor.whiteCollarExposure)}, non-white-collar ${formatExposure(labor.blueCollarExposure)}`
         : "",
       renderLaborSplit(labor)
     );
