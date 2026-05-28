@@ -354,6 +354,38 @@ section > h2,
   color: var(--factor-color, var(--accent));
 }
 
+.factor-description {
+  display: grid;
+  gap: 7px;
+  max-width: var(--copy-width);
+  margin: 9px auto 5px;
+  font-family: var(--sans);
+}
+
+.factor-description-card {
+  display: grid;
+  gap: 2px;
+  padding: 8px 11px;
+  border: 1px solid var(--line-soft);
+  border-left: 3px solid var(--factor-color, var(--link));
+  border-radius: 6px;
+  background: #fbfbfc;
+  box-shadow: 0 1px 0 rgba(18, 31, 44, 0.03);
+}
+
+.factor-description-card strong {
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.factor-description-card span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
 .factor-help {
   margin: 0 auto 8px;
   color: var(--quiet);
@@ -1348,6 +1380,15 @@ footer {
 
   .figure-downloads {
     justify-content: flex-end;
+  }
+
+  .factor-description-card {
+    padding: 7px 9px;
+  }
+
+  .factor-description-card strong,
+  .factor-description-card span {
+    font-size: 0.75rem;
   }
 
   .remittance-callouts {

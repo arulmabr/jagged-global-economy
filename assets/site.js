@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=driver-axis-pad-20260527";
+  const DATA_URL = "assets/interactive_data.json?v=factor-descriptions-20260527";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#1f4b7a";
   const RED = "#8b2332";
@@ -14,6 +14,12 @@
     internetPct: "#8b2332",
     logGni: "#60723c",
     cmpNational: "#6f5d85",
+  };
+  const FACTOR_DESCRIPTIONS = {
+    wcSharePct: "Percent of workers in ISCO 1-4 occupations, the paper's white-collar definition.",
+    internetPct: "Share of people using the internet. This is a digital-access comparison, not part of the exposure formula.",
+    logGni: "Country income level, measured as logged GNI per capita, PPP. This is a macro comparison, not part of the exposure formula.",
+    cmpNational: "Index of the tasks in a country's occupation mix. Higher values mean jobs are concentrated in task profiles associated with higher AI exposure.",
   };
   const EXPOSURE_COLORSCALE = [
     [0, "#f2f5f3"],
@@ -832,6 +838,30 @@
     });
   }
 
+  function updateFactorDescription(data) {
+    const target = document.getElementById("factor-description");
+    const predictors = data?.exposureDrivers?.predictors || {};
+    if (!target) return;
+
+    const selectedKeys = Object.keys(predictors).filter((key) => exposureFactors.has(key));
+    target.replaceChildren();
+    selectedKeys.forEach((key) => {
+      const predictor = predictors[key];
+      const card = document.createElement("article");
+      card.className = "factor-description-card";
+      card.style.setProperty("--factor-color", FACTOR_COLORS[key] || BLUE);
+
+      const title = document.createElement("strong");
+      title.textContent = predictor?.label || titleCase(key);
+
+      const text = document.createElement("span");
+      text.textContent = FACTOR_DESCRIPTIONS[key] || predictor?.note || "";
+
+      card.append(title, text);
+      target.append(card);
+    });
+  }
+
   function bindExposureFactorButtons(data) {
     document.querySelectorAll("[data-exposure-factor]").forEach((button) => {
       if (button.dataset.bound === "true") return;
@@ -845,10 +875,12 @@
         }
         if (exposureFactors.size === 0) exposureFactors.add("wcSharePct");
         updateExposureFactorButtons();
+        updateFactorDescription(data);
         await renderExposureDrivers(data);
       });
     });
     updateExposureFactorButtons();
+    updateFactorDescription(data);
   }
 
   async function renderExposureDrivers(data) {
