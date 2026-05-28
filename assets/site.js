@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=labor-complement-20260527";
+  const DATA_URL = "assets/interactive_data.json?v=scatter-unclip-20260527";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#246b8f";
   const RED = "#b44f2a";
@@ -874,6 +874,7 @@
         x: points.map((row) => row.predictorPercentile),
         y: points.map((row) => row.exposure),
         text: points.map((row) => row.countryName),
+        cliponaxis: false,
         customdata: points.map((row) => [
           row.countryCode,
           row.region,
