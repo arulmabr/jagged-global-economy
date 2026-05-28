@@ -251,6 +251,19 @@ section > h2,
   text-align: center;
 }
 
+.citation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 0 0 10px;
+}
+
+.citation-header h2 {
+  margin: 0;
+  text-align: left;
+}
+
 .section-copy {
   max-width: var(--copy-width);
   margin: 0 auto;
@@ -1013,17 +1026,25 @@ figcaption,
 }
 
 .copy-button {
-  display: flex;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
-  min-height: 34px;
-  margin: 0 0 8px auto;
-  padding: 5px 12px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--panel);
-  color: var(--ink);
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
   cursor: pointer;
-  font: 700 0.86rem/1 var(--sans);
+  font: 750 0.8rem/1.2 var(--sans);
+}
+
+.copy-button:hover,
+.copy-button:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 pre {
