@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=feedback-polish-20260527";
+  const DATA_URL = "assets/interactive_data.json?v=final-polish-20260527";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#246b8f";
   const RED = "#b44f2a";
@@ -576,7 +576,7 @@
     bar.append(wc);
     const labels = document.createElement("span");
     labels.className = "labor-split-labels";
-    labels.textContent = `${formatPercent(labor.whiteCollarSharePct)} white-collar · ${formatPercent(blueShare)} other workers`;
+    labels.textContent = `${formatPercent(blueShare)} other workers`;
     wrap.append(bar, labels);
     return wrap;
   }
@@ -592,7 +592,7 @@
       "Labor composition",
       hasNumber(labor.whiteCollarSharePct) ? `${formatPercent(labor.whiteCollarSharePct)} white-collar` : "",
       hasNumber(labor.whiteCollarExposure) && hasNumber(labor.blueCollarExposure)
-        ? `WC exposure ${formatExposure(labor.whiteCollarExposure)}; other workers ${formatExposure(labor.blueCollarExposure)}`
+        ? `Exposure: white-collar ${formatExposure(labor.whiteCollarExposure)}, other ${formatExposure(labor.blueCollarExposure)}`
         : "",
       renderLaborSplit(labor)
     );
@@ -604,7 +604,7 @@
         target,
         "Gender",
         `${direction} by ${Math.abs(gender.gap).toFixed(3)}`,
-        `Women ${formatExposure(gender.femaleExposure)}; men ${formatExposure(gender.maleExposure)}`
+        `Women ${formatExposure(gender.femaleExposure)} · men ${formatExposure(gender.maleExposure)}`
       );
     }
 
@@ -619,7 +619,7 @@
         chip.textContent = `${adoptionLabel(sourceKey)}: ${formatAdoptionValue(sourceKey, observation.value)}`;
         chips.append(chip);
       });
-      appendSnapshotCard(target, "Observed adoption", "Available validation data", "", chips);
+      appendSnapshotCard(target, "Observed adoption", "Validation data available", "", chips);
     }
   }
 
@@ -905,7 +905,7 @@
       baseLayout({
         margin: { l: 64, r: 72, t: 28, b: 72 },
         xaxis: cartesianAxis({
-          title: "Predictor percentile among measured countries",
+          title: "Predictor percentile among measured countries (0 = lowest, 100 = highest)",
           range: [0, 100],
           ticksuffix: "",
         }),

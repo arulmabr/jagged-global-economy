@@ -309,7 +309,7 @@ section > h2,
   flex-wrap: wrap;
   justify-content: center;
   gap: 7px;
-  margin: 18px auto 8px;
+  margin: 18px auto 5px;
   font-family: var(--sans);
 }
 
@@ -329,6 +329,15 @@ section > h2,
   border-color: rgba(139, 35, 50, 0.28);
   background: var(--accent-light);
   color: var(--accent);
+}
+
+.factor-help {
+  margin: 0 auto 8px;
+  color: var(--quiet);
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 650;
+  text-align: center;
 }
 
 .findings {
@@ -425,7 +434,7 @@ figure {
 }
 
 .plot-map {
-  min-height: 700px;
+  min-height: 540px;
   cursor: pointer;
 }
 
@@ -1048,7 +1057,7 @@ footer {
   }
 
   .plot-map {
-    min-height: 620px;
+    min-height: 470px;
   }
 
   .country-inspector {
@@ -1108,7 +1117,7 @@ footer {
   }
 
   .plot-map {
-    min-height: 470px;
+    min-height: 390px;
   }
 
   .plot-small {
@@ -1207,7 +1216,7 @@ footer {
   }
 
   .plot-map {
-    min-height: 360px;
+    min-height: 250px;
   }
 
   .atlas-figure {

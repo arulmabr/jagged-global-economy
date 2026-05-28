@@ -276,8 +276,8 @@ def build_exposure_drivers(national_lookup: dict[str, dict]) -> dict:
             "note": "Logged GNI per capita, PPP.",
         },
         "cmpNational": {
-            "label": "Task-composition index",
-            "xTitle": "Task-composition index",
+            "label": "Task mix",
+            "xTitle": "Task mix",
             "tickSuffix": "",
             "xMin": 0,
             "note": "Country-level composition measure from the release predictor panel.",
