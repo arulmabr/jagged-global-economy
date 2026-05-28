@@ -26,7 +26,7 @@
       "Countries score higher when more workers are in jobs with cognitive, computer, document, and information-processing tasks; they score lower when work is more physical or manual.",
   };
   const COMBINED_FACTOR_DESCRIPTION =
-    "Multiple active buttons are combined by averaging each country's percentile across the selected factors.";
+    "Averages each country's percentile across the active factors.";
   const EXPOSURE_COLORSCALE = [
     [0, "#f2f5f3"],
     [0.35, "#a8c7b8"],
@@ -868,18 +868,34 @@
     const selectedKeys = Object.keys(predictors).filter((key) => exposureFactors.has(key));
     target.replaceChildren();
     if (selectedKeys.length > 1) {
-      const labels = selectedKeys.map((key) => factorLabel(key, predictors[key]));
       const card = document.createElement("article");
-      card.className = "factor-description-card";
+      card.className = "factor-description-card factor-description-card-combined";
       card.style.setProperty("--factor-color", BLUE);
 
       const title = document.createElement("strong");
-      title.textContent = "Combined predictor";
+      title.textContent = `Combined predictor (${selectedKeys.length} factors)`;
 
       const text = document.createElement("span");
-      text.textContent = `${COMBINED_FACTOR_DESCRIPTION} Selected factors: ${labels.join(", ")}.`;
+      text.textContent = COMBINED_FACTOR_DESCRIPTION;
 
-      card.append(title, text);
+      const selectedList = document.createElement("div");
+      selectedList.className = "selected-factor-list";
+      selectedList.setAttribute(
+        "aria-label",
+        `Active factors: ${selectedKeys.map((key) => factorLabel(key, predictors[key])).join(", ")}.`
+      );
+      selectedList.setAttribute("role", "list");
+      selectedKeys.forEach((key) => {
+        const pill = document.createElement("span");
+        pill.className = "selected-factor-pill";
+        pill.setAttribute("role", "listitem");
+        pill.style.setProperty("--factor-color", FACTOR_COLORS[key] || BLUE);
+        pill.style.setProperty("--factor-tint", `${FACTOR_COLORS[key] || BLUE}17`);
+        pill.textContent = factorLabel(key, predictors[key]);
+        selectedList.append(pill);
+      });
+
+      card.append(title, text, selectedList);
       target.append(card);
       return;
     }

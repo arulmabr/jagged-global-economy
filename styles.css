@@ -386,6 +386,32 @@ section > h2,
   line-height: 1.35;
 }
 
+.factor-description-card-combined {
+  gap: 6px;
+}
+
+.selected-factor-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 1px;
+}
+
+.factor-description-card .selected-factor-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 3px 7px;
+  border: 1px solid var(--line-soft);
+  border-color: color-mix(in srgb, var(--factor-color, var(--link)) 52%, white);
+  border-radius: 999px;
+  background: var(--factor-tint, #f5f7f9);
+  color: var(--factor-color, var(--link));
+  font-size: 0.72rem;
+  font-weight: 750;
+  line-height: 1.1;
+}
+
 .factor-help {
   margin: 0 auto 8px;
   color: var(--quiet);
