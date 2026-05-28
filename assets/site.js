@@ -16,13 +16,14 @@
     cmpNational: "#6f5d85",
   };
   const FACTOR_LABELS = {
-    cmpNational: "Task mix",
+    cmpNational: "Task profile",
   };
   const FACTOR_DESCRIPTIONS = {
     wcSharePct: "Share of workers in white-collar occupations (ISCO 1-4).",
     internetPct: "Share of people using the internet.",
     logGni: "Gross national income per person, adjusted for purchasing power.",
-    cmpNational: "Whether jobs lean toward cognitive and information-processing tasks rather than physical or manual tasks.",
+    cmpNational:
+      "Countries score higher when more workers are in jobs with cognitive, computer, document, and information-processing tasks; they score lower when work is more physical or manual.",
   };
   const COMBINED_FACTOR_DESCRIPTION =
     "Average percentile across the selected factors. Higher values mean a country ranks higher on the selected mix.";
