@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=final-polish-20260527";
+  const DATA_URL = "assets/interactive_data.json?v=remittance-colors-20260527";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#1f4b7a";
   const RED = "#8b2332";
@@ -1028,12 +1028,13 @@
           marker: {
             color: rows.map((row) => row.remittancePctGdp),
             colorscale: [
-              [0, "#f8efe5"],
-              [0.42, "#d99763"],
-              [1, "#8b2332"],
+              [0, "#d9e9e4"],
+              [0.38, "#78b7ae"],
+              [0.72, "#2f8199"],
+              [1, "#123f5a"],
             ],
             size: rows.map((row) => Math.max(7, Math.min(17, row.remittancePctGdp / 2.8))),
-            opacity: 0.76,
+            opacity: 0.86,
             line: { color: "white", width: 0.7 },
             colorbar: {
               title: { text: "Remittance<br>(% GDP)", font: { family: FONT_FAMILY, size: 12, color: MUTED } },
