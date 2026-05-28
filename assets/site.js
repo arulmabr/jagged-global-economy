@@ -21,7 +21,7 @@
   const FACTOR_DESCRIPTIONS = {
     wcSharePct: "Share of workers in white-collar occupations (ISCO 1-4).",
     internetPct: "Share of people using the internet.",
-    logGni: "GNI per person, adjusted for purchasing power.",
+    logGni: "Gross national income per person, adjusted for purchasing power.",
     cmpNational: "Whether jobs lean toward cognitive and information-processing tasks rather than physical or manual tasks.",
   };
   const COMBINED_FACTOR_DESCRIPTION =
