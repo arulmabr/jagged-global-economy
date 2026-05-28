@@ -280,7 +280,7 @@ def build_exposure_drivers(national_lookup: dict[str, dict]) -> dict:
             "xTitle": "Task mix",
             "tickSuffix": "",
             "xMin": 0,
-            "note": "Country-level composition measure from the release predictor panel.",
+            "note": "National cognitive-minus-physical task-structure score aggregated from O*NET/ISCO occupational properties.",
         },
     }
     metrics = {}
