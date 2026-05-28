@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=remittance-colors-20260527";
+  const DATA_URL = "assets/interactive_data.json?v=driver-axis-pad-20260527";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#1f4b7a";
   const RED = "#8b2332";
@@ -917,7 +917,9 @@
         margin: { l: 64, r: 72, t: 28, b: 72 },
         xaxis: cartesianAxis({
           title: "Predictor percentile among measured countries (0 = lowest, 100 = highest)",
-          range: [0, 100],
+          range: [-2.5, 102.5],
+          tickmode: "array",
+          tickvals: [0, 20, 40, 60, 80, 100],
           ticksuffix: "",
         }),
         yaxis: cartesianAxis({
