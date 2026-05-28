@@ -26,7 +26,7 @@
       "Countries score higher when more workers are in jobs with cognitive, computer, document, and information-processing tasks; they score lower when work is more physical or manual.",
   };
   const COMBINED_FACTOR_DESCRIPTION =
-    "Average percentile across the selected factors. Higher values mean a country ranks higher on the selected mix.";
+    "Multiple active buttons are combined by averaging each country's percentile across the selected factors.";
   const EXPOSURE_COLORSCALE = [
     [0, "#f2f5f3"],
     [0.35, "#a8c7b8"],
@@ -877,7 +877,7 @@
       title.textContent = "Combined predictor";
 
       const text = document.createElement("span");
-      text.textContent = `${COMBINED_FACTOR_DESCRIPTION} Selected: ${labels.join(", ")}.`;
+      text.textContent = `${COMBINED_FACTOR_DESCRIPTION} Selected factors: ${labels.join(", ")}.`;
 
       card.append(title, text);
       target.append(card);
@@ -961,6 +961,7 @@
     const primaryKey = selectedKeys[0];
     const primaryPredictor = drivers.predictors[primaryKey] || {};
     const traceName = isCombined ? "Combined predictor" : factorLabel(primaryKey, primaryPredictor);
+    const percentileLabel = isCombined ? "Combined predictor percentile" : `${traceName} percentile`;
     const color = isCombined ? BLUE : FACTOR_COLORS[primaryKey] || BLUE;
     const fit = scatterFitTrace(
       linearFitClient(points, "predictorPercentile", "exposure"),
@@ -992,7 +993,7 @@
         hovertemplate:
           "<b>%{text}</b> (%{customdata[0]})<br>" +
           "%{customdata[3]}<br>" +
-          "Factor percentile: %{x:.0f}<br>" +
+          `${percentileLabel}: %{x:.0f}<br>` +
           "Exposure: %{y:.3f}<br>" +
           "Region: %{customdata[1]}<br>" +
           "Income group: %{customdata[2]}<extra></extra>",
@@ -1003,7 +1004,9 @@
     const metricNotes = [];
     if (isCombined) {
       const combinedR2 = rSquaredClient(points, "predictorPercentile", "exposure");
-      if (hasNumber(combinedR2)) metricNotes.push(`Combined predictor R² = ${combinedR2.toFixed(2)}`);
+      if (hasNumber(combinedR2)) {
+        metricNotes.push(`Combined predictor (${selectedKeys.length} factors) R² = ${combinedR2.toFixed(2)}`);
+      }
     } else {
       const metric = drivers.metrics?.[primaryKey];
       if (metric?.rSquared) metricNotes.push(`${traceName} R² = ${metric.rSquared.toFixed(2)}`);
@@ -1032,7 +1035,7 @@
       baseLayout({
         margin: { l: 64, r: 72, t: 28, b: 72 },
         xaxis: cartesianAxis({
-          title: "Factor percentile",
+          title: percentileLabel,
           range: [0, 102.5],
           tickmode: "array",
           tickvals: [0, 20, 40, 60, 80, 100],
