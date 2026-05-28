@@ -335,13 +335,23 @@ section > h2,
   background: var(--panel);
   color: var(--muted);
   cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
   font: 750 0.76rem/1.15 var(--sans);
 }
 
+.factor-controls button:hover,
+.factor-controls button:focus-visible {
+  border-color: var(--factor-color, var(--accent));
+  color: var(--factor-color, var(--accent));
+}
+
 .factor-controls button[aria-pressed="true"] {
-  border-color: rgba(139, 35, 50, 0.28);
-  background: var(--accent-light);
-  color: var(--accent);
+  border-color: var(--factor-color, var(--accent));
+  background: var(--factor-tint, var(--accent-light));
+  color: var(--factor-color, var(--accent));
 }
 
 .factor-help {

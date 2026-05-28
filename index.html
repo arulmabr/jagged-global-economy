@@ -11,7 +11,7 @@
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css?v=map-controls-20260527" />
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
-    <script src="assets/site.js?v=scatter-unclip-20260527" defer></script>
+    <script src="assets/site.js?v=plot-style-20260527" defer></script>
   </head>
   <body>
     <main class="page">
@@ -233,10 +233,10 @@
         </div>
         <figure class="interactive-figure">
           <div class="factor-controls" aria-label="Exposure explanation selector">
-            <button type="button" data-exposure-factor="wcSharePct" aria-pressed="true">White-collar share</button>
-            <button type="button" data-exposure-factor="internetPct" aria-pressed="false">Internet access</button>
-            <button type="button" data-exposure-factor="logGni" aria-pressed="false">Income</button>
-            <button type="button" data-exposure-factor="cmpNational" aria-pressed="false">Task mix</button>
+            <button type="button" data-exposure-factor="wcSharePct" aria-pressed="true" style="--factor-color: #1f4b7a; --factor-tint: #edf4f8;">White-collar share</button>
+            <button type="button" data-exposure-factor="internetPct" aria-pressed="false" style="--factor-color: #8b2332; --factor-tint: #f4e8ea;">Internet access</button>
+            <button type="button" data-exposure-factor="logGni" aria-pressed="false" style="--factor-color: #60723c; --factor-tint: #eef3e8;">Income</button>
+            <button type="button" data-exposure-factor="cmpNational" aria-pressed="false" style="--factor-color: #6f5d85; --factor-tint: #f1edf6;">Task mix</button>
           </div>
           <p class="factor-help">0 = lowest among measured countries; 100 = highest.</p>
           <div

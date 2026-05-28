@@ -1,11 +1,20 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=scatter-unclip-20260527";
+  const DATA_URL = "assets/interactive_data.json?v=plot-style-20260527";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
-  const BLUE = "#246b8f";
-  const RED = "#b44f2a";
-  const GRID = "#e4e7eb";
-  const AXIS = "#c5ccd4";
+  const BLUE = "#1f4b7a";
+  const RED = "#8b2332";
+  const INK = "#1a1a1a";
+  const MUTED = "#555f69";
+  const QUIET = "#7b8490";
+  const GRID = "#e8ebef";
+  const AXIS = "#d1d6dc";
   const SOURCE_TEXT = "Source: Jagged Global Economy (2026)";
+  const FACTOR_COLORS = {
+    wcSharePct: "#1f4b7a",
+    internetPct: "#8b2332",
+    logGni: "#60723c",
+    cmpNational: "#6f5d85",
+  };
   const EXPOSURE_COLORSCALE = [
     [0, "#f2f5f3"],
     [0.35, "#a8c7b8"],
@@ -144,11 +153,11 @@
       margin: { l: 64, r: 24, t: 28, b: 58 },
       paper_bgcolor: "white",
       plot_bgcolor: "white",
-      font: { family: FONT_FAMILY, size: 13, color: "#202124" },
+      font: { family: FONT_FAMILY, size: 13, color: INK },
       hoverlabel: {
         bgcolor: "white",
-        bordercolor: "#dadce0",
-        font: { family: FONT_FAMILY, color: "#202124" },
+        bordercolor: AXIS,
+        font: { family: FONT_FAMILY, color: INK },
       },
       ...extra,
     };
@@ -164,8 +173,8 @@
       ticks: "outside",
       ticklen: 3,
       tickcolor: AXIS,
-      tickfont: { size: 12, color: "#2f3439" },
-      titlefont: { size: 13 },
+      tickfont: { family: FONT_FAMILY, size: 12, color: MUTED },
+      titlefont: { family: FONT_FAMILY, size: 13, color: INK },
       automargin: true,
       ...extra,
     };
@@ -345,6 +354,7 @@
       y: points.map((point) => point.y),
       line: options.line || { color, width: 2 },
       hoverinfo: "skip",
+      showlegend: options.showlegend !== undefined ? options.showlegend : true,
     };
   }
 
@@ -844,11 +854,11 @@
   async function renderExposureDrivers(data) {
     const drivers = data.exposureDrivers || {};
     const selectedKeys = Object.keys(drivers.predictors || {}).filter((key) => exposureFactors.has(key));
-    const colors = ["#246b8f", "#8b2332", "#60723c", "#7a5aa6"];
     const traces = [];
     const metricNotes = [];
-    selectedKeys.forEach((key, index) => {
+    selectedKeys.forEach((key) => {
       const predictor = drivers.predictors[key];
+      const color = FACTOR_COLORS[key] || BLUE;
       const rows = (drivers.points || []).filter((row) => hasNumber(row[key]) && hasNumber(row.exposure));
       const sortedValues = [...rows].sort((a, b) => a[key] - b[key]);
       const percentileByCountry = new Map(
@@ -864,8 +874,8 @@
       const fit = scatterFitTrace(
         linearFitClient(points, "predictorPercentile", "exposure"),
         `${predictor.label} fit`,
-        colors[index % colors.length],
-        { line: { color: colors[index % colors.length], width: 2 } }
+        color,
+        { line: { color, width: 2.3 }, showlegend: false }
       );
       traces.push({
         type: "scatter",
@@ -882,10 +892,10 @@
           formatFactorValue(key, row[key], predictor),
         ]),
         marker: {
-          color: colors[index % colors.length],
-          size: 8,
-          opacity: selectedKeys.length > 1 ? 0.55 : 0.78,
-          line: { color: "white", width: 0.5 },
+          color,
+          size: 7.5,
+          opacity: selectedKeys.length > 1 ? 0.64 : 0.82,
+          line: { color: "white", width: 0.7 },
         },
         hovertemplate:
           "<b>%{text}</b> (%{customdata[0]})<br>" +
@@ -921,9 +931,10 @@
             y: 0.96,
             showarrow: false,
             align: "left",
-            bgcolor: "rgba(255,255,255,0.86)",
-            bordercolor: "#dadce0",
+            bgcolor: "rgba(255,255,255,0.92)",
+            bordercolor: AXIS,
             borderpad: 6,
+            font: { family: FONT_FAMILY, size: 12, color: INK },
             text: metricNotes.join("<br>"),
           },
         ],
@@ -934,7 +945,8 @@
           xanchor: "center",
           y: -0.25,
           yanchor: "top",
-          font: { size: 11 },
+          font: { family: FONT_FAMILY, size: 11, color: MUTED },
+          itemsizing: "constant",
         },
       })
     );
