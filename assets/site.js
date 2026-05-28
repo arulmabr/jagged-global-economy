@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=comments-polish-20260528";
+  const DATA_URL = "assets/interactive_data.json?v=remittance-labels-20260528";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#1f4b7a";
   const RED = "#8b2332";
@@ -180,13 +180,13 @@
 
   function cartesianAxis(extra = {}) {
     return {
-      showline: true,
-      linewidth: 1,
-      linecolor: AXIS,
+      showline: false,
+      linewidth: 0,
+      linecolor: "rgba(0,0,0,0)",
       gridcolor: GRID,
       zeroline: false,
-      ticks: "outside",
-      ticklen: 3,
+      ticks: "",
+      ticklen: 0,
       tickcolor: AXIS,
       tickfont: { family: FONT_FAMILY, size: 12, color: MUTED },
       titlefont: { family: FONT_FAMILY, size: 13, color: INK },
@@ -1085,15 +1085,18 @@
     const exposures = rows.flatMap((row) => [row.domesticExposure, row.remittanceExposure]);
     const min = Math.min(...exposures) - 0.01;
     const max = Math.max(...exposures) + 0.01;
+    const labeledCountries = new Set(["TJK", "HND", "GTM", "SLV", "TON", "LBN", "MNE"]);
     const pointLabel = (countryCode) => {
-      if (countryCode === "HND") return "HND/GTM";
-      if (countryCode === "TJK" || countryCode === "SLV") return countryCode;
-      return "";
+      return labeledCountries.has(countryCode) ? countryCode : "";
     };
     const labelPositions = {
       TJK: "middle right",
       HND: "top left",
+      GTM: "bottom right",
       SLV: "top center",
+      TON: "top right",
+      LBN: "middle left",
+      MNE: "bottom left",
     };
     await plot(
       "plot-remittance",
