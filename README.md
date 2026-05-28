@@ -30,6 +30,7 @@ Site: https://arulmurugan.me/jagged-global-economy/
 Use Python 3.11 from the repository root:
 
 ```bash
+python3.11 -m pip install -r code/requirements.txt
 python3.11 scripts/build_country_snapshot.py
 python3.11 scripts/build_interactive_data.py
 python3.11 -m http.server 8765 --bind 127.0.0.1

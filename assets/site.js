@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=data-link-polish-20260528";
+  const DATA_URL = "assets/interactive_data.json?v=missing-country-hover-20260528";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#1f4b7a";
   const RED = "#8b2332";
@@ -770,7 +770,6 @@
           locations: missingRows.map((row) => row.countryCode),
           z: missingRows.map(() => 0),
           text: missingRows.map((row) => row.countryName),
-          customdata: missingRows.map((row) => [row.reason, row.explanation]),
           colorscale: [
             [0, "#d9dde3"],
             [1, "#d9dde3"],
@@ -779,8 +778,7 @@
           marker: { line: { color: "rgba(255,255,255,0.75)", width: 0.35 } },
           hovertemplate:
             "<b>%{text}</b><br>" +
-            "No released exposure score<br>" +
-            "%{customdata[1]}<extra></extra>",
+            "No exposure estimate due to missing data<extra></extra>",
         },
         {
           type: "choropleth",

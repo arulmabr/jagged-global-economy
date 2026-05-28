@@ -8,6 +8,8 @@ import json
 import math
 from pathlib import Path
 
+import pycountry
+
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
@@ -43,14 +45,6 @@ EXCLUSION_COUNTRY_CODES = {
     "Iceland": "ISL",
     "Slovakia": "SVK",
 }
-
-EXCLUSION_EXPLANATIONS = {
-    "Low reliability": "Available occupation data did not meet the release reliability threshold.",
-    "ISCO-88 only": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here.",
-    "Major-group only": "Available employment data are too aggregated for the occupation-level exposure measure.",
-    "TOTAL/NEC only": "Available employment data do not include usable occupation detail.",
-}
-
 
 def read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8") as handle:
@@ -166,7 +160,7 @@ def build_national_exposure() -> list[dict]:
 
 def build_missing_countries(measured_codes: set[str]) -> list[dict]:
     rows = read_csv(DATA_DIR / "coverage/country_exclusion_lists.csv")
-    countries = []
+    explicit_exclusions = {}
     for row in rows:
         reason = row["reason"]
         for country_name in row["countries"].split(";"):
@@ -174,17 +168,29 @@ def build_missing_countries(measured_codes: set[str]) -> list[dict]:
             country_code = EXCLUSION_COUNTRY_CODES.get(country_name)
             if not country_code or country_code in measured_codes:
                 continue
-            countries.append(
-                {
-                    "countryCode": country_code,
-                    "countryName": country_name,
-                    "reason": reason,
-                    "explanation": EXCLUSION_EXPLANATIONS.get(
-                        reason,
-                        "This country is not in the released national exposure sample.",
-                    ),
-                }
-            )
+            explicit_exclusions[country_code] = {
+                "countryName": country_name,
+                "reason": reason,
+            }
+
+    map_universe = {
+        country.alpha_3: getattr(country, "common_name", country.name)
+        for country in pycountry.countries
+    }
+
+    countries = []
+    for country_code, country_name in sorted(map_universe.items(), key=lambda item: item[1]):
+        if country_code in measured_codes:
+            continue
+        exclusion = explicit_exclusions.get(country_code, {})
+        countries.append(
+            {
+                "countryCode": country_code,
+                "countryName": exclusion.get("countryName", country_name),
+                "reason": exclusion.get("reason", "Missing data"),
+                "explanation": "No exposure estimate due to missing data.",
+            }
+        )
     require_fields(countries, ["countryCode", "countryName", "reason", "explanation"], "missingCountries")
     return sorted(countries, key=lambda country: country["countryName"])
 

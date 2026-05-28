@@ -110,6 +110,7 @@ keeps aggregate robustness statistics and source links for that comparison.
 The website plots are generated from the released tables:
 
 ```bash
+python3.11 -m pip install -r code/requirements.txt
 python3.11 scripts/build_country_snapshot.py
 python3.11 scripts/build_interactive_data.py
 ```

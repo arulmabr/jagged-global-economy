@@ -1275,157 +1275,655 @@
       "countryCode": "DZA",
       "countryName": "Algeria",
       "reason": "Major-group only",
-      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "ASM",
+      "countryName": "American Samoa",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "AND",
+      "countryName": "Andorra",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "AIA",
+      "countryName": "Anguilla",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "ATA",
+      "countryName": "Antarctica",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "ATG",
+      "countryName": "Antigua and Barbuda",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "ARM",
       "countryName": "Armenia",
       "reason": "ISCO-88 only",
-      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "ABW",
+      "countryName": "Aruba",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "AZE",
+      "countryName": "Azerbaijan",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "BHR",
+      "countryName": "Bahrain",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "BMU",
+      "countryName": "Bermuda",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "BES",
+      "countryName": "Bonaire, Sint Eustatius and Saba",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "BVT",
+      "countryName": "Bouvet Island",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "IOT",
+      "countryName": "British Indian Ocean Territory",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "CMR",
+      "countryName": "Cameroon",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "CAN",
       "countryName": "Canada",
       "reason": "Major-group only",
-      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "CYM",
+      "countryName": "Cayman Islands",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "CAF",
+      "countryName": "Central African Republic",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "TCD",
+      "countryName": "Chad",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "CHN",
       "countryName": "China",
       "reason": "Major-group only",
-      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "CXR",
+      "countryName": "Christmas Island",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "CCK",
+      "countryName": "Cocos (Keeling) Islands",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "COM",
+      "countryName": "Comoros",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "COG",
+      "countryName": "Congo",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "CUW",
+      "countryName": "Curaçao",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "DJI",
+      "countryName": "Djibouti",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "DMA",
+      "countryName": "Dominica",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "GNQ",
+      "countryName": "Equatorial Guinea",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "ERI",
+      "countryName": "Eritrea",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "FLK",
+      "countryName": "Falkland Islands (Malvinas)",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "FRO",
+      "countryName": "Faroe Islands",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "GUF",
+      "countryName": "French Guiana",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "PYF",
+      "countryName": "French Polynesia",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "ATF",
+      "countryName": "French Southern Territories",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "GAB",
+      "countryName": "Gabon",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "GIB",
+      "countryName": "Gibraltar",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "GRL",
+      "countryName": "Greenland",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "GRD",
       "countryName": "Grenada",
       "reason": "Low reliability",
-      "explanation": "Available occupation data did not meet the release reliability threshold."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "GLP",
+      "countryName": "Guadeloupe",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "GUM",
+      "countryName": "Guam",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "GGY",
+      "countryName": "Guernsey",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "HTI",
+      "countryName": "Haiti",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "HMD",
+      "countryName": "Heard Island and McDonald Islands",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "VAT",
+      "countryName": "Holy See (Vatican City State)",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "HKG",
+      "countryName": "Hong Kong",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "ISL",
       "countryName": "Iceland",
       "reason": "TOTAL/NEC only",
-      "explanation": "Available employment data do not include usable occupation detail."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "IMN",
+      "countryName": "Isle of Man",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "JEY",
+      "countryName": "Jersey",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "KAZ",
       "countryName": "Kazakhstan",
       "reason": "Major-group only",
-      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "KWT",
+      "countryName": "Kuwait",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "LBR",
       "countryName": "Liberia",
       "reason": "Low reliability",
-      "explanation": "Available occupation data did not meet the release reliability threshold."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "LBY",
+      "countryName": "Libya",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "LIE",
+      "countryName": "Liechtenstein",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "MAC",
+      "countryName": "Macao",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "MYS",
       "countryName": "Malaysia",
       "reason": "ISCO-88 only",
-      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "MLT",
       "countryName": "Malta",
       "reason": "ISCO-88 only",
-      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "MTQ",
+      "countryName": "Martinique",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "MRT",
+      "countryName": "Mauritania",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "MYT",
+      "countryName": "Mayotte",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "MDA",
+      "countryName": "Moldova",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "MCO",
+      "countryName": "Monaco",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "MAR",
       "countryName": "Morocco",
       "reason": "Major-group only",
-      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "NAM",
       "countryName": "Namibia",
       "reason": "ISCO-88 only",
-      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "NRU",
       "countryName": "Nauru",
       "reason": "Low reliability",
-      "explanation": "Available occupation data did not meet the release reliability threshold."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "NCL",
+      "countryName": "New Caledonia",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "NZL",
       "countryName": "New Zealand",
       "reason": "Major-group only",
-      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "NIC",
       "countryName": "Nicaragua",
       "reason": "ISCO-88 only",
-      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "NGA",
       "countryName": "Nigeria",
       "reason": "Low reliability",
-      "explanation": "Available occupation data did not meet the release reliability threshold."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "NFK",
+      "countryName": "Norfolk Island",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "PRK",
+      "countryName": "North Korea",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "MNP",
+      "countryName": "Northern Mariana Islands",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "OMN",
+      "countryName": "Oman",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "PRY",
+      "countryName": "Paraguay",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "PCN",
+      "countryName": "Pitcairn",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "PRI",
+      "countryName": "Puerto Rico",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "QAT",
+      "countryName": "Qatar",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "KOR",
       "countryName": "Republic of Korea",
       "reason": "Major-group only",
-      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "REU",
+      "countryName": "Réunion",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "BLM",
+      "countryName": "Saint Barthélemy",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "SHN",
+      "countryName": "Saint Helena, Ascension and Tristan da Cunha",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "KNA",
+      "countryName": "Saint Kitts and Nevis",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "LCA",
+      "countryName": "Saint Lucia",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "MAF",
+      "countryName": "Saint Martin (French part)",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "SPM",
+      "countryName": "Saint Pierre and Miquelon",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "VCT",
+      "countryName": "Saint Vincent and the Grenadines",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "SMR",
+      "countryName": "San Marino",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "SAU",
       "countryName": "Saudi Arabia",
       "reason": "Major-group only",
-      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "SEN",
       "countryName": "Senegal",
       "reason": "Low reliability",
-      "explanation": "Available occupation data did not meet the release reliability threshold."
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "SYC",
       "countryName": "Seychelles",
       "reason": "Low reliability",
-      "explanation": "Available occupation data did not meet the release reliability threshold."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "SXM",
+      "countryName": "Sint Maarten (Dutch part)",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "SVK",
       "countryName": "Slovakia",
       "reason": "TOTAL/NEC only",
-      "explanation": "Available employment data do not include usable occupation detail."
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "ZAF",
       "countryName": "South Africa",
       "reason": "ISCO-88 only",
-      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "SGS",
+      "countryName": "South Georgia and the South Sandwich Islands",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "SSD",
+      "countryName": "South Sudan",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "SJM",
+      "countryName": "Svalbard and Jan Mayen",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "SYR",
+      "countryName": "Syria",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "TWN",
+      "countryName": "Taiwan",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "TTO",
       "countryName": "Trinidad and Tobago",
       "reason": "ISCO-88 only",
-      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "TKM",
+      "countryName": "Turkmenistan",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "TCA",
+      "countryName": "Turks and Caicos Islands",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "UKR",
       "countryName": "Ukraine",
       "reason": "ISCO-88 only",
-      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "UMI",
+      "countryName": "United States Minor Outlying Islands",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "UZB",
       "countryName": "Uzbekistan",
       "reason": "Major-group only",
-      "explanation": "Available employment data are too aggregated for the occupation-level exposure measure."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "VEN",
+      "countryName": "Venezuela",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "VGB",
+      "countryName": "Virgin Islands, British",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "VIR",
+      "countryName": "Virgin Islands, U.S.",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "ESH",
+      "countryName": "Western Sahara",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     },
     {
       "countryCode": "YEM",
       "countryName": "Yemen",
       "reason": "ISCO-88 only",
-      "explanation": "Available employment data use ISCO-88 rather than the ISCO-08 occupation system used here."
+      "explanation": "No exposure estimate due to missing data."
+    },
+    {
+      "countryCode": "ALA",
+      "countryName": "Åland Islands",
+      "reason": "Missing data",
+      "explanation": "No exposure estimate due to missing data."
     }
   ],
   "laborComposition": {
