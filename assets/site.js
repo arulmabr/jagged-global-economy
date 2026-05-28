@@ -1,5 +1,5 @@
 (async function () {
-  const DATA_URL = "assets/interactive_data.json?v=task-mix-copy-20260527";
+  const DATA_URL = "assets/interactive_data.json?v=paper-predictors-20260527";
   const FONT_FAMILY = "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
   const BLUE = "#1f4b7a";
   const RED = "#8b2332";
@@ -19,7 +19,7 @@
     wcSharePct: "Percent of workers in ISCO 1-4 occupations, the paper's white-collar definition.",
     internetPct: "Share of people using the internet. This is a digital-access comparison, not part of the exposure formula.",
     logGni: "Country income level, measured as logged GNI per capita, PPP. This is a macro comparison, not part of the exposure formula.",
-    cmpNational: "How cognitive versus physical the country's jobs are. More employment in cognitive work scores higher; more employment in physical work scores lower.",
+    cmpNational: "The paper's cognitive-minus-physical score: more computer, document, and information-processing work scores higher; more physical/manual work scores lower.",
   };
   const EXPOSURE_COLORSCALE = [
     [0, "#f2f5f3"],

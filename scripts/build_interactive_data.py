@@ -261,13 +261,6 @@ def build_exposure_drivers(national_lookup: dict[str, dict]) -> dict:
             "xMin": 0,
             "note": "Share of workers in ISCO 1-4 occupations.",
         },
-        "internetPct": {
-            "label": "Internet access",
-            "xTitle": "Individuals using the internet (%)",
-            "tickSuffix": "%",
-            "xMin": 0,
-            "note": "Country-level internet use from the release predictor panel.",
-        },
         "logGni": {
             "label": "Income",
             "xTitle": "log GNI per capita, PPP",
@@ -275,9 +268,16 @@ def build_exposure_drivers(national_lookup: dict[str, dict]) -> dict:
             "xMin": None,
             "note": "Logged GNI per capita, PPP.",
         },
+        "internetPct": {
+            "label": "Internet access",
+            "xTitle": "Individuals using the internet (%)",
+            "tickSuffix": "%",
+            "xMin": 0,
+            "note": "Country-level internet use from the release predictor panel.",
+        },
         "cmpNational": {
-            "label": "Task mix",
-            "xTitle": "Task mix",
+            "label": "Cognitive vs physical",
+            "xTitle": "Cognitive-minus-physical score",
             "tickSuffix": "",
             "xMin": 0,
             "note": "National cognitive-minus-physical task-structure score aggregated from O*NET/ISCO occupational properties.",

@@ -33351,13 +33351,6 @@
         "xMin": 0,
         "note": "Share of workers in ISCO 1-4 occupations."
       },
-      "internetPct": {
-        "label": "Internet access",
-        "xTitle": "Individuals using the internet (%)",
-        "tickSuffix": "%",
-        "xMin": 0,
-        "note": "Country-level internet use from the release predictor panel."
-      },
       "logGni": {
         "label": "Income",
         "xTitle": "log GNI per capita, PPP",
@@ -33365,9 +33358,16 @@
         "xMin": null,
         "note": "Logged GNI per capita, PPP."
       },
+      "internetPct": {
+        "label": "Internet access",
+        "xTitle": "Individuals using the internet (%)",
+        "tickSuffix": "%",
+        "xMin": 0,
+        "note": "Country-level internet use from the release predictor panel."
+      },
       "cmpNational": {
-        "label": "Task mix",
-        "xTitle": "Task mix",
+        "label": "Cognitive vs physical",
+        "xTitle": "Cognitive-minus-physical score",
         "tickSuffix": "",
         "xMin": 0,
         "note": "National cognitive-minus-physical task-structure score aggregated from O*NET/ISCO occupational properties."
@@ -33392,24 +33392,6 @@
           "intercept": 0.1833590173001872
         }
       },
-      "internetPct": {
-        "nCountries": 130,
-        "rSquared": 0.668721186714348,
-        "fit": {
-          "points": [
-            {
-              "x": 11.0784,
-              "y": 0.1661695440066457
-            },
-            {
-              "x": 100.0,
-              "y": 0.3054210848299844
-            }
-          ],
-          "slope": 0.0015660035449580158,
-          "intercept": 0.1488207303341828
-        }
-      },
       "logGni": {
         "nCountries": 135,
         "rSquared": 0.7724633960420931,
@@ -33426,6 +33408,24 @@
           ],
           "slope": 0.035530112955476846,
           "intercept": -0.08514588201402229
+        }
+      },
+      "internetPct": {
+        "nCountries": 130,
+        "rSquared": 0.668721186714348,
+        "fit": {
+          "points": [
+            {
+              "x": 11.0784,
+              "y": 0.1661695440066457
+            },
+            {
+              "x": 100.0,
+              "y": 0.3054210848299844
+            }
+          ],
+          "slope": 0.0015660035449580158,
+          "intercept": 0.1488207303341828
         }
       },
       "cmpNational": {
