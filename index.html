@@ -9,7 +9,7 @@
       content="Project page for The Jagged Global Economy: Frontier AI Unevenly Exposes National Economies."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=citation-copy-20260527" />
+    <link rel="stylesheet" href="styles.css?v=map-controls-20260527" />
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
     <script src="assets/site.js?v=final-polish-20260527" defer></script>
   </head>
@@ -115,23 +115,25 @@
               />
               <div class="atlas-tools">
                 <p class="interaction-cue">Click a shaded country, or choose one below.</p>
-                <select id="country-selector" aria-label="Choose a country">
-                  <option value="">Loading countries</option>
-                </select>
-              </div>
-              <div
-                id="national-exposure-legend"
-                class="map-legend"
-                aria-label="Exposure score color scale"
-              >
-                <span class="map-legend-title">Exposure score</span>
-                <div class="map-legend-scale" aria-hidden="true">
-                  <span class="map-legend-ramp"></span>
-                  <span class="map-legend-ticks">
-                    <span id="legend-exposure-min">0.14</span>
-                    <span id="legend-exposure-mid">0.26</span>
-                    <span id="legend-exposure-max">0.37</span>
-                  </span>
+                <div class="map-control-group">
+                  <select id="country-selector" aria-label="Choose a country">
+                    <option value="">Loading countries</option>
+                  </select>
+                  <div
+                    id="national-exposure-legend"
+                    class="map-legend"
+                    aria-label="Exposure score color scale"
+                  >
+                    <span class="map-legend-title">Exposure score</span>
+                    <div class="map-legend-scale" aria-hidden="true">
+                      <span class="map-legend-ramp"></span>
+                      <span class="map-legend-ticks">
+                        <span id="legend-exposure-min">0.14</span>
+                        <span id="legend-exposure-mid">0.26</span>
+                        <span id="legend-exposure-max">0.37</span>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
