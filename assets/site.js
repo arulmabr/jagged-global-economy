@@ -124,10 +124,16 @@
     return `${Math.abs(delta).toFixed(3)} ${delta > 0 ? "above" : "below"}`;
   }
 
-  function comparisonPhrase(delta, peerLabel) {
+  function comparisonPhrase(delta, peerGroup) {
     if (!hasNumber(delta)) return null;
-    if (Math.abs(delta) < 0.005) return `Near ${peerLabel} average`;
-    return delta > 0 ? `Above ${peerLabel} average` : `Below ${peerLabel} average`;
+    if (peerGroup === "income") {
+      if (Math.abs(delta) < 0.005) return "Near income peers";
+      return delta > 0
+        ? "More exposed than income peers"
+        : "Less exposed than income peers";
+    }
+    if (Math.abs(delta) < 0.005) return "Near regional average";
+    return delta > 0 ? "More exposed than regional average" : "Less exposed than regional average";
   }
 
   function reliabilityLabel(value) {
@@ -494,7 +500,7 @@
   function appendComparison(parent, label) {
     if (!label) return;
     const item = document.createElement("span");
-    item.className = "comparison-pill";
+    item.className = "comparison-card";
     item.textContent = label;
     parent.append(item);
   }
@@ -505,7 +511,7 @@
     target.replaceChildren();
     appendComparison(
       target,
-      comparisonPhrase(country.incomeExposureDelta, "income-group")
+      comparisonPhrase(country.incomeExposureDelta, "income")
     );
     appendComparison(
       target,
@@ -550,11 +556,17 @@
       const absGap = Math.abs(gender.gap);
       const direction =
         absGap < 0.005 ? "Minimal gender variation" : gender.gap > 0 ? "Women more exposed" : "Men more exposed";
+      const firstLabel = gender.gap >= 0 ? "Women" : "Men";
+      const secondLabel = gender.gap >= 0 ? "Men" : "Women";
+      const firstValue = gender.gap >= 0 ? gender.femaleExposure : gender.maleExposure;
+      const secondValue = gender.gap >= 0 ? gender.maleExposure : gender.femaleExposure;
+      const gapNote =
+        absGap >= 0.005 ? `${firstLabel} higher by ${absGap.toFixed(3)}` : "Scores are nearly equal";
       appendSnapshotCard(
         target,
         direction,
-        `Women ${formatExposure(gender.femaleExposure)} · men ${formatExposure(gender.maleExposure)}`,
-        absGap >= 0.005 ? `Gap ${absGap.toFixed(3)}` : ""
+        `${firstLabel}: ${formatExposure(firstValue)} · ${secondLabel}: ${formatExposure(secondValue)}`,
+        gapNote
       );
     }
   }

@@ -757,33 +757,23 @@ figcaption,
 
 .comparison-list {
   display: grid;
-  gap: 4px;
+  gap: 7px;
   margin: 0 0 12px;
 }
 
-.comparison-pill {
+.comparison-card {
   display: flex;
   align-items: center;
-  min-height: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  color: var(--muted);
+  min-height: 34px;
+  padding: 8px 10px;
+  border: 1px solid var(--line-soft);
+  border-left: 3px solid rgba(23, 90, 135, 0.7);
+  border-radius: 6px;
+  background: #fbfbfc;
+  color: var(--text);
   font-size: 0.76rem;
-  font-weight: 650;
-  line-height: 1.2;
-}
-
-.comparison-pill::before {
-  content: "";
-  flex: none;
-  width: 5px;
-  height: 5px;
-  margin-right: 7px;
-  border-radius: 50%;
-  background: var(--link);
-  opacity: 0.72;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .snapshot-grid {
