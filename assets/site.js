@@ -103,6 +103,28 @@
     return `${compactNumber(thousands, 0)}k`;
   }
 
+  function formatSignificant(value, significantDigits = 3) {
+    const number = Number(value);
+    if (!Number.isFinite(number)) return "n/a";
+    if (number === 0) return "0";
+    const decimals = Math.max(
+      0,
+      significantDigits - Math.floor(Math.log10(Math.abs(number))) - 1,
+    );
+    return number.toLocaleString(undefined, {
+      maximumFractionDigits: Math.min(decimals, 2),
+      minimumFractionDigits: 0,
+    });
+  }
+
+  function formatEmploymentHover(thousands) {
+    const value = Number(thousands);
+    if (!Number.isFinite(value)) return "n/a";
+    if (value >= 1000) return `${formatSignificant(value / 1000)}m workers`;
+    if (value >= 1) return `${formatSignificant(value)}k workers`;
+    return `${formatSignificant(value * 1000)} workers`;
+  }
+
   function ordinal(value) {
     const rounded = Math.round(value);
     const mod100 = rounded % 100;
@@ -726,7 +748,7 @@
             row.countryCode,
             row.region,
             row.incomeGroup,
-            row.employmentK,
+            formatEmploymentHover(row.employmentK),
           ]),
           colorscale: EXPOSURE_COLORSCALE,
           zmin: exposureMin,
@@ -738,7 +760,7 @@
             "Exposure: %{z:.3f}<br>" +
             "Region: %{customdata[1]}<br>" +
             "Income group: %{customdata[2]}<br>" +
-            "Employment: %{customdata[3]:,.0f}k<extra></extra>",
+            "Employment: %{customdata[3]}<extra></extra>",
         },
         {
           type: "choropleth",
